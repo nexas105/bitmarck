@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-04-19)
 
 **Core value:** Der Recruiter versteht in 30 Sekunden: Tobias ist kein "nur Techniker" — analytisches Denken, großes Bild, Technik UND Anforderungsübersetzung
-**Current focus:** Phase 1 — Foundation
+**Current focus:** Phase 2 — Public Content
 
 ## Current Position
 
@@ -70,5 +70,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Completed 01-02-PLAN.md — Phase 1 complete. Next: Phase 2 (Public Content)
-Resume file: None
+Stopped at: Phase 2 context gathered
+Resume file: .planning/phases/02-public-content/02-CONTEXT.md
