@@ -3,6 +3,7 @@ import {HeroSection} from '@/components/hero-section';
 import {CareerSection} from '@/components/career-section';
 import {ProjectsSection} from '@/components/projects-section';
 import {SkillsSection} from '@/components/skills-section';
+import {CertificationsSection} from '@/components/certifications-section';
 import {FAQSection} from '@/components/faq-section';
 import {AnimateOnScroll} from '@/components/animate-on-scroll';
 
@@ -25,6 +26,9 @@ export default async function HomePage({params}: Props) {
       </AnimateOnScroll>
       <AnimateOnScroll>
         <SkillsSection />
+      </AnimateOnScroll>
+      <AnimateOnScroll>
+        <CertificationsSection />
       </AnimateOnScroll>
       <AnimateOnScroll>
         <FAQSection />

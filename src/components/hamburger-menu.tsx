@@ -5,7 +5,7 @@ import {useTranslations} from 'next-intl';
 import {Menu, X} from 'lucide-react';
 import {LocaleToggle} from '@/components/locale-toggle';
 
-const NAV_KEYS = ['career', 'projects', 'skills', 'faq'] as const;
+const NAV_KEYS = ['career', 'projects', 'skills', 'certifications', 'faq'] as const;
 
 type HamburgerMenuProps = {
   activeSection: string;

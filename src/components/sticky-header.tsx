@@ -5,8 +5,8 @@ import {useTranslations} from 'next-intl';
 import {LocaleToggle} from '@/components/locale-toggle';
 import {HamburgerMenu} from '@/components/hamburger-menu';
 
-const SECTION_IDS = ['career', 'projects', 'skills', 'faq'] as const;
-const NAV_KEYS = ['career', 'projects', 'skills', 'faq'] as const;
+const SECTION_IDS = ['career', 'projects', 'skills', 'certifications', 'faq'] as const;
+const NAV_KEYS = ['career', 'projects', 'skills', 'certifications', 'faq'] as const;
 
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
