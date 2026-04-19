@@ -41,7 +41,7 @@
 
 - [x] **TECH-01**: Scroll-Animationen sind dezent und GPU-optimiert (nur x, y, scale, opacity) mit prefers-reduced-motion Fallback
 - [x] **TECH-02**: Website läuft als Docker Container auf eigenem Server mit HTTPS (Production Dockerfile, standalone output)
-- [ ] **TECH-03**: Terminal Easter Egg: verstecktes CLI-Interface mit 3-5 Befehlen (whoami, skills, projects, motivation, contact)
+- [x] **TECH-03**: Terminal Easter Egg: verstecktes CLI-Interface mit 3-5 Befehlen (whoami, skills, projects, motivation, contact)
 - [x] **TECH-04**: Website ist responsive — getestet auf Mobile (375px) und Desktop (1440px)
 - [x] **TECH-05**: Website-eigener Tech Stack ist im Footer sichtbar ("Built with Next.js, Tailwind, ...")
 
@@ -89,7 +89,7 @@
 | ADM-03 | Phase 4 | Pending |
 | TECH-01 | Phase 3 | Complete (03-01) |
 | TECH-02 | Phase 1 | Complete (01-01, 01-02) |
-| TECH-03 | Phase 3 | Pending |
+| TECH-03 | Phase 3 | Complete (03-02) |
 | TECH-04 | Phase 2 | Complete (02-04) |
 | TECH-05 | Phase 2 | Complete (02-03) |
 

@@ -14,9 +14,10 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Next.js App Router mit i18n-Routing, Tailwind, TypeScript und Docker-Stub
 - [ ] **Phase 2: Public Content** - Vollständiger recruiter-sichtbarer Content (Hero, Narrativ, Projekte, Skills, FAQ)
-- [ ] **Phase 3: Animations & Polish** - Framer Motion Scroll-Animationen, Terminal Easter Egg, finale visuelle Qualität
+- [x] **Phase 3: Animations & Polish** - Framer Motion Scroll-Animationen, Terminal Easter Egg, finale visuelle Qualität
 - [ ] **Phase 4: Dynamic Data, PDFs & Admin** - GitHub API, PDF-Generierung, Admin-Panel, Production Docker
 - [ ] **Phase 5: Enterprise UI Redesign** - Professionelles visuelles Redesign — die Website muss optisch und technisch die BA-IAM-Stelle und den Lebenslauf repräsentieren
+- [ ] **Phase 6: Content Expansion** - Karriere-Stationen und Projekte mit echten CV-Daten anreichern, Details als Collapse-Sektionen, alle 6 Projekte zeigen
 
 ## Phase Details
 
@@ -64,7 +65,7 @@ Plans:
 **Plans:** 2 plans
 Plans:
 - [x] 03-01-PLAN.md — Install motion, AnimateOnScroll wrapper, MotionProvider, scroll animations on all sections
-- [ ] 03-02-PLAN.md — Terminal Easter Egg with i18n commands, footer hint, keyboard shortcut
+- [x] 03-02-PLAN.md — Terminal Easter Egg with i18n commands, footer hint, keyboard shortcut
 **UI hint**: yes
 
 ### Phase 4: Dynamic Data, PDFs & Admin
@@ -97,15 +98,29 @@ Plans:
 **Plans**: TBD
 **UI hint**: yes
 
+### Phase 6: Content Expansion
+**Goal**: Karriere-Stationen und Projekte werden mit echten CV-Daten angereichert — jede Station hat ausklappbare Details, alle 6 Projekte aus dem CV sind sichtbar, Kontext ist rund und umfangreich
+**Depends on**: Phase 5
+**Requirements**: (new — content depth requirements)
+**Success Criteria** (what must be TRUE):
+  1. Alle 7 beruflichen Stationen aus dem CV sind sichtbar mit ausklappbaren Detail-Abschnitten (Aufgaben, Technologien, Erfolge)
+  2. Alle 6 Projekte aus dem CV sind als Karten dargestellt (Auth API, Next CMS, MyFitCoach PRO, Partner App, Logbuch App, MPA Nutrition Shop)
+  3. Karriere-Stationen haben logischen Kontext — der rote Faden vom Techniker zum Analysten ist in jeder Station spürbar
+  4. Collapse/Expand funktioniert auf Mobile und Desktop — Details sind optional, Überblick bleibt clean
+  5. Zertifikate und Ausbildung sind vollständig dargestellt (ITIL, SINA, DevOps, Linux, etc.)
+**Plans**: TBD
+**UI hint**: yes
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-19 |
 | 2. Public Content | 4/4 | Complete | 2026-04-19 |
-| 3. Animations & Polish | 1/2 | In progress | - |
+| 3. Animations & Polish | 2/2 | Complete | 2026-04-19 |
 | 4. Dynamic Data, PDFs & Admin | 0/4 | Not started | - |
 | 5. Enterprise UI Redesign | 0/TBD | Not started | - |
+| 6. Content Expansion | 0/TBD | Not started | - |

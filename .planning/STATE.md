@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 ## Current Position
 
 Phase: 3 of 5 (Animations & Polish)
-Plan: 1 of 2 in current phase
-Status: Executing Phase 3
-Last activity: 2026-04-19 — Plan 03-01 complete (Scroll animations with motion)
+Plan: 2 of 2 in current phase
+Status: Phase 3 Complete
+Last activity: 2026-04-19 — Plan 03-02 complete (Terminal Easter Egg)
 
-Progress: [███████░░░] 70%
+Progress: [████████░░] 80%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
+- Total plans completed: 8
 - Average duration: 2 min
-- Total execution time: 0.28 hours
+- Total execution time: 0.31 hours
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [███████░░░] 70%
 |-------|-------|-------|----------|
 | 1. Foundation | 2/2 | 8 min | 4 min |
 | 2. Public Content | 4/4 | 8 min | 2 min |
-| 3. Animations & Polish | 1/2 | 1 min | 1 min |
+| 3. Animations & Polish | 2/2 | 3 min | 1.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-01 (2 min), 02-02 (2 min), 02-03 (2 min), 02-04 (2 min), 03-01 (1 min)
+- Last 5 plans: 02-02 (2 min), 02-03 (2 min), 02-04 (2 min), 03-01 (1 min), 03-02 (2 min)
 - Trend: stable at 1-2 min
 
 *Updated after each plan completion*
@@ -59,6 +59,9 @@ Recent decisions affecting current work:
 - 03-01: HeroSection not wrapped in AnimateOnScroll -- above-the-fold renders instantly
 - 03-01: viewport margin=-64px accounts for sticky header height in scroll trigger
 - 03-01: AnimateOnScroll wrapper pattern -- wrap server components from page.tsx, never convert to client
+- 03-02: CustomEvent bridge pattern -- TerminalHint dispatches toggle-terminal event, Terminal listens, no shared state
+- 03-02: Terminal z-[60] above StickyHeader z-50 for proper overlay stacking
+- 03-02: Command allowlist as const tuple -- input trimmed+lowercased, matched against allowlist only
 
 ### Pending Todos
 
@@ -80,5 +83,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Completed 03-01-PLAN.md (Scroll animations)
-Resume file: 03-02-PLAN.md
+Stopped at: Completed 03-02-PLAN.md (Terminal Easter Egg) -- Phase 3 complete
+Resume file: Phase 4 planning
