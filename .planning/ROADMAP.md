@@ -28,7 +28,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. `/de` und `/en` laden die korrekte Locale ohne Reload — next-intl Middleware aktiv
   3. Ein Docker-Build (`docker build`) schlägt nicht fehl — standalone output konfiguriert
   4. Tailwind CSS v4 und TypeScript kompilieren fehlerfrei
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [x] 01-01-PLAN.md — Scaffold Next.js 16 + i18n routing + design tokens + locale toggle
+- [ ] 01-02-PLAN.md — Docker standalone build + container verification
 **UI hint**: yes
 
 ### Phase 2: Public Content
@@ -70,11 +73,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 1/2 | Executing | - |
 | 2. Public Content | 0/TBD | Not started | - |
 | 3. Animations & Polish | 0/TBD | Not started | - |
 | 4. Dynamic Data, PDFs & Admin | 0/TBD | Not started | - |

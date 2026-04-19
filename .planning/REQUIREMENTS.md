@@ -10,7 +10,7 @@
 - [ ] **HERO-01**: User sieht Hero mit Name, Ziel-Rolle "Business Analyst IAM" und Value Proposition above-the-fold
 - [ ] **HERO-02**: User sieht animierte Dashboard-Metriken (10+ Jahre IT, 15 Projekte, 6 Zertifikate) im Hero
 - [ ] **HERO-03**: User kann über responsive Navigation zu Sektionen scrollen (Desktop + Mobile Hamburger)
-- [ ] **HERO-04**: User kann zwischen Deutsch und Englisch wechseln via URL-basiertem Toggle (/de, /en) ohne Reload
+- [x] **HERO-04**: User kann zwischen Deutsch und Englisch wechseln via URL-basiertem Toggle (/de, /en) ohne Reload
 
 ### Karriere-Narrativ
 
@@ -40,7 +40,7 @@
 ### Technisch
 
 - [ ] **TECH-01**: Scroll-Animationen sind dezent und GPU-optimiert (nur x, y, scale, opacity) mit prefers-reduced-motion Fallback
-- [ ] **TECH-02**: Website läuft als Docker Container auf eigenem Server mit HTTPS (Production Dockerfile, standalone output)
+- [x] **TECH-02**: Website läuft als Docker Container auf eigenem Server mit HTTPS (Production Dockerfile, standalone output)
 - [ ] **TECH-03**: Terminal Easter Egg: verstecktes CLI-Interface mit 3-5 Befehlen (whoami, skills, projects, motivation, contact)
 - [ ] **TECH-04**: Website ist responsive — getestet auf Mobile (375px) und Desktop (1440px)
 - [ ] **TECH-05**: Website-eigener Tech Stack ist im Footer sichtbar ("Built with Next.js, Tailwind, ...")
@@ -73,7 +73,7 @@
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
 | HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 1 | Pending |
+| HERO-04 | Phase 1 | Complete (01-01) |
 | NARR-01 | Phase 2 | Pending |
 | NARR-02 | Phase 2 | Pending |
 | NARR-03 | Phase 3 | Pending |
@@ -88,7 +88,7 @@
 | ADM-02 | Phase 4 | Pending |
 | ADM-03 | Phase 4 | Pending |
 | TECH-01 | Phase 3 | Pending |
-| TECH-02 | Phase 1 | Pending |
+| TECH-02 | Phase 1 | Complete (01-01) |
 | TECH-03 | Phase 3 | Pending |
 | TECH-04 | Phase 2 | Pending |
 | TECH-05 | Phase 2 | Pending |
