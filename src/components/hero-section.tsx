@@ -18,14 +18,23 @@ export async function HeroSection() {
           <p className="text-body text-text-primary mt-md leading-relaxed">
             {t('valueProposition')}
           </p>
-          {/* CTA button — disabled placeholder per D-06, functional in Phase 4 */}
-          <button
-            disabled
-            className="mt-lg inline-flex items-center rounded-lg bg-accent px-lg py-sm text-label font-semibold text-white opacity-50 cursor-not-allowed"
-            aria-label={t('ctaDisabled')}
-          >
-            {t('cta')}
-          </button>
+          {/* CTA buttons — CV and cover letter downloads */}
+          <div className="mt-lg flex flex-wrap gap-sm">
+            <a
+              href="/api/pdf/cv"
+              download
+              className="inline-flex items-center rounded-lg bg-accent px-lg py-sm text-label font-semibold text-white hover:bg-accent-hover transition-colors duration-150"
+            >
+              {t('cta')}
+            </a>
+            <a
+              href="/api/pdf/cover-letter"
+              download
+              className="inline-flex items-center rounded-lg border border-accent px-lg py-sm text-label font-semibold text-accent hover:bg-accent hover:text-white transition-colors duration-150"
+            >
+              {t('ctaCoverLetter')}
+            </a>
+          </div>
         </div>
         {/* Right: Metrics Dashboard */}
         <MetricsDashboard />
