@@ -117,7 +117,19 @@
     }
   },
   "Footer": {
-    "builtWith": "Gebaut mit Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Selbst gehostet mit Docker"
+    "builtWith": "Gebaut mit Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Selbst gehostet mit Docker",
+    "terminalHint": "Druecke Ctrl+` fuer eine Ueberraschung"
+  },
+  "Terminal": {
+    "greeting": "tobias@bitmarck:~$ Willkommen! Tippe 'help' fuer eine Liste der Befehle.",
+    "whoami": "Tobias Ludwig -- Business Analyst IAM Kandidat bei Bitmarck. 10+ Jahre IT-Erfahrung, vom Service-Techniker ueber SINA-Administration zum Softwareentwickler. Ich uebersetze zwischen Technik und Fachbereich.",
+    "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA-Methoden: Anforderungsanalyse, Use Cases, DSGVO, Prozessoptimierung, Dokumentation\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nSprachen: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSprachen: Deutsch (C2), Englisch (B2)",
+    "projects": "1. Auth API Service -- JWT-basierter Auth-Service mit RBAC, PostgreSQL und Prisma\n2. Next CMS -- Eigenes Headless CMS mit Next.js, Supabase und RLS\n3. MyFitCoach PRO -- Coaching-Plattform mit Flutter, Next.js und Strapi\n4. Partner App -- Flutter-App mit Realtime Chat und Push Notifications\n5. Logbuch App -- Strukturierte Datenerfassung mit Flutter und Supabase\n6. Auth API Service -- Node.js Auth mit JWT und RBAC",
+    "motivation": "Bitmarck digitalisiert das Gesundheitswesen -- ein Bereich mit echtem Impact. Als Business Analyst IAM kann ich meine technische Erfahrung mit SINA-Systemen und Auth-Architekturen mit analytischem Denken verbinden -- genau die Schnittstelle, die mich antreibt.",
+    "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
+    "help": "Verfuegbare Befehle:\n  whoami      -- Wer ist Tobias?\n  skills      -- Technische Skills\n  projects    -- Projekt-Highlights\n  motivation  -- Warum Bitmarck?\n  contact     -- Kontaktdaten\n  help        -- Diese Hilfe\n  clear       -- Terminal leeren\n  exit        -- Terminal schliessen",
+    "unknown": "Befehl nicht gefunden: {cmd}. Tippe 'help' fuer eine Liste der Befehle.",
+    "prompt": "tobias@bitmarck:~$"
   },
   "ProjectData": {
     "authApi": {

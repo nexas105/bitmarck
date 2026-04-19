@@ -117,7 +117,19 @@
     }
   },
   "Footer": {
-    "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Self-hosted with Docker"
+    "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Self-hosted with Docker",
+    "terminalHint": "Press Ctrl+` for a surprise"
+  },
+  "Terminal": {
+    "greeting": "tobias@bitmarck:~$ Welcome! Type 'help' for a list of commands.",
+    "whoami": "Tobias Ludwig -- Business Analyst IAM candidate at Bitmarck. 10+ years IT experience, from service technician to SINA administration to software developer. I translate between technology and business.",
+    "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA Methods: Requirements analysis, Use Cases, GDPR, Process optimization, Documentation\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nLanguages: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSpoken: German (C2), English (B2)",
+    "projects": "1. Auth API Service -- JWT-based auth service with RBAC, PostgreSQL and Prisma\n2. Next CMS -- Custom headless CMS with Next.js, Supabase and RLS\n3. MyFitCoach PRO -- Coaching platform with Flutter, Next.js and Strapi\n4. Partner App -- Flutter app with realtime chat and push notifications\n5. Logbuch App -- Structured data capture with Flutter and Supabase\n6. MPA Nutrition Shop -- Custom shop system with payment and shipping integration",
+    "motivation": "Bitmarck digitizes healthcare -- a domain with real impact. As a Business Analyst IAM, I can combine my technical experience with SINA systems and auth architectures with analytical thinking -- exactly the intersection that drives me.",
+    "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
+    "help": "Available commands:\n  whoami      -- Who is Tobias?\n  skills      -- Technical skills\n  projects    -- Project highlights\n  motivation  -- Why Bitmarck?\n  contact     -- Contact info\n  help        -- Show this help\n  clear       -- Clear terminal\n  exit        -- Close terminal",
+    "unknown": "Command not found: {cmd}. Type 'help' for a list of commands.",
+    "prompt": "tobias@bitmarck:~$"
   },
   "ProjectData": {
     "authApi": {
