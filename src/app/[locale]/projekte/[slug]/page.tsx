@@ -4,7 +4,7 @@ import {Link} from '@/i18n/navigation';
 import {routing} from '@/i18n/routing';
 import {getProject, getAllProjectSlugs} from '@/data/projects';
 import {Tag} from '@/components/tag';
-import {ArrowLeft, ExternalLink} from 'lucide-react';
+import {ArrowLeft, ExternalLink, CheckCircle2, Lightbulb} from 'lucide-react';
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -81,6 +81,51 @@ export default async function ProjectDetailPage({params}: Props) {
               </p>
             </div>
           ))}
+
+          {/* Highlights section */}
+          {project.detail.highlightsKey && (
+            <div className="relative pl-lg border-l-2 border-emerald-500/30">
+              <h2 className="text-heading font-bold text-text-primary mb-md tracking-tight flex items-center gap-sm">
+                <CheckCircle2 className="h-5 w-5 text-emerald-500" aria-hidden="true" />
+                {td('highlights')}
+              </h2>
+              <ul className="flex flex-col gap-sm">
+                {t(project.detail.highlightsKey).split('\n').map((item) => (
+                  <li key={item} className="flex items-start gap-sm text-body text-text-secondary leading-loose">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-500/60 mt-1.5 shrink-0" aria-hidden="true" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Learnings section */}
+          {project.detail.learningsKey && (
+            <div className="relative pl-lg border-l-2 border-amber-500/30">
+              <h2 className="text-heading font-bold text-text-primary mb-md tracking-tight flex items-center gap-sm">
+                <Lightbulb className="h-5 w-5 text-amber-500" aria-hidden="true" />
+                {td('learnings')}
+              </h2>
+              <div className="rounded-lg bg-surface-secondary/50 border border-border/50 px-lg py-md">
+                <p className="text-body text-text-secondary leading-loose italic">
+                  {t(project.detail.learningsKey)}
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Tech Stack Detail */}
+        <div className="mt-3xl">
+          <h2 className="text-heading font-bold text-text-primary mb-md tracking-tight">
+            {td('techStack')}
+          </h2>
+          <div className="flex flex-wrap gap-sm">
+            {project.techStack.map((tech) => (
+              <Tag key={tech} variant="outline">{tech}</Tag>
+            ))}
+          </div>
         </div>
       </div>
     </main>
