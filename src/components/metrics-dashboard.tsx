@@ -15,12 +15,12 @@ export async function MetricsDashboard() {
       {metrics.map((metric) => (
         <div
           key={metric.label}
-          className="rounded-lg border border-border bg-surface-raised p-lg text-center"
+          className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-lg text-center"
         >
-          <p className="text-heading font-semibold text-text-primary">
+          <p className="text-heading font-semibold text-white">
             {metric.value}
           </p>
-          <p className="text-label text-text-secondary mt-xs">
+          <p className="text-label text-white/60 mt-xs">
             {metric.label}
           </p>
         </div>
