@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-04-19)
 
 **Core value:** Der Recruiter versteht in 30 Sekunden: Tobias ist kein "nur Techniker" — analytisches Denken, großes Bild, Technik UND Anforderungsübersetzung
-**Current focus:** Phase 2 — Public Content
+**Current focus:** Phase 3 — Animations & Polish
 
 ## Current Position
 
-Phase: 2 of 4 (Public Content)
-Plan: 4 of 4 in current phase
-Status: Phase 2 Complete
-Last activity: 2026-04-19 — Plan 02-04 complete (Navigation, layout assembly, project detail routes)
+Phase: 3 of 5 (Animations & Polish)
+Plan: 1 of 2 in current phase
+Status: Executing Phase 3
+Last activity: 2026-04-19 — Plan 03-01 complete (Scroll animations with motion)
 
-Progress: [██████░░░░] 60%
+Progress: [███████░░░] 70%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
+- Total plans completed: 7
 - Average duration: 2 min
-- Total execution time: 0.27 hours
+- Total execution time: 0.28 hours
 
 **By Phase:**
 
@@ -29,10 +29,11 @@ Progress: [██████░░░░] 60%
 |-------|-------|-------|----------|
 | 1. Foundation | 2/2 | 8 min | 4 min |
 | 2. Public Content | 4/4 | 8 min | 2 min |
+| 3. Animations & Polish | 1/2 | 1 min | 1 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-02 (4 min), 02-01 (2 min), 02-02 (2 min), 02-03 (2 min), 02-04 (2 min)
-- Trend: stable at 2 min
+- Last 5 plans: 02-01 (2 min), 02-02 (2 min), 02-03 (2 min), 02-04 (2 min), 03-01 (1 min)
+- Trend: stable at 1-2 min
 
 *Updated after each plan completion*
 
@@ -55,6 +56,9 @@ Recent decisions affecting current work:
 - 02-01: lucide-react moved to dependencies for Docker standalone builds
 - 02-04: Scroll-spy uses IntersectionObserver with rootMargin '-64px 0px -50% 0px' for header offset
 - 02-04: HamburgerMenu body scroll lock via overflow-hidden class with useEffect cleanup
+- 03-01: HeroSection not wrapped in AnimateOnScroll -- above-the-fold renders instantly
+- 03-01: viewport margin=-64px accounts for sticky header height in scroll trigger
+- 03-01: AnimateOnScroll wrapper pattern -- wrap server components from page.tsx, never convert to client
 
 ### Pending Todos
 
@@ -76,5 +80,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Completed 02-04-PLAN.md (Phase 2 complete)
-Resume file: Phase 3 planning
+Stopped at: Completed 03-01-PLAN.md (Scroll animations)
+Resume file: 03-02-PLAN.md

@@ -63,7 +63,7 @@ Plans:
   3. Terminal Easter Egg ist aufrufbar (versteckte Tastenkombination oder Hinweis im Footer) und antwortet auf `whoami`, `skills`, `projects`, `motivation`, `contact`
 **Plans:** 2 plans
 Plans:
-- [ ] 03-01-PLAN.md — Install motion, AnimateOnScroll wrapper, MotionProvider, scroll animations on all sections
+- [x] 03-01-PLAN.md — Install motion, AnimateOnScroll wrapper, MotionProvider, scroll animations on all sections
 - [ ] 03-02-PLAN.md — Terminal Easter Egg with i18n commands, footer hint, keyboard shortcut
 **UI hint**: yes
 
@@ -77,7 +77,12 @@ Plans:
   3. Nutzer kann Anschreiben als PDF herunterladen
   4. Tobias kann sich in `/admin` einloggen, Projekte anlegen/bearbeiten/löschen und Git-Links eintragen mit Auto-Pull
   5. Website läuft als Docker Container mit HTTPS auf eigenem Server — kein HTTP-Fehler, kein fehlender Static Asset
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 04-01-PLAN.md — GitHub API client with caching + project card enrichment
+- [ ] 04-02-PLAN.md — CV and cover letter PDF generation with real CV data
+- [ ] 04-03-PLAN.md — Admin authentication with iron-session
+- [ ] 04-04-PLAN.md — Admin project CRUD with GitHub auto-pull + Docker volume
 
 ### Phase 5: Enterprise UI Redesign
 **Goal**: Die Website sieht aus wie ein professionelles Enterprise-Produkt — visuelles Design repräsentiert die BA-IAM-Stelle und den Lebenslauf überzeugend, nicht wie ein generisches Template
@@ -101,6 +106,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-19 |
 | 2. Public Content | 4/4 | Complete | 2026-04-19 |
-| 3. Animations & Polish | 0/2 | Not started | - |
-| 4. Dynamic Data, PDFs & Admin | 0/TBD | Not started | - |
+| 3. Animations & Polish | 1/2 | In progress | - |
+| 4. Dynamic Data, PDFs & Admin | 0/4 | Not started | - |
 | 5. Enterprise UI Redesign | 0/TBD | Not started | - |
