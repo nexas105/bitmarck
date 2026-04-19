@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation** - Next.js App Router mit i18n-Routing, Tailwind, TypeScript und Docker-Stub
 - [ ] **Phase 2: Public Content** - Vollständiger recruiter-sichtbarer Content (Hero, Narrativ, Projekte, Skills, FAQ)
 - [x] **Phase 3: Animations & Polish** - Framer Motion Scroll-Animationen, Terminal Easter Egg, finale visuelle Qualität
-- [ ] **Phase 4: Dynamic Data, PDFs & Admin** - GitHub API, PDF-Generierung, Admin-Panel, Production Docker
+- [x] **Phase 4: Dynamic Data, PDFs & Admin** - GitHub API, PDF-Generierung, Admin-Panel, Production Docker
 - [ ] **Phase 5: Enterprise UI Redesign** - Professionelles visuelles Redesign — die Website muss optisch und technisch die BA-IAM-Stelle und den Lebenslauf repräsentieren
 - [ ] **Phase 6: Content Expansion** - Karriere-Stationen und Projekte mit echten CV-Daten anreichern, Details als Collapse-Sektionen, alle 6 Projekte zeigen
 
@@ -80,10 +80,10 @@ Plans:
   5. Website läuft als Docker Container mit HTTPS auf eigenem Server — kein HTTP-Fehler, kein fehlender Static Asset
 **Plans:** 4 plans
 Plans:
-- [ ] 04-01-PLAN.md — GitHub API client with caching + project card enrichment
-- [ ] 04-02-PLAN.md — CV and cover letter PDF generation with real CV data
-- [ ] 04-03-PLAN.md — Admin authentication with iron-session
-- [ ] 04-04-PLAN.md — Admin project CRUD with GitHub auto-pull + Docker volume
+- [x] 04-01-PLAN.md — GitHub API client with caching + project card enrichment
+- [x] 04-02-PLAN.md — CV and cover letter PDF generation with real CV data
+- [x] 04-03-PLAN.md — Admin authentication with iron-session
+- [x] 04-04-PLAN.md — Admin project CRUD with GitHub auto-pull + Docker volume
 
 ### Phase 5: Enterprise UI Redesign
 **Goal**: Die Website sieht aus wie ein professionelles Enterprise-Produkt — visuelles Design repräsentiert die BA-IAM-Stelle und den Lebenslauf überzeugend, nicht wie ein generisches Template
@@ -121,6 +121,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 1. Foundation | 2/2 | Complete | 2026-04-19 |
 | 2. Public Content | 4/4 | Complete | 2026-04-19 |
 | 3. Animations & Polish | 2/2 | Complete | 2026-04-19 |
-| 4. Dynamic Data, PDFs & Admin | 0/4 | Not started | - |
+| 4. Dynamic Data, PDFs & Admin | 4/4 | Complete | 2026-04-19 |
 | 5. Enterprise UI Redesign | 0/TBD | Not started | - |
 | 6. Content Expansion | 0/TBD | Not started | - |

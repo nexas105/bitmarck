@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-04-19)
 
 **Core value:** Der Recruiter versteht in 30 Sekunden: Tobias ist kein "nur Techniker" — analytisches Denken, großes Bild, Technik UND Anforderungsübersetzung
-**Current focus:** Phase 3 — Animations & Polish
+**Current focus:** Phase 4 — Dynamic Data, PDFs & Admin
 
 ## Current Position
 
-Phase: 3 of 5 (Animations & Polish)
-Plan: 2 of 2 in current phase
-Status: Phase 3 Complete
-Last activity: 2026-04-19 — Plan 03-02 complete (Terminal Easter Egg)
+Phase: 4 of 6 (Dynamic Data, PDFs & Admin)
+Plan: 4 of 4 in current phase
+Status: Phase 4 Complete
+Last activity: 2026-04-19 — Plan 04-04 complete (Admin Project CRUD)
 
 Progress: [████████░░] 80%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 12
 - Average duration: 2 min
-- Total execution time: 0.31 hours
+- Total execution time: 0.40 hours
 
 **By Phase:**
 
@@ -30,9 +30,10 @@ Progress: [████████░░] 80%
 | 1. Foundation | 2/2 | 8 min | 4 min |
 | 2. Public Content | 4/4 | 8 min | 2 min |
 | 3. Animations & Polish | 2/2 | 3 min | 1.5 min |
+| 4. Dynamic Data, PDFs & Admin | 4/4 | 7 min | 1.75 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (2 min), 02-03 (2 min), 02-04 (2 min), 03-01 (1 min), 03-02 (2 min)
+- Last 5 plans: 03-02 (2 min), 04-01 (2 min), 04-02 (2 min), 04-03 (2 min), 04-04 (1 min)
 - Trend: stable at 1-2 min
 
 *Updated after each plan completion*
@@ -62,6 +63,9 @@ Recent decisions affecting current work:
 - 03-02: CustomEvent bridge pattern -- TerminalHint dispatches toggle-terminal event, Terminal listens, no shared state
 - 03-02: Terminal z-[60] above StickyHeader z-50 for proper overlay stacking
 - 03-02: Command allowlist as const tuple -- input trimmed+lowercased, matched against allowlist only
+- 04-04: AdminProjectList extracted as client component to bridge server actions to interactive UI
+- 04-04: Slug validation with regex [a-z0-9-] prevents path traversal in JSON file operations
+- 04-04: Every Server Action checks session.isLoggedIn before mutation (threat mitigation T-04-11)
 
 ### Pending Todos
 
@@ -83,5 +87,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Completed 03-02-PLAN.md (Terminal Easter Egg) -- Phase 3 complete
-Resume file: Phase 4 planning
+Stopped at: Completed 04-04-PLAN.md (Admin Project CRUD) -- Phase 4 complete
+Resume file: Phase 5 planning
