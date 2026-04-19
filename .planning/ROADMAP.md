@@ -44,7 +44,12 @@ Plans:
   3. Nutzer sieht 3 Projekt-Karten mit Tech-Stack-Tags und kann zu Detail-Seiten navigieren (Problem/Ansatz/Ergebnis)
   4. Nutzer sieht Skills-Übersicht als gruppierte Tags (IAM, BA, DevOps, Sprachen) und FAQ mit Standort/Starttermin/Warum Bitmarck
   5. Website ist auf 375px (Mobile) und 1440px (Desktop) vollständig nutzbar — Navigation, Hamburger-Menü, alle Sektionen
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 02-01-PLAN.md — Data layer, i18n messages (DE/EN), Tag component, lucide-react fix
+- [ ] 02-02-PLAN.md — Hero section (split layout, metrics dashboard) + Career section (timeline)
+- [ ] 02-03-PLAN.md — Projects cards, Skills tags, FAQ accordion, Footer
+- [ ] 02-04-PLAN.md — Sticky header, hamburger menu, page assembly, project detail routes
 **UI hint**: yes
 
 ### Phase 3: Animations & Polish
@@ -78,6 +83,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-19 |
-| 2. Public Content | 0/TBD | Not started | - |
+| 2. Public Content | 0/4 | Not started | - |
 | 3. Animations & Polish | 0/TBD | Not started | - |
 | 4. Dynamic Data, PDFs & Admin | 0/TBD | Not started | - |
