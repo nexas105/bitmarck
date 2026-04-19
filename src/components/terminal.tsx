@@ -102,7 +102,7 @@ export function Terminal() {
             animate={{opacity: 1, y: 0}}
             exit={{opacity: 0, y: 20}}
             transition={{duration: 0.2}}
-            className="bg-[#1a1a2e] rounded-lg border border-border max-w-2xl w-full max-h-[60vh] flex flex-col"
+            className="bg-[#1a1a2e] rounded-lg border border-border max-w-[42rem] w-full max-h-[60vh] flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Title bar */}
