@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {MetricsDashboard} from '@/components/metrics-dashboard';
+import {CvDownload} from '@/components/cv-download';
 
 export async function HeroSection() {
   const t = await getTranslations('Hero');
@@ -19,22 +20,9 @@ export async function HeroSection() {
           <p className="text-body text-white/80 mt-md leading-relaxed">
             {t('valueProposition')}
           </p>
-          {/* CTA buttons — CV and cover letter downloads */}
-          <div className="mt-lg flex flex-wrap gap-sm">
-            <a
-              href="/api/pdf/cv"
-              download
-              className="inline-flex items-center rounded-lg bg-white text-primary-900 px-lg py-sm text-label font-semibold hover:bg-white/90 transition-colors duration-150"
-            >
-              {t('cta')}
-            </a>
-            <a
-              href="/api/pdf/cover-letter"
-              download
-              className="inline-flex items-center rounded-lg border border-white/30 px-lg py-sm text-label font-semibold text-white hover:bg-white/10 transition-colors duration-150"
-            >
-              {t('ctaCoverLetter')}
-            </a>
+          {/* CTA buttons — CV formats dropdown + cover letter */}
+          <div className="mt-lg">
+            <CvDownload />
           </div>
         </div>
         {/* Right: Metrics Dashboard */}

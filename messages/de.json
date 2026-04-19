@@ -20,8 +20,13 @@
     "role": "Business Analyst IAM",
     "valueProposition": "Ich übersetze Technik in Anforderungen — 10+ Jahre IT, jetzt mit analytischem Fokus.",
     "cta": "CV herunterladen",
-    "ctaCoverLetter": "Anschreiben herunterladen",
-    "ctaDisabled": "CV in Kürze verfügbar"
+    "ctaCoverLetter": "Anschreiben",
+    "ctaDisabled": "CV in Kürze verfügbar",
+    "cvFormat": {
+      "pdf": {"label": "PDF", "desc": "Gestylter Lebenslauf (2 Seiten, ATS-kompatibel)"},
+      "json": {"label": "JSON", "desc": "Strukturierte Daten fuer API-Integration"},
+      "llm": {"label": "LLM-optimiert", "desc": "Klartext fuer KI-Parsing und Analyse"}
+    }
   },
   "Metrics": {
     "experience": "10+ Jahre IT",

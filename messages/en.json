@@ -20,8 +20,13 @@
     "role": "Business Analyst IAM",
     "valueProposition": "I translate technology into requirements — 10+ years in IT, now with an analytical focus.",
     "cta": "Download CV",
-    "ctaCoverLetter": "Download Cover Letter",
-    "ctaDisabled": "CV coming soon"
+    "ctaCoverLetter": "Cover Letter",
+    "ctaDisabled": "CV coming soon",
+    "cvFormat": {
+      "pdf": {"label": "PDF", "desc": "Styled resume (2 pages, ATS-compatible)"},
+      "json": {"label": "JSON", "desc": "Structured data for API integration"},
+      "llm": {"label": "LLM-optimized", "desc": "Plain text for AI parsing and analysis"}
+    }
   },
   "Metrics": {
     "experience": "10+ Years IT",
