@@ -42,42 +42,131 @@
   "Career": {
     "heading": "My Path to Business Analyst",
     "intro": "My professional path leads from technician to analyst — not a career change, but an arrival. In every role, I brought analytical thinking, coordination, and a big-picture perspective.",
+    "expandLabel": "Show details",
+    "collapseLabel": "Hide details",
     "stations": {
       "telekom": {
-        "period": "2011 – 2016",
+        "period": "2014 – 2016",
         "company": "Deutsche Telekom",
-        "role": "IT Systems Electronics Apprentice & Fiber Optic Service Technician",
-        "body": "Foundation in network technology and system architecture. Fiber optic installation, splicing, and quality assurance — fault analysis and structured troubleshooting as core analytical competency."
+        "role": "Fiber Optic Service Technician",
+        "body": "Fiber optic installation and network expansion — structured fault analysis and quality assurance as analytical foundation.",
+        "narrative": "This is where I learned to systematically analyze complex technical systems — the basis for any requirements analysis.",
+        "technologies": "FTTH, Fiber Optics, Splicing, Measurement Technology",
+        "details": [
+          "Fiber optic installation and network expansion",
+          "Splicing and installation work",
+          "Measurements and quality assurance",
+          "Fault resolution and maintenance"
+        ]
       },
-      "netzwerk": {
-        "period": "2016 – 2021",
-        "company": "Media.com / Biermann Telekom",
-        "role": "Network Infrastructure & Construction Lead",
-        "body": "Maintained coaxial networks, analyzed signal disruptions (MER, BER). Then planned civil engineering works, led technician teams, and coordinated external contractors — project planning and team leadership in practice."
+      "mediacom": {
+        "period": "2016 – 2018",
+        "company": "Media.com GmbH",
+        "role": "IT Service Technician Network Level 4",
+        "body": "Coaxial network maintenance and signal analysis — data-driven fault diagnosis using MER and BER metrics.",
+        "narrative": "Signal analysis with concrete metrics was my first contact with data-driven decision making.",
+        "technologies": "Coaxial Networks, MER, BER, Signal Analysis",
+        "details": [
+          "Coaxial network maintenance",
+          "Signal disruption analysis",
+          "Network quality optimization (MER, BER)",
+          "Cross-department collaboration"
+        ]
+      },
+      "biermann": {
+        "period": "2018 – 2021",
+        "company": "Biermann Telekommunikationstechnik",
+        "role": "Construction Lead Telecommunications",
+        "body": "Planning and organizing civil engineering works, leading technician teams — project management and coordination in practice.",
+        "narrative": "Team leadership, planning, and coordination of external partners — classic project management skills every business analyst needs.",
+        "technologies": "Copper Network, Civil Engineering, Project Planning",
+        "details": [
+          "Planning and organizing civil engineering works",
+          "Coordination of external contractors",
+          "Fault analysis in copper networks",
+          "Leading technician teams",
+          "Technical documentation"
+        ]
       },
       "bwi": {
         "period": "2021 – 2023",
         "company": "BWI GmbH",
         "role": "IT Service Technician",
-        "body": "IT infrastructure projects for the German Ministry of Defence. Installed and configured systems (Cisco, LANCOM, VLAN), managed SINA systems, ticket-based support — requirements analysis in security-critical environments."
+        "body": "IT infrastructure projects for the German Ministry of Defence — working with security-critical SINA systems and structured ticketing.",
+        "narrative": "Security-critical systems, SINA experience, and structured processes — directly relevant to IAM at Bitmarck.",
+        "technologies": "Cisco, LANCOM, VLAN, SINA, IBM Maximo",
+        "details": [
+          "IT infrastructure projects for Ministry of Defence",
+          "System installation and configuration (Cisco, LANCOM, VLAN)",
+          "Ticket-based support (IBM Maximo)",
+          "Working with security-critical systems (SINA)",
+          "Documentation and process optimization"
+        ]
+      },
+      "persona": {
+        "period": "2024-12 – 2025-01",
+        "company": "Persona GmbH",
+        "role": "IT Client Technician",
+        "body": "IT project coordination and process optimization — leading small IT projects and coordinating external service providers.",
+        "narrative": "Short-term assignment focused on coordination and process optimization — analytical work under time pressure.",
+        "technologies": "IT Infrastructure, Project Coordination",
+        "details": [
+          "IT appointment and client coordination",
+          "Planning and implementing infrastructure projects",
+          "IT support and problem resolution",
+          "Leading small IT projects",
+          "Coordinating external service providers",
+          "IT process optimization",
+          "Documentation and software installation"
+        ]
       },
       "bhf": {
         "period": "2023 – 2024",
         "company": "BHF Group GmbH",
-        "role": "IT Consultant & Software Developer",
-        "body": "Developed CRM and training software: backend with Node.js, database design with PostgreSQL, UI/UX design. GDPR-compliant security concepts, workflow automation, and analytics — from concept to operations."
+        "role": "Assistant Studio Management / IT Consultant",
+        "body": "Developed CRM and training software — from concept through database design to productive operations.",
+        "narrative": "First time owning the entire software development cycle — requirements analysis, architecture, implementation. The turning point toward analyst.",
+        "technologies": "Node.js, PostgreSQL, REST APIs, UI/UX Design",
+        "details": [
+          "Development of CRM and training software",
+          "Backend with Node.js and REST APIs",
+          "Database design with PostgreSQL",
+          "UI/UX Design",
+          "GDPR-compliant security concepts",
+          "Workflow automation",
+          "Analytics and reporting",
+          "Organization and staff planning"
+        ]
       },
       "xecuro": {
         "period": "2025 – present",
         "company": "Xecuro GmbH",
         "role": "IT System Administrator Secure Client Manager",
-        "body": "Administering and advancing SINA-based secure clients. Hardening Windows and Linux systems, contributing to security concepts, provisioning test and integration environments."
+        "body": "Administering and advancing SINA-based secure clients — contributing to security concepts.",
+        "narrative": "Deepening SINA expertise, actively shaping security concepts — the technical bridge to the IAM world.",
+        "technologies": "SINA, Windows, Linux, Hardening, Security Concepts",
+        "details": [
+          "Administration and advancement of SINA-based secure clients",
+          "Hardening Windows and Linux systems under security policies",
+          "Building and operating IT infrastructure",
+          "Incident analysis and performance optimization",
+          "Contributing to security concepts",
+          "Collaboration with security and infrastructure teams",
+          "Provisioning test and integration environments"
+        ]
       },
       "bitmarck": {
         "period": "Next Step",
         "company": "Bitmarck",
         "role": "Business Analyst IAM",
-        "body": "The logical consequence: Analytical thinking and technical understanding as an official role — shaping digital identities in healthcare."
+        "body": "The logical consequence: Analytical thinking and technical understanding as an official role — shaping digital identities in healthcare.",
+        "narrative": "All threads come together here — technology, analysis, security, coordination.",
+        "technologies": "IAM, Identity Management, Healthcare",
+        "details": [
+          "Requirements analysis for IAM systems",
+          "Translating between technology and business",
+          "Shaping digital identities in healthcare"
+        ]
       }
     }
   },
@@ -163,6 +252,64 @@
       "problem": "Coaches needed a digital platform for training planning, client management, and progress tracking.",
       "approach": "Fullstack platform with Flutter mobile app, Next.js web dashboard, Strapi backend, realtime features, and integrated analytics.",
       "result": "Functional coaching platform with mobile and web interfaces. Requirements analysis, multi-platform architecture, and analytics independently implemented."
+    },
+    "partnerApp": {
+      "title": "Partner App",
+      "description": "Flutter app for couples with realtime chat, media sharing, and push notifications.",
+      "problem": "Couples needed a private, secure platform for shared communication and media exchange.",
+      "approach": "Flutter mobile app with Supabase backend, realtime chat, media sharing, and push notifications via FCM/APNs.",
+      "result": "Working mobile app with realtime features. Architecture and realtime patterns independently designed and implemented."
+    },
+    "logbuchApp": {
+      "title": "Logbuch App",
+      "description": "Structured data capture with Flutter and Supabase — form logic and API integration.",
+      "problem": "Structured field data capture required a mobile solution with flexible form logic.",
+      "approach": "Flutter app with Supabase backend, dynamic form logic, and API integration for data export.",
+      "result": "Mobile data capture app with flexible forms. Requirements analyzed and data model independently designed."
+    },
+    "mpaNutrition": {
+      "title": "MPA Nutrition Shop",
+      "description": "Custom shop system with payment and shipping integration — e-commerce from scratch.",
+      "problem": "A nutrition shop needed a custom e-commerce solution without dependency on third-party platforms.",
+      "approach": "Custom shop system with payment integration, shipping logic, marketing tools, and analytics.",
+      "result": "Functional online shop with complete order flow. Business requirements analyzed and technically implemented."
+    }
+  },
+  "Certifications": {
+    "heading": "Certifications & Education",
+    "certLabel": "Certifications",
+    "eduLabel": "Education",
+    "certs": {
+      "itil": "ITIL Foundation",
+      "sinaCore": "SINA CORE",
+      "sinaBasics": "SINA BASICS",
+      "devops": "DevOps Fundamentals",
+      "databases": "Databases",
+      "linuxAdmin": "Linux System Administration",
+      "fitTrainer": "Fitness Trainer B License",
+      "nutritionist": "Certified Nutritionist",
+      "lancom": "LANCOM Certification",
+      "ftth": "FTTH Fiber Optics"
+    },
+    "education": {
+      "bsc": {
+        "degree": "B.Sc. Computer Science",
+        "institution": "FernUniversitaet Hagen",
+        "period": "2024 – present",
+        "status": "in progress"
+      },
+      "sde": {
+        "degree": "Software Developer Expert",
+        "institution": "IU International University",
+        "period": "2023 – 2024",
+        "status": "completed"
+      },
+      "itse": {
+        "degree": "IT Systems Electronics Technician",
+        "institution": "Deutsche Telekom (Apprenticeship)",
+        "period": "2011 – 2014",
+        "status": "completed"
+      }
     }
   }
 }
