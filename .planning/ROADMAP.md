@@ -95,7 +95,11 @@ Plans:
   3. Hero-Bereich hat visuellen Impact — nicht nur Text auf weißem Hintergrund
   4. Karriere-Timeline und Projekt-Karten haben visuelle Tiefe (Schatten, Hover-Effekte, Farbakzente)
   5. Mobile und Desktop haben konsistentes, hochwertiges Design
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — Design tokens (shadows, colors, typography) + dark gradient hero + glass metric cards
+- [ ] 05-02-PLAN.md — Accent career timeline + elevated project cards + accent-tinted tags
+- [ ] 05-03-PLAN.md — Backdrop-blur header, dark footer, alternating section backgrounds, section heading upgrades
 **UI hint**: yes
 
 ### Phase 6: Content Expansion
@@ -122,5 +126,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 2. Public Content | 4/4 | Complete | 2026-04-19 |
 | 3. Animations & Polish | 2/2 | Complete | 2026-04-19 |
 | 4. Dynamic Data, PDFs & Admin | 4/4 | Complete | 2026-04-19 |
-| 5. Enterprise UI Redesign | 0/TBD | Not started | - |
+| 5. Enterprise UI Redesign | 0/3 | Not started | - |
 | 6. Content Expansion | 0/TBD | Not started | - |
