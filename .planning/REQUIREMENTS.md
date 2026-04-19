@@ -7,28 +7,28 @@
 
 ### Hero & Navigation
 
-- [ ] **HERO-01**: User sieht Hero mit Name, Ziel-Rolle "Business Analyst IAM" und Value Proposition above-the-fold
-- [ ] **HERO-02**: User sieht animierte Dashboard-Metriken (10+ Jahre IT, 15 Projekte, 6 Zertifikate) im Hero
-- [ ] **HERO-03**: User kann über responsive Navigation zu Sektionen scrollen (Desktop + Mobile Hamburger)
+- [x] **HERO-01**: User sieht Hero mit Name, Ziel-Rolle "Business Analyst IAM" und Value Proposition above-the-fold
+- [x] **HERO-02**: User sieht animierte Dashboard-Metriken (10+ Jahre IT, 15 Projekte, 6 Zertifikate) im Hero
+- [x] **HERO-03**: User kann über responsive Navigation zu Sektionen scrollen (Desktop + Mobile Hamburger)
 - [x] **HERO-04**: User kann zwischen Deutsch und Englisch wechseln via URL-basiertem Toggle (/de, /en) ohne Reload
 
 ### Karriere-Narrativ
 
-- [ ] **NARR-01**: User sieht eigene Sektion "Mein Weg zum Business Analyst" — explizite Transformations-Story vom Techniker zum Analysten
-- [ ] **NARR-02**: User erkennt bei jeder Karriere-Station den roten Faden — analytische und konzeptionelle Aspekte hervorgehoben
+- [x] **NARR-01**: User sieht eigene Sektion "Mein Weg zum Business Analyst" — explizite Transformations-Story vom Techniker zum Analysten
+- [x] **NARR-02**: User erkennt bei jeder Karriere-Station den roten Faden — analytische und konzeptionelle Aspekte hervorgehoben
 - [ ] **NARR-03**: User erlebt scroll-getriebene Karriere-Timeline mit dezenten Framer Motion Animationen
 
 ### Projekte & Skills
 
-- [ ] **PROJ-01**: User sieht 3 Projekt-Showcase-Karten (Auth API Service, Next CMS, Server-Cluster) mit Tech-Stack-Tags
-- [ ] **PROJ-02**: User sieht Skills-Gesamtübersicht als gruppierte Tags/Icons (IAM, BA-Methoden, DevOps, Sprachen)
-- [ ] **PROJ-03**: User kann auf Projekt-Detail-Seiten navigieren mit Problem/Ansatz/Ergebnis-Narrativ
+- [x] **PROJ-01**: User sieht 3 Projekt-Showcase-Karten (Auth API Service, Next CMS, Server-Cluster) mit Tech-Stack-Tags
+- [x] **PROJ-02**: User sieht Skills-Gesamtübersicht als gruppierte Tags/Icons (IAM, BA-Methoden, DevOps, Sprachen)
+- [x] **PROJ-03**: User kann auf Projekt-Detail-Seiten navigieren mit Problem/Ansatz/Ergebnis-Narrativ
 - [ ] **PROJ-04**: Projekt-Karten zeigen Live-Daten von GitHub API (Languages, Stars, letzter Commit)
 
 ### Downloads & Bewerbung
 
 - [ ] **DL-01**: User kann CV als gestyltes PDF herunterladen (Design passend zur Website, ATS-kompatibel, max 2 Seiten)
-- [ ] **DL-02**: User findet FAQ-Bereich mit direkten Antworten: Standort (flexibel), Starttermin (1-3 Monate), Warum Bitmarck, Warum Business Analyst
+- [x] **DL-02**: User findet FAQ-Bereich mit direkten Antworten: Standort (flexibel), Starttermin (1-3 Monate), Warum Bitmarck, Warum Business Analyst
 - [ ] **DL-03**: User kann Anschreiben als PDF herunterladen
 
 ### Admin
@@ -42,8 +42,8 @@
 - [ ] **TECH-01**: Scroll-Animationen sind dezent und GPU-optimiert (nur x, y, scale, opacity) mit prefers-reduced-motion Fallback
 - [x] **TECH-02**: Website läuft als Docker Container auf eigenem Server mit HTTPS (Production Dockerfile, standalone output)
 - [ ] **TECH-03**: Terminal Easter Egg: verstecktes CLI-Interface mit 3-5 Befehlen (whoami, skills, projects, motivation, contact)
-- [ ] **TECH-04**: Website ist responsive — getestet auf Mobile (375px) und Desktop (1440px)
-- [ ] **TECH-05**: Website-eigener Tech Stack ist im Footer sichtbar ("Built with Next.js, Tailwind, ...")
+- [x] **TECH-04**: Website ist responsive — getestet auf Mobile (375px) und Desktop (1440px)
+- [x] **TECH-05**: Website-eigener Tech Stack ist im Footer sichtbar ("Built with Next.js, Tailwind, ...")
 
 ## v2 Requirements
 
@@ -70,19 +70,19 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Complete (02-02) |
+| HERO-02 | Phase 2 | Complete (02-02) |
+| HERO-03 | Phase 2 | Complete (02-04) |
 | HERO-04 | Phase 1 | Complete (01-01) |
-| NARR-01 | Phase 2 | Pending |
-| NARR-02 | Phase 2 | Pending |
+| NARR-01 | Phase 2 | Complete (02-02) |
+| NARR-02 | Phase 2 | Complete (02-02) |
 | NARR-03 | Phase 3 | Pending |
-| PROJ-01 | Phase 2 | Pending |
-| PROJ-02 | Phase 2 | Pending |
-| PROJ-03 | Phase 2 | Pending |
+| PROJ-01 | Phase 2 | Complete (02-03) |
+| PROJ-02 | Phase 2 | Complete (02-03) |
+| PROJ-03 | Phase 2 | Complete (02-04) |
 | PROJ-04 | Phase 4 | Pending |
 | DL-01 | Phase 4 | Pending |
-| DL-02 | Phase 2 | Pending |
+| DL-02 | Phase 2 | Complete (02-03) |
 | DL-03 | Phase 4 | Pending |
 | ADM-01 | Phase 4 | Pending |
 | ADM-02 | Phase 4 | Pending |
@@ -90,8 +90,8 @@
 | TECH-01 | Phase 3 | Pending |
 | TECH-02 | Phase 1 | Complete (01-01, 01-02) |
 | TECH-03 | Phase 3 | Pending |
-| TECH-04 | Phase 2 | Pending |
-| TECH-05 | Phase 2 | Pending |
+| TECH-04 | Phase 2 | Complete (02-04) |
+| TECH-05 | Phase 2 | Complete (02-03) |
 
 **Coverage:**
 - v1 requirements: 22 total

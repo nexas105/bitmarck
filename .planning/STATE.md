@@ -10,29 +10,29 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 ## Current Position
 
 Phase: 2 of 4 (Public Content)
-Plan: 1 of 4 in current phase
-Status: Executing Phase 2
-Last activity: 2026-04-19 — Plan 02-01 complete (Data foundation, i18n messages, Tag component)
+Plan: 4 of 4 in current phase
+Status: Phase 2 Complete
+Last activity: 2026-04-19 — Plan 02-04 complete (Navigation, layout assembly, project detail routes)
 
-Progress: [███░░░░░░░] 30%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 3 min
-- Total execution time: 0.17 hours
+- Total plans completed: 6
+- Average duration: 2 min
+- Total execution time: 0.27 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 2/2 | 8 min | 4 min |
-| 2. Public Content | 1/4 | 2 min | 2 min |
+| 2. Public Content | 4/4 | 8 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (4 min), 01-02 (4 min), 02-01 (2 min)
-- Trend: accelerating
+- Last 5 plans: 01-02 (4 min), 02-01 (2 min), 02-02 (2 min), 02-03 (2 min), 02-04 (2 min)
+- Trend: stable at 2 min
 
 *Updated after each plan completion*
 
@@ -53,6 +53,8 @@ Recent decisions affecting current work:
 - 02-01: Project data uses translation keys (dot notation) for bilingual content instead of inline objects
 - 02-01: Tag component is server component (no 'use client') -- purely presentational
 - 02-01: lucide-react moved to dependencies for Docker standalone builds
+- 02-04: Scroll-spy uses IntersectionObserver with rootMargin '-64px 0px -50% 0px' for header offset
+- 02-04: HamburgerMenu body scroll lock via overflow-hidden class with useEffect cleanup
 
 ### Pending Todos
 
@@ -74,5 +76,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Completed 02-01-PLAN.md
-Resume file: .planning/phases/02-public-content/02-02-PLAN.md
+Stopped at: Completed 02-04-PLAN.md (Phase 2 complete)
+Resume file: Phase 3 planning

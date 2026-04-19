@@ -47,9 +47,9 @@ Plans:
 **Plans:** 4 plans
 Plans:
 - [x] 02-01-PLAN.md — Data layer, i18n messages (DE/EN), Tag component, lucide-react fix
-- [ ] 02-02-PLAN.md — Hero section (split layout, metrics dashboard) + Career section (timeline)
-- [ ] 02-03-PLAN.md — Projects cards, Skills tags, FAQ accordion, Footer
-- [ ] 02-04-PLAN.md — Sticky header, hamburger menu, page assembly, project detail routes
+- [x] 02-02-PLAN.md — Hero section (split layout, metrics dashboard) + Career section (timeline)
+- [x] 02-03-PLAN.md — Projects cards, Skills tags, FAQ accordion, Footer
+- [x] 02-04-PLAN.md — Sticky header, hamburger menu, page assembly, project detail routes
 **UI hint**: yes
 
 ### Phase 3: Animations & Polish
@@ -83,6 +83,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-19 |
-| 2. Public Content | 1/4 | In Progress | - |
+| 2. Public Content | 4/4 | Complete | 2026-04-19 |
 | 3. Animations & Polish | 0/TBD | Not started | - |
 | 4. Dynamic Data, PDFs & Admin | 0/TBD | Not started | - |
