@@ -46,7 +46,7 @@ Plans:
   5. Website ist auf 375px (Mobile) und 1440px (Desktop) vollständig nutzbar — Navigation, Hamburger-Menü, alle Sektionen
 **Plans:** 4 plans
 Plans:
-- [ ] 02-01-PLAN.md — Data layer, i18n messages (DE/EN), Tag component, lucide-react fix
+- [x] 02-01-PLAN.md — Data layer, i18n messages (DE/EN), Tag component, lucide-react fix
 - [ ] 02-02-PLAN.md — Hero section (split layout, metrics dashboard) + Career section (timeline)
 - [ ] 02-03-PLAN.md — Projects cards, Skills tags, FAQ accordion, Footer
 - [ ] 02-04-PLAN.md — Sticky header, hamburger menu, page assembly, project detail routes
@@ -83,6 +83,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-19 |
-| 2. Public Content | 0/4 | Not started | - |
+| 2. Public Content | 1/4 | In Progress | - |
 | 3. Animations & Polish | 0/TBD | Not started | - |
 | 4. Dynamic Data, PDFs & Admin | 0/TBD | Not started | - |

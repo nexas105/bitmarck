@@ -9,29 +9,30 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation)
-Plan: 2 of 2 in current phase
-Status: Phase 1 Complete
-Last activity: 2026-04-19 — Plan 01-02 complete (Docker standalone deployment)
+Phase: 2 of 4 (Public Content)
+Plan: 1 of 4 in current phase
+Status: Executing Phase 2
+Last activity: 2026-04-19 — Plan 02-01 complete (Data foundation, i18n messages, Tag component)
 
-Progress: [██░░░░░░░░] 20%
+Progress: [███░░░░░░░] 30%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 4 min
-- Total execution time: 0.13 hours
+- Total plans completed: 3
+- Average duration: 3 min
+- Total execution time: 0.17 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 2/2 | 8 min | 4 min |
+| 2. Public Content | 1/4 | 2 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (4 min), 01-02 (4 min)
-- Trend: stable
+- Last 5 plans: 01-01 (4 min), 01-02 (4 min), 02-01 (2 min)
+- Trend: accelerating
 
 *Updated after each plan completion*
 
@@ -49,6 +50,9 @@ Recent decisions affecting current work:
 - 01-01: localePrefix: 'always' -- /de und /en immer sichtbar in URL
 - 01-01: Inter Font via next/font/google CSS Variable (--font-inter) -- GDPR self-hosting
 - 01-02: package-lock.json regeneriert wegen npm 10/11 Kompatibilitaet im Docker Container
+- 02-01: Project data uses translation keys (dot notation) for bilingual content instead of inline objects
+- 02-01: Tag component is server component (no 'use client') -- purely presentational
+- 02-01: lucide-react moved to dependencies for Docker standalone builds
 
 ### Pending Todos
 
@@ -70,5 +74,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Phase 2 UI-SPEC approved
-Resume file: .planning/phases/02-public-content/02-UI-SPEC.md
+Stopped at: Completed 02-01-PLAN.md
+Resume file: .planning/phases/02-public-content/02-02-PLAN.md
