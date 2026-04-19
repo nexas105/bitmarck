@@ -40,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code / GSD workflow
+.claude/
+.planning/
+*.claude
+.continue-here.md
