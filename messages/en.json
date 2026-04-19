@@ -237,42 +237,54 @@
       "description": "Central authentication service with JWT, RBAC and Prisma — the core of my IAM experience.",
       "problem": "Multiple independent applications needed unified authentication and authorization. Each app had its own login logic — no central user management, no consistent permission model, no single sign-on.",
       "approach": "Self-designed RESTful auth service with Node.js and TypeScript. JWT token flow with access and refresh token rotation, role-based access control (RBAC) with fine-grained permissions, PostgreSQL with Prisma ORM. Clean API documentation and error handling.",
-      "result": "Production-ready auth service centrally serving multiple applications. Use cases defined, data model designed, access concepts developed and implemented — completely independently from concept to deployment."
+      "result": "Production-ready auth service centrally serving multiple applications. Use cases defined, data model designed, access concepts developed and implemented — completely independently from concept to deployment.",
+      "highlights": "Secure token rotation with access/refresh token pairs prevents session hijacking\nCentral service serving multiple applications with unified authentication\nFine-grained RBAC system with configurable roles and permissions\nClean API documentation with standardized error handling",
+      "learnings": "This project fundamentally shaped my understanding of IAM architectures: token lifecycle management, access concepts, and the challenge of balancing security with usability — exactly the mindset a Business Analyst IAM needs every day."
     },
     "nextCms": {
       "title": "Next CMS",
       "description": "Custom headless CMS with Next.js and Supabase — from client requirements to self-hosting.",
       "problem": "Clients needed a flexible content management system without the complexity and cost of WordPress or Strapi. Requirements: simple operation, fast performance, self-hostable.",
       "approach": "Headless architecture with Next.js frontend and Supabase backend (Auth, DB, Storage). Row-level security (RLS) for multi-tenant data separation. Auto-install script for one-click setup. Docker-based self-hosting on own server with automated backups.",
-      "result": "Fully functional CMS in production use by multiple clients. Requirements analysis conducted, architecture designed, frontend and backend independently implemented and documented."
+      "result": "Fully functional CMS in production use by multiple clients. Requirements analysis conducted, architecture designed, frontend and backend independently implemented and documented.",
+      "highlights": "Row-Level Security (RLS) for complete multi-tenant data separation at database level\nAuto-install script for one-click setup without technical knowledge\nDocker-based self-hosting with automated backups on own server\nProduction use by multiple clients with different requirements",
+      "learnings": "Requirements analysis for non-technical clients taught me to translate complex systems into simple usage concepts — a core competency for communication between business and technology."
     },
     "myfitcoach": {
       "title": "MyFitCoach PRO",
       "description": "Fullstack coaching platform with Flutter, Next.js and Strapi — multi-platform with analytics.",
       "problem": "Personal trainers and coaches needed a digital platform combining training planning, client management, progress tracking and communication in one app — mobile and desktop.",
       "approach": "Multi-platform solution: Flutter mobile app for trainers and clients, Next.js web dashboard for administration and analytics, Strapi as headless backend. Realtime features for live updates, integrated analytics dashboard with progress charts and export functionality.",
-      "result": "Working coaching platform with iOS/Android app and web dashboard. Business requirements analyzed, multi-platform architecture designed and implemented across all layers."
+      "result": "Working coaching platform with iOS/Android app and web dashboard. Business requirements analyzed, multi-platform architecture designed and implemented across all layers.",
+      "highlights": "Multi-platform architecture: Flutter mobile app, Next.js web dashboard, and Strapi backend\nIntegrated analytics dashboard with progress charts and export functionality\nRealtime features for live updates between trainer and client\nRole-based views for trainers, clients, and administration",
+      "learnings": "Stakeholder management across different user groups (trainers vs. clients) demonstrated how important it is to prioritize competing requirements and find sustainable compromises."
     },
     "partnerApp": {
       "title": "Partner App",
       "description": "Private social app with Flutter and Supabase — realtime chat, media sharing and end-to-end privacy.",
       "problem": "A private community needed a protected platform for communication and media exchange — focused on privacy, realtime interaction and seamless mobile experience. No third-party platform dependency.",
       "approach": "Native Flutter app (iOS/Android) with Supabase backend. Realtime chat via WebSockets, media upload with compressed previews, push notifications via FCM (Android) and APNs (iOS). Authentication with session management, content moderation and reporting system. GDPR-compliant data handling.",
-      "result": "Production mobile app with active user base. Complete feature set independently designed: realtime messaging, media gallery, push notifications, user management and moderation tools."
+      "result": "Production mobile app with active user base. Complete feature set independently designed: realtime messaging, media gallery, push notifications, user management and moderation tools.",
+      "highlights": "Realtime WebSocket architecture for low-latency messaging\nContent moderation and reporting system for community safety\nGDPR-compliant data handling with privacy-by-design approach\nProduction app with active user base and stable infrastructure",
+      "learnings": "Privacy-by-design and moderation workflows sharpened my understanding of data protection requirements — from concept to technical implementation, directly transferable to GDPR compliance in healthcare."
     },
     "logbuchApp": {
       "title": "Logbuch App",
       "description": "Mobile data capture with Flutter and Supabase — dynamic forms and structured export.",
       "problem": "Field workers needed a mobile solution for structured data capture with flexible forms, offline capability and automated data export to existing systems.",
       "approach": "Flutter app with Supabase backend, dynamic form engine (configurable fields and validations), offline sync mechanism and REST API integration for automatic data export. User-friendly UI with barcode scanner integration.",
-      "result": "Mobile data capture app in production use. Requirements gathered with end users, data model designed, form logic and export interfaces independently implemented."
+      "result": "Mobile data capture app in production use. Requirements gathered with end users, data model designed, form logic and export interfaces independently implemented.",
+      "highlights": "Offline sync mechanism for reliable data capture without network connectivity\nBarcode scanner integration for rapid product identification in the field\nDynamic form engine with configurable fields and validations\nREST API integration for automated data export to existing systems",
+      "learnings": "Requirements gathering with field users showed how important it is to understand real working conditions — requirements emerge in the field, not at the desk."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
       "description": "Custom e-commerce system — payment processing, shipping logic and marketing in one package.",
       "problem": "A nutrition company needed their own online shop without dependency on Shopify or WooCommerce. Requirements: full control over design, payment flow and customer data.",
       "approach": "Custom shop system from scratch: product catalog with variants, cart with session persistence, payment integration (Stripe), shipping logic with tracking, customer accounts with order history. Marketing tools (discount codes, newsletter) and integrated analytics dashboard.",
-      "result": "Functional online shop with complete order flow in production. Business requirements analyzed, UX designed and full-stack independently implemented."
+      "result": "Functional online shop with complete order flow in production. Business requirements analyzed, UX designed and full-stack independently implemented.",
+      "highlights": "Stripe payment integration with complete checkout flow and error handling\nShipping logic with tracking and automatic status updates\nMarketing tools: discount codes, newsletter system, and analytics dashboard\nCustomer accounts with order history and session-based cart",
+      "learnings": "Analyzing e-commerce business processes — from cart through payment to shipping — sharpened my understanding of end-to-end process modeling and business requirements."
     }
   },
   "Certifications": {

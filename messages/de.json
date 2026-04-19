@@ -237,42 +237,54 @@
       "description": "Zentraler Authentifizierungsdienst mit JWT, RBAC und Prisma — das Herzstück meiner IAM-Erfahrung.",
       "problem": "Mehrere eigenständige Anwendungen brauchten einheitliche Authentifizierung und Autorisierung. Jede App hatte eigene Login-Logik — keine zentrale Benutzerverwaltung, keine konsistente Rechtevergabe, kein Single Sign-On.",
       "approach": "Eigenständig konzipierter RESTful Auth-Service mit Node.js und TypeScript. JWT-Token-Flow mit Access- und Refresh-Token-Rotation, rollenbasierte Zugriffskontrolle (RBAC) mit feingranularen Berechtigungen, PostgreSQL als Datenspeicher mit Prisma ORM. Saubere API-Dokumentation und Fehlerbehandlung.",
-      "result": "Produktionsreifer Auth-Service der mehrere Anwendungen zentral bedient. Use Cases definiert, Datenmodell entworfen, Zugriffskonzepte erarbeitet und implementiert — komplett eigenständig vom Konzept bis zum Deployment."
+      "result": "Produktionsreifer Auth-Service der mehrere Anwendungen zentral bedient. Use Cases definiert, Datenmodell entworfen, Zugriffskonzepte erarbeitet und implementiert — komplett eigenständig vom Konzept bis zum Deployment.",
+      "highlights": "Sichere Token-Rotation mit Access- und Refresh-Token-Paar verhindert Session-Hijacking\nZentraler Service bedient mehrere Anwendungen mit einheitlicher Authentifizierung\nFeingranulares RBAC-System mit konfigurierbaren Rollen und Berechtigungen\nSaubere API-Dokumentation mit standardisierter Fehlerbehandlung",
+      "learnings": "Dieses Projekt hat mein Verstaendnis fuer IAM-Architekturen grundlegend gepraegt: Token-Lifecycle-Management, Zugriffskonzepte und die Herausforderung, Sicherheit und Benutzerfreundlichkeit in Einklang zu bringen — genau die Denkweise, die ein Business Analyst IAM taeglich braucht."
     },
     "nextCms": {
       "title": "Next CMS",
       "description": "Eigenes Headless CMS mit Next.js und Supabase — von der Kundenanforderung bis zum Self-Hosting.",
       "problem": "Kunden brauchten ein flexibles Content-Management-System ohne die Komplexität und Kosten von WordPress oder Strapi. Anforderung: einfache Bedienung, schnelle Performance, eigenständig hostbar.",
       "approach": "Headless-Architektur mit Next.js als Frontend und Supabase als Backend (Auth, Datenbank, Storage). Row-Level Security (RLS) für mandantenfähige Datentrennung. Auto-Install Script für Ein-Klick-Setup. Docker-basiertes Self-Hosting auf eigenem Server mit automatischem Backup.",
-      "result": "Voll funktionsfähiges CMS im produktiven Einsatz bei mehreren Kunden. Anforderungsanalyse durchgeführt, Architektur entworfen, Frontend und Backend eigenständig implementiert und dokumentiert."
+      "result": "Voll funktionsfähiges CMS im produktiven Einsatz bei mehreren Kunden. Anforderungsanalyse durchgeführt, Architektur entworfen, Frontend und Backend eigenständig implementiert und dokumentiert.",
+      "highlights": "Row-Level Security (RLS) fuer vollstaendige Mandantentrennung auf Datenbankebene\nAuto-Install Script fuer Ein-Klick-Setup ohne technische Vorkenntnisse\nDocker-basiertes Self-Hosting mit automatischem Backup auf eigenem Server\nProduktiver Einsatz bei mehreren Kunden mit unterschiedlichen Anforderungen",
+      "learnings": "Die Anforderungsanalyse fuer nicht-technische Kunden hat mich gelehrt, komplexe Systeme in einfache Bedienkonzepte zu uebersetzen — eine Kernkompetenz fuer die Kommunikation zwischen Fachbereich und Technik."
     },
     "myfitcoach": {
       "title": "MyFitCoach PRO",
       "description": "Fullstack Coaching-Plattform mit Flutter, Next.js und Strapi — Multi-Platform mit Analytics.",
       "problem": "Personal Trainer und Coaches brauchten eine digitale Plattform, die Trainingsplanung, Kundenverwaltung, Fortschrittstracking und Kommunikation in einer App vereint — mobil und am Desktop.",
       "approach": "Multi-Platform-Lösung: Flutter Mobile-App für Trainer und Kunden, Next.js Web-Dashboard für Administration und Analytics, Strapi als headless Backend. Realtime-Features für Live-Updates, integriertes Analytics-Dashboard mit Fortschrittsgrafiken und Exportfunktion.",
-      "result": "Funktionierende Coaching-Plattform mit iOS/Android App und Web-Dashboard. Geschäftsanforderungen analysiert, Multi-Platform-Architektur konzipiert und über alle Schichten implementiert."
+      "result": "Funktionierende Coaching-Plattform mit iOS/Android App und Web-Dashboard. Geschäftsanforderungen analysiert, Multi-Platform-Architektur konzipiert und über alle Schichten implementiert.",
+      "highlights": "Multi-Platform-Architektur: Flutter Mobile-App, Next.js Web-Dashboard und Strapi Backend\nIntegriertes Analytics-Dashboard mit Fortschrittsgrafiken und Exportfunktion\nRealtime-Features fuer Live-Updates zwischen Trainer und Kunden\nRollenbasierte Sichten fuer Trainer, Kunden und Administration",
+      "learnings": "Stakeholder-Management mit unterschiedlichen Nutzergruppen (Trainer vs. Kunden) hat gezeigt, wie wichtig es ist, konkurrierende Anforderungen zu priorisieren und tragfaehige Kompromisse zu finden."
     },
     "partnerApp": {
       "title": "Partner App",
       "description": "Private Social-App mit Flutter und Supabase — Realtime Chat, Media Sharing und Ende-zu-Ende-Privatsphäre.",
       "problem": "Eine private Community brauchte eine geschützte Plattform für Kommunikation und Medienaustausch — mit Fokus auf Privatsphäre, Echtzeit-Interaktion und nahtlosem Mobile-Erlebnis. Keine Drittplattform-Abhängigkeit.",
       "approach": "Native Flutter-App (iOS/Android) mit Supabase Backend. Realtime Chat via WebSockets, Media Upload mit komprimierter Vorschau, Push Notifications über FCM (Android) und APNs (iOS). Authentifizierung mit Session-Management, Content-Moderation und Reporting-System. DSGVO-konformes Datenhandling.",
-      "result": "Produktive Mobile-App mit aktiver Nutzerbasis. Komplettes Feature-Set eigenständig konzipiert: Echtzeit-Messaging, Media-Galerie, Push-Benachrichtigungen, User-Management und Moderationstools."
+      "result": "Produktive Mobile-App mit aktiver Nutzerbasis. Komplettes Feature-Set eigenständig konzipiert: Echtzeit-Messaging, Media-Galerie, Push-Benachrichtigungen, User-Management und Moderationstools.",
+      "highlights": "Realtime WebSocket-Architektur fuer Echtzeit-Messaging mit niedriger Latenz\nContent-Moderation und Reporting-System fuer Community-Sicherheit\nDSGVO-konformes Datenhandling mit Privacy-by-Design-Ansatz\nProduktive App mit aktiver Nutzerbasis und stabiler Infrastruktur",
+      "learnings": "Privacy-by-Design und Moderations-Workflows haben mein Verstaendnis fuer Datenschutzanforderungen geschaerft — von der Konzeption bis zur technischen Umsetzung, direkt uebertragbar auf DSGVO-Compliance im Gesundheitswesen."
     },
     "logbuchApp": {
       "title": "Logbuch App",
       "description": "Mobile Datenerfassung mit Flutter und Supabase — dynamische Formulare und strukturierter Export.",
       "problem": "Fachkräfte im Außendienst brauchten eine mobile Lösung für strukturierte Datenerfassung mit flexiblen Formularen, Offline-Fähigkeit und automatisiertem Datenexport an bestehende Systeme.",
       "approach": "Flutter-App mit Supabase Backend, dynamischer Formularengine (konfigurierbare Felder und Validierungen), Offline-Sync-Mechanismus und REST-API-Integration für automatischen Datenexport. Benutzerfreundliches UI mit Barcode-Scanner-Integration.",
-      "result": "Mobile Datenerfassungs-App im produktiven Einsatz. Anforderungen mit Endanwendern erhoben, Datenmodell entworfen, Formularlogik und Exportschnittstellen eigenständig implementiert."
+      "result": "Mobile Datenerfassungs-App im produktiven Einsatz. Anforderungen mit Endanwendern erhoben, Datenmodell entworfen, Formularlogik und Exportschnittstellen eigenständig implementiert.",
+      "highlights": "Offline-Sync-Mechanismus fuer zuverlaessige Datenerfassung ohne Netzwerk\nBarcode-Scanner-Integration fuer schnelle Produktidentifikation im Feld\nDynamische Formularengine mit konfigurierbaren Feldern und Validierungen\nREST-API-Integration fuer automatisierten Datenexport an Bestandssysteme",
+      "learnings": "Die Anforderungserhebung mit Aussendienst-Nutzern hat gezeigt, wie wichtig es ist, reale Arbeitsbedingungen zu verstehen — Anforderungen entstehen im Feld, nicht am Schreibtisch."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
       "description": "Maßgeschneidertes E-Commerce-System — Zahlungsabwicklung, Versandlogik und Marketing aus einer Hand.",
       "problem": "Ein Nutrition-Unternehmen brauchte einen eigenen Online-Shop ohne Abhängigkeit von Shopify oder WooCommerce. Anforderung: volle Kontrolle über Design, Zahlungsfluss und Kundendaten.",
       "approach": "Eigenes Shopsystem von Grund auf: Produktkatalog mit Varianten, Warenkorb mit Session-Persistenz, Zahlungsintegration (Stripe), Versandlogik mit Tracking, Kundenkonto mit Bestellhistorie. Marketing-Tools (Rabattcodes, Newsletter) und integriertes Analytics-Dashboard.",
-      "result": "Funktionsfähiger Online-Shop mit vollständigem Bestellprozess im produktiven Betrieb. Geschäftsanforderungen analysiert, UX entworfen und Full-Stack eigenständig umgesetzt."
+      "result": "Funktionsfähiger Online-Shop mit vollständigem Bestellprozess im produktiven Betrieb. Geschäftsanforderungen analysiert, UX entworfen und Full-Stack eigenständig umgesetzt.",
+      "highlights": "Stripe-Zahlungsintegration mit vollstaendigem Checkout-Flow und Fehlerbehandlung\nVersandlogik mit Tracking und automatischer Statusaktualisierung\nMarketing-Tools: Rabattcodes, Newsletter-System und Analytics-Dashboard\nKundenkonto mit Bestellhistorie und Session-basiertem Warenkorb",
+      "learnings": "Die Analyse von E-Commerce-Geschaeftsprozessen — vom Warenkorb ueber Zahlung bis Versand — hat mein Verstaendnis fuer End-to-End-Prozessmodellierung und Business-Anforderungen geschaerft."
     }
   },
   "Certifications": {
