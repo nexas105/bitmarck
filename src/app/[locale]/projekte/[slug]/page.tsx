@@ -34,7 +34,7 @@ export default async function ProjectDetailPage({params}: Props) {
 
   return (
     <main className="py-3xl px-md md:px-xl">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-[56rem]">
         {/* Back link */}
         <Link
           href="/"

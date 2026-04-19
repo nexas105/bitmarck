@@ -25,11 +25,11 @@
   --color-accent-hover:    #1D4ED8;
   --color-destructive:     #DC2626;
 
-  /* Typography */
-  --font-size-label:   14px;
-  --font-size-body:    16px;
-  --font-size-heading: 20px;
-  --font-size-display: clamp(28px, 4vw, 36px);
+  /* Typography — use --text-* for Tailwind v4 text-{name} utilities */
+  --text-label:   14px;
+  --text-body:    16px;
+  --text-heading: 20px;
+  --text-display: clamp(28px, 4vw, 36px);
   --font-weight-regular:  400;
   --font-weight-semibold: 600;
   --line-height-snug:   1.15;
@@ -51,7 +51,7 @@ body {
   background-color: var(--color-surface);
   color: var(--color-text-primary);
   font-family: var(--font-family-sans);
-  font-size: var(--font-size-body);
+  font-size: var(--text-body);
   line-height: var(--line-height-loose);
 }
 

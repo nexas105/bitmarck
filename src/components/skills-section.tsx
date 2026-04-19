@@ -29,7 +29,7 @@ export async function SkillsSection() {
       aria-labelledby="skills-heading"
       className="py-3xl px-md md:px-xl scroll-mt-[64px]"
     >
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-[56rem]">
         <h2
           id="skills-heading"
           className="text-heading font-semibold text-text-primary mb-xl"
