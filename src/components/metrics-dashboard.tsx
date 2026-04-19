@@ -1,4 +1,5 @@
 import {getTranslations} from 'next-intl/server';
+import {MetricCard} from '@/components/metric-card';
 
 export async function MetricsDashboard() {
   const t = await getTranslations('Metrics');
@@ -12,18 +13,13 @@ export async function MetricsDashboard() {
 
   return (
     <div className="grid grid-cols-2 gap-md">
-      {metrics.map((metric) => (
-        <div
+      {metrics.map((metric, index) => (
+        <MetricCard
           key={metric.label}
-          className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-lg text-center"
-        >
-          <p className="text-heading font-semibold text-white">
-            {metric.value}
-          </p>
-          <p className="text-label text-white/60 mt-xs">
-            {metric.label}
-          </p>
-        </div>
+          value={metric.value}
+          label={metric.label}
+          index={index}
+        />
       ))}
     </div>
   );

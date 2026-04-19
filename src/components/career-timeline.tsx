@@ -19,10 +19,10 @@ export async function CareerTimeline() {
   const collapseLabel = t('collapseLabel')
 
   return (
-    <div className="relative pl-lg">
+    <div className="relative pl-xl">
       {/* Vertical accent gradient line */}
       <div
-        className="absolute left-[3px] top-[4px] bottom-[4px] w-0.5 bg-linear-to-b from-accent to-accent/30"
+        className="absolute left-[3px] top-[4px] bottom-[4px] w-[2px] bg-linear-to-b from-accent via-accent/50 to-accent/10 rounded-full"
         aria-hidden="true"
       />
 

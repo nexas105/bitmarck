@@ -54,18 +54,18 @@ export function CvDownload() {
       <button
         ref={btnRef}
         onClick={() => setOpen(!open)}
-        className="inline-flex items-center gap-xs rounded-lg bg-white text-primary-900 px-lg py-sm text-label font-semibold hover:bg-white/90 transition-colors duration-150"
+        className="inline-flex items-center gap-sm rounded-xl bg-white text-primary-900 px-xl py-sm text-label font-bold hover:bg-white/90 hover:shadow-glow transition-all duration-200 shadow-elevated"
       >
         <FileText className="h-4 w-4" />
         {t('cta')}
-        <ChevronDown className={`h-4 w-4 transition-transform duration-150 ${open ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
       </button>
 
       {open && typeof document !== 'undefined' && createPortal(
         <div
           ref={dropRef}
-          className="fixed w-64 rounded-lg border border-white/20 bg-[#1e293b] shadow-2xl backdrop-blur-sm overflow-hidden"
-          style={{top: pos.top, left: pos.left, zIndex: 9999}}
+          className="fixed w-72 rounded-2xl border border-white/10 bg-primary-800/95 shadow-elevated backdrop-blur-xl overflow-hidden"
+          style={{top: pos.top + 4, left: pos.left, zIndex: 9999}}
         >
           {CV_FORMATS.map(({key, href, icon: Icon}) => (
             <a
@@ -73,12 +73,14 @@ export function CvDownload() {
               href={href}
               download
               onClick={() => setOpen(false)}
-              className="flex items-center gap-sm px-md py-sm text-label text-white/80 hover:bg-white/10 hover:text-white transition-colors duration-150"
+              className="flex items-center gap-md px-lg py-md text-label text-white/80 hover:bg-white/8 hover:text-white transition-colors duration-200 first:pt-lg last:pb-lg"
             >
-              <Icon className="h-4 w-4 shrink-0" />
+              <div className="p-sm rounded-lg bg-white/10 shrink-0">
+                <Icon className="h-4 w-4" />
+              </div>
               <div>
                 <div className="font-semibold">{t(`cvFormat.${key}.label`)}</div>
-                <div className="text-[12px] text-white/50">{t(`cvFormat.${key}.desc`)}</div>
+                <div className="text-xs text-white/40 mt-px">{t(`cvFormat.${key}.desc`)}</div>
               </div>
             </a>
           ))}
@@ -89,7 +91,7 @@ export function CvDownload() {
       <a
         href="/api/pdf/cover-letter"
         download
-        className="inline-flex items-center gap-xs rounded-lg border border-white/30 px-lg py-sm text-label font-semibold text-white hover:bg-white/10 transition-colors duration-150"
+        className="inline-flex items-center gap-sm rounded-xl border border-white/20 px-xl py-sm text-label font-semibold text-white hover:bg-white/10 hover:border-white/40 transition-all duration-200"
       >
         <Mail className="h-4 w-4" />
         {t('ctaCoverLetter')}

@@ -22,27 +22,27 @@ export async function CertificationsSection() {
     <section
       id="certifications"
       aria-labelledby="certifications-heading"
-      className="py-3xl px-md md:px-xl scroll-mt-[64px] bg-primary-50"
+      className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-primary-50"
     >
       <div className="mx-auto max-w-4xl">
         <h2
           id="certifications-heading"
-          className="text-section font-semibold text-text-primary inline-block"
+          className="text-section font-bold text-text-primary tracking-tight inline-block"
         >
           {t('heading')}
-          <span className="block h-1 w-12 bg-accent rounded-full mt-sm" aria-hidden="true" />
+          <span className="block h-1 w-16 bg-linear-to-r from-accent to-accent/40 rounded-full mt-sm" aria-hidden="true" />
         </h2>
 
         {/* Certifications */}
         <div className="mt-2xl">
-          <h3 className="text-body font-semibold text-text-primary mb-md">
+          <h3 className="text-label font-semibold text-text-primary mb-md uppercase tracking-wide">
             {t('certLabel')}
           </h3>
           <div className="flex flex-wrap gap-sm">
             {CERT_KEYS.map((key) => (
               <span
                 key={key}
-                className="text-label border border-accent/20 bg-accent/5 text-accent font-medium rounded-full px-4 py-1.5 shadow-sm"
+                className="text-label bg-accent/8 text-accent font-medium rounded-full px-3.5 py-1.5 hover:bg-accent/12 transition-colors duration-150"
               >
                 {t(`certs.${key}`)}
               </span>
@@ -52,27 +52,27 @@ export async function CertificationsSection() {
 
         {/* Education */}
         <div className="mt-2xl">
-          <h3 className="text-body font-semibold text-text-primary mb-md">
+          <h3 className="text-label font-semibold text-text-primary mb-md uppercase tracking-wide">
             {t('eduLabel')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-md">
             {EDU_KEYS.map((key) => (
               <div
                 key={key}
-                className="rounded-xl border border-border/50 bg-surface-raised p-lg shadow-card"
+                className="group rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
               >
-                <p className="text-body font-semibold text-text-primary">
+                <p className="text-body font-bold text-text-primary tracking-tight">
                   {t(`education.${key}.degree`)}
                 </p>
                 <p className="text-label text-text-secondary mt-xs">
                   {t(`education.${key}.institution`)}
                 </p>
-                <div className="flex items-center justify-between mt-sm">
-                  <p className="text-label text-text-secondary">
+                <div className="flex items-center justify-between mt-md pt-md border-t border-border/30">
+                  <p className="text-xs text-text-tertiary font-medium">
                     {t(`education.${key}.period`)}
                   </p>
                   <span
-                    className={`text-label font-medium rounded-full px-3 py-0.5 ${
+                    className={`text-xs font-semibold rounded-full px-2.5 py-0.5 ${
                       t(`education.${key}.status`) === 'laufend' || t(`education.${key}.status`) === 'in progress'
                         ? 'bg-accent/10 text-accent'
                         : 'bg-surface-subtle text-text-secondary'

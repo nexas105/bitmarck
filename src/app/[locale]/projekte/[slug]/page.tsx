@@ -33,24 +33,24 @@ export default async function ProjectDetailPage({params}: Props) {
   ];
 
   return (
-    <main className="py-3xl px-md md:px-xl">
+    <main className="py-4xl px-md md:px-xl">
       <div className="mx-auto max-w-4xl">
         {/* Back link */}
         <Link
           href="/"
-          className="inline-flex items-center gap-xs text-label text-accent hover:text-accent-hover transition-colors duration-150 ease mb-xl"
+          className="group inline-flex items-center gap-sm text-label font-medium text-accent hover:text-accent-hover transition-colors duration-200 mb-2xl"
         >
-          <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+          <ArrowLeft className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-1" aria-hidden="true" />
           {td('back')}
         </Link>
 
         {/* Project title */}
-        <h1 className="text-display font-semibold text-text-primary">
+        <h1 className="text-display font-bold text-text-primary tracking-tight">
           {t(project.titleKey)}
         </h1>
 
         {/* Tech stack tags */}
-        <div className="flex flex-wrap gap-xs mt-md">
+        <div className="flex flex-wrap gap-sm mt-lg">
           {project.techStack.map((tech) => (
             <Tag key={tech}>{tech}</Tag>
           ))}
@@ -62,21 +62,21 @@ export default async function ProjectDetailPage({params}: Props) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-xs text-label text-accent hover:text-accent-hover transition-colors duration-150 ease mt-md"
+            className="group inline-flex items-center gap-sm text-label font-medium text-accent hover:text-accent-hover transition-colors duration-200 mt-lg"
           >
             {td('viewOnGithub')}
-            <ExternalLink className="h-4 w-4" aria-hidden="true" />
+            <ExternalLink className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
           </a>
         )}
 
         {/* Problem / Ansatz / Ergebnis sections */}
-        <div className="mt-2xl flex flex-col gap-xl">
+        <div className="mt-3xl flex flex-col gap-2xl">
           {sections.map((section) => (
-            <div key={section.heading}>
-              <h2 className="text-heading font-semibold text-text-primary mb-sm">
+            <div key={section.heading} className="relative pl-lg border-l-2 border-accent/20">
+              <h2 className="text-heading font-bold text-text-primary mb-sm tracking-tight">
                 {section.heading}
               </h2>
-              <p className="text-body text-text-secondary leading-relaxed">
+              <p className="text-body text-text-secondary leading-loose">
                 {section.content}
               </p>
             </div>

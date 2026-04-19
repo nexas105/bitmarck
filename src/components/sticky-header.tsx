@@ -40,7 +40,7 @@ export function StickyHeader() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 h-[64px] border-b border-border/50 bg-surface-raised/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 h-[64px] border-b border-border/30 bg-surface-raised/85 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto flex h-full max-w-6xl items-center justify-between px-md md:px-xl">
         {/* Left: Name/Logo */}
         <button
@@ -48,27 +48,32 @@ export function StickyHeader() {
             window.scrollTo({top: 0, behavior: 'smooth'});
             setActiveSection('hero');
           }}
-          className="text-label font-semibold text-text-primary min-h-[44px] flex items-center"
+          className="text-label font-bold text-text-primary min-h-[44px] flex items-center tracking-tight hover:text-accent transition-colors duration-200"
         >
           Tobias Ludwig
         </button>
 
         {/* Center/Right: Desktop nav links (hidden on mobile) */}
-        <nav className="hidden md:flex items-center gap-md" aria-label="Main navigation">
+        <nav className="hidden md:flex items-center gap-xs" aria-label="Main navigation">
           {NAV_KEYS.map((key) => (
             <button
               key={key}
               onClick={() => scrollToSection(key)}
-              className={`min-h-[44px] flex items-center px-sm text-label transition-colors duration-150 ease ${
+              className={`relative min-h-[44px] flex items-center px-md text-label font-medium transition-colors duration-200 ${
                 activeSection === key
-                  ? 'text-text-primary border-l-2 border-accent pl-sm'
+                  ? 'text-accent'
                   : 'text-text-secondary hover:text-text-primary'
               }`}
             >
               {t(key)}
+              {activeSection === key && (
+                <span className="absolute bottom-3 left-md right-md h-0.5 bg-accent rounded-full" />
+              )}
             </button>
           ))}
-          <LocaleToggle />
+          <div className="ml-sm pl-sm border-l border-border/50">
+            <LocaleToggle />
+          </div>
         </nav>
 
         {/* Right: Hamburger menu (visible on mobile only) */}
