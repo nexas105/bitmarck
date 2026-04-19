@@ -55,6 +55,39 @@ const fallbackProjects: Project[] = [
       resultKey: 'ProjectData.myfitcoach.result',
     },
   },
+  {
+    slug: 'partner-app',
+    titleKey: 'ProjectData.partnerApp.title',
+    descriptionKey: 'ProjectData.partnerApp.description',
+    techStack: ['Flutter', 'Dart', 'Supabase', 'FCM', 'APNs', 'Realtime'],
+    detail: {
+      problemKey: 'ProjectData.partnerApp.problem',
+      approachKey: 'ProjectData.partnerApp.approach',
+      resultKey: 'ProjectData.partnerApp.result',
+    },
+  },
+  {
+    slug: 'logbuch-app',
+    titleKey: 'ProjectData.logbuchApp.title',
+    descriptionKey: 'ProjectData.logbuchApp.description',
+    techStack: ['Flutter', 'Dart', 'Supabase', 'REST API'],
+    detail: {
+      problemKey: 'ProjectData.logbuchApp.problem',
+      approachKey: 'ProjectData.logbuchApp.approach',
+      resultKey: 'ProjectData.logbuchApp.result',
+    },
+  },
+  {
+    slug: 'mpa-nutrition',
+    titleKey: 'ProjectData.mpaNutrition.title',
+    descriptionKey: 'ProjectData.mpaNutrition.description',
+    techStack: ['E-Commerce', 'Payment', 'Shipping', 'Analytics', 'Marketing'],
+    detail: {
+      problemKey: 'ProjectData.mpaNutrition.problem',
+      approachKey: 'ProjectData.mpaNutrition.approach',
+      resultKey: 'ProjectData.mpaNutrition.result',
+    },
+  },
 ];
 
 export function getAllProjects(): Project[] {
