@@ -2,7 +2,7 @@
 
 ## Overview
 
-Vom leeren Repo zur fertigen Bewerbungs-Experience in vier Phasen. Phase 1 legt das technische Fundament (i18n-Routing als architektonische Pflicht ab dem ersten Commit). Phase 2 liefert den gesamten recruiter-sichtbaren Content — das eigentliche Produkt. Phase 3 schichtet Animationen und Interaktivität auf den verifizierten Content. Phase 4 schließt dynamische Daten, PDF-Generierung und den Admin-Bereich ab und produziert das deploybare Docker-Image.
+Vom leeren Repo zur fertigen Bewerbungs-Experience in fünf Phasen. Phase 1 legt das technische Fundament (i18n-Routing als architektonische Pflicht ab dem ersten Commit). Phase 2 liefert den gesamten recruiter-sichtbaren Content — das eigentliche Produkt. Phase 3 schichtet Animationen und Interaktivität auf den verifizierten Content. Phase 4 schließt dynamische Daten, PDF-Generierung und den Admin-Bereich ab und produziert das deploybare Docker-Image.
 
 ## Phases
 
@@ -16,6 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 2: Public Content** - Vollständiger recruiter-sichtbarer Content (Hero, Narrativ, Projekte, Skills, FAQ)
 - [ ] **Phase 3: Animations & Polish** - Framer Motion Scroll-Animationen, Terminal Easter Egg, finale visuelle Qualität
 - [ ] **Phase 4: Dynamic Data, PDFs & Admin** - GitHub API, PDF-Generierung, Admin-Panel, Production Docker
+- [ ] **Phase 5: Enterprise UI Redesign** - Professionelles visuelles Redesign — die Website muss optisch und technisch die BA-IAM-Stelle und den Lebenslauf repräsentieren
 
 ## Phase Details
 
@@ -60,7 +61,10 @@ Plans:
   1. Karriere-Timeline und Sektionen blenden beim Scrollen dezent ein (x/y/opacity only, keine Layout Shifts)
   2. `prefers-reduced-motion` deaktiviert alle Animationen — Content bleibt vollständig sichtbar
   3. Terminal Easter Egg ist aufrufbar (versteckte Tastenkombination oder Hinweis im Footer) und antwortet auf `whoami`, `skills`, `projects`, `motivation`, `contact`
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — Install motion, AnimateOnScroll wrapper, MotionProvider, scroll animations on all sections
+- [ ] 03-02-PLAN.md — Terminal Easter Egg with i18n commands, footer hint, keyboard shortcut
 **UI hint**: yes
 
 ### Phase 4: Dynamic Data, PDFs & Admin
@@ -75,14 +79,28 @@ Plans:
   5. Website läuft als Docker Container mit HTTPS auf eigenem Server — kein HTTP-Fehler, kein fehlender Static Asset
 **Plans**: TBD
 
+### Phase 5: Enterprise UI Redesign
+**Goal**: Die Website sieht aus wie ein professionelles Enterprise-Produkt — visuelles Design repräsentiert die BA-IAM-Stelle und den Lebenslauf überzeugend, nicht wie ein generisches Template
+**Depends on**: Phase 4
+**Requirements**: (new — UI/UX quality requirements)
+**Success Criteria** (what must be TRUE):
+  1. Ein Recruiter sieht sofort: hier hat jemand Anspruch an visuelle Qualität — kein generisches Bootstrap/Template-Feeling
+  2. Farbschema, Typografie und Spacing wirken professionell und enterprise-tauglich (nicht "Entwickler-Hobby-Seite")
+  3. Hero-Bereich hat visuellen Impact — nicht nur Text auf weißem Hintergrund
+  4. Karriere-Timeline und Projekt-Karten haben visuelle Tiefe (Schatten, Hover-Effekte, Farbakzente)
+  5. Mobile und Desktop haben konsistentes, hochwertiges Design
+**Plans**: TBD
+**UI hint**: yes
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-19 |
 | 2. Public Content | 4/4 | Complete | 2026-04-19 |
-| 3. Animations & Polish | 0/TBD | Not started | - |
+| 3. Animations & Polish | 0/2 | Not started | - |
 | 4. Dynamic Data, PDFs & Admin | 0/TBD | Not started | - |
+| 5. Enterprise UI Redesign | 0/TBD | Not started | - |
