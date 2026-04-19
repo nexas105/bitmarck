@@ -234,45 +234,45 @@
   "ProjectData": {
     "authApi": {
       "title": "Auth API Service",
-      "description": "JWT-based authentication service with RBAC and Prisma — directly relevant to IAM.",
-      "problem": "Multiple applications needed unified authentication and authorization with fine-grained access control.",
-      "approach": "Node.js auth service with JWT token flow, role-based access control (RBAC), PostgreSQL, and Prisma ORM.",
-      "result": "Production-ready auth service serving multiple apps. Use cases, data models, and access concepts independently developed."
+      "description": "Central authentication service with JWT, RBAC and Prisma — the core of my IAM experience.",
+      "problem": "Multiple independent applications needed unified authentication and authorization. Each app had its own login logic — no central user management, no consistent permission model, no single sign-on.",
+      "approach": "Self-designed RESTful auth service with Node.js and TypeScript. JWT token flow with access and refresh token rotation, role-based access control (RBAC) with fine-grained permissions, PostgreSQL with Prisma ORM. Clean API documentation and error handling.",
+      "result": "Production-ready auth service centrally serving multiple applications. Use cases defined, data model designed, access concepts developed and implemented — completely independently from concept to deployment."
     },
     "nextCms": {
       "title": "Next CMS",
-      "description": "Custom headless CMS with Next.js and Supabase — from requirements analysis to operations.",
-      "problem": "Clients needed flexible content management without the complexity of established CMS systems.",
-      "approach": "Headless architecture with Next.js frontend, Supabase backend (Auth, DB, Storage), row-level security (RLS), auto-install script, and Docker self-hosting.",
-      "result": "Fully functional CMS in production use. Client requirements analyzed, architecture designed, independently implemented."
+      "description": "Custom headless CMS with Next.js and Supabase — from client requirements to self-hosting.",
+      "problem": "Clients needed a flexible content management system without the complexity and cost of WordPress or Strapi. Requirements: simple operation, fast performance, self-hostable.",
+      "approach": "Headless architecture with Next.js frontend and Supabase backend (Auth, DB, Storage). Row-level security (RLS) for multi-tenant data separation. Auto-install script for one-click setup. Docker-based self-hosting on own server with automated backups.",
+      "result": "Fully functional CMS in production use by multiple clients. Requirements analysis conducted, architecture designed, frontend and backend independently implemented and documented."
     },
     "myfitcoach": {
       "title": "MyFitCoach PRO",
-      "description": "Coaching platform with Flutter, Next.js, and Strapi — analytics and realtime features.",
-      "problem": "Coaches needed a digital platform for training planning, client management, and progress tracking.",
-      "approach": "Fullstack platform with Flutter mobile app, Next.js web dashboard, Strapi backend, realtime features, and integrated analytics.",
-      "result": "Functional coaching platform with mobile and web interfaces. Requirements analysis, multi-platform architecture, and analytics independently implemented."
+      "description": "Fullstack coaching platform with Flutter, Next.js and Strapi — multi-platform with analytics.",
+      "problem": "Personal trainers and coaches needed a digital platform combining training planning, client management, progress tracking and communication in one app — mobile and desktop.",
+      "approach": "Multi-platform solution: Flutter mobile app for trainers and clients, Next.js web dashboard for administration and analytics, Strapi as headless backend. Realtime features for live updates, integrated analytics dashboard with progress charts and export functionality.",
+      "result": "Working coaching platform with iOS/Android app and web dashboard. Business requirements analyzed, multi-platform architecture designed and implemented across all layers."
     },
     "partnerApp": {
       "title": "Partner App",
-      "description": "Flutter app for couples with realtime chat, media sharing, and push notifications.",
-      "problem": "Couples needed a private, secure platform for shared communication and media exchange.",
-      "approach": "Flutter mobile app with Supabase backend, realtime chat, media sharing, and push notifications via FCM/APNs.",
-      "result": "Working mobile app with realtime features. Architecture and realtime patterns independently designed and implemented."
+      "description": "Private social app with Flutter and Supabase — realtime chat, media sharing and end-to-end privacy.",
+      "problem": "A private community needed a protected platform for communication and media exchange — focused on privacy, realtime interaction and seamless mobile experience. No third-party platform dependency.",
+      "approach": "Native Flutter app (iOS/Android) with Supabase backend. Realtime chat via WebSockets, media upload with compressed previews, push notifications via FCM (Android) and APNs (iOS). Authentication with session management, content moderation and reporting system. GDPR-compliant data handling.",
+      "result": "Production mobile app with active user base. Complete feature set independently designed: realtime messaging, media gallery, push notifications, user management and moderation tools."
     },
     "logbuchApp": {
       "title": "Logbuch App",
-      "description": "Structured data capture with Flutter and Supabase — form logic and API integration.",
-      "problem": "Structured field data capture required a mobile solution with flexible form logic.",
-      "approach": "Flutter app with Supabase backend, dynamic form logic, and API integration for data export.",
-      "result": "Mobile data capture app with flexible forms. Requirements analyzed and data model independently designed."
+      "description": "Mobile data capture with Flutter and Supabase — dynamic forms and structured export.",
+      "problem": "Field workers needed a mobile solution for structured data capture with flexible forms, offline capability and automated data export to existing systems.",
+      "approach": "Flutter app with Supabase backend, dynamic form engine (configurable fields and validations), offline sync mechanism and REST API integration for automatic data export. User-friendly UI with barcode scanner integration.",
+      "result": "Mobile data capture app in production use. Requirements gathered with end users, data model designed, form logic and export interfaces independently implemented."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
-      "description": "Custom shop system with payment and shipping integration — e-commerce from scratch.",
-      "problem": "A nutrition shop needed a custom e-commerce solution without dependency on third-party platforms.",
-      "approach": "Custom shop system with payment integration, shipping logic, marketing tools, and analytics.",
-      "result": "Functional online shop with complete order flow. Business requirements analyzed and technically implemented."
+      "description": "Custom e-commerce system — payment processing, shipping logic and marketing in one package.",
+      "problem": "A nutrition company needed their own online shop without dependency on Shopify or WooCommerce. Requirements: full control over design, payment flow and customer data.",
+      "approach": "Custom shop system from scratch: product catalog with variants, cart with session persistence, payment integration (Stripe), shipping logic with tracking, customer accounts with order history. Marketing tools (discount codes, newsletter) and integrated analytics dashboard.",
+      "result": "Functional online shop with complete order flow in production. Business requirements analyzed, UX designed and full-stack independently implemented."
     }
   },
   "Certifications": {

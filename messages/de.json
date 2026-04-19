@@ -234,45 +234,45 @@
   "ProjectData": {
     "authApi": {
       "title": "Auth API Service",
-      "description": "JWT-basierter Authentifizierungsservice mit RBAC und Prisma \u2014 direkt relevant f\u00fcr IAM.",
-      "problem": "Mehrere Anwendungen brauchten einheitliche Authentifizierung und Autorisierung mit feingranularer Rechteverwaltung.",
-      "approach": "Node.js Auth Service mit JWT-Token-Flow, rollenbasierter Zugriffskontrolle (RBAC), PostgreSQL und Prisma ORM.",
-      "result": "Produktionsreifer Auth-Service der mehrere Apps bedient. Use Cases, Datenmodelle und Zugriffskonzepte eigenst\u00e4ndig erarbeitet."
+      "description": "Zentraler Authentifizierungsdienst mit JWT, RBAC und Prisma — das Herzstück meiner IAM-Erfahrung.",
+      "problem": "Mehrere eigenständige Anwendungen brauchten einheitliche Authentifizierung und Autorisierung. Jede App hatte eigene Login-Logik — keine zentrale Benutzerverwaltung, keine konsistente Rechtevergabe, kein Single Sign-On.",
+      "approach": "Eigenständig konzipierter RESTful Auth-Service mit Node.js und TypeScript. JWT-Token-Flow mit Access- und Refresh-Token-Rotation, rollenbasierte Zugriffskontrolle (RBAC) mit feingranularen Berechtigungen, PostgreSQL als Datenspeicher mit Prisma ORM. Saubere API-Dokumentation und Fehlerbehandlung.",
+      "result": "Produktionsreifer Auth-Service der mehrere Anwendungen zentral bedient. Use Cases definiert, Datenmodell entworfen, Zugriffskonzepte erarbeitet und implementiert — komplett eigenständig vom Konzept bis zum Deployment."
     },
     "nextCms": {
       "title": "Next CMS",
-      "description": "Eigenes Headless CMS mit Next.js und Supabase \u2014 von der Anforderungsanalyse bis zum Betrieb.",
-      "problem": "Kunden brauchten ein flexibles Content-Management ohne die Komplexit\u00e4t etablierter CMS-Systeme.",
-      "approach": "Headless-Architektur mit Next.js Frontend, Supabase Backend (Auth, DB, Storage), rollenbasierte Zugriffe (RLS), Auto-Install Script und Docker Self-Hosting.",
-      "result": "Voll funktionsf\u00e4higes CMS im produktiven Einsatz. Kundenanforderungen analysiert, Architektur entworfen, eigenst\u00e4ndig umgesetzt."
+      "description": "Eigenes Headless CMS mit Next.js und Supabase — von der Kundenanforderung bis zum Self-Hosting.",
+      "problem": "Kunden brauchten ein flexibles Content-Management-System ohne die Komplexität und Kosten von WordPress oder Strapi. Anforderung: einfache Bedienung, schnelle Performance, eigenständig hostbar.",
+      "approach": "Headless-Architektur mit Next.js als Frontend und Supabase als Backend (Auth, Datenbank, Storage). Row-Level Security (RLS) für mandantenfähige Datentrennung. Auto-Install Script für Ein-Klick-Setup. Docker-basiertes Self-Hosting auf eigenem Server mit automatischem Backup.",
+      "result": "Voll funktionsfähiges CMS im produktiven Einsatz bei mehreren Kunden. Anforderungsanalyse durchgeführt, Architektur entworfen, Frontend und Backend eigenständig implementiert und dokumentiert."
     },
     "myfitcoach": {
       "title": "MyFitCoach PRO",
-      "description": "Coaching-Plattform mit Flutter, Next.js und Strapi \u2014 Analytics und Realtime-Features.",
-      "problem": "Coaches brauchten eine digitale Plattform f\u00fcr Trainingsplanung, Kundenverwaltung und Fortschrittstracking.",
-      "approach": "Fullstack-Plattform mit Flutter Mobile-App, Next.js Web-Dashboard, Strapi Backend, Realtime-Features und integriertem Analytics.",
-      "result": "Funktionale Coaching-Plattform mit mobiler und Web-Oberfl\u00e4che. Anforderungsanalyse, Multi-Platform-Architektur und Analytics eigenst\u00e4ndig umgesetzt."
+      "description": "Fullstack Coaching-Plattform mit Flutter, Next.js und Strapi — Multi-Platform mit Analytics.",
+      "problem": "Personal Trainer und Coaches brauchten eine digitale Plattform, die Trainingsplanung, Kundenverwaltung, Fortschrittstracking und Kommunikation in einer App vereint — mobil und am Desktop.",
+      "approach": "Multi-Platform-Lösung: Flutter Mobile-App für Trainer und Kunden, Next.js Web-Dashboard für Administration und Analytics, Strapi als headless Backend. Realtime-Features für Live-Updates, integriertes Analytics-Dashboard mit Fortschrittsgrafiken und Exportfunktion.",
+      "result": "Funktionierende Coaching-Plattform mit iOS/Android App und Web-Dashboard. Geschäftsanforderungen analysiert, Multi-Platform-Architektur konzipiert und über alle Schichten implementiert."
     },
     "partnerApp": {
       "title": "Partner App",
-      "description": "Flutter-App fuer Paare mit Realtime Chat, Media Sharing und Push Notifications.",
-      "problem": "Paare brauchten eine private, sichere Plattform fuer gemeinsame Kommunikation und Medienaustausch.",
-      "approach": "Flutter Mobile-App mit Supabase Backend, Realtime Chat, Media Sharing und Push Notifications ueber FCM/APNs.",
-      "result": "Funktionierende Mobile-App mit Echtzeit-Features. Architektur und Realtime-Patterns eigenstaendig konzipiert und umgesetzt."
+      "description": "Private Social-App mit Flutter und Supabase — Realtime Chat, Media Sharing und Ende-zu-Ende-Privatsphäre.",
+      "problem": "Eine private Community brauchte eine geschützte Plattform für Kommunikation und Medienaustausch — mit Fokus auf Privatsphäre, Echtzeit-Interaktion und nahtlosem Mobile-Erlebnis. Keine Drittplattform-Abhängigkeit.",
+      "approach": "Native Flutter-App (iOS/Android) mit Supabase Backend. Realtime Chat via WebSockets, Media Upload mit komprimierter Vorschau, Push Notifications über FCM (Android) und APNs (iOS). Authentifizierung mit Session-Management, Content-Moderation und Reporting-System. DSGVO-konformes Datenhandling.",
+      "result": "Produktive Mobile-App mit aktiver Nutzerbasis. Komplettes Feature-Set eigenständig konzipiert: Echtzeit-Messaging, Media-Galerie, Push-Benachrichtigungen, User-Management und Moderationstools."
     },
     "logbuchApp": {
       "title": "Logbuch App",
-      "description": "Strukturierte Datenerfassung mit Flutter und Supabase \u2014 Formularlogik und API-Integration.",
-      "problem": "Strukturierte Datenerfassung im Feld erforderte eine mobile Loesung mit flexibler Formularlogik.",
-      "approach": "Flutter-App mit Supabase Backend, dynamischer Formularlogik und API-Integration fuer Datenexport.",
-      "result": "Mobile Datenerfassungs-App mit flexiblen Formularen. Anforderungen analysiert und Datenmodell eigenstaendig entworfen."
+      "description": "Mobile Datenerfassung mit Flutter und Supabase — dynamische Formulare und strukturierter Export.",
+      "problem": "Fachkräfte im Außendienst brauchten eine mobile Lösung für strukturierte Datenerfassung mit flexiblen Formularen, Offline-Fähigkeit und automatisiertem Datenexport an bestehende Systeme.",
+      "approach": "Flutter-App mit Supabase Backend, dynamischer Formularengine (konfigurierbare Felder und Validierungen), Offline-Sync-Mechanismus und REST-API-Integration für automatischen Datenexport. Benutzerfreundliches UI mit Barcode-Scanner-Integration.",
+      "result": "Mobile Datenerfassungs-App im produktiven Einsatz. Anforderungen mit Endanwendern erhoben, Datenmodell entworfen, Formularlogik und Exportschnittstellen eigenständig implementiert."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
-      "description": "Eigenes Shopsystem mit Zahlungs- und Versandintegration \u2014 E-Commerce von Grund auf.",
-      "problem": "Ein Nutrition-Shop brauchte eine massgeschneiderte E-Commerce-Loesung ohne Abhaengigkeit von Drittplattformen.",
-      "approach": "Eigenes Shopsystem mit Zahlungsintegration, Versandlogik, Marketing-Tools und Analytics.",
-      "result": "Funktionsfaehiger Online-Shop mit vollstaendigem Bestellprozess. Geschaeftsanforderungen analysiert und technisch umgesetzt."
+      "description": "Maßgeschneidertes E-Commerce-System — Zahlungsabwicklung, Versandlogik und Marketing aus einer Hand.",
+      "problem": "Ein Nutrition-Unternehmen brauchte einen eigenen Online-Shop ohne Abhängigkeit von Shopify oder WooCommerce. Anforderung: volle Kontrolle über Design, Zahlungsfluss und Kundendaten.",
+      "approach": "Eigenes Shopsystem von Grund auf: Produktkatalog mit Varianten, Warenkorb mit Session-Persistenz, Zahlungsintegration (Stripe), Versandlogik mit Tracking, Kundenkonto mit Bestellhistorie. Marketing-Tools (Rabattcodes, Newsletter) und integriertes Analytics-Dashboard.",
+      "result": "Funktionsfähiger Online-Shop mit vollständigem Bestellprozess im produktiven Betrieb. Geschäftsanforderungen analysiert, UX entworfen und Full-Stack eigenständig umgesetzt."
     }
   },
   "Certifications": {
