@@ -64,3 +64,6 @@ CLAUDE.md
 .qwen/
 .trae/
 agents/
+get-shit-done/
+.clinerules
+gsd-file-manifest.json

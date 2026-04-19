@@ -12,16 +12,17 @@
     "projects": "Projekte",
     "skills": "Skills",
     "faq": "FAQ",
-    "menuOpen": "Menü öffnen",
-    "menuClose": "Menü schließen"
+    "certifications": "Zertifikate",
+    "menuOpen": "Men\u00fc \u00f6ffnen",
+    "menuClose": "Men\u00fc schlie\u00dfen"
   },
   "Hero": {
     "name": "Tobias Ludwig",
     "role": "Business Analyst IAM",
-    "valueProposition": "Ich übersetze Technik in Anforderungen — 10+ Jahre IT, jetzt mit analytischem Fokus.",
+    "valueProposition": "Ich \u00fcbersetze Technik in Anforderungen \u2014 10+ Jahre IT, jetzt mit analytischem Fokus.",
     "cta": "CV herunterladen",
     "ctaCoverLetter": "Anschreiben",
-    "ctaDisabled": "CV in Kürze verfügbar",
+    "ctaDisabled": "CV in K\u00fcrze verf\u00fcgbar",
     "cvFormat": {
       "pdf": {"label": "PDF", "desc": "Gestylter Lebenslauf (2 Seiten, ATS-kompatibel)"},
       "json": {"label": "JSON", "desc": "Strukturierte Daten fuer API-Integration"},
@@ -40,55 +41,144 @@
   },
   "Career": {
     "heading": "Mein Weg zum Business Analyst",
-    "intro": "Mein beruflicher Weg führt vom Techniker zum Analysten — nicht als Wechsel, sondern als Ankunft. In jeder Station habe ich analytisches Denken, Koordination und den Blick fürs große Bild eingebracht.",
+    "intro": "Mein beruflicher Weg f\u00fchrt vom Techniker zum Analysten \u2014 nicht als Wechsel, sondern als Ankunft. In jeder Station habe ich analytisches Denken, Koordination und den Blick f\u00fcrs gro\u00dfe Bild eingebracht.",
+    "expandLabel": "Details anzeigen",
+    "collapseLabel": "Details ausblenden",
     "stations": {
       "telekom": {
-        "period": "2011 – 2016",
+        "period": "2014 \u2013 2016",
         "company": "Deutsche Telekom",
-        "role": "Ausbildung IT-Systemelektroniker & Service Techniker Glasfaser",
-        "body": "Fundament in Netzwerktechnik und Systemarchitektur. Glasfaserverlegung, Spleißarbeiten und Qualitätssicherung — Fehleranalyse und strukturiertes Troubleshooting als analytische Kernkompetenz."
+        "role": "Service Techniker Glasfaser",
+        "body": "Glasfaserverlegung und Netzwerkausbau \u2014 strukturierte Fehleranalyse und Qualitaetssicherung als analytische Grundlage.",
+        "narrative": "Hier lernte ich, komplexe technische Systeme systematisch zu analysieren \u2014 die Basis fuer jede Anforderungsanalyse.",
+        "technologies": "FTTH, Glasfaser, Spleissarbeiten, Messtechnik",
+        "details": [
+          "Glasfaserverlegung und Netzwerkausbau",
+          "Spleissarbeiten und Installation",
+          "Messungen und Qualitaetssicherung",
+          "Fehlerbehebung und Wartung"
+        ]
       },
-      "netzwerk": {
-        "period": "2016 – 2021",
-        "company": "Media.com / Biermann Telekom",
-        "role": "Netzwerk-Infrastruktur & Messbauführer",
-        "body": "Koaxialnetze gewartet, Signalstörungen analysiert (MER, BER). Danach Tiefbauarbeiten geplant, Monteurteams geführt und externe Firmen koordiniert — Projektplanung und Teamführung in der Praxis."
+      "mediacom": {
+        "period": "2016 \u2013 2018",
+        "company": "Media.com GmbH",
+        "role": "IT-Service Techniker Netzebene 4",
+        "body": "Wartung von Koaxialnetzen und Signalanalyse \u2014 datengetriebene Fehlerdiagnose mit MER- und BER-Metriken.",
+        "narrative": "Signalanalyse mit konkreten Metriken war mein erster Kontakt mit datenbasierter Entscheidungsfindung.",
+        "technologies": "Koaxialnetze, MER, BER, Signalanalyse",
+        "details": [
+          "Wartung von Koaxialnetzen",
+          "Analyse von Signalstoerungen",
+          "Optimierung von Netzqualitaet (MER, BER)",
+          "Zusammenarbeit mit Fachabteilungen"
+        ]
+      },
+      "biermann": {
+        "period": "2018 \u2013 2021",
+        "company": "Biermann Telekommunikationstechnik",
+        "role": "Messbaufuehrer Fernmeldetechnik",
+        "body": "Planung und Organisation von Tiefbauarbeiten, Fuehrung von Monteurteams \u2014 Projektmanagement und Koordination in der Praxis.",
+        "narrative": "Teamfuehrung, Planung und Koordination externer Partner \u2014 klassische Projektmanagement-Skills, die jeder Business Analyst braucht.",
+        "technologies": "Kupfernetz, Tiefbau, Projektplanung",
+        "details": [
+          "Planung und Organisation von Tiefbauarbeiten",
+          "Koordination externer Firmen",
+          "Fehleranalyse im Kupfernetz",
+          "Fuehrung von Monteurteams",
+          "Technische Dokumentation"
+        ]
       },
       "bwi": {
-        "period": "2021 – 2023",
+        "period": "2021 \u2013 2023",
         "company": "BWI GmbH",
         "role": "IT-Service Techniker",
-        "body": "IT-Infrastrukturprojekte für das BMVg. Systeme installiert und konfiguriert (Cisco, LANCOM, VLAN), SINA-Systeme betreut, ticketbasierter Support — Anforderungsanalyse in sicherheitskritischer Umgebung."
+        "body": "IT-Infrastrukturprojekte fuer das BMVg \u2014 Arbeit mit sicherheitskritischen SINA-Systemen und strukturiertem Ticketsystem.",
+        "narrative": "Sicherheitskritische Systeme, SINA-Erfahrung und strukturierte Prozesse \u2014 direkt relevant fuer IAM bei Bitmarck.",
+        "technologies": "Cisco, LANCOM, VLAN, SINA, IBM Maximo",
+        "details": [
+          "IT-Infrastrukturprojekte fuer BMVg",
+          "Installation und Konfiguration von Systemen (Cisco, LANCOM, VLAN)",
+          "Ticketbasierter Support (IBM Maximo)",
+          "Arbeit mit sicherheitskritischen Systemen (SINA)",
+          "Dokumentation und Prozessoptimierung"
+        ]
       },
       "bhf": {
-        "period": "2023 – 2024",
+        "period": "2023 \u2013 2024",
         "company": "BHF Group GmbH",
-        "role": "IT-Berater & Softwareentwickler",
-        "body": "CRM- und Trainingssoftware entwickelt: Backend mit Node.js, Datenbankdesign mit PostgreSQL, UI/UX Design. DSGVO-konforme Sicherheitskonzepte, Workflow-Automatisierung und Analytics — vom Konzept bis zum Betrieb."
+        "role": "Assistent Studioleitung / IT-Berater",
+        "body": "CRM- und Trainingssoftware entwickelt \u2014 vom Konzept ueber Datenbankdesign bis zum produktiven Betrieb.",
+        "narrative": "Erstmals den gesamten Softwareentwicklungszyklus verantwortet \u2014 Anforderungsanalyse, Architektur, Umsetzung. Der Wendepunkt zum Analysten.",
+        "technologies": "Node.js, PostgreSQL, REST APIs, UI/UX Design",
+        "details": [
+          "Entwicklung einer CRM- und Trainingssoftware",
+          "Backend mit Node.js und REST APIs",
+          "Datenbankdesign mit PostgreSQL",
+          "UI/UX Design",
+          "DSGVO-konforme Sicherheitskonzepte",
+          "Workflow-Automatisierung",
+          "Analytics und Reporting",
+          "Organisation und Personalplanung"
+        ]
+      },
+      "persona": {
+        "period": "2024-12 \u2013 2025-01",
+        "company": "Persona GmbH",
+        "role": "IT Client Techniker",
+        "body": "IT-Projektkoordination und Prozessoptimierung \u2014 Leitung kleiner IT-Projekte und Koordination externer Dienstleister.",
+        "narrative": "Kurzfristiger Einsatz mit Fokus auf Koordination und Prozessoptimierung \u2014 analytisches Arbeiten unter Zeitdruck.",
+        "technologies": "IT-Infrastruktur, Projektkoordination",
+        "details": [
+          "Koordination von IT-Terminen und Kunden",
+          "Planung und Umsetzung von Infrastrukturprojekten",
+          "IT-Support und Problemloesung",
+          "Leitung kleiner IT-Projekte",
+          "Koordination externer Dienstleister",
+          "Optimierung von IT-Prozessen",
+          "Dokumentation und Softwareinstallation"
+        ]
       },
       "xecuro": {
-        "period": "2025 – heute",
+        "period": "2025 \u2013 heute",
         "company": "Xecuro GmbH",
         "role": "IT-Systemadministrator Secure Client Manager",
-        "body": "SINA-basierte Secure Clients administriert und weiterentwickelt. Windows- und Linux-Systeme gehärtet, Sicherheitskonzepte mitgestaltet, Test- und Integrationsumgebungen bereitgestellt."
+        "body": "SINA-basierte Secure Clients administriert und weiterentwickelt \u2014 Sicherheitskonzepte mitgestaltet.",
+        "narrative": "SINA-Expertise vertieft, Sicherheitskonzepte aktiv mitgestaltet \u2014 die technische Bruecke zur IAM-Welt.",
+        "technologies": "SINA, Windows, Linux, Haertung, Sicherheitskonzepte",
+        "details": [
+          "Administration und Weiterentwicklung von SINA-basierten Secure Clients",
+          "Haertung von Windows- und Linux-Systemen unter Sicherheitsrichtlinien",
+          "Aufbau und Betrieb von IT-Infrastruktur",
+          "Analyse und Behebung von Stoerungen sowie Performanceoptimierung",
+          "Mitwirkung an Sicherheitskonzepten",
+          "Zusammenarbeit mit Security- und Infrastrukturteams",
+          "Bereitstellung von Test- und Integrationsumgebungen"
+        ]
       },
       "bitmarck": {
-        "period": "Nächster Schritt",
+        "period": "Naechster Schritt",
         "company": "Bitmarck",
         "role": "Business Analyst IAM",
-        "body": "Die logische Konsequenz: Analytisches Denken und technisches Verständnis als offizielle Rolle — digitale Identitäten im Gesundheitswesen gestalten."
+        "body": "Die logische Konsequenz: Analytisches Denken und technisches Verstaendnis als offizielle Rolle \u2014 digitale Identitaeten im Gesundheitswesen gestalten.",
+        "narrative": "Alle Faeden laufen hier zusammen \u2014 Technik, Analyse, Sicherheit, Koordination.",
+        "technologies": "IAM, Identity Management, Gesundheitswesen",
+        "details": [
+          "Anforderungsanalyse fuer IAM-Systeme",
+          "Uebersetzung zwischen Technik und Fachbereich",
+          "Gestaltung digitaler Identitaeten im Gesundheitswesen"
+        ]
       }
     }
   },
   "Projects": {
     "heading": "Projekte",
-    "detailsLink": "Details →",
+    "detailsLink": "Details \u2192",
     "languages": "Sprachen",
     "lastCommit": "Letzter Commit",
     "daysAgo": "vor {days} Tagen"
   },
   "ProjectDetail": {
-    "back": "← Zurück",
+    "back": "\u2190 Zur\u00fcck",
     "problem": "Problem",
     "approach": "Ansatz",
     "result": "Ergebnis",
@@ -105,35 +195,35 @@
     }
   },
   "FAQ": {
-    "heading": "Häufige Fragen",
+    "heading": "H\u00e4ufige Fragen",
     "items": {
       "location": {
         "question": "Standort",
-        "answer": "Flexibel — Remote und vor Ort möglich. Ich bin mobil und derzeit in der Region Köln/Bonn ansässig."
+        "answer": "Flexibel \u2014 Remote und vor Ort m\u00f6glich. Ich bin mobil und derzeit in der Region K\u00f6ln/Bonn ans\u00e4ssig."
       },
       "startDate": {
         "question": "Starttermin",
-        "answer": "1–3 Monate nach Zusage möglich."
+        "answer": "1\u20133 Monate nach Zusage m\u00f6glich."
       },
       "whyBitmarck": {
         "question": "Warum Bitmarck?",
-        "answer": "Bitmarck digitalisiert das Gesundheitswesen — ein Bereich mit echtem Impact. Die Rolle als Business Analyst IAM verbindet meine technische Erfahrung mit analytischer Arbeit an digitalen Identitäten. Genau das, was ich suche."
+        "answer": "Bitmarck digitalisiert das Gesundheitswesen \u2014 ein Bereich mit echtem Impact. Die Rolle als Business Analyst IAM verbindet meine technische Erfahrung mit analytischer Arbeit an digitalen Identit\u00e4ten. Genau das, was ich suche."
       },
       "whyBA": {
         "question": "Warum Business Analyst?",
-        "answer": "Analytisches Denken war in jeder meiner Rollen präsent — von der Infrastrukturplanung bis zur API-Architektur. Business Analyst macht diese Stärke zur offiziellen Rolle."
+        "answer": "Analytisches Denken war in jeder meiner Rollen pr\u00e4sent \u2014 von der Infrastrukturplanung bis zur API-Architektur. Business Analyst macht diese St\u00e4rke zur offiziellen Rolle."
       }
     }
   },
   "Footer": {
-    "builtWith": "Gebaut mit Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Selbst gehostet mit Docker",
+    "builtWith": "Gebaut mit Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl \u00b7 Selbst gehostet mit Docker",
     "terminalHint": "Druecke Ctrl+` fuer eine Ueberraschung"
   },
   "Terminal": {
     "greeting": "tobias@bitmarck:~$ Willkommen! Tippe 'help' fuer eine Liste der Befehle.",
     "whoami": "Tobias Ludwig -- Business Analyst IAM Kandidat bei Bitmarck. 10+ Jahre IT-Erfahrung, vom Service-Techniker ueber SINA-Administration zum Softwareentwickler. Ich uebersetze zwischen Technik und Fachbereich.",
     "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA-Methoden: Anforderungsanalyse, Use Cases, DSGVO, Prozessoptimierung, Dokumentation\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nSprachen: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSprachen: Deutsch (C2), Englisch (B2)",
-    "projects": "1. Auth API Service -- JWT-basierter Auth-Service mit RBAC, PostgreSQL und Prisma\n2. Next CMS -- Eigenes Headless CMS mit Next.js, Supabase und RLS\n3. MyFitCoach PRO -- Coaching-Plattform mit Flutter, Next.js und Strapi\n4. Partner App -- Flutter-App mit Realtime Chat und Push Notifications\n5. Logbuch App -- Strukturierte Datenerfassung mit Flutter und Supabase\n6. Auth API Service -- Node.js Auth mit JWT und RBAC",
+    "projects": "1. Auth API Service -- JWT-basierter Auth-Service mit RBAC, PostgreSQL und Prisma\n2. Next CMS -- Eigenes Headless CMS mit Next.js, Supabase und RLS\n3. MyFitCoach PRO -- Coaching-Plattform mit Flutter, Next.js und Strapi\n4. Partner App -- Flutter-App mit Realtime Chat und Push Notifications\n5. Logbuch App -- Strukturierte Datenerfassung mit Flutter und Supabase\n6. MPA Nutrition Shop -- Eigenes Shopsystem mit Zahlungs- und Versandintegration",
     "motivation": "Bitmarck digitalisiert das Gesundheitswesen -- ein Bereich mit echtem Impact. Als Business Analyst IAM kann ich meine technische Erfahrung mit SINA-Systemen und Auth-Architekturen mit analytischem Denken verbinden -- genau die Schnittstelle, die mich antreibt.",
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
     "help": "Verfuegbare Befehle:\n  whoami      -- Wer ist Tobias?\n  skills      -- Technische Skills\n  projects    -- Projekt-Highlights\n  motivation  -- Warum Bitmarck?\n  contact     -- Kontaktdaten\n  help        -- Diese Hilfe\n  clear       -- Terminal leeren\n  exit        -- Terminal schliessen",
@@ -144,24 +234,82 @@
   "ProjectData": {
     "authApi": {
       "title": "Auth API Service",
-      "description": "JWT-basierter Authentifizierungsservice mit RBAC und Prisma — direkt relevant für IAM.",
+      "description": "JWT-basierter Authentifizierungsservice mit RBAC und Prisma \u2014 direkt relevant f\u00fcr IAM.",
       "problem": "Mehrere Anwendungen brauchten einheitliche Authentifizierung und Autorisierung mit feingranularer Rechteverwaltung.",
       "approach": "Node.js Auth Service mit JWT-Token-Flow, rollenbasierter Zugriffskontrolle (RBAC), PostgreSQL und Prisma ORM.",
-      "result": "Produktionsreifer Auth-Service der mehrere Apps bedient. Use Cases, Datenmodelle und Zugriffskonzepte eigenständig erarbeitet."
+      "result": "Produktionsreifer Auth-Service der mehrere Apps bedient. Use Cases, Datenmodelle und Zugriffskonzepte eigenst\u00e4ndig erarbeitet."
     },
     "nextCms": {
       "title": "Next CMS",
-      "description": "Eigenes Headless CMS mit Next.js und Supabase — von der Anforderungsanalyse bis zum Betrieb.",
-      "problem": "Kunden brauchten ein flexibles Content-Management ohne die Komplexität etablierter CMS-Systeme.",
+      "description": "Eigenes Headless CMS mit Next.js und Supabase \u2014 von der Anforderungsanalyse bis zum Betrieb.",
+      "problem": "Kunden brauchten ein flexibles Content-Management ohne die Komplexit\u00e4t etablierter CMS-Systeme.",
       "approach": "Headless-Architektur mit Next.js Frontend, Supabase Backend (Auth, DB, Storage), rollenbasierte Zugriffe (RLS), Auto-Install Script und Docker Self-Hosting.",
-      "result": "Voll funktionsfähiges CMS im produktiven Einsatz. Kundenanforderungen analysiert, Architektur entworfen, eigenständig umgesetzt."
+      "result": "Voll funktionsf\u00e4higes CMS im produktiven Einsatz. Kundenanforderungen analysiert, Architektur entworfen, eigenst\u00e4ndig umgesetzt."
     },
     "myfitcoach": {
       "title": "MyFitCoach PRO",
-      "description": "Coaching-Plattform mit Flutter, Next.js und Strapi — Analytics und Realtime-Features.",
-      "problem": "Coaches brauchten eine digitale Plattform für Trainingsplanung, Kundenverwaltung und Fortschrittstracking.",
+      "description": "Coaching-Plattform mit Flutter, Next.js und Strapi \u2014 Analytics und Realtime-Features.",
+      "problem": "Coaches brauchten eine digitale Plattform f\u00fcr Trainingsplanung, Kundenverwaltung und Fortschrittstracking.",
       "approach": "Fullstack-Plattform mit Flutter Mobile-App, Next.js Web-Dashboard, Strapi Backend, Realtime-Features und integriertem Analytics.",
-      "result": "Funktionale Coaching-Plattform mit mobiler und Web-Oberfläche. Anforderungsanalyse, Multi-Platform-Architektur und Analytics eigenständig umgesetzt."
+      "result": "Funktionale Coaching-Plattform mit mobiler und Web-Oberfl\u00e4che. Anforderungsanalyse, Multi-Platform-Architektur und Analytics eigenst\u00e4ndig umgesetzt."
+    },
+    "partnerApp": {
+      "title": "Partner App",
+      "description": "Flutter-App fuer Paare mit Realtime Chat, Media Sharing und Push Notifications.",
+      "problem": "Paare brauchten eine private, sichere Plattform fuer gemeinsame Kommunikation und Medienaustausch.",
+      "approach": "Flutter Mobile-App mit Supabase Backend, Realtime Chat, Media Sharing und Push Notifications ueber FCM/APNs.",
+      "result": "Funktionierende Mobile-App mit Echtzeit-Features. Architektur und Realtime-Patterns eigenstaendig konzipiert und umgesetzt."
+    },
+    "logbuchApp": {
+      "title": "Logbuch App",
+      "description": "Strukturierte Datenerfassung mit Flutter und Supabase \u2014 Formularlogik und API-Integration.",
+      "problem": "Strukturierte Datenerfassung im Feld erforderte eine mobile Loesung mit flexibler Formularlogik.",
+      "approach": "Flutter-App mit Supabase Backend, dynamischer Formularlogik und API-Integration fuer Datenexport.",
+      "result": "Mobile Datenerfassungs-App mit flexiblen Formularen. Anforderungen analysiert und Datenmodell eigenstaendig entworfen."
+    },
+    "mpaNutrition": {
+      "title": "MPA Nutrition Shop",
+      "description": "Eigenes Shopsystem mit Zahlungs- und Versandintegration \u2014 E-Commerce von Grund auf.",
+      "problem": "Ein Nutrition-Shop brauchte eine massgeschneiderte E-Commerce-Loesung ohne Abhaengigkeit von Drittplattformen.",
+      "approach": "Eigenes Shopsystem mit Zahlungsintegration, Versandlogik, Marketing-Tools und Analytics.",
+      "result": "Funktionsfaehiger Online-Shop mit vollstaendigem Bestellprozess. Geschaeftsanforderungen analysiert und technisch umgesetzt."
+    }
+  },
+  "Certifications": {
+    "heading": "Zertifikate & Ausbildung",
+    "certLabel": "Zertifizierungen",
+    "eduLabel": "Ausbildung",
+    "certs": {
+      "itil": "ITIL Foundation",
+      "sinaCore": "SINA CORE",
+      "sinaBasics": "SINA BASICS",
+      "devops": "DevOps Fundamentals",
+      "databases": "Datenbanken",
+      "linuxAdmin": "Linux System Administration",
+      "fitTrainer": "Fitness Trainer B-Lizenz",
+      "nutritionist": "Ernaehrungsberater",
+      "lancom": "LANCOM Zertifizierung",
+      "ftth": "FTTH Glasfaser"
+    },
+    "education": {
+      "bsc": {
+        "degree": "B.Sc. Informatik",
+        "institution": "FernUniversitaet Hagen",
+        "period": "2024 \u2013 heute",
+        "status": "laufend"
+      },
+      "sde": {
+        "degree": "Software Developer Expert",
+        "institution": "IU Internationale Hochschule",
+        "period": "2023 \u2013 2024",
+        "status": "abgeschlossen"
+      },
+      "itse": {
+        "degree": "IT-Systemelektroniker",
+        "institution": "Deutsche Telekom (Ausbildung)",
+        "period": "2011 \u2013 2014",
+        "status": "abgeschlossen"
+      }
     }
   }
 }
