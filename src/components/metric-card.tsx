@@ -11,26 +11,29 @@ type MetricCardProps = {
 export function MetricCard({value, label, index}: MetricCardProps) {
   return (
     <motion.div
-      initial={{opacity: 0, y: 20, scale: 0.95}}
+      initial={{opacity: 0, y: 24, scale: 0.92}}
       animate={{opacity: 1, y: 0, scale: 1}}
       transition={{
-        duration: 0.5,
-        delay: 0.3 + index * 0.1,
+        duration: 0.6,
+        delay: 0.4 + index * 0.12,
         ease: [0.16, 1, 0.3, 1],
       }}
       whileHover={{
-        scale: 1.03,
+        scale: 1.04,
+        borderColor: 'rgba(255,255,255,0.2)',
         transition: {type: 'spring', stiffness: 400, damping: 20},
       }}
-      className="group relative rounded-2xl border border-white/10 bg-white/[0.06] backdrop-blur-md p-lg text-center overflow-hidden cursor-default"
+      className="group relative rounded-2xl border border-white/[0.08] bg-white/[0.04] backdrop-blur-md p-xl text-center overflow-hidden cursor-default"
     >
       {/* Subtle gradient shimmer on hover */}
-      <div className="absolute inset-0 bg-linear-to-br from-white/[0.08] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
+      <div className="absolute inset-0 bg-linear-to-br from-accent/[0.06] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
+      {/* Top accent line */}
+      <div className="absolute top-0 left-[20%] right-[20%] h-px bg-linear-to-r from-transparent via-accent/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
       <div className="relative">
-        <p className="text-display font-bold text-white tracking-tight">
+        <p className="text-section font-bold text-white tracking-tight leading-none">
           {value}
         </p>
-        <p className="text-label text-white/50 mt-xs font-medium tracking-wide uppercase">
+        <p className="text-xs text-white/40 mt-sm font-medium tracking-widest uppercase">
           {label}
         </p>
       </div>
