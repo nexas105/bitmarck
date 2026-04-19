@@ -51,3 +51,16 @@ next-env.d.ts
 .continue-here.md
 *.claude
 CLAUDE.md
+.codebuddy/
+.codex/
+.augment/
+.agent/
+.gemini/
+.github/
+.kilo/
+.opencode/
+.planning/
+.windsurf/
+.qwen/
+.trae/
+agents/
