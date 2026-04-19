@@ -1,3 +1,5 @@
+import {readProjects} from '@/lib/projects';
+
 export type Project = {
   slug: string;
   titleKey: string;
@@ -13,7 +15,7 @@ export type Project = {
   };
 };
 
-const projects: Project[] = [
+const fallbackProjects: Project[] = [
   {
     slug: 'auth-api',
     titleKey: 'ProjectData.authApi.title',
@@ -56,13 +58,18 @@ const projects: Project[] = [
 ];
 
 export function getAllProjects(): Project[] {
-  return projects;
+  try {
+    const projects = readProjects();
+    return projects.length > 0 ? projects : fallbackProjects;
+  } catch {
+    return fallbackProjects;
+  }
 }
 
 export function getProject(slug: string): Project | undefined {
-  return projects.find((p) => p.slug === slug);
+  return getAllProjects().find((p) => p.slug === slug);
 }
 
 export function getAllProjectSlugs(): string[] {
-  return projects.map((p) => p.slug);
+  return getAllProjects().map((p) => p.slug);
 }
