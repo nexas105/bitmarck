@@ -32,9 +32,10 @@ export async function SkillsSection() {
       <div className="mx-auto max-w-4xl">
         <h2
           id="skills-heading"
-          className="text-heading font-semibold text-text-primary mb-xl"
+          className="text-section font-semibold text-text-primary mb-xl inline-block"
         >
           {t('heading')}
+          <span className="block h-1 w-12 bg-accent rounded-full mt-sm" aria-hidden="true" />
         </h2>
         <div className="flex flex-col gap-lg">
           {SKILL_CATEGORIES.map((category) => (

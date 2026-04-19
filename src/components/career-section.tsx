@@ -7,8 +7,9 @@ export async function CareerSection() {
   return (
     <section id="career" aria-labelledby="career-heading" className="py-3xl px-md md:px-xl scroll-mt-[64px]">
       <div className="mx-auto max-w-4xl">
-        <h2 id="career-heading" className="text-heading font-semibold text-text-primary">
+        <h2 id="career-heading" className="text-section font-semibold text-text-primary inline-block">
           {t('heading')}
+          <span className="block h-1 w-12 bg-accent rounded-full mt-sm" aria-hidden="true" />
         </h2>
         <p className="text-body text-text-secondary mt-md leading-relaxed">
           {t('intro')}

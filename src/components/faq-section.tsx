@@ -12,14 +12,15 @@ export function FAQSection() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="py-3xl px-md md:px-xl scroll-mt-[64px]"
+      className="py-3xl px-md md:px-xl scroll-mt-[64px] bg-primary-50"
     >
       <div className="mx-auto max-w-4xl">
         <h2
           id="faq-heading"
-          className="text-heading font-semibold text-text-primary mb-xl"
+          className="text-section font-semibold text-text-primary mb-xl inline-block"
         >
           {t('heading')}
+          <span className="block h-1 w-12 bg-accent rounded-full mt-sm" aria-hidden="true" />
         </h2>
         <div>
           {FAQ_KEYS.map((key) => (
