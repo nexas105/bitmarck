@@ -12,6 +12,8 @@ export type Project = {
     problemKey: string;
     approachKey: string;
     resultKey: string;
+    highlightsKey?: string;
+    learningsKey?: string;
   };
 };
 
@@ -27,6 +29,8 @@ const fallbackProjects: Project[] = [
       problemKey: 'ProjectData.authApi.problem',
       approachKey: 'ProjectData.authApi.approach',
       resultKey: 'ProjectData.authApi.result',
+      highlightsKey: 'ProjectData.authApi.highlights',
+      learningsKey: 'ProjectData.authApi.learnings',
     },
   },
   {
@@ -40,6 +44,8 @@ const fallbackProjects: Project[] = [
       problemKey: 'ProjectData.nextCms.problem',
       approachKey: 'ProjectData.nextCms.approach',
       resultKey: 'ProjectData.nextCms.result',
+      highlightsKey: 'ProjectData.nextCms.highlights',
+      learningsKey: 'ProjectData.nextCms.learnings',
     },
   },
   {
@@ -53,6 +59,8 @@ const fallbackProjects: Project[] = [
       problemKey: 'ProjectData.myfitcoach.problem',
       approachKey: 'ProjectData.myfitcoach.approach',
       resultKey: 'ProjectData.myfitcoach.result',
+      highlightsKey: 'ProjectData.myfitcoach.highlights',
+      learningsKey: 'ProjectData.myfitcoach.learnings',
     },
   },
   {
@@ -64,6 +72,8 @@ const fallbackProjects: Project[] = [
       problemKey: 'ProjectData.partnerApp.problem',
       approachKey: 'ProjectData.partnerApp.approach',
       resultKey: 'ProjectData.partnerApp.result',
+      highlightsKey: 'ProjectData.partnerApp.highlights',
+      learningsKey: 'ProjectData.partnerApp.learnings',
     },
   },
   {
@@ -75,6 +85,8 @@ const fallbackProjects: Project[] = [
       problemKey: 'ProjectData.logbuchApp.problem',
       approachKey: 'ProjectData.logbuchApp.approach',
       resultKey: 'ProjectData.logbuchApp.result',
+      highlightsKey: 'ProjectData.logbuchApp.highlights',
+      learningsKey: 'ProjectData.logbuchApp.learnings',
     },
   },
   {
@@ -86,6 +98,8 @@ const fallbackProjects: Project[] = [
       problemKey: 'ProjectData.mpaNutrition.problem',
       approachKey: 'ProjectData.mpaNutrition.approach',
       resultKey: 'ProjectData.mpaNutrition.result',
+      highlightsKey: 'ProjectData.mpaNutrition.highlights',
+      learningsKey: 'ProjectData.mpaNutrition.learnings',
     },
   },
 ];
