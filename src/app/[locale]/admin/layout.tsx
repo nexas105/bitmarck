@@ -15,7 +15,7 @@ export default async function AdminLayout({children, params}: Props) {
   const session = await getSession();
 
   if (!session.isLoggedIn) {
-    redirect(`/${locale}/admin/login`);
+    redirect(`/${locale}/login`);
   }
 
   return <AdminShell locale={locale}>{children}</AdminShell>;

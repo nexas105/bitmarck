@@ -1,7 +1,7 @@
 'use client';
 
 import {useState} from 'react';
-import {useRouter} from 'next/navigation';
+import {useRouter} from '@/i18n/navigation';
 
 export function LoginForm() {
   const [error, setError] = useState('');
@@ -26,7 +26,7 @@ export function LoginForm() {
       });
 
       if (res.ok) {
-        router.push('/de/admin');
+        router.push('/admin');
         router.refresh();
       } else if (res.status === 429) {
         setError('Zu viele Versuche. Bitte spaeter erneut versuchen.');
