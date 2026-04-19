@@ -70,5 +70,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-public-content/02-CONTEXT.md
+Stopped at: Phase 2 UI-SPEC approved
+Resume file: .planning/phases/02-public-content/02-UI-SPEC.md
