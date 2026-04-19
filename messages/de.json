@@ -132,7 +132,8 @@
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
     "help": "Verfuegbare Befehle:\n  whoami      -- Wer ist Tobias?\n  skills      -- Technische Skills\n  projects    -- Projekt-Highlights\n  motivation  -- Warum Bitmarck?\n  contact     -- Kontaktdaten\n  help        -- Diese Hilfe\n  clear       -- Terminal leeren\n  exit        -- Terminal schliessen",
     "unknown": "Befehl nicht gefunden: {cmd}. Tippe 'help' fuer eine Liste der Befehle.",
-    "prompt": "tobias@bitmarck:~$"
+    "prompt": "tobias@bitmarck:~$",
+    "fabLabel": "Terminal oeffnen"
   },
   "ProjectData": {
     "authApi": {
