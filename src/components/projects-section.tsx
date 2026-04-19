@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {ProjectCard} from '@/components/project-card';
+import {AnimateOnScroll} from '@/components/animate-on-scroll';
 import {getAllProjects} from '@/data/projects';
 
 export async function ProjectsSection() {
@@ -21,8 +22,10 @@ export async function ProjectsSection() {
           <span className="block h-1 w-12 bg-accent rounded-full mt-sm" aria-hidden="true" />
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
-          {projects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+          {projects.map((project, index) => (
+            <AnimateOnScroll key={project.slug} delay={index * 0.1}>
+              <ProjectCard project={project} />
+            </AnimateOnScroll>
           ))}
         </div>
       </div>
