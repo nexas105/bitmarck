@@ -4,6 +4,8 @@ export type Project = {
   descriptionKey: string;
   techStack: string[];
   githubUrl?: string;
+  githubOwner?: string;
+  githubRepo?: string;
   detail: {
     problemKey: string;
     approachKey: string;
@@ -17,6 +19,8 @@ const projects: Project[] = [
     titleKey: 'ProjectData.authApi.title',
     descriptionKey: 'ProjectData.authApi.description',
     techStack: ['Node.js', 'TypeScript', 'JWT', 'RBAC', 'PostgreSQL', 'Prisma'],
+    githubOwner: 'nexas105',
+    githubRepo: 'auth-api-service',
     detail: {
       problemKey: 'ProjectData.authApi.problem',
       approachKey: 'ProjectData.authApi.approach',
@@ -28,6 +32,8 @@ const projects: Project[] = [
     titleKey: 'ProjectData.nextCms.title',
     descriptionKey: 'ProjectData.nextCms.description',
     techStack: ['Next.js', 'TypeScript', 'Supabase', 'RLS', 'Docker'],
+    githubOwner: 'nexas105',
+    githubRepo: 'next-cms',
     detail: {
       problemKey: 'ProjectData.nextCms.problem',
       approachKey: 'ProjectData.nextCms.approach',
@@ -39,6 +45,8 @@ const projects: Project[] = [
     titleKey: 'ProjectData.myfitcoach.title',
     descriptionKey: 'ProjectData.myfitcoach.description',
     techStack: ['Flutter', 'Next.js', 'Strapi', 'Dart', 'TypeScript'],
+    githubOwner: 'nexas105',
+    githubRepo: 'myfitcoach',
     detail: {
       problemKey: 'ProjectData.myfitcoach.problem',
       approachKey: 'ProjectData.myfitcoach.approach',
