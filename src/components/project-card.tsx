@@ -30,7 +30,7 @@ export async function ProjectCard({project}: ProjectCardProps) {
       : null;
 
   return (
-    <article className="rounded-lg border border-border bg-surface-raised p-lg flex flex-col gap-md hover:shadow-sm transition-shadow duration-150 ease">
+    <article className="rounded-xl border border-border/50 bg-surface-raised p-lg flex flex-col gap-md shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
       <h3 className="text-heading font-semibold text-text-primary">
         {t(project.titleKey)}
       </h3>
