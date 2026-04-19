@@ -76,7 +76,10 @@
   },
   "Projects": {
     "heading": "Projekte",
-    "detailsLink": "Details →"
+    "detailsLink": "Details →",
+    "languages": "Sprachen",
+    "lastCommit": "Letzter Commit",
+    "daysAgo": "vor {days} Tagen"
   },
   "ProjectDetail": {
     "back": "← Zurück",
