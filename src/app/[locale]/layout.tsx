@@ -8,6 +8,7 @@ import {Inter} from 'next/font/google';
 import {StickyHeader} from '@/components/sticky-header';
 import {Footer} from '@/components/footer';
 import {MotionProvider} from '@/components/motion-provider';
+import {Terminal} from '@/components/terminal';
 import '../globals.css';
 
 const inter = Inter({
@@ -42,6 +43,7 @@ export default async function LocaleLayout({children, params}: Props) {
             <StickyHeader />
             {children}
             <Footer />
+            <Terminal />
           </MotionProvider>
         </NextIntlClientProvider>
       </body>

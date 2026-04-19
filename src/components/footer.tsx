@@ -1,4 +1,5 @@
 import {getTranslations} from 'next-intl/server';
+import {TerminalHint} from '@/components/terminal';
 
 export async function Footer() {
   const t = await getTranslations('Footer');
@@ -9,6 +10,7 @@ export async function Footer() {
         <p className="text-label text-text-secondary">
           {t('builtWith')}
         </p>
+        <TerminalHint />
       </div>
     </footer>
   );
