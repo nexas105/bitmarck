@@ -6,5 +6,134 @@
     "heading": "Seite nicht gefunden",
     "body": "Diese Seite existiert nicht.",
     "cta": "Zur Startseite"
+  },
+  "Nav": {
+    "career": "Mein Weg",
+    "projects": "Projekte",
+    "skills": "Skills",
+    "faq": "FAQ",
+    "menuOpen": "Men\u00fc \u00f6ffnen",
+    "menuClose": "Men\u00fc schlie\u00dfen"
+  },
+  "Hero": {
+    "name": "Tobias Ludwig",
+    "role": "Business Analyst IAM",
+    "valueProposition": "Ich \u00fcbersetze Technik in Anforderungen \u2014 10+ Jahre IT, jetzt mit analytischem Fokus.",
+    "cta": "CV herunterladen",
+    "ctaDisabled": "CV in K\u00fcrze verf\u00fcgbar"
+  },
+  "Metrics": {
+    "experience": "10+ Jahre IT",
+    "experienceLabel": "Berufserfahrung",
+    "projects": "15 Projekte",
+    "projectsLabel": "Umgesetzte Projekte",
+    "certificates": "6 Zertifikate",
+    "certificatesLabel": "Zertifizierungen",
+    "degree": "B.Sc. Informatik",
+    "degreeLabel": "Studium (laufend)"
+  },
+  "Career": {
+    "heading": "Mein Weg zum Business Analyst",
+    "intro": "Mein beruflicher Weg f\u00fchrt vom Techniker zum Analysten \u2014 nicht als Wechsel, sondern als Ankunft. In jeder Station habe ich analytisches Denken, Koordination und den Blick f\u00fcrs gro\u00dfe Bild eingebracht.",
+    "stations": {
+      "telekom": {
+        "period": "2013 \u2013 2016",
+        "company": "Deutsche Telekom",
+        "role": "Ausbildung IT-Systemelektroniker",
+        "body": "Fundament in Netzwerktechnik und Systemarchitektur. Bereits hier: Fehleranalyse und strukturiertes Troubleshooting als analytische Kernkompetenz."
+      },
+      "bwi": {
+        "period": "2016 \u2013 2019",
+        "company": "BWI GmbH",
+        "role": "IT-Infrastruktur & Planung",
+        "body": "IT-Infrastrukturprojekte f\u00fcr die Bundeswehr geplant und koordiniert. SINA-Systeme betreut, Rollouts gesteuert \u2014 Anforderungsanalyse in der Praxis."
+      },
+      "xecuro": {
+        "period": "2019 \u2013 heute",
+        "company": "Xecuro GmbH",
+        "role": "Secure Client Manager (SINA)",
+        "body": "Sicherheitskonzepte f\u00fcr hochsichere IT entwickelt. Use Cases definiert, Prozesse dokumentiert, Schnittstelle zwischen Technik und Fachbereich."
+      },
+      "freelancer": {
+        "period": "2020 \u2013 heute",
+        "company": "Freiberuflich",
+        "role": "Fullstack-Entwickler & Berater",
+        "body": "Kundenanforderungen analysiert, Architekturen entworfen, eigenst\u00e4ndig umgesetzt. Auth API mit IAM-Konzepten, CMS-Systeme, Server-Cluster \u2014 vom Konzept bis zum Betrieb."
+      },
+      "bitmarck": {
+        "period": "N\u00e4chster Schritt",
+        "company": "Bitmarck",
+        "role": "Business Analyst IAM",
+        "body": "Die logische Konsequenz: Analytisches Denken und technisches Verst\u00e4ndnis als offizielle Rolle \u2014 digitale Identit\u00e4ten im Gesundheitswesen gestalten."
+      }
+    }
+  },
+  "Projects": {
+    "heading": "Projekte",
+    "detailsLink": "Details \u2192"
+  },
+  "ProjectDetail": {
+    "back": "\u2190 Zur\u00fcck",
+    "problem": "Problem",
+    "approach": "Ansatz",
+    "result": "Ergebnis",
+    "techStack": "Tech Stack",
+    "viewOnGithub": "Auf GitHub ansehen"
+  },
+  "Skills": {
+    "heading": "Skills & Kompetenzen",
+    "categories": {
+      "iam": "IAM & Security",
+      "ba": "BA-Methoden",
+      "devops": "DevOps & Infra",
+      "languages": "Sprachen & Frameworks"
+    }
+  },
+  "FAQ": {
+    "heading": "H\u00e4ufige Fragen",
+    "items": {
+      "location": {
+        "question": "Standort",
+        "answer": "Flexibel \u2014 Remote und vor Ort m\u00f6glich. Ich bin mobil und derzeit in der Region K\u00f6ln/Bonn ans\u00e4ssig."
+      },
+      "startDate": {
+        "question": "Starttermin",
+        "answer": "1\u20133 Monate nach Zusage m\u00f6glich."
+      },
+      "whyBitmarck": {
+        "question": "Warum Bitmarck?",
+        "answer": "Bitmarck digitalisiert das Gesundheitswesen \u2014 ein Bereich mit echtem Impact. Die Rolle als Business Analyst IAM verbindet meine technische Erfahrung mit analytischer Arbeit an digitalen Identit\u00e4ten. Genau das, was ich suche."
+      },
+      "whyBA": {
+        "question": "Warum Business Analyst?",
+        "answer": "Analytisches Denken war in jeder meiner Rollen pr\u00e4sent \u2014 von der Infrastrukturplanung bis zur API-Architektur. Business Analyst macht diese St\u00e4rke zur offiziellen Rolle."
+      }
+    }
+  },
+  "Footer": {
+    "builtWith": "Gebaut mit Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl \u00b7 Selbst gehostet mit Docker"
+  },
+  "ProjectData": {
+    "authApi": {
+      "title": "Auth API Service",
+      "description": "JWT/OAuth2-basierter Authentifizierungsservice mit RBAC \u2014 direkt relevant f\u00fcr IAM.",
+      "problem": "Mehrere Anwendungen brauchten einheitliche Authentifizierung und Autorisierung mit feingranularer Rechteverwaltung.",
+      "approach": "RESTful API mit JWT-Token-Flow, OAuth2-Integration, rollenbasierter Zugriffskontrolle (RBAC) und Refresh-Token-Rotation.",
+      "result": "Produktionsreifer Auth-Service der mehrere Apps bedient. Use Cases, Datenmodelle und Zugriffskonzepte eigenst\u00e4ndig erarbeitet."
+    },
+    "nextCms": {
+      "title": "Next CMS",
+      "description": "Headless CMS mit Next.js und Supabase \u2014 von der Anforderungsanalyse bis zum Betrieb.",
+      "problem": "Kunden brauchten ein flexibles Content-Management ohne die Komplexit\u00e4t etablierter CMS-Systeme.",
+      "approach": "Headless-Architektur mit Next.js Frontend, Supabase Backend, Markdown-Editor und API-first Design.",
+      "result": "Voll funktionsf\u00e4higes CMS im produktiven Einsatz. Kundenanforderungen analysiert, Architektur entworfen, eigenst\u00e4ndig umgesetzt."
+    },
+    "serverCluster": {
+      "title": "Server-Cluster",
+      "description": "5-Node Homelab-Cluster mit Docker, Monitoring und automatisiertem Deployment.",
+      "problem": "Mehrere Services und Projekte brauchten zuverl\u00e4ssiges Hosting mit \u00dcberwachung und einfachem Deployment.",
+      "approach": "5 physische Server mit Docker Compose, Traefik Reverse-Proxy, Prometheus/Grafana Monitoring und Git-basiertem Deployment.",
+      "result": "Stabiler Cluster der alle eigenen Projekte hostet. Infrastrukturplanung, Netzwerk-Design und Betrieb in einer Hand."
+    }
   }
 }

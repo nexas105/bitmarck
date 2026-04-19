@@ -6,5 +6,134 @@
     "heading": "Page not found",
     "body": "This page does not exist.",
     "cta": "Back to home"
+  },
+  "Nav": {
+    "career": "My Journey",
+    "projects": "Projects",
+    "skills": "Skills",
+    "faq": "FAQ",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "Hero": {
+    "name": "Tobias Ludwig",
+    "role": "Business Analyst IAM",
+    "valueProposition": "I translate technology into requirements \u2014 10+ years in IT, now with an analytical focus.",
+    "cta": "Download CV",
+    "ctaDisabled": "CV coming soon"
+  },
+  "Metrics": {
+    "experience": "10+ Years IT",
+    "experienceLabel": "Professional Experience",
+    "projects": "15 Projects",
+    "projectsLabel": "Delivered Projects",
+    "certificates": "6 Certificates",
+    "certificatesLabel": "Certifications",
+    "degree": "B.Sc. Computer Science",
+    "degreeLabel": "Degree (in progress)"
+  },
+  "Career": {
+    "heading": "My Path to Business Analyst",
+    "intro": "My professional path leads from technician to analyst \u2014 not a career change, but an arrival. In every role, I brought analytical thinking, coordination, and a big-picture perspective.",
+    "stations": {
+      "telekom": {
+        "period": "2013 \u2013 2016",
+        "company": "Deutsche Telekom",
+        "role": "IT Systems Electronics Apprentice",
+        "body": "Foundation in network technology and system architecture. Even here: fault analysis and structured troubleshooting as core analytical competency."
+      },
+      "bwi": {
+        "period": "2016 \u2013 2019",
+        "company": "BWI GmbH",
+        "role": "IT Infrastructure & Planning",
+        "body": "Planned and coordinated IT infrastructure projects for the German Armed Forces. Managed SINA systems, oversaw rollouts \u2014 requirements analysis in practice."
+      },
+      "xecuro": {
+        "period": "2019 \u2013 present",
+        "company": "Xecuro GmbH",
+        "role": "Secure Client Manager (SINA)",
+        "body": "Developed security concepts for high-security IT. Defined use cases, documented processes, served as interface between technology and business."
+      },
+      "freelancer": {
+        "period": "2020 \u2013 present",
+        "company": "Freelance",
+        "role": "Fullstack Developer & Consultant",
+        "body": "Analyzed client requirements, designed architectures, implemented end-to-end. Auth API with IAM concepts, CMS systems, server clusters \u2014 from concept to operations."
+      },
+      "bitmarck": {
+        "period": "Next Step",
+        "company": "Bitmarck",
+        "role": "Business Analyst IAM",
+        "body": "The logical consequence: Analytical thinking and technical understanding as an official role \u2014 shaping digital identities in healthcare."
+      }
+    }
+  },
+  "Projects": {
+    "heading": "Projects",
+    "detailsLink": "Details \u2192"
+  },
+  "ProjectDetail": {
+    "back": "\u2190 Back",
+    "problem": "Problem",
+    "approach": "Approach",
+    "result": "Result",
+    "techStack": "Tech Stack",
+    "viewOnGithub": "View on GitHub"
+  },
+  "Skills": {
+    "heading": "Skills & Competencies",
+    "categories": {
+      "iam": "IAM & Security",
+      "ba": "BA Methods",
+      "devops": "DevOps & Infra",
+      "languages": "Languages & Frameworks"
+    }
+  },
+  "FAQ": {
+    "heading": "Frequently Asked Questions",
+    "items": {
+      "location": {
+        "question": "Location",
+        "answer": "Flexible \u2014 remote and on-site both work. I'm mobile and currently based in the Cologne/Bonn area."
+      },
+      "startDate": {
+        "question": "Start Date",
+        "answer": "Available within 1\u20133 months of offer."
+      },
+      "whyBitmarck": {
+        "question": "Why Bitmarck?",
+        "answer": "Bitmarck digitizes healthcare \u2014 a domain with real impact. The Business Analyst IAM role connects my technical experience with analytical work on digital identities. Exactly what I'm looking for."
+      },
+      "whyBA": {
+        "question": "Why Business Analyst?",
+        "answer": "Analytical thinking has been present in every one of my roles \u2014 from infrastructure planning to API architecture. Business Analyst makes this strength an official role."
+      }
+    }
+  },
+  "Footer": {
+    "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl \u00b7 Self-hosted with Docker"
+  },
+  "ProjectData": {
+    "authApi": {
+      "title": "Auth API Service",
+      "description": "JWT/OAuth2-based authentication service with RBAC \u2014 directly relevant to IAM.",
+      "problem": "Multiple applications needed unified authentication and authorization with fine-grained access control.",
+      "approach": "RESTful API with JWT token flow, OAuth2 integration, role-based access control (RBAC), and refresh token rotation.",
+      "result": "Production-ready auth service serving multiple apps. Use cases, data models, and access concepts independently developed."
+    },
+    "nextCms": {
+      "title": "Next CMS",
+      "description": "Headless CMS with Next.js and Supabase \u2014 from requirements analysis to operations.",
+      "problem": "Clients needed flexible content management without the complexity of established CMS systems.",
+      "approach": "Headless architecture with Next.js frontend, Supabase backend, Markdown editor, and API-first design.",
+      "result": "Fully functional CMS in production use. Client requirements analyzed, architecture designed, independently implemented."
+    },
+    "serverCluster": {
+      "title": "Server Cluster",
+      "description": "5-node homelab cluster with Docker, monitoring, and automated deployment.",
+      "problem": "Multiple services and projects needed reliable hosting with monitoring and easy deployment.",
+      "approach": "5 physical servers with Docker Compose, Traefik reverse proxy, Prometheus/Grafana monitoring, and Git-based deployment.",
+      "result": "Stable cluster hosting all personal projects. Infrastructure planning, network design, and operations all in one hand."
+    }
   }
 }
