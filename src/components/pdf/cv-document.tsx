@@ -20,23 +20,31 @@ const styles = StyleSheet.create({
     paddingHorizontal: 36,
     lineHeight: 1.4,
   },
+  headerBar: {
+    backgroundColor: colors.accent,
+    height: 4,
+    marginBottom: 12,
+    marginHorizontal: -36,
+    marginTop: -32,
+  },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginBottom: 10,
-    paddingBottom: 8,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    marginBottom: 12,
+    paddingBottom: 10,
+    borderBottomWidth: 2,
+    borderBottomColor: colors.accent,
   },
   headerName: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: 700,
     color: colors.textPrimary,
   },
   headerSubtitle: {
-    fontSize: 11,
-    color: colors.textSecondary,
-    marginTop: 2,
+    fontSize: 12,
+    color: colors.accent,
+    marginTop: 3,
+    fontWeight: 500,
   },
   contactBlock: {
     alignItems: "flex-end",
@@ -213,6 +221,8 @@ export function CvDocument() {
     <Document title="Tobias Ludwig - CV" author="Tobias Ludwig">
       {/* Page 1: Header + Profile + Skills + Top Experience */}
       <Page size="A4" style={styles.page}>
+        {/* Accent bar */}
+        <View style={styles.headerBar} />
         {/* Header */}
         <View style={styles.header}>
           <View>
@@ -287,7 +297,7 @@ export function CvDocument() {
                 </Text>
                 {exp.details.slice(0, 4).map((d, j) => (
                   <Text key={j} style={styles.bullet}>
-                    {"  "}
+                    {"• "}
                     {d}
                   </Text>
                 ))}
@@ -322,7 +332,7 @@ export function CvDocument() {
                 <Text style={styles.volOrg}>{vol.organization}</Text>
                 {vol.details.map((d, j) => (
                   <Text key={j} style={styles.bullet}>
-                    {"  "}
+                    {"• "}
                     {d}
                   </Text>
                 ))}
@@ -350,7 +360,7 @@ export function CvDocument() {
                 </Text>
                 {exp.details.map((d, j) => (
                   <Text key={j} style={styles.bullet}>
-                    {"  "}
+                    {"• "}
                     {d}
                   </Text>
                 ))}
@@ -367,7 +377,7 @@ export function CvDocument() {
                 </Text>
                 {proj.details.map((d, j) => (
                   <Text key={j} style={styles.projDetail}>
-                    {"  "}
+                    {"• "}
                     {d}
                   </Text>
                 ))}
