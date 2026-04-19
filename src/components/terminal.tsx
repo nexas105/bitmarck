@@ -107,7 +107,7 @@ export function Terminal() {
               animate={{opacity: 1, y: 0, scale: 1}}
               exit={{opacity: 0, y: 40, scale: 0.95}}
               transition={{duration: 0.2, ease: [0.16, 1, 0.3, 1]}}
-              className="w-full max-w-[42rem] max-h-[70vh] flex flex-col rounded-xl overflow-hidden shadow-2xl"
+              className="w-full max-w-2xl max-h-[70vh] flex flex-col rounded-xl overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Title bar — glassmorphism */}

@@ -14,7 +14,7 @@ export function FAQSection() {
       aria-labelledby="faq-heading"
       className="py-3xl px-md md:px-xl scroll-mt-[64px]"
     >
-      <div className="mx-auto max-w-[56rem]">
+      <div className="mx-auto max-w-4xl">
         <h2
           id="faq-heading"
           className="text-heading font-semibold text-text-primary mb-xl"
