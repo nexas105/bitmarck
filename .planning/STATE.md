@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 ## Current Position
 
 Phase: 1 of 4 (Foundation)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-04-19 — Plan 01-01 complete (Next.js 16 + i18n + design tokens)
+Plan: 2 of 2 in current phase
+Status: Phase 1 Complete
+Last activity: 2026-04-19 — Plan 01-02 complete (Docker standalone deployment)
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
+- Total plans completed: 2
 - Average duration: 4 min
-- Total execution time: 0.07 hours
+- Total execution time: 0.13 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1. Foundation | 1/2 | 4 min | 4 min |
+| 1. Foundation | 2/2 | 8 min | 4 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (4 min)
-- Trend: —
+- Last 5 plans: 01-01 (4 min), 01-02 (4 min)
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -48,6 +48,7 @@ Recent decisions affecting current work:
 - 01-01: proxy.ts (Next.js 16) statt middleware.ts -- Node.js Runtime, nicht Edge
 - 01-01: localePrefix: 'always' -- /de und /en immer sichtbar in URL
 - 01-01: Inter Font via next/font/google CSS Variable (--font-inter) -- GDPR self-hosting
+- 01-02: package-lock.json regeneriert wegen npm 10/11 Kompatibilitaet im Docker Container
 
 ### Pending Todos
 
@@ -69,5 +70,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Completed 01-01-PLAN.md — next: 01-02-PLAN.md (Docker)
+Stopped at: Completed 01-02-PLAN.md — Phase 1 complete. Next: Phase 2 (Public Content)
 Resume file: None

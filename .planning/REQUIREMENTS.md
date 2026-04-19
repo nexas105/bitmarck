@@ -88,7 +88,7 @@
 | ADM-02 | Phase 4 | Pending |
 | ADM-03 | Phase 4 | Pending |
 | TECH-01 | Phase 3 | Pending |
-| TECH-02 | Phase 1 | Complete (01-01) |
+| TECH-02 | Phase 1 | Complete (01-01, 01-02) |
 | TECH-03 | Phase 3 | Pending |
 | TECH-04 | Phase 2 | Pending |
 | TECH-05 | Phase 2 | Pending |

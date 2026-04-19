@@ -12,7 +12,7 @@ Vom leeren Repo zur fertigen Bewerbungs-Experience in vier Phasen. Phase 1 legt 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Next.js App Router mit i18n-Routing, Tailwind, TypeScript und Docker-Stub
+- [x] **Phase 1: Foundation** - Next.js App Router mit i18n-Routing, Tailwind, TypeScript und Docker-Stub
 - [ ] **Phase 2: Public Content** - Vollständiger recruiter-sichtbarer Content (Hero, Narrativ, Projekte, Skills, FAQ)
 - [ ] **Phase 3: Animations & Polish** - Framer Motion Scroll-Animationen, Terminal Easter Egg, finale visuelle Qualität
 - [ ] **Phase 4: Dynamic Data, PDFs & Admin** - GitHub API, PDF-Generierung, Admin-Panel, Production Docker
@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Next.js 16 + i18n routing + design tokens + locale toggle
-- [ ] 01-02-PLAN.md — Docker standalone build + container verification
+- [x] 01-02-PLAN.md — Docker standalone build + container verification
 **UI hint**: yes
 
 ### Phase 2: Public Content
@@ -77,7 +77,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/2 | Executing | - |
+| 1. Foundation | 2/2 | Complete | 2026-04-19 |
 | 2. Public Content | 0/TBD | Not started | - |
 | 3. Animations & Polish | 0/TBD | Not started | - |
 | 4. Dynamic Data, PDFs & Admin | 0/TBD | Not started | - |
