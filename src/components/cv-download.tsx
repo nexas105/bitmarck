@@ -28,7 +28,7 @@ export function CvDownload() {
   return (
     <div className="flex flex-wrap gap-sm">
       {/* CV Download with format dropdown */}
-      <div ref={ref} className="relative">
+      <div ref={ref} className="relative z-50">
         <button
           onClick={() => setOpen(!open)}
           className="inline-flex items-center gap-xs rounded-lg bg-white text-primary-900 px-lg py-sm text-label font-semibold hover:bg-white/90 transition-colors duration-150"
