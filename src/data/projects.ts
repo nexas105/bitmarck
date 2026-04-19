@@ -16,8 +16,7 @@ const projects: Project[] = [
     slug: 'auth-api',
     titleKey: 'ProjectData.authApi.title',
     descriptionKey: 'ProjectData.authApi.description',
-    techStack: ['TypeScript', 'Node.js', 'JWT', 'OAuth2', 'RBAC', 'PostgreSQL'],
-    githubUrl: 'https://github.com/tobiasludwig/auth-api',
+    techStack: ['Node.js', 'TypeScript', 'JWT', 'RBAC', 'PostgreSQL', 'Prisma'],
     detail: {
       problemKey: 'ProjectData.authApi.problem',
       approachKey: 'ProjectData.authApi.approach',
@@ -28,7 +27,7 @@ const projects: Project[] = [
     slug: 'next-cms',
     titleKey: 'ProjectData.nextCms.title',
     descriptionKey: 'ProjectData.nextCms.description',
-    techStack: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Markdown'],
+    techStack: ['Next.js', 'TypeScript', 'Supabase', 'RLS', 'Docker'],
     detail: {
       problemKey: 'ProjectData.nextCms.problem',
       approachKey: 'ProjectData.nextCms.approach',
@@ -36,14 +35,14 @@ const projects: Project[] = [
     },
   },
   {
-    slug: 'server-cluster',
-    titleKey: 'ProjectData.serverCluster.title',
-    descriptionKey: 'ProjectData.serverCluster.description',
-    techStack: ['Docker', 'Traefik', 'Prometheus', 'Grafana', 'Linux', 'Bash'],
+    slug: 'myfitcoach',
+    titleKey: 'ProjectData.myfitcoach.title',
+    descriptionKey: 'ProjectData.myfitcoach.description',
+    techStack: ['Flutter', 'Next.js', 'Strapi', 'Dart', 'TypeScript'],
     detail: {
-      problemKey: 'ProjectData.serverCluster.problem',
-      approachKey: 'ProjectData.serverCluster.approach',
-      resultKey: 'ProjectData.serverCluster.result',
+      problemKey: 'ProjectData.myfitcoach.problem',
+      approachKey: 'ProjectData.myfitcoach.approach',
+      resultKey: 'ProjectData.myfitcoach.result',
     },
   },
 ];

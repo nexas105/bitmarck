@@ -4,19 +4,19 @@ import {Tag} from '@/components/tag';
 const SKILL_CATEGORIES = [
   {
     key: 'iam' as const,
-    skills: ['OAuth2', 'JWT', 'RBAC', 'SAML', 'LDAP', 'PKI', 'SINA', 'Zero Trust'],
+    skills: ['SINA', 'RLS', 'JWT', 'RBAC', 'Auth Systems', 'API Design'],
   },
   {
     key: 'ba' as const,
-    skills: ['Anforderungsanalyse', 'Use Cases', 'User Stories', 'BPMN', 'Stakeholder Management', 'Fachkonzepte'],
+    skills: ['Anforderungsanalyse', 'Use Cases', 'DSGVO', 'Prozessoptimierung', 'Dokumentation', 'Stakeholder Management'],
   },
   {
     key: 'devops' as const,
-    skills: ['Docker', 'Linux', 'Traefik', 'Prometheus', 'Grafana', 'CI/CD', 'Nginx', 'Git'],
+    skills: ['Docker', 'Linux', 'Self-Hosting', 'CI/CD', 'Cisco', 'LANCOM', 'VLAN', 'Git'],
   },
   {
     key: 'languages' as const,
-    skills: ['TypeScript', 'JavaScript', 'Python', 'SQL', 'Bash', 'Next.js', 'React', 'Tailwind CSS'],
+    skills: ['TypeScript', 'JavaScript', 'Dart', 'Java', 'SQL', 'Next.js', 'React', 'Flutter', 'Node.js', 'Tailwind CSS'],
   },
 ] as const;
 

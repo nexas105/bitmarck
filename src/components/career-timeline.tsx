@@ -1,6 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 
-const STATION_KEYS = ['telekom', 'bwi', 'xecuro', 'freelancer', 'bitmarck'] as const;
+const STATION_KEYS = ['telekom', 'netzwerk', 'bwi', 'bhf', 'xecuro', 'bitmarck'] as const;
 
 export async function CareerTimeline() {
   const t = await getTranslations('Career');

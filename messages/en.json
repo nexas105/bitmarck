@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Tobias Ludwig \u2014 Business Analyst IAM"
+    "title": "Tobias Ludwig — Business Analyst IAM"
   },
   "NotFound": {
     "heading": "Page not found",
@@ -18,62 +18,68 @@
   "Hero": {
     "name": "Tobias Ludwig",
     "role": "Business Analyst IAM",
-    "valueProposition": "I translate technology into requirements \u2014 10+ years in IT, now with an analytical focus.",
+    "valueProposition": "I translate technology into requirements — 10+ years in IT, now with an analytical focus.",
     "cta": "Download CV",
     "ctaDisabled": "CV coming soon"
   },
   "Metrics": {
     "experience": "10+ Years IT",
     "experienceLabel": "Professional Experience",
-    "projects": "15 Projects",
-    "projectsLabel": "Delivered Projects",
-    "certificates": "6 Certificates",
+    "projects": "6 Projects",
+    "projectsLabel": "Own Software Projects",
+    "certificates": "10 Certificates",
     "certificatesLabel": "Certifications",
     "degree": "B.Sc. Computer Science",
     "degreeLabel": "Degree (in progress)"
   },
   "Career": {
     "heading": "My Path to Business Analyst",
-    "intro": "My professional path leads from technician to analyst \u2014 not a career change, but an arrival. In every role, I brought analytical thinking, coordination, and a big-picture perspective.",
+    "intro": "My professional path leads from technician to analyst — not a career change, but an arrival. In every role, I brought analytical thinking, coordination, and a big-picture perspective.",
     "stations": {
       "telekom": {
-        "period": "2013 \u2013 2016",
+        "period": "2011 – 2016",
         "company": "Deutsche Telekom",
-        "role": "IT Systems Electronics Apprentice",
-        "body": "Foundation in network technology and system architecture. Even here: fault analysis and structured troubleshooting as core analytical competency."
+        "role": "IT Systems Electronics Apprentice & Fiber Optic Service Technician",
+        "body": "Foundation in network technology and system architecture. Fiber optic installation, splicing, and quality assurance — fault analysis and structured troubleshooting as core analytical competency."
+      },
+      "netzwerk": {
+        "period": "2016 – 2021",
+        "company": "Media.com / Biermann Telekom",
+        "role": "Network Infrastructure & Construction Lead",
+        "body": "Maintained coaxial networks, analyzed signal disruptions (MER, BER). Then planned civil engineering works, led technician teams, and coordinated external contractors — project planning and team leadership in practice."
       },
       "bwi": {
-        "period": "2016 \u2013 2019",
+        "period": "2021 – 2023",
         "company": "BWI GmbH",
-        "role": "IT Infrastructure & Planning",
-        "body": "Planned and coordinated IT infrastructure projects for the German Armed Forces. Managed SINA systems, oversaw rollouts \u2014 requirements analysis in practice."
+        "role": "IT Service Technician",
+        "body": "IT infrastructure projects for the German Ministry of Defence. Installed and configured systems (Cisco, LANCOM, VLAN), managed SINA systems, ticket-based support — requirements analysis in security-critical environments."
+      },
+      "bhf": {
+        "period": "2023 – 2024",
+        "company": "BHF Group GmbH",
+        "role": "IT Consultant & Software Developer",
+        "body": "Developed CRM and training software: backend with Node.js, database design with PostgreSQL, UI/UX design. GDPR-compliant security concepts, workflow automation, and analytics — from concept to operations."
       },
       "xecuro": {
-        "period": "2019 \u2013 present",
+        "period": "2025 – present",
         "company": "Xecuro GmbH",
-        "role": "Secure Client Manager (SINA)",
-        "body": "Developed security concepts for high-security IT. Defined use cases, documented processes, served as interface between technology and business."
-      },
-      "freelancer": {
-        "period": "2020 \u2013 present",
-        "company": "Freelance",
-        "role": "Fullstack Developer & Consultant",
-        "body": "Analyzed client requirements, designed architectures, implemented end-to-end. Auth API with IAM concepts, CMS systems, server clusters \u2014 from concept to operations."
+        "role": "IT System Administrator Secure Client Manager",
+        "body": "Administering and advancing SINA-based secure clients. Hardening Windows and Linux systems, contributing to security concepts, provisioning test and integration environments."
       },
       "bitmarck": {
         "period": "Next Step",
         "company": "Bitmarck",
         "role": "Business Analyst IAM",
-        "body": "The logical consequence: Analytical thinking and technical understanding as an official role \u2014 shaping digital identities in healthcare."
+        "body": "The logical consequence: Analytical thinking and technical understanding as an official role — shaping digital identities in healthcare."
       }
     }
   },
   "Projects": {
     "heading": "Projects",
-    "detailsLink": "Details \u2192"
+    "detailsLink": "Details →"
   },
   "ProjectDetail": {
-    "back": "\u2190 Back",
+    "back": "← Back",
     "problem": "Problem",
     "approach": "Approach",
     "result": "Result",
@@ -94,46 +100,46 @@
     "items": {
       "location": {
         "question": "Location",
-        "answer": "Flexible \u2014 remote and on-site both work. I'm mobile and currently based in the Cologne/Bonn area."
+        "answer": "Flexible — remote and on-site both work. I'm mobile and currently based in the Cologne/Bonn area."
       },
       "startDate": {
         "question": "Start Date",
-        "answer": "Available within 1\u20133 months of offer."
+        "answer": "Available within 1–3 months of offer."
       },
       "whyBitmarck": {
         "question": "Why Bitmarck?",
-        "answer": "Bitmarck digitizes healthcare \u2014 a domain with real impact. The Business Analyst IAM role connects my technical experience with analytical work on digital identities. Exactly what I'm looking for."
+        "answer": "Bitmarck digitizes healthcare — a domain with real impact. The Business Analyst IAM role connects my technical experience with analytical work on digital identities. Exactly what I'm looking for."
       },
       "whyBA": {
         "question": "Why Business Analyst?",
-        "answer": "Analytical thinking has been present in every one of my roles \u2014 from infrastructure planning to API architecture. Business Analyst makes this strength an official role."
+        "answer": "Analytical thinking has been present in every one of my roles — from infrastructure planning to API architecture. Business Analyst makes this strength an official role."
       }
     }
   },
   "Footer": {
-    "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl \u00b7 Self-hosted with Docker"
+    "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Self-hosted with Docker"
   },
   "ProjectData": {
     "authApi": {
       "title": "Auth API Service",
-      "description": "JWT/OAuth2-based authentication service with RBAC \u2014 directly relevant to IAM.",
+      "description": "JWT-based authentication service with RBAC and Prisma — directly relevant to IAM.",
       "problem": "Multiple applications needed unified authentication and authorization with fine-grained access control.",
-      "approach": "RESTful API with JWT token flow, OAuth2 integration, role-based access control (RBAC), and refresh token rotation.",
+      "approach": "Node.js auth service with JWT token flow, role-based access control (RBAC), PostgreSQL, and Prisma ORM.",
       "result": "Production-ready auth service serving multiple apps. Use cases, data models, and access concepts independently developed."
     },
     "nextCms": {
       "title": "Next CMS",
-      "description": "Headless CMS with Next.js and Supabase \u2014 from requirements analysis to operations.",
+      "description": "Custom headless CMS with Next.js and Supabase — from requirements analysis to operations.",
       "problem": "Clients needed flexible content management without the complexity of established CMS systems.",
-      "approach": "Headless architecture with Next.js frontend, Supabase backend, Markdown editor, and API-first design.",
+      "approach": "Headless architecture with Next.js frontend, Supabase backend (Auth, DB, Storage), row-level security (RLS), auto-install script, and Docker self-hosting.",
       "result": "Fully functional CMS in production use. Client requirements analyzed, architecture designed, independently implemented."
     },
-    "serverCluster": {
-      "title": "Server Cluster",
-      "description": "5-node homelab cluster with Docker, monitoring, and automated deployment.",
-      "problem": "Multiple services and projects needed reliable hosting with monitoring and easy deployment.",
-      "approach": "5 physical servers with Docker Compose, Traefik reverse proxy, Prometheus/Grafana monitoring, and Git-based deployment.",
-      "result": "Stable cluster hosting all personal projects. Infrastructure planning, network design, and operations all in one hand."
+    "myfitcoach": {
+      "title": "MyFitCoach PRO",
+      "description": "Coaching platform with Flutter, Next.js, and Strapi — analytics and realtime features.",
+      "problem": "Coaches needed a digital platform for training planning, client management, and progress tracking.",
+      "approach": "Fullstack platform with Flutter mobile app, Next.js web dashboard, Strapi backend, realtime features, and integrated analytics.",
+      "result": "Functional coaching platform with mobile and web interfaces. Requirements analysis, multi-platform architecture, and analytics independently implemented."
     }
   }
 }
