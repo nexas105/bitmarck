@@ -59,7 +59,7 @@ export async function ContactSection() {
 
                 {/* Phone */}
                 <a
-                  href="tel:+4917634475254"
+                  href="tel:+491731948945"
                   className="group flex items-center gap-md text-body text-text-primary hover:text-accent transition-colors duration-200"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-200">
@@ -67,7 +67,7 @@ export async function ContactSection() {
                   </div>
                   <div>
                     <p className="text-caption font-medium text-text-secondary">{t('phoneLabel')}</p>
-                    <p className="text-body">+49 176 3447 5254</p>
+                    <p className="text-body">+49 173 1948 945</p>
                   </div>
                 </a>
 

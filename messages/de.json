@@ -26,8 +26,8 @@
     "ctaDisabled": "CV in K\u00fcrze verf\u00fcgbar",
     "cvFormat": {
       "pdf": {"label": "PDF", "desc": "Gestylter Lebenslauf (2 Seiten, ATS-kompatibel)"},
-      "json": {"label": "JSON", "desc": "Strukturierte Daten fuer API-Integration"},
-      "llm": {"label": "LLM-optimiert", "desc": "Klartext fuer KI-Parsing und Analyse"}
+      "json": {"label": "JSON", "desc": "Strukturierte Daten für API-Integration"},
+      "llm": {"label": "LLM-optimiert", "desc": "Klartext für KI-Parsing und Analyse"}
     }
   },
   "Metrics": {
@@ -52,7 +52,7 @@
         "company": "Deutsche Telekom",
         "role": "Service Techniker Glasfaser & Kupfer",
         "body": "Glasfaser-Spleissarbeiten und Kupfer-Messtechnik (2-Draht). Fehlereinmessung, Planung und Koordination von Fehlerbaustellen inkl. Tiefbau. OTDR, Murray-Methode, ORCA.",
-        "narrative": "Hier lernte ich, komplexe technische Systeme systematisch zu analysieren \u2014 die Basis fuer jede Anforderungsanalyse.",
+        "narrative": "Hier lernte ich, komplexe technische Systeme systematisch zu analysieren \u2014 die Basis für jede Anforderungsanalyse.",
         "technologies": "FTTH, FTTC, Kupfer, OTDR, Murray-Methode, ORCA",
         "details": [
           "Glasfaser-Spleissarbeiten und Kupfer-Messtechnik (2-Draht) parallel",
@@ -61,13 +61,13 @@
           "Vollst\u00e4ndige Dokumentation von Auftragseingang bis Abschluss"
         ],
         "detailPage": {
-          "overview": "Mein Einstieg bei Deutschlands groesstem Telekommunikationsunternehmen. Gestartet im Bautrupp mit Glasfaser-Spleissarbeiten, wechselte ich schnell parallel auf Kupfer-2-Draht-Technik. Durch mein analytisches Denken wurde ich frueh ins Messteam geholt \u2014 weg von der reinen Montage, hin zur Fehleranalyse, Planung und Koordination von Fehlerbaustellen inklusive Tiefbau.",
-          "baRelevance": "Der schnelle Wechsel vom Bautrupp ins Messteam zeigt genau das Muster, das sich durch meinen gesamten Werdegang zieht: Ich werde dort eingesetzt, wo analytisches Denken gefragt ist. Bei der Telekom war ich eigenverantwortlich fuer den gesamten Prozess \u2014 Auftragseingang, Fehlereinmessung, Planung, Koordination, Dokumentation. Genau dieser End-to-End-Blick ist die Grundlage fuer Anforderungsanalyse.",
+          "overview": "Mein Einstieg bei Deutschlands größtem Telekommunikationsunternehmen. Gestartet im Bautrupp mit Glasfaser-Spleissarbeiten, wechselte ich schnell parallel auf Kupfer-2-Draht-Technik. Durch mein analytisches Denken wurde ich frueh ins Messteam geholt \u2014 weg von der reinen Montage, hin zur Fehleranalyse, Planung und Koordination von Fehlerbaustellen inklusive Tiefbau.",
+          "baRelevance": "Der schnelle Wechsel vom Bautrupp ins Messteam zeigt genau das Muster, das sich durch meinen gesamten Werdegang zieht: Ich werde dort eingesetzt, wo analytisches Denken gefragt ist. Bei der Telekom war ich eigenverantwortlich für den gesamten Prozess \u2014 Auftragseingang, Fehlereinmessung, Planung, Koordination, Dokumentation. Genau dieser End-to-End-Blick ist die Grundlage für Anforderungsanalyse.",
           "achievements": [
             "Aufstieg vom Bautrupp ins Messteam durch nachgewiesenes analytisches Denken",
-            "OTDR-Messungen, galvanische Messungen, Murray-Methode, 2-Punkt/3-Punkt-Messungen eigenstaendig durchgefuehrt",
+            "OTDR-Messungen, galvanische Messungen, Murray-Methode, 2-Punkt/3-Punkt-Messungen eigenständig durchgefuehrt",
             "Eigenverantwortliche Planung und Koordination von Fehlerbaustellen inkl. Tiefbau",
-            "Vollstaendige Prozesskette: Auftragseingang \u2192 Analyse \u2192 Ausfuehrung \u2192 Dokumentation",
+            "Vollständige Prozesskette: Auftragseingang \u2192 Analyse \u2192 Ausführung \u2192 Dokumentation",
             "Tools: ORCA, Kabellinienbaumplaene, diverse Messtechnik"
           ],
           "skillsGained": ["Analytisches Denken", "Messtechnik", "Eigenverantwortliche Prozesssteuerung", "Technische Dokumentation"]
@@ -77,34 +77,34 @@
         "period": "Sep 2016 \u2013 M\u00e4r 2018",
         "company": "Media.com GmbH",
         "role": "IT-Service Techniker Netzebene 4",
-        "body": "Vor-Ort-Service NRW/Hessen, ca. 12 Tickets/Tag. Signalanalyse (Pegel, MER, BER, Ingress). Spaeter Expertentechniker fuer Schwerfaelle und B2B-Grossanlagen.",
+        "body": "Vor-Ort-Service NRW/Hessen, ca. 12 Tickets/Tag. Signalanalyse (Pegel, MER, BER, Ingress). Spaeter Expertentechniker für Schwerfälle und B2B-Großanlagen.",
         "narrative": "Signalanalyse mit konkreten Metriken war mein erster Kontakt mit datenbasierter Entscheidungsfindung.",
         "technologies": "Koaxialnetze, MER, BER, Pegel, Ingress, Signalanalyse",
         "details": [
-          "Ca. 12 Service-Tickets pro Tag im Aussendienst (NRW und Hessen)",
-          "Aufstieg zum Expertentechniker fuer technisch komplexe Schwerfaelle",
-          "Betreuung von B2B-Grossanlagen gegen Ende der Taetigkeit",
+          "Ca. 12 Service-Tickets pro Tag im Außendienst (NRW und Hessen)",
+          "Aufstieg zum Expertentechniker für technisch komplexe Schwerfälle",
+          "Betreuung von B2B-Großanlagen gegen Ende der Taetigkeit",
           "Erneut: Vom Monteur zu analytischen Aufgaben entwickelt"
         ],
         "detailPage": {
-          "overview": "Bei Media.com startete ich im Vor-Ort-Service fuer Koaxialnetze mit ca. 12 Tickets pro Tag in NRW und Hessen. Durch mein technisches Know-how und analytisches Vorgehen wurde ich zum Expertentechniker befoerdert \u2014 zustaendig fuer die Schwerfaelle, die andere nicht loesen konnten. Gegen Ende betreute ich B2B-Grossanlagen. Dasselbe Muster wie bei der Telekom: Vom Monteur zu analytischen Aufgaben.",
-          "baRelevance": "Die Arbeit mit Signalmetriken (Pegel, MER, BER, Ingress) war mein erster systematischer Kontakt mit datenbasierter Entscheidungsfindung. Als Expertentechniker musste ich komplexe Stoerungen analysieren, Ursachen ableiten und Loesungen vorschlagen \u2014 genau das, was ein Business Analyst taeglich tut. Die B2B-Kundenbetreuung brachte zusaetzlich Stakeholder-Kommunikation auf Geschaeftsebene.",
+          "overview": "Bei Media.com startete ich im Vor-Ort-Service für Koaxialnetze mit ca. 12 Tickets pro Tag in NRW und Hessen. Durch mein technisches Know-how und analytisches Vorgehen wurde ich zum Expertentechniker befördert \u2014 zuständig für die Schwerfälle, die andere nicht loesen konnten. Gegen Ende betreute ich B2B-Großanlagen. Dasselbe Muster wie bei der Telekom: Vom Monteur zu analytischen Aufgaben.",
+          "baRelevance": "Die Arbeit mit Signalmetriken (Pegel, MER, BER, Ingress) war mein erster systematischer Kontakt mit datenbasierter Entscheidungsfindung. Als Expertentechniker musste ich komplexe Störungen analysieren, Ursachen ableiten und Lösungen vorschlagen \u2014 genau das, was ein Business Analyst taeglich tut. Die B2B-Kundenbetreuung brachte zusaetzlich Stakeholder-Kommunikation auf Geschaeftsebene.",
           "achievements": [
-            "Aufstieg zum Expertentechniker fuer technisch anspruchsvolle Schwerfaelle",
-            "Einsatzgebiet NRW und Hessen mit ca. 12 Tickets/Tag im Aussendienst",
-            "Betreuung von B2B-Grossanlagen mit erhoehten Anforderungen",
+            "Aufstieg zum Expertentechniker für technisch anspruchsvolle Schwerfälle",
+            "Einsatzgebiet NRW und Hessen mit ca. 12 Tickets/Tag im Außendienst",
+            "Betreuung von B2B-Großanlagen mit erhoehten Anforderungen",
             "Umfassende Signalanalyse: Pegel, MER, BER, Ingress-Messungen",
             "Erneuter Karrierepfad: Vom Standardtechniker zur Analyserolle"
           ],
-          "skillsGained": ["Datenbasierte Analyse", "Komplexe Problemloesung", "B2B-Kundenbetreuung", "Expertenwissen aufbauen"]
+          "skillsGained": ["Datenbasierte Analyse", "Komplexe Problemlösung", "B2B-Kundenbetreuung", "Expertenwissen aufbauen"]
         }
       },
       "biermann": {
         "period": "Jul 2018 \u2013 M\u00e4r 2021",
         "company": "Biermann Telekommunikationstechnik",
-        "role": "Messbaufuehrer Fernmeldetechnik",
-        "body": "Einstieg als Monteur, Aufstieg zum Messbaufuehrer. Kupfernetz-Messtechnik, Teamfuehrung, Koordination von Tiefbauarbeiten. Materialplanung und Dokumentation nach Telekom-Vorgaben.",
-        "narrative": "Teamfuehrung, Planung und Koordination externer Partner \u2014 klassische Projektmanagement-Skills, die jeder Business Analyst braucht.",
+        "role": "Messbauführer Fernmeldetechnik",
+        "body": "Einstieg als Monteur, Aufstieg zum Messbauführer. Kupfernetz-Messtechnik, Teamführung, Koordination von Tiefbauarbeiten. Materialplanung und Dokumentation nach Telekom-Vorgaben.",
+        "narrative": "Teamführung, Planung und Koordination externer Partner \u2014 klassische Projektmanagement-Skills, die jeder Business Analyst braucht.",
         "technologies": "Kupfernetz, Tiefbau, Projektplanung",
         "details": [
           "Eigenverantwortliche Projektplanung und Ressourcenkoordination",
@@ -117,7 +117,7 @@
           "baRelevance": "Hier entwickelte ich die F\u00e4higkeit, zwischen verschiedenen Stakeholdern zu vermitteln: Auftraggeber mit ihren Anforderungen, Monteure mit ihren Kapazit\u00e4ten, externe Firmen mit ihren Zeitpl\u00e4nen. Genau diese Koordinationsf\u00e4higkeit braucht ein Business Analyst, um zwischen Fachbereich und IT zu \u00fcbersetzen.",
           "achievements": [
             "Eigenverantwortliche Leitung paralleler Bauprojekte mit Teamkoordination",
-            "Abstimmung konkurrierender Anforderungen zwischen Auftraggeber und Ausfuehrung",
+            "Abstimmung konkurrierender Anforderungen zwischen Auftraggeber und Ausführung",
             "Entwicklung effizienter Arbeitsabl\u00e4ufe zur Terminoptimierung",
             "Qualit\u00e4tssicherung durch strukturierte Abnahmeprotokolle"
           ],
@@ -128,8 +128,8 @@
         "period": "Apr 2021 \u2013 Sep 2023",
         "company": "BWI GmbH",
         "role": "IT-Service Techniker",
-        "body": "SINA-Rollouts, Incident-Management (INC/IMAC) mit IBM Maximo, Koordination mit secunet. Sicherheitsueberprueft. Fokus auf SINA und Client-Systeme.",
-        "narrative": "Sicherheitskritische Systeme, SINA-Erfahrung und strukturierte Prozesse \u2014 direkt relevant fuer IAM bei Bitmarck.",
+        "body": "SINA-Rollouts, Incident-Management (INC/IMAC) mit IBM Maximo, Koordination mit secunet. Sicherheitsüberprueft. Fokus auf SINA und Client-Systeme.",
+        "narrative": "Sicherheitskritische Systeme, SINA-Erfahrung und strukturierte Prozesse \u2014 direkt relevant für IAM bei Bitmarck.",
         "technologies": "Cisco, LANCOM, VLAN, SINA, IBM Maximo",
         "details": [
           "Arbeit mit sicherheitskritischen SINA-Systemen (direkt relevant f\u00fcr IAM)",
@@ -138,13 +138,13 @@
           "Dokumentation und Prozessoptimierung in reguliertem Umfeld"
         ],
         "detailPage": {
-          "overview": "Bei der BWI, dem IT-Systemhaus der Bundeswehr, arbeitete ich an IT-Infrastrukturprojekten fuer das BMVg. Mein Fokus lag auf SINA-Systemen und Incident-Management (INC) \u2014 von Rollouts ueber Token-Umschreibungen bis zur Koordination mit secunet bei groesseren Reparaturen und Tamper-Faellen. Sicherheitsueberprueft und bereit fuer erweiterte Pruefungen.",
-          "baRelevance": "Die BWI war mein Einstieg in regulierte IT-Umgebungen mit hoechsten Sicherheitsanforderungen. Strukturiertes Arbeiten nach ITIL mit IBM Maximo, dokumentierte INC- und IMAC-Prozesse, Koordination mit secunet als externem Partner \u2014 all das ist direkt uebertragbar auf die Arbeit als Business Analyst IAM. Meine SINA-Erfahrung ist ein direkter Brueckenschlag zu Bitmarck und der Telematikinfrastruktur.",
+          "overview": "Bei der BWI, dem IT-Systemhaus der Bundeswehr, arbeitete ich an IT-Infrastrukturprojekten für das BMVg. Mein Fokus lag auf SINA-Systemen und Incident-Management (INC) \u2014 von Rollouts über Token-Umschreibungen bis zur Koordination mit secunet bei größeren Reparaturen und Tamper-Fällen. Sicherheitsüberprueft und bereit für erweiterte Prüfungen.",
+          "baRelevance": "Die BWI war mein Einstieg in regulierte IT-Umgebungen mit höchsten Sicherheitsanforderungen. Strukturiertes Arbeiten nach ITIL mit IBM Maximo, dokumentierte INC- und IMAC-Prozesse, Koordination mit secunet als externem Partner \u2014 all das ist direkt übertragbar auf die Arbeit als Business Analyst IAM. Meine SINA-Erfahrung ist ein direkter Brückenschlag zu Bitmarck und der Telematikinfrastruktur.",
           "achievements": [
             "SINA-Rollouts: Updates, Token-Umschreibungen, Konfiguration im Feld",
-            "Incident-Management (INC) mit IBM Maximo: Eigenstaendig koordiniert, bearbeitet und dokumentiert",
-            "Koordination mit secunet bei groesseren Reparaturen und Tamper-Faellen",
-            "Sicherheitsueberprueft \u2014 Arbeit in VS-NfD-Umgebungen",
+            "Incident-Management (INC) mit IBM Maximo: Eigenständig koordiniert, bearbeitet und dokumentiert",
+            "Koordination mit secunet bei größeren Reparaturen und Tamper-Fällen",
+            "Sicherheitsüberprueft \u2014 Arbeit in VS-NfD-Umgebungen",
             "Fokus auf SINA und Client-Systeme in sicherheitskritischer Umgebung"
           ],
           "skillsGained": ["SINA-Systeme", "ITIL/Incident-Management", "IBM Maximo", "Sicherheitskritische Umgebungen"]
@@ -155,7 +155,7 @@
         "company": "BHF Group GmbH",
         "role": "Assistent Studioleitung / IT-Berater",
         "subtitle": "Befristete Aushilfst\u00e4tigkeit \u00b7 Parallel: Fortbildung Software Developer Expert (IU)",
-        "body": "Verwaltungssoftware fuer Fitnessstudio entwickelt: Benutzeranmeldung, Trainingssystem-Schnittstelle, Analyse-Dashboard. Parallel: Software Developer Expert (IU) abgeschlossen.",
+        "body": "Verwaltungssoftware für Fitnessstudio entwickelt: Benutzeranmeldung, Trainingssystem-Schnittstelle, Analyse-Dashboard. Parallel: Software Developer Expert (IU) abgeschlossen.",
         "narrative": "Was als befristete Aushilfe begann, wurde zum Wendepunkt: Erstmals den gesamten Zyklus verantwortet \u2014 Anforderungsanalyse, Architektur, Umsetzung. Parallel dazu die Fortbildung zum Software Developer Expert.",
         "technologies": "Anforderungsanalyse, Prozessoptimierung, Node.js, PostgreSQL",
         "details": [
@@ -166,12 +166,12 @@
           "Parallel: Fortbildung Software Developer Expert (IU) abgeschlossen"
         ],
         "detailPage": {
-          "overview": "Die BHF Group war eine befristete Aushilfst\u00e4tigkeit in einem kleinen Fitnessstudio \u2014 aber eine mit maximalem Lerneffekt. Parallel absolvierte ich meine Fortbildung zum Software Developer Expert an der IU. In der Praxis baute ich eine Verwaltungssoftware: Benutzeranmeldung, Schnittstelle zum vorhandenen Trainingssystem, Trainingsplaene und Analyse per Website und App fuer die Mitglieder.",
-          "baRelevance": "Diese Rolle war der Wendepunkt. Ich musste Geschaeftsprozesse eines Fitnessstudios verstehen (Mitgliederverwaltung, Trainingsplanung, Abrechnung), Anforderungen von Studioleitung und Trainern erheben und in eine technische Loesung uebersetzen. Die parallele Fortbildung gab mir das theoretische Fundament. Genau das ist der Kern der Business-Analyst-Rolle.",
+          "overview": "Die BHF Group war eine befristete Aushilfst\u00e4tigkeit in einem kleinen Fitnessstudio \u2014 aber eine mit maximalem Lerneffekt. Parallel absolvierte ich meine Fortbildung zum Software Developer Expert an der IU. In der Praxis baute ich eine Verwaltungssoftware: Benutzeranmeldung, Schnittstelle zum vorhandenen Trainingssystem, Trainingsplaene und Analyse per Website und App für die Mitglieder.",
+          "baRelevance": "Diese Rolle war der Wendepunkt. Ich musste Geschäftsprozesse eines Fitnessstudios verstehen (Mitgliederverwaltung, Trainingsplanung, Abrechnung), Anforderungen von Studioleitung und Trainern erheben und in eine technische Lösung übersetzen. Die parallele Fortbildung gab mir das theoretische Fundament. Genau das ist der Kern der Business-Analyst-Rolle.",
           "achievements": [
             "Verwaltungssoftware konzipiert und umgesetzt: Benutzeranmeldung, Trainingssystem-Schnittstelle, Analyse-Dashboard",
             "Anforderungen von Studioleitung und Trainern erhoben und priorisiert",
-            "Schnittstelle zum vorhandenen System fuer Trainingsplaene und Nutzeranalyse",
+            "Schnittstelle zum vorhandenen System für Trainingsplaene und Nutzeranalyse",
             "Parallel: Fortbildung Software Developer Expert (IU) erfolgreich abgeschlossen"
           ],
           "skillsGained": ["Anforderungsanalyse", "Prozessmodellierung", "Stakeholder-Management", "DSGVO-Compliance"]
@@ -200,7 +200,7 @@
             "Implementierung von Prozessverbesserungen innerhalb kurzer Zeitfenster",
             "Klarheit \u00fcber die eigene berufliche Ausrichtung gewonnen"
           ],
-          "skillsGained": ["Schnelle Analyse", "Pragmatische Problemloesung", "Prozessoptimierung unter Zeitdruck", "Wissenstransfer"]
+          "skillsGained": ["Schnelle Analyse", "Pragmatische Problemlösung", "Prozessoptimierung unter Zeitdruck", "Wissenstransfer"]
         }
       },
       "freelancer": {
@@ -208,7 +208,7 @@
         "company": "Selbstst\u00e4ndig",
         "role": "Freelancer \u2014 DevOps, Webentwicklung & IT-Beratung",
         "subtitle": "Nebenberuflich",
-        "body": "Nebenberuflich: Webentwicklung, Servereinrichtung und DevOps fuer Kunden. Anforderungsgespraeche, Projektplanung, Umsetzung und Betrieb.",
+        "body": "Nebenberuflich: Webentwicklung, Servereinrichtung und DevOps für Kunden. Anforderungsgespräche, Projektplanung, Umsetzung und Betrieb.",
         "narrative": "Als Freelancer bringe ich alles zusammen: Kundenanforderungen verstehen, Projekte planen, technisch umsetzen \u2014 die Essenz der Business-Analyst-Rolle in Eigenregie.",
         "technologies": "DevOps, Docker, Linux, Next.js, Webentwicklung, Server",
         "details": [
@@ -234,8 +234,8 @@
         "company": "Xecuro GmbH",
         "role": "IT-Systemadministrator Secure Client Manager",
         "body": "Administration von SINA-basierten Secure Clients und SINA CA. Mitgestaltung von Sicherheitskonzepten, interne Prozessoptimierung. Sicherheitssektor (Geheimhaltung).",
-        "narrative": "SINA-Expertise vertieft, Sicherheitskonzepte aktiv mitgestaltet \u2014 die technische Bruecke zur IAM-Welt.",
-        "technologies": "SINA, Windows, Linux, Haertung, Sicherheitskonzepte",
+        "narrative": "SINA-Expertise vertieft, Sicherheitskonzepte aktiv mitgestaltet \u2014 die technische Brücke zur IAM-Welt.",
+        "technologies": "SINA, Windows, Linux, Härtung, Sicherheitskonzepte",
         "details": [
           "Administration und Weiterentwicklung von SINA-basierten Secure Clients",
           "Aktive Mitgestaltung von Sicherheitskonzepten und Zugriffsrichtlinien",
@@ -243,13 +243,13 @@
           "Analyse von Sicherheitsanforderungen und deren technische Umsetzung"
         ],
         "detailPage": {
-          "overview": "Xecuro ist ein Start-up im Sicherheitssektor, in dem alle Mitarbeiter aktiv mitgestalten. Ich administriere SINA-basierte Secure Clients, arbeite mit SINA CA und weiteren sicherheitskritischen Systemen. Da ich in einem kleinen Team schnell Verantwortung uebernommen habe, treibe ich die interne Prozessoptimierung voran. Details zur Arbeit unterliegen der Geheimhaltung.",
-          "baRelevance": "Diese Rolle ist die direkte Bruecke zur IAM-Welt bei Bitmarck: SINA-Systeme, Sicherheitskonzepte, SINA CA, Zugriffsrichtlinien \u2014 all das sind Kernthemen im Identity and Access Management. Als Start-up mit flachen Hierarchien hatte ich von Anfang an Mitspracherecht bei Sicherheitskonzepten und habe die Optimierung interner Prozesse eigenstaendig uebernommen \u2014 genau die proaktive, analytische Arbeitsweise, die Bitmarck sucht.",
+          "overview": "Xecuro ist ein Start-up im Sicherheitssektor, in dem alle Mitarbeiter aktiv mitgestalten. Ich administriere SINA-basierte Secure Clients, arbeite mit SINA CA und weiteren sicherheitskritischen Systemen. Da ich in einem kleinen Team schnell Verantwortung übernommen habe, treibe ich die interne Prozessoptimierung voran. Details zur Arbeit unterliegen der Geheimhaltung.",
+          "baRelevance": "Diese Rolle ist die direkte Brücke zur IAM-Welt bei Bitmarck: SINA-Systeme, Sicherheitskonzepte, SINA CA, Zugriffsrichtlinien \u2014 all das sind Kernthemen im Identity and Access Management. Als Start-up mit flachen Hierarchien hatte ich von Anfang an Mitspracherecht bei Sicherheitskonzepten und habe die Optimierung interner Prozesse eigenständig übernommen \u2014 genau die proaktive, analytische Arbeitsweise, die Bitmarck sucht.",
           "achievements": [
             "SINA-Expertise vertieft: Secure Clients, SINA CA, sicherheitskritische Systeme",
             "Aktive Mitgestaltung von Sicherheitskonzepten im Start-up-Umfeld",
-            "Eigenstaendige Uebernahme der internen Prozessoptimierung",
-            "Schnelle Verantwortungsuebernahme in flacher Hierarchie"
+            "Eigenständige Übernahme der internen Prozessoptimierung",
+            "Schnelle Verantwortungsübernahme in flacher Hierarchie"
           ],
           "skillsGained": ["SINA-Architektur", "SINA CA", "Prozessoptimierung", "Sicherheitskonzepte"]
         }
@@ -258,7 +258,7 @@
         "period": "Angestrebte Position",
         "company": "Bitmarck",
         "role": "Business Analyst IAM",
-        "body": "Fachliche Spezifikationen fuer bitIAM, Anforderungsabstimmung mit Krankenkassen und Telematik, Prozessmodellierung, Use-Case-Entwicklung.",
+        "body": "Fachliche Spezifikationen für bitIAM, Anforderungsabstimmung mit Krankenkassen und Telematik, Prozessmodellierung, Use-Case-Entwicklung.",
         "narrative": "Alle F\u00e4den laufen hier zusammen \u2014 Technik, Analyse, Sicherheit, Koordination.",
         "technologies": "IAM, Identity Management, Gesundheitswesen, Telematik",
         "details": [
@@ -274,7 +274,7 @@
             "10+ Jahre IT-Erfahrung mit steigendem analytischen Fokus",
             "Praktische SINA-Expertise aus zwei sicherheitskritischen Umgebungen",
             "Nachgewiesene F\u00e4higkeit zur eigenst\u00e4ndigen Anforderungsanalyse und Prozessmodellierung",
-            "Technisches Verst\u00e4ndnis, das die Bruecke zwischen Fachbereich und Entwicklung bildet"
+            "Technisches Verst\u00e4ndnis, das die Brücke zwischen Fachbereich und Entwicklung bildet"
           ],
           "skillsGained": ["IAM-Architektur", "Anforderungsanalyse", "Telematikinfrastruktur", "Digitale Identitaeten"]
         }
@@ -384,7 +384,7 @@
             "context": "BHF Group, Persona GmbH"
           },
           "Dokumentation": {
-            "description": "Strukturierte technische und fachliche Dokumentation: API-Dokumentation, Prozessbeschreibungen, Entscheidungsprotokolle, Uebergabedokumente.",
+            "description": "Strukturierte technische und fachliche Dokumentation: API-Dokumentation, Prozessbeschreibungen, Entscheidungsprotokolle, Übergabedokumente.",
             "level": "Fortgeschritten",
             "context": "Alle Stationen"
           },
@@ -485,10 +485,10 @@
   },
   "Contact": {
     "heading": "Kontakt",
-    "intro": "Interesse geweckt? Ich freue mich ueber Ihre Nachricht \u2014 ob Fragen zur Bewerbung, zum Werdegang oder fuer ein persoenliches Gespraech.",
+    "intro": "Interesse geweckt? Ich freue mich über Ihre Nachricht \u2014 ob Fragen zur Bewerbung, zum Werdegang oder für ein persönliches Gespräch.",
     "formHeading": "Nachricht senden",
     "directHeading": "Direkt erreichen",
-    "directIntro": "Sie koennen mich auch direkt ueber die folgenden Kanaele kontaktieren.",
+    "directIntro": "Sie können mich auch direkt über die folgenden Kanäle kontaktieren.",
     "name": "Name",
     "namePlaceholder": "Ihr Name",
     "email": "E-Mail",
@@ -509,17 +509,17 @@
   },
   "Footer": {
     "builtWith": "Gebaut mit Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl \u00b7 Selbst gehostet mit Docker",
-    "terminalHint": "Druecke Ctrl+` fuer eine Ueberraschung"
+    "terminalHint": "Druecke Ctrl+` für eine Überraschung"
   },
   "Terminal": {
-    "greeting": "tobias@bitmarck:~$ Willkommen! Tippe 'help' fuer eine Liste der Befehle.",
-    "whoami": "Tobias Ludwig -- Business Analyst IAM Kandidat bei Bitmarck. 10+ Jahre IT-Erfahrung, von strukturierter Fehleranalyse ueber SINA-Systeme bis zur eigenstaendigen Anforderungsanalyse. Ich analysiere Geschaeftsprozesse und uebersetze sie in praezise Anforderungen.",
+    "greeting": "tobias@bitmarck:~$ Willkommen! Tippe 'help' für eine Liste der Befehle.",
+    "whoami": "Tobias Ludwig -- Business Analyst IAM Kandidat bei Bitmarck. 10+ Jahre IT-Erfahrung, von strukturierter Fehleranalyse über SINA-Systeme bis zur eigenständigen Anforderungsanalyse. Ich analysiere Geschäftsprozesse und übersetze sie in praezise Anforderungen.",
     "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA-Methoden: Anforderungsanalyse, Use Cases, DSGVO, Prozessoptimierung, Stakeholder Management\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nSprachen: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSprachen: Deutsch (C2), Englisch (B2)",
-    "projects": "1. Auth API Service -- Zentrales IAM-System: Anforderungsanalyse, Zugriffskonzept, Implementierung\n2. Next CMS -- Kundenanforderung analysiert, Architektur konzipiert, mandantenfaehig umgesetzt\n3. MyFitCoach PRO -- Stakeholder-Anforderungen priorisiert, Multi-Platform-Loesung konzipiert\n4. EroHub -- Datenschutzanforderungen analysiert, Privacy-by-Design-Architektur umgesetzt\n5. Logbuch App -- Feldanforderungen erhoben, dynamische Formulare und Systemintegration konzipiert\n6. MPA Nutrition Shop -- E-Commerce-Geschaeftsprozesse End-to-End modelliert und umgesetzt",
-    "motivation": "Bitmarck digitalisiert das Gesundheitswesen -- ein Bereich mit echtem Impact auf Millionen Versicherte. Als Business Analyst IAM kann ich meine SINA-Erfahrung, mein Verstaendnis fuer Auth-Architekturen und meine analytische Arbeitsweise mit einer Aufgabe verbinden, die wirklich zaehlt: digitale Versichertenidentitaeten sicher und nutzbar zu gestalten.",
+    "projects": "1. Auth API Service -- Zentrales IAM-System: Anforderungsanalyse, Zugriffskonzept, Implementierung\n2. Next CMS -- Kundenanforderung analysiert, Architektur konzipiert, mandantenfähig umgesetzt\n3. MyFitCoach PRO -- Stakeholder-Anforderungen priorisiert, Multi-Platform-Lösung konzipiert\n4. EroHub -- Datenschutzanforderungen analysiert, Privacy-by-Design-Architektur umgesetzt\n5. Logbuch App -- Feldanforderungen erhoben, dynamische Formulare und Systemintegration konzipiert\n6. MPA Nutrition Shop -- E-Commerce-Geschäftsprozesse End-to-End modelliert und umgesetzt",
+    "motivation": "Bitmarck digitalisiert das Gesundheitswesen -- ein Bereich mit echtem Impact auf Millionen Versicherte. Als Business Analyst IAM kann ich meine SINA-Erfahrung, mein Verständnis für Auth-Architekturen und meine analytische Arbeitsweise mit einer Aufgabe verbinden, die wirklich zaehlt: digitale Versichertenidentitaeten sicher und nutzbar zu gestalten.",
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
     "help": "Verfuegbare Befehle:\n  whoami      -- Wer ist Tobias?\n  skills      -- Technische Skills\n  projects    -- Projekt-Highlights\n  motivation  -- Warum Bitmarck?\n  contact     -- Kontaktdaten\n  help        -- Diese Hilfe\n  clear       -- Terminal leeren\n  exit        -- Terminal schliessen",
-    "unknown": "Befehl nicht gefunden: {cmd}. Tippe 'help' fuer eine Liste der Befehle.",
+    "unknown": "Befehl nicht gefunden: {cmd}. Tippe 'help' für eine Liste der Befehle.",
     "prompt": "tobias@bitmarck:~$",
     "fabLabel": "Terminal oeffnen"
   },
@@ -531,7 +531,7 @@
       "approach": "Analyse der bestehenden Auth-Landschaft und Identifikation der Anforderungen pro Anwendung. Konzeption eines zentralen Zugriffsmodells mit JWT-Token-Flow (Access/Refresh-Rotation) und feingranularem RBAC. Datenmodellierung mit PostgreSQL/Prisma. API-Spezifikation mit standardisierter Fehlerbehandlung.",
       "result": "Produktionsreifer Auth-Service, der mehrere Anwendungen zentral bedient. Ergebnis: Einheitliches Identit\u00e4tsmanagement, konsistente Rechtevergabe, dokumentierte API. Vom Konzept bis zum Deployment eigenst\u00e4ndig verantwortet.",
       "highlights": "Sichere Token-Rotation mit Access- und Refresh-Token-Paar verhindert Session-Hijacking\nZentraler Service bedient mehrere Anwendungen mit einheitlicher Authentifizierung\nFeingranulares RBAC-System mit konfigurierbaren Rollen und Berechtigungen\nSaubere API-Dokumentation mit standardisierter Fehlerbehandlung",
-      "learnings": "Dieses Projekt hat mein Verstaendnis fuer IAM-Architekturen grundlegend gepraegt: Token-Lifecycle-Management, Zugriffskonzepte und die Herausforderung, Sicherheit und Benutzerfreundlichkeit in Einklang zu bringen \u2014 genau die Denkweise, die ein Business Analyst IAM taeglich braucht."
+      "learnings": "Dieses Projekt hat mein Verständnis für IAM-Architekturen grundlegend gepraegt: Token-Lifecycle-Management, Zugriffskonzepte und die Herausforderung, Sicherheit und Benutzerfreundlichkeit in Einklang zu bringen \u2014 genau die Denkweise, die ein Business Analyst IAM taeglich braucht."
     },
     "nextCms": {
       "title": "Next CMS",
@@ -539,8 +539,8 @@
       "problem": "Kunden brauchten ein flexibles Content-Management-System ohne die Komplexit\u00e4t und Kosten von WordPress oder Strapi. Kernanforderungen: einfache Bedienung f\u00fcr nicht-technische Nutzer, schnelle Performance und eigenst\u00e4ndige Hosting-M\u00f6glichkeit.",
       "approach": "Anforderungserhebung mit nicht-technischen Kunden, \u00dcbersetzung in technische Spezifikation. Headless-Architektur mit mandantenf\u00e4higer Datentrennung (Row-Level Security). Auto-Install f\u00fcr technisch unerfahrene Nutzer. Docker-basiertes Self-Hosting.",
       "result": "Voll funktionsf\u00e4higes CMS im produktiven Einsatz bei mehreren Kunden mit unterschiedlichen Anforderungen. Zentrale Erkenntnis: Die Qualit\u00e4t einer L\u00f6sung misst sich nicht an technischer Komplexitt, sondern daran, wie gut sie die Anforderungen der Nutzer erf\u00fcllt.",
-      "highlights": "Row-Level Security (RLS) fuer vollstaendige Mandantentrennung auf Datenbankebene\nAuto-Install Script fuer Ein-Klick-Setup ohne technische Vorkenntnisse\nDocker-basiertes Self-Hosting mit automatischem Backup auf eigenem Server\nProduktiver Einsatz bei mehreren Kunden mit unterschiedlichen Anforderungen",
-      "learnings": "Die Anforderungsanalyse fuer nicht-technische Kunden hat mich gelehrt, komplexe Systeme in einfache Bedienkonzepte zu uebersetzen \u2014 eine Kernkompetenz fuer die Kommunikation zwischen Fachbereich und Technik."
+      "highlights": "Row-Level Security (RLS) für vollständige Mandantentrennung auf Datenbankebene\nAuto-Install Script für Ein-Klick-Setup ohne technische Vorkenntnisse\nDocker-basiertes Self-Hosting mit automatischem Backup auf eigenem Server\nProduktiver Einsatz bei mehreren Kunden mit unterschiedlichen Anforderungen",
+      "learnings": "Die Anforderungsanalyse für nicht-technische Kunden hat mich gelehrt, komplexe Systeme in einfache Bedienkonzepte zu übersetzen \u2014 eine Kernkompetenz für die Kommunikation zwischen Fachbereich und Technik."
     },
     "myfitcoach": {
       "title": "MyFitCoach PRO",
@@ -548,7 +548,7 @@
       "problem": "Personal Trainer und Coaches brauchten eine digitale Plattform, die Trainingsplanung, Kundenverwaltung, Fortschrittstracking und Kommunikation vereint \u2014 mit unterschiedlichen Anforderungen je nach Nutzerrolle (Trainer vs. Kunden).",
       "approach": "Stakeholder-Analyse mit zwei Nutzergruppen. Priorisierung konkurrierender Anforderungen und Ableitung einer Multi-Platform-Strategie: Mobile App f\u00fcr t\u00e4gliche Nutzung, Web-Dashboard f\u00fcr Administration und Analytics. Rollenbasierte Sichten f\u00fcr verschiedene Nutzergruppen.",
       "result": "Funktionierende Coaching-Plattform mit iOS/Android App und Web-Dashboard. Der Schl\u00fcssel zum Erfolg war die Priorisierung: Nicht alles f\u00fcr alle, sondern das Richtige f\u00fcr die jeweilige Rolle.",
-      "highlights": "Multi-Platform-Architektur: Flutter Mobile-App, Next.js Web-Dashboard und Strapi Backend\nIntegriertes Analytics-Dashboard mit Fortschrittsgrafiken und Exportfunktion\nRealtime-Features fuer Live-Updates zwischen Trainer und Kunden\nRollenbasierte Sichten fuer Trainer, Kunden und Administration",
+      "highlights": "Multi-Platform-Architektur: Flutter Mobile-App, Next.js Web-Dashboard und Strapi Backend\nIntegriertes Analytics-Dashboard mit Fortschrittsgrafiken und Exportfunktion\nRealtime-Features für Live-Updates zwischen Trainer und Kunden\nRollenbasierte Sichten für Trainer, Kunden und Administration",
       "learnings": "Stakeholder-Management mit unterschiedlichen Nutzergruppen (Trainer vs. Kunden) hat gezeigt, wie wichtig es ist, konkurrierende Anforderungen zu priorisieren und tragfaehige Kompromisse zu finden."
     },
     "partnerApp": {
@@ -557,44 +557,44 @@
       "problem": "Eine private Community brauchte eine gesch\u00fctzte Plattform f\u00fcr Kommunikation und Medienaustausch mit h\u00f6chsten Datenschutzanforderungen \u2014 Ende-zu-Ende-Verschl\u00fcsselung, DSGVO-Konformit\u00e4t und keine Drittplattform-Abh\u00e4ngigkeit.",
       "approach": "Datenschutz-Anforderungsanalyse nach Privacy-by-Design-Prinzipien. Architektur mit Ende-zu-Ende-Verschl\u00fcsselung, sicherem Vault-System f\u00fcr Medien, Riverpod State Management und Supabase Backend. Content-Moderation und Reporting-System f\u00fcr Community-Sicherheit. DSGVO-konformes Datenhandling.",
       "result": "Produktive Mobile-App mit aktiver Nutzerbasis und durchg\u00e4ngigem Datenschutzkonzept. Von der Anforderungsanalyse \u00fcber die Sicherheitsarchitektur bis zum Moderationssystem eigenst\u00e4ndig konzipiert \u2014 direkt \u00fcbertragbar auf DSGVO-Compliance im Gesundheitswesen.",
-      "highlights": "Ende-zu-Ende-Verschl\u00fcsselung mit sicherem Vault-System fuer sensible Medien\nPrivacy-by-Design-Architektur mit DSGVO-konformem Datenhandling\nContent-Moderation und Reporting-System fuer Community-Sicherheit\nRiverpod State Management fuer reaktive, testbare App-Architektur",
-      "learnings": "Privacy-by-Design und Moderations-Workflows haben mein Verstaendnis fuer Datenschutzanforderungen geschaerft \u2014 von der Konzeption bis zur technischen Umsetzung, direkt uebertragbar auf DSGVO-Compliance im Gesundheitswesen."
+      "highlights": "Ende-zu-Ende-Verschl\u00fcsselung mit sicherem Vault-System für sensible Medien\nPrivacy-by-Design-Architektur mit DSGVO-konformem Datenhandling\nContent-Moderation und Reporting-System für Community-Sicherheit\nRiverpod State Management für reaktive, testbare App-Architektur",
+      "learnings": "Privacy-by-Design und Moderations-Workflows haben mein Verständnis für Datenschutzanforderungen geschaerft \u2014 von der Konzeption bis zur technischen Umsetzung, direkt übertragbar auf DSGVO-Compliance im Gesundheitswesen."
     },
     "logbuchApp": {
       "title": "Logbuch App",
       "description": "Feldanforderungen mit Endanwendern erhoben, dynamische Formulare konzipiert und nahtlose Systemintegration umgesetzt.",
-      "problem": "Fachkr\u00e4fte im Aussendienst brauchten eine mobile L\u00f6sung f\u00fcr strukturierte Datenerfassung \u2014 mit flexiblen Formularen, Offline-F\u00e4higkeit und automatisiertem Datenexport an Bestandssysteme. Bestehende L\u00f6sungen waren zu starr oder zu kompliziert.",
+      "problem": "Fachkr\u00e4fte im Außendienst brauchten eine mobile L\u00f6sung f\u00fcr strukturierte Datenerfassung \u2014 mit flexiblen Formularen, Offline-F\u00e4higkeit und automatisiertem Datenexport an Bestandssysteme. Bestehende L\u00f6sungen waren zu starr oder zu kompliziert.",
       "approach": "Anforderungserhebung direkt mit Endanwendern im Feld. Konzeption einer dynamischen Formularengine mit konfigurierbaren Feldern und Validierungen. Offline-Sync f\u00fcr zuverl\u00e4ssige Datenerfassung ohne Netzwerk. REST-API-Integration f\u00fcr automatisierten Export an Bestandssysteme.",
       "result": "Mobile Datenerfassungs-App im produktiven Einsatz. Zentrale Erkenntnis: Anforderungen entstehen im Feld, nicht am Schreibtisch \u2014 wer die realen Arbeitsbedingungen nicht versteht, baut die falsche L\u00f6sung.",
-      "highlights": "Offline-Sync-Mechanismus fuer zuverlaessige Datenerfassung ohne Netzwerk\nBarcode-Scanner-Integration fuer schnelle Produktidentifikation im Feld\nDynamische Formularengine mit konfigurierbaren Feldern und Validierungen\nREST-API-Integration fuer automatisierten Datenexport an Bestandssysteme",
-      "learnings": "Die Anforderungserhebung mit Aussendienst-Nutzern hat gezeigt, wie wichtig es ist, reale Arbeitsbedingungen zu verstehen \u2014 Anforderungen entstehen im Feld, nicht am Schreibtisch."
+      "highlights": "Offline-Sync-Mechanismus für zuverlässige Datenerfassung ohne Netzwerk\nBarcode-Scanner-Integration für schnelle Produktidentifikation im Feld\nDynamische Formularengine mit konfigurierbaren Feldern und Validierungen\nREST-API-Integration für automatisierten Datenexport an Bestandssysteme",
+      "learnings": "Die Anforderungserhebung mit Außendienst-Nutzern hat gezeigt, wie wichtig es ist, reale Arbeitsbedingungen zu verstehen \u2014 Anforderungen entstehen im Feld, nicht am Schreibtisch."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
       "description": "E-Commerce-Gesch\u00e4ftsprozesse End-to-End modelliert: Bestellprozess, Zahlungsabwicklung, Versandlogik und Marketing.",
-      "problem": "Ein Nutrition-Unternehmen brauchte einen eigenen Online-Shop ohne Abh\u00e4ngigkeit von Shopify oder WooCommerce. Kernanforderung: volle Kontrolle \u00fcber Design, Zahlungsfluss, Kundendaten und Marketingmassnahmen.",
+      "problem": "Ein Nutrition-Unternehmen brauchte einen eigenen Online-Shop ohne Abh\u00e4ngigkeit von Shopify oder WooCommerce. Kernanforderung: volle Kontrolle \u00fcber Design, Zahlungsfluss, Kundendaten und Marketingmaßnahmen.",
       "approach": "Analyse der E-Commerce-Gesch\u00e4ftsprozesse End-to-End: Produktverwaltung, Warenkorb-Logik, Zahlungsabwicklung (Stripe), Versand mit Tracking, Kundenkonto-Management. Zus\u00e4tzlich: Marketing-Tools (Rabattcodes, Newsletter) und integriertes Analytics-Dashboard.",
       "result": "Funktionsf\u00e4higer Online-Shop mit vollst\u00e4ndigem Bestellprozess im produktiven Betrieb. Die End-to-End-Modellierung aller Gesch\u00e4ftsprozesse \u2014 vom Warenkorb \u00fcber Zahlung bis Versand \u2014 war das wertvollste Learning.",
-      "highlights": "Stripe-Zahlungsintegration mit vollstaendigem Checkout-Flow und Fehlerbehandlung\nVersandlogik mit Tracking und automatischer Statusaktualisierung\nMarketing-Tools: Rabattcodes, Newsletter-System und Analytics-Dashboard\nKundenkonto mit Bestellhistorie und Session-basiertem Warenkorb",
-      "learnings": "Die Analyse von E-Commerce-Geschaeftsprozessen \u2014 vom Warenkorb ueber Zahlung bis Versand \u2014 hat mein Verstaendnis fuer End-to-End-Prozessmodellierung und Business-Anforderungen geschaerft."
+      "highlights": "Stripe-Zahlungsintegration mit vollständigem Checkout-Flow und Fehlerbehandlung\nVersandlogik mit Tracking und automatischer Statusaktualisierung\nMarketing-Tools: Rabattcodes, Newsletter-System und Analytics-Dashboard\nKundenkonto mit Bestellhistorie und Session-basiertem Warenkorb",
+      "learnings": "Die Analyse von E-Commerce-Geschäftsprozessen \u2014 vom Warenkorb über Zahlung bis Versand \u2014 hat mein Verständnis für End-to-End-Prozessmodellierung und Business-Anforderungen geschaerft."
     },
     "dbfv": {
       "title": "DBFV Wettkampfsoftware",
-      "description": "Ehrenamtliche Entwicklung einer Wettkampfsoftware fuer den Deutschen Bodybuilding & Fitness-Verband (DBFV). Bewertungssystem, Athletenverwaltung, Jury-Interface.",
-      "problem": "Der DBFV brauchte eine digitale Loesung fuer die Durchfuehrung von Bodybuilding-Wettkaempfen: Athletenanmeldung, Jurybewertung in Echtzeit, Ergebnisberechnung und Ranglisten.",
-      "approach": "Konzeption und Entwicklung einer Wettkampfsoftware: Athleten- und Wettkampfdatenverwaltung, digitales Bewertungssystem fuer die Jury, automatische Ergebnisberechnung und Ranglistenerstellung.",
-      "result": "Funktionsfaehige Wettkampfsoftware im ehrenamtlichen Einsatz beim DBFV. Kompletter Wettkampf-Workflow digitalisiert: Anmeldung, Bewertung, Ergebnis.",
-      "highlights": "Digitales Bewertungssystem fuer Jury mit Echtzeit-Eingabe\nAutomatische Ergebnisberechnung und Ranglistenerstellung\nAthletenverwaltung mit Wettkampfhistorie\nEhrenamtliches Engagement fuer den Deutschen Bodybuilding & Fitness-Verband",
-      "learnings": "Die Anforderungserhebung mit Jurymitgliedern und Wettkampforganisatoren hat gezeigt, wie wichtig es ist, Fachprozesse zu verstehen, bevor man eine technische Loesung baut."
+      "description": "Ehrenamtliche Entwicklung einer Wettkampfsoftware für den Deutschen Bodybuilding & Fitness-Verband (DBFV). Bewertungssystem, Athletenverwaltung, Jury-Interface.",
+      "problem": "Der DBFV brauchte eine digitale Lösung für die Durchführung von Bodybuilding-Wettkaempfen: Athletenanmeldung, Jurybewertung in Echtzeit, Ergebnisberechnung und Ranglisten.",
+      "approach": "Konzeption und Entwicklung einer Wettkampfsoftware: Athleten- und Wettkampfdatenverwaltung, digitales Bewertungssystem für die Jury, automatische Ergebnisberechnung und Ranglistenerstellung.",
+      "result": "Funktionsfähige Wettkampfsoftware im ehrenamtlichen Einsatz beim DBFV. Kompletter Wettkampf-Workflow digitalisiert: Anmeldung, Bewertung, Ergebnis.",
+      "highlights": "Digitales Bewertungssystem für Jury mit Echtzeit-Eingabe\nAutomatische Ergebnisberechnung und Ranglistenerstellung\nAthletenverwaltung mit Wettkampfhistorie\nEhrenamtliches Engagement für den Deutschen Bodybuilding & Fitness-Verband",
+      "learnings": "Die Anforderungserhebung mit Jurymitgliedern und Wettkampforganisatoren hat gezeigt, wie wichtig es ist, Fachprozesse zu verstehen, bevor man eine technische Lösung baut."
     }
   },
   "CertificationDetail": {
-    "back": "\u2190 Zurueck",
+    "back": "\u2190 Zurück",
     "badge": "Qualifikationen",
     "heading": "Zertifikate & Qualifikationen im Detail",
-    "intro": "Jedes Zertifikat steht fuer gezielten Kompetenzaufbau \u2014 von IT-Service-Management ueber Sicherheitsarchitekturen bis hin zu Infrastruktur-Know-how. Hier sehen Sie, was hinter den einzelnen Qualifikationen steckt und warum sie fuer die Rolle als Business Analyst IAM relevant sind.",
+    "intro": "Jedes Zertifikat steht für gezielten Kompetenzaufbau \u2014 von IT-Service-Management über Sicherheitsarchitekturen bis hin zu Infrastruktur-Know-how. Hier sehen Sie, was hinter den einzelnen Qualifikationen steckt und warum sie für die Rolle als Business Analyst IAM relevant sind.",
     "baRelevanceLabel": "BA-Relevanz",
-    "allCertsLabel": "Alle Zertifikate im Ueberblick",
+    "allCertsLabel": "Alle Zertifikate im Überblick",
     "categories": {
       "iamSecurity": "IAM & Security",
       "itMethoden": "IT-Methoden & Software Engineering",
@@ -606,42 +606,42 @@
         "name": "SINA CORE",
         "provider": "secunet Security Networks AG",
         "status": "abgeschlossen",
-        "description": "Vertiefungszertifizierung fuer die Sichere Inter-Netzwerk Architektur (SINA). Umfasst Architekturkonzepte, Kryptografie-Grundlagen, Netzwerksegmentierung und die Administration von SINA-Komponenten in VS-NfD-Umgebungen. Behandelt Thin Clients, SINA Workstations und zentrale Managementsysteme.",
-        "baRelevance": "SINA ist die Basistechnologie fuer sichere Kommunikation in der Telematikinfrastruktur des Gesundheitswesens. Als Business Analyst IAM bei Bitmarck ist das Verstaendnis dieser Architektur essenziell, um Anforderungen an sichere Identitaetssysteme korrekt zu spezifizieren."
+        "description": "Vertiefungszertifizierung für die Sichere Inter-Netzwerk Architektur (SINA). Umfasst Architekturkonzepte, Kryptografie-Grundlagen, Netzwerksegmentierung und die Administration von SINA-Komponenten in VS-NfD-Umgebungen. Behandelt Thin Clients, SINA Workstations und zentrale Managementsysteme.",
+        "baRelevance": "SINA ist die Basistechnologie für sichere Kommunikation in der Telematikinfrastruktur des Gesundheitswesens. Als Business Analyst IAM bei Bitmarck ist das Verständnis dieser Architektur essenziell, um Anforderungen an sichere Identitaetssysteme korrekt zu spezifizieren."
       },
       "sinaBasics": {
         "name": "SINA BASICS",
         "provider": "secunet Security Networks AG",
         "status": "abgeschlossen",
-        "description": "Grundlagenzertifizierung fuer SINA-Systeme. Vermittelt die Grundkonzepte der sicheren Netzwerkkommunikation, VS-NfD-Einstufung, grundlegende SINA-Komponenten und deren Zusammenspiel in sicherheitskritischen Infrastrukturen.",
-        "baRelevance": "Das Fundament fuer die Arbeit mit sicherheitskritischen Systemen. Dieses Wissen ermoeglicht es, Sicherheitsanforderungen im IAM-Kontext fachlich einzuordnen und mit Entwicklern und Sicherheitsteams auf Augenhoehe zu kommunizieren."
+        "description": "Grundlagenzertifizierung für SINA-Systeme. Vermittelt die Grundkonzepte der sicheren Netzwerkkommunikation, VS-NfD-Einstufung, grundlegende SINA-Komponenten und deren Zusammenspiel in sicherheitskritischen Infrastrukturen.",
+        "baRelevance": "Das Fundament für die Arbeit mit sicherheitskritischen Systemen. Dieses Wissen ermöglicht es, Sicherheitsanforderungen im IAM-Kontext fachlich einzuordnen und mit Entwicklern und Sicherheitsteams auf Augenhoehe zu kommunizieren."
       },
       "itil": {
         "name": "ITIL Foundation",
         "provider": "AXELOS / PeopleCert",
         "status": "abgeschlossen",
         "description": "Zertifizierung im IT Service Management Framework ITIL. Umfasst den Service-Lifecycle (Service Strategy, Design, Transition, Operation, Continual Improvement), Incident-, Problem- und Change-Management sowie Service-Level-Agreements und Prozessdokumentation.",
-        "baRelevance": "ITIL-Prozesse sind die Grundlage fuer strukturiertes IT-Service-Management bei Bitmarck. Als Business Analyst nutze ich ITIL-Konzepte fuer die Anforderungserhebung, Prozessmodellierung und die Abstimmung von Service-Level-Anforderungen mit Krankenkassen."
+        "baRelevance": "ITIL-Prozesse sind die Grundlage für strukturiertes IT-Service-Management bei Bitmarck. Als Business Analyst nutze ich ITIL-Konzepte für die Anforderungserhebung, Prozessmodellierung und die Abstimmung von Service-Level-Anforderungen mit Krankenkassen."
       },
       "devops": {
         "name": "DevOps Fundamentals",
         "provider": "Online-Zertifizierung",
         "status": "abgeschlossen",
         "description": "Grundlagen der DevOps-Kultur und -Praktiken: CI/CD-Pipelines, Infrastructure as Code, Monitoring, automatisiertes Testing und die Zusammenarbeit zwischen Entwicklung und Betrieb. Containerisierung mit Docker und Orchestrierung.",
-        "baRelevance": "Verstaendnis fuer DevOps-Prozesse ermoeglicht es, Anforderungen an Deployment, Monitoring und Betrieb realistisch zu spezifizieren \u2014 ein entscheidender Vorteil, wenn technische und fachliche Anforderungen zusammengefuehrt werden muessen."
+        "baRelevance": "Verständnis für DevOps-Prozesse ermöglicht es, Anforderungen an Deployment, Monitoring und Betrieb realistisch zu spezifizieren \u2014 ein entscheidender Vorteil, wenn technische und fachliche Anforderungen zusammengefuehrt werden muessen."
       },
       "databases": {
         "name": "Datenbanken",
         "provider": "Online-Zertifizierung",
         "status": "abgeschlossen",
         "description": "Relationale Datenbanken und SQL: Datenbankdesign, Normalisierung, komplexe Abfragen, Indexierung, Transaktionen und Performance-Optimierung. Praktische Erfahrung mit PostgreSQL.",
-        "baRelevance": "Datenmodellierung ist ein Kernwerkzeug des Business Analyst. Das Verstaendnis fuer Datenbankstrukturen ermoeglicht praezise Anforderungen an Datenhaltung, Berechtigungskonzepte (RLS) und Datenintegritaet im IAM-Kontext."
+        "baRelevance": "Datenmodellierung ist ein Kernwerkzeug des Business Analyst. Das Verständnis für Datenbankstrukturen ermöglicht praezise Anforderungen an Datenhaltung, Berechtigungskonzepte (RLS) und Datenintegritaet im IAM-Kontext."
       },
       "sapErp": {
         "name": "SAP ERP Grundkurs",
         "provider": "LinkedIn Learning",
         "status": "abgeschlossen",
-        "description": "Einfuehrung in SAP ERP-Systeme: Modulueberblick (FI, CO, MM, SD, HR), Navigation im SAP GUI, Geschaeftsprozesse in SAP, Stammdatenverwaltung und grundlegende Transaktionen. Verstaendnis fuer die Integration zwischen SAP-Modulen.",
+        "description": "Einführung in SAP ERP-Systeme: Modulüberblick (FI, CO, MM, SD, HR), Navigation im SAP GUI, Geschäftsprozesse in SAP, Stammdatenverwaltung und grundlegende Transaktionen. Verständnis für die Integration zwischen SAP-Modulen.",
         "baRelevance": "SAP-Kenntnisse sind in der GKV-IT-Landschaft relevant, da viele Krankenkassen SAP-basierte Systeme nutzen. Als Business Analyst hilft dieses Wissen, Schnittstellen-Anforderungen zwischen IAM-Systemen und bestehenden ERP-Prozessen korrekt zu spezifizieren."
       },
       "qualitaetssicherung": {
@@ -649,35 +649,35 @@
         "provider": "IU Internationale Hochschule (SDE-Fortbildung)",
         "status": "abgeschlossen",
         "description": "Methoden und Werkzeuge der Software-Qualitaetssicherung: Testplanung, Teststufen (Unit-, Integrations-, Systemtest), Testautomatisierung, Code Reviews, statische Analyse, Metriken und Qualitaetsstandards (ISO 25010).",
-        "baRelevance": "Qualitaetssicherung ist integraler Bestandteil der BA-Arbeit: Von der Definition von Akzeptanzkriterien ueber die Ableitung von Testfaellen aus Use Cases bis zur Bewertung von Testergebnissen \u2014 direkt relevant fuer die Spezifikation von IAM-Systemen."
+        "baRelevance": "Qualitaetssicherung ist integraler Bestandteil der BA-Arbeit: Von der Definition von Akzeptanzkriterien über die Ableitung von Testfällen aus Use Cases bis zur Bewertung von Testergebnissen \u2014 direkt relevant für die Spezifikation von IAM-Systemen."
       },
       "softwaretechnik": {
         "name": "Grundlagen der industriellen Softwaretechnik",
         "provider": "IU Internationale Hochschule (SDE-Fortbildung)",
         "status": "abgeschlossen",
-        "description": "Software-Engineering-Methoden fuer industrielle Anwendungen: Vorgehensmodelle (Wasserfall, V-Modell, Scrum), Anforderungsmanagement, Softwarearchitektur, Design Patterns, UML-Modellierung und Projektmanagement in der Softwareentwicklung.",
-        "baRelevance": "Das theoretische Fundament fuer die BA-Rolle: Vorgehensmodelle, UML-Diagramme und Anforderungsmanagement sind das taegliche Handwerkszeug. Dieses Wissen ermoeglicht strukturierte Anforderungsdokumente und praezise Kommunikation mit Entwicklungsteams."
+        "description": "Software-Engineering-Methoden für industrielle Anwendungen: Vorgehensmodelle (Wasserfall, V-Modell, Scrum), Anforderungsmanagement, Softwarearchitektur, Design Patterns, UML-Modellierung und Projektmanagement in der Softwareentwicklung.",
+        "baRelevance": "Das theoretische Fundament für die BA-Rolle: Vorgehensmodelle, UML-Diagramme und Anforderungsmanagement sind das taegliche Handwerkszeug. Dieses Wissen ermöglicht strukturierte Anforderungsdokumente und praezise Kommunikation mit Entwicklungsteams."
       },
       "businessAnalyst": {
         "name": "Business Analyst Lernpfad",
         "provider": "LinkedIn Learning",
         "status": "laufend",
-        "description": "Umfassender Lernpfad fuer Business-Analyse-Kompetenzen: Anforderungserhebungstechniken, Stakeholder-Analyse, Prozessmodellierung (BPMN), User Stories, Akzeptanzkriterien, Business Cases, Gap-Analyse und agile BA-Methoden.",
-        "baRelevance": "Direkter Kompetenzaufbau fuer die angestrebte Rolle. Der Lernpfad vertieft systematisch die Methoden, die ein Business Analyst IAM taeglich einsetzt \u2014 von der Anforderungserhebung bis zur Prozessmodellierung."
+        "description": "Umfassender Lernpfad für Business-Analyse-Kompetenzen: Anforderungserhebungstechniken, Stakeholder-Analyse, Prozessmodellierung (BPMN), User Stories, Akzeptanzkriterien, Business Cases, Gap-Analyse und agile BA-Methoden.",
+        "baRelevance": "Direkter Kompetenzaufbau für die angestrebte Rolle. Der Lernpfad vertieft systematisch die Methoden, die ein Business Analyst IAM taeglich einsetzt \u2014 von der Anforderungserhebung bis zur Prozessmodellierung."
       },
       "linuxAdmin": {
         "name": "Linux System Administration",
         "provider": "Online-Zertifizierung",
         "status": "abgeschlossen",
-        "description": "Linux-Systemadministration: Benutzerverwaltung, Dateisysteme, Netzwerkkonfiguration, Dienstverwaltung (systemd), Shell-Scripting, Sicherheitshaertung, Paketmanagement und Monitoring. Praktische Serververwaltung in Produktionsumgebungen.",
-        "baRelevance": "Linux ist das Betriebssystem vieler IAM-Komponenten und Server-Infrastrukturen. Das Verstaendnis fuer Benutzerverwaltung und Berechtigungskonzepte auf OS-Ebene ist direkt uebertragbar auf IAM-Anforderungen."
+        "description": "Linux-Systemadministration: Benutzerverwaltung, Dateisysteme, Netzwerkkonfiguration, Dienstverwaltung (systemd), Shell-Scripting, Sicherheitshärtung, Paketmanagement und Monitoring. Praktische Serververwaltung in Produktionsumgebungen.",
+        "baRelevance": "Linux ist das Betriebssystem vieler IAM-Komponenten und Server-Infrastrukturen. Das Verständnis für Benutzerverwaltung und Berechtigungskonzepte auf OS-Ebene ist direkt übertragbar auf IAM-Anforderungen."
       },
       "lancom": {
         "name": "LANCOM Zertifizierung",
         "provider": "LANCOM Systems",
         "status": "abgeschlossen",
-        "description": "Zertifizierung fuer LANCOM-Netzwerkkomponenten: Router-Konfiguration, VPN-Einrichtung, VLAN-Segmentierung, Firewall-Regeln und zentrales Management ueber die LANCOM Management Cloud. Fokus auf sicherheitskritische Netzwerke.",
-        "baRelevance": "Netzwerksegmentierung und VPN-Konzepte sind Grundbausteine fuer sichere IAM-Architekturen. Das Verstaendnis fuer Netzwerkinfrastruktur hilft, Anforderungen an Netzwerksicherheit und Zugriffskontrolle korrekt zu formulieren."
+        "description": "Zertifizierung für LANCOM-Netzwerkkomponenten: Router-Konfiguration, VPN-Einrichtung, VLAN-Segmentierung, Firewall-Regeln und zentrales Management über die LANCOM Management Cloud. Fokus auf sicherheitskritische Netzwerke.",
+        "baRelevance": "Netzwerksegmentierung und VPN-Konzepte sind Grundbausteine für sichere IAM-Architekturen. Das Verständnis für Netzwerkinfrastruktur hilft, Anforderungen an Netzwerksicherheit und Zugriffskontrolle korrekt zu formulieren."
       },
       "ftth": {
         "name": "FTTH Glasfaser",
@@ -690,26 +690,26 @@
         "name": "Fitness Trainer B-Lizenz",
         "provider": "IST-Studieninstitut",
         "status": "abgeschlossen",
-        "description": "Fachliche Qualifikation als Fitnesstrainer: Trainingslehre, Anatomie, Ernaehrungslehre, Trainingsplanerstellung und Kundenbetreuung. Verstaendnis fuer systematische Zielverfolgung und individuelle Bedarfsanalyse.",
-        "baRelevance": "Scheinbar fachfremd, aber im Kern geht es um dasselbe: individuelle Bedarfsanalyse, Zieldefinition, Planentwicklung und Fortschrittskontrolle. Die gleiche Denkweise gilt fuer Stakeholder-Anforderungen und Projektziele."
+        "description": "Fachliche Qualifikation als Fitnesstrainer: Trainingslehre, Anatomie, Ernährungslehre, Trainingsplanerstellung und Kundenbetreuung. Verständnis für systematische Zielverfolgung und individuelle Bedarfsanalyse.",
+        "baRelevance": "Scheinbar fachfremd, aber im Kern geht es um dasselbe: individuelle Bedarfsanalyse, Zieldefinition, Planentwicklung und Fortschrittskontrolle. Die gleiche Denkweise gilt für Stakeholder-Anforderungen und Projektziele."
       },
       "nutritionist": {
-        "name": "Ernaehrungsberater",
+        "name": "Ernährungsberater",
         "provider": "IST-Studieninstitut",
         "status": "abgeschlossen",
-        "description": "Qualifikation als Ernaehrungsberater: Ernaehrungsphysiologie, Makro- und Mikronaehrstoffe, Ernaehrungsplanung, Beratungsmethodik und Gespraechsfuehrung.",
-        "baRelevance": "Die Beratungsmethodik \u2014 Bedarfsanalyse, Zielsetzung, individuelle Planentwicklung und Erfolgskontrolle \u2014 ist direkt uebertragbar auf die Anforderungserhebung und Stakeholder-Beratung im BA-Kontext."
+        "description": "Qualifikation als Ernährungsberater: Ernährungsphysiologie, Makro- und Mikronaehrstoffe, Ernährungsplanung, Beratungsmethodik und Gesprächsführung.",
+        "baRelevance": "Die Beratungsmethodik \u2014 Bedarfsanalyse, Zielsetzung, individuelle Planentwicklung und Erfolgskontrolle \u2014 ist direkt übertragbar auf die Anforderungserhebung und Stakeholder-Beratung im BA-Kontext."
       }
     },
     "education": {
       "bsc": {
-        "description": "Laufendes Informatik-Studium mit Schwerpunkten in Softwaretechnik, theoretischer Informatik, Datenbanken und Algorithmen. Baut das theoretische Fundament fuer die analytische Arbeit als Business Analyst systematisch aus."
+        "description": "Laufendes Informatik-Studium mit Schwerpunkten in Softwaretechnik, theoretischer Informatik, Datenbanken und Algorithmen. Baut das theoretische Fundament für die analytische Arbeit als Business Analyst systematisch aus."
       },
       "sde": {
-        "description": "Abgeschlossene Fortbildung mit Schwerpunkten in Software Engineering, Qualitaetssicherung, industrieller Softwaretechnik und Projektmanagement. Lieferte das methodische Handwerkszeug fuer strukturierte Anforderungsanalyse und Prozessmodellierung."
+        "description": "Abgeschlossene Fortbildung mit Schwerpunkten in Software Engineering, Qualitaetssicherung, industrieller Softwaretechnik und Projektmanagement. Lieferte das methodische Handwerkszeug für strukturierte Anforderungsanalyse und Prozessmodellierung."
       },
       "itse": {
-        "description": "Dreij\u00e4hrige duale Ausbildung bei der Deutschen Telekom. Fundament in IT-Infrastruktur, Netzwerktechnik, Systemadministration und strukturierter Problemloesung \u2014 die technische Basis meines gesamten Werdegangs."
+        "description": "Dreij\u00e4hrige duale Ausbildung bei der Deutschen Telekom. Fundament in IT-Infrastruktur, Netzwerktechnik, Systemadministration und strukturierter Problemlösung \u2014 die technische Basis meines gesamten Werdegangs."
       }
     }
   },
@@ -726,7 +726,7 @@
       "databases": "Datenbanken",
       "linuxAdmin": "Linux System Administration",
       "fitTrainer": "Fitness Trainer B-Lizenz",
-      "nutritionist": "Ernaehrungsberater",
+      "nutritionist": "Ernährungsberater",
       "lancom": "LANCOM Zertifizierung",
       "ftth": "FTTH Glasfaser",
       "sapErp": "SAP ERP Grundkurs",

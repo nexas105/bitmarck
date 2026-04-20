@@ -66,13 +66,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const port = parseInt(SMTP_PORT, 10);
     const transporter = nodemailer.createTransport({
       host: SMTP_HOST,
-      port: parseInt(SMTP_PORT, 10),
-      secure: parseInt(SMTP_PORT, 10) === 465,
+      port,
+      secure: port === 465,
+      ...(port === 587 ? {requireTLS: true} : {}),
       auth: {
         user: SMTP_USER,
         pass: SMTP_PASS,
+      },
+      tls: {
+        rejectUnauthorized: false,
       },
     });
 

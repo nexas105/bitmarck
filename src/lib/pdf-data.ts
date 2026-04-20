@@ -86,7 +86,7 @@ const cvData: CvData = {
     },
     contact: {
       email: "Ludwig.tobias105@t-online.de",
-      phone: "+49 173 19 480 45",
+      phone: "+49 173 1948 945",
       website: "www.tobiasjonas-ludwig.de",
       github: "github.com/nexas105",
     },

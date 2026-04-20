@@ -30,7 +30,7 @@ const coverLetterData: CoverLetterData = {
     street: "Lauterbachstr. 37",
     city: "53639 Königswinter",
     email: "Ludwig.tobias105@t-online.de",
-    phone: "+49 173 19 480 45",
+    phone: "+49 173 1948 945",
   },
   recipient: {
     company: "BITMARCK Holding GmbH",
