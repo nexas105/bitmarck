@@ -23,7 +23,7 @@
     "valueProposition": "I analyze business processes and translate them into precise requirements — with 10+ years at the intersection of IT and business.",
     "cta": "Download CV",
     "ctaCoverLetter": "Cover Letter",
-    "eyebrow": "Application \u00b7 Business Analyst IAM \u00b7 Bitmarck",
+    "eyebrow": "Application · Business Analyst IAM · Bitmarck",
     "ctaDisabled": "CV coming soon",
     "cvFormat": {
       "pdf": {
@@ -75,6 +75,13 @@
     "expandLabel": "Show details",
     "collapseLabel": "Hide details",
     "detailLink": "View full details",
+    "tabs": {
+      "timeline": "Timeline",
+      "compact": "Compact",
+      "cards": "Cards",
+      "swiper": "Carousel"
+    },
+    "viewFullCv": "View full CV",
     "stations": {
       "telekom": {
         "period": "Jul 2014 – Mar 2016",
@@ -556,7 +563,7 @@
   },
   "Contact": {
     "heading": "Contact",
-    "intro": "Interested? I look forward to hearing from you \u2014 whether you have questions about the application, my background, or would like to arrange a personal conversation.",
+    "intro": "Interested? I look forward to hearing from you — whether you have questions about the application, my background, or would like to arrange a personal conversation.",
     "formHeading": "Send a message",
     "directHeading": "Reach me directly",
     "directIntro": "You can also contact me directly through the following channels.",
@@ -581,7 +588,7 @@
   "Footer": {
     "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Self-hosted with Docker",
     "terminalHint": "Press Ctrl+` for a surprise",
-    "signature": "Custom-built for Bitmarck \u00b7 Business Analyst IAM \u00b7 April 2026 \u00b7 v1.0"
+    "signature": "Custom-built for Bitmarck · Business Analyst IAM · April 2026 · v1.0"
   },
   "Terminal": {
     "greeting": "tobias@bitmarck:~$ Welcome! Type 'help' for a list of commands.",

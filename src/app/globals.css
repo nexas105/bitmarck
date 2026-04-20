@@ -158,6 +158,15 @@ summary {
   background-size: 24px 24px;
 }
 
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Smooth section transitions */
 section + section {
   position: relative;
