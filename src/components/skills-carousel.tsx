@@ -13,32 +13,59 @@ type Props = {
 
 export function SkillsCarousel({children}: Props) {
   const items = React.Children.toArray(children)
+  const half = Math.ceil(items.length / 2)
+  const left = items.slice(0, half)
+  const right = items.slice(half)
+
+  const swiperConfig = {
+    modules: [EffectCube, Autoplay, Pagination],
+    effect: 'cube' as const,
+    cubeEffect: {shadow: false, slideShadows: false},
+    pagination: {clickable: true},
+    grabCursor: true,
+    loop: true,
+  }
 
   return (
-    <div className="max-w-[420px] mx-auto">
+    <>
       <style>{`
-        .skills-swiper .swiper-pagination-bullet-active { background: var(--color-accent) !important; }
-        .skills-swiper .swiper-slide { height: auto; }
+        .skills-cube .swiper-pagination-bullet-active { background: var(--color-accent) !important; }
       `}</style>
-      <Swiper
-        className="skills-swiper !pb-xl"
-        modules={[EffectCube, Autoplay, Pagination]}
-        effect="cube"
-        cubeEffect={{
-          shadow: false,
-          slideShadows: false,
-        }}
-        autoplay={{delay: 3500, disableOnInteraction: true}}
-        pagination={{clickable: true}}
-        grabCursor
-        loop
-      >
-        {items.map((child, i) => (
-          <SwiperSlide key={i}>
-            {child}
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+
+      {/* Mobile: single cube with all items */}
+      <div className="md:hidden">
+        <Swiper
+          className="skills-cube !pb-xl"
+          {...swiperConfig}
+          autoplay={{delay: 3000, disableOnInteraction: true}}
+        >
+          {items.map((child, i) => (
+            <SwiperSlide key={i}>{child}</SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* Desktop: 2 cubes side by side */}
+      <div className="hidden md:grid md:grid-cols-2 gap-lg">
+        <Swiper
+          className="skills-cube !pb-xl"
+          {...swiperConfig}
+          autoplay={{delay: 3000, disableOnInteraction: true}}
+        >
+          {left.map((child, i) => (
+            <SwiperSlide key={i}>{child}</SwiperSlide>
+          ))}
+        </Swiper>
+        <Swiper
+          className="skills-cube !pb-xl"
+          {...swiperConfig}
+          autoplay={{delay: 4000, disableOnInteraction: true}}
+        >
+          {right.map((child, i) => (
+            <SwiperSlide key={i}>{child}</SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </>
   )
 }
