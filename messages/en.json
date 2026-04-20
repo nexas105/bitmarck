@@ -71,7 +71,7 @@
   },
   "Career": {
     "heading": "My Path to Business Analyst",
-    "intro": "From technician to analyst — not a career change, but a consistent evolution. Every role sharpened my analytical thinking, strengthened my coordination skills, and deepened my understanding of the bridge between technology and business.",
+    "intro": "10+ years of IT experience — from telecommunications and security-critical infrastructure to software delivery, with a consistent focus on analysis, structuring, and alignment between business and engineering.",
     "expandLabel": "Show details",
     "collapseLabel": "Hide details",
     "detailLink": "View full details",
@@ -87,8 +87,8 @@
         "period": "Jul 2014 – Mar 2016",
         "company": "Deutsche Telekom",
         "role": "Fiber Optic Service Technician",
-        "body": "Structured fault analysis and quality assurance in fiber optic deployment — systematic methodology as analytical foundation.",
-        "narrative": "This is where I learned to systematically analyze complex technical systems — the basis for any requirements analysis.",
+        "body": "Fiber splicing and copper measurement (2-wire). Analyzed faults with OTDR, Murray method, and ORCA, then planned actions and coordinated civil engineering for incident resolution.",
+        "narrative": "This is where my foundation was built: systematic root-cause analysis, prioritization, and translating findings into clear actions.",
         "technologies": "FTTH, Fiber Optics, Splicing, Measurement Technology",
         "details": [
           "Systematic fault analysis with structured methodology",
@@ -117,8 +117,8 @@
         "period": "Sep 2016 – Mar 2018",
         "company": "Media.com GmbH",
         "role": "IT Service Technician Network Level 4",
-        "body": "Data-driven fault diagnosis using MER and BER metrics — my first contact with analytical decision-making based on data.",
-        "narrative": "Signal analysis with concrete metrics was my first contact with data-driven decision making.",
+        "body": "On-site service across NRW/Hesse with high ticket volume (~12/day). Evaluated signal metrics (level, MER, BER, ingress), narrowed causes, and handled complex B2B cases as expert technician.",
+        "narrative": "Data-based assessment and fast decision-making under pressure — a core pattern for analytical BA work.",
         "technologies": "Coaxial Networks, MER, BER, Signal Analysis",
         "details": [
           "Data-driven fault diagnosis based on signal metrics",
@@ -147,8 +147,8 @@
         "period": "Jul 2018 – Mar 2021",
         "company": "Biermann Telekommunikationstechnik",
         "role": "Construction Lead Telecommunications",
-        "body": "Project planning, team leadership and external partner coordination — classic project management in practice.",
-        "narrative": "Team leadership, planning, and coordination of external partners — classic project management skills every business analyst needs.",
+        "body": "Progressed from technician to construction lead: copper network measurement, team coordination, civil works coordination, plus material planning and documentation under Telekom standards.",
+        "narrative": "I learned to align technical execution, resources, and external partners toward one shared outcome.",
         "technologies": "Copper Network, Civil Engineering, Project Planning",
         "details": [
           "Independent project planning and resource coordination",
@@ -177,8 +177,8 @@
         "period": "Apr 2021 – Sep 2023",
         "company": "BWI GmbH",
         "role": "IT Service Technician",
-        "body": "IT infrastructure projects for the Ministry of Defence — working with security-critical SINA systems, structured ticketing, and ITIL-based processes.",
-        "narrative": "Security-critical systems, SINA experience, and structured processes — directly relevant to IAM at Bitmarck.",
+        "body": "Delivered SINA rollouts, handled incidents (INC/IMAC) with IBM Maximo, and coordinated with secunet in security-critical environments. Strong focus on structured execution, traceability, and secure client systems.",
+        "narrative": "Understanding security requirements, documenting them clearly, and executing with multiple stakeholders — directly relevant to IAM at Bitmarck.",
         "technologies": "Cisco, LANCOM, VLAN, SINA, IBM Maximo",
         "details": [
           "Working with security-critical SINA systems (directly relevant to IAM)",
@@ -208,8 +208,8 @@
         "company": "BHF Group GmbH",
         "role": "Assistant Studio Management / IT Consultant",
         "subtitle": "Fixed-term position · Parallel: Software Developer Expert training (IU)",
-        "body": "Analyzed business processes, gathered requirements, and translated them into CRM and training software — while completing Software Developer Expert training in parallel.",
-        "narrative": "What started as a fixed-term position became a turning point: First time owning the complete cycle — requirements analysis, architecture, implementation. Parallel: Software Developer Expert training.",
+        "body": "Designed and delivered fitness administration software: gathered requirements, translated them into functionality, and structured delivery as a CRM/training solution while completing Software Developer Expert training.",
+        "narrative": "Turning point toward BA work: combining problem understanding, solution definition, and delivery end-to-end in one role.",
         "technologies": "Requirements Analysis, Process Optimization, Node.js, PostgreSQL",
         "details": [
           "Analysis of existing business processes and identification of optimization potential",
@@ -240,8 +240,8 @@
         "company": "Persona GmbH",
         "role": "IT Client Technician",
         "subtitle": "Temporary agency · Transitional role",
-        "body": "Short engagement via temporary agency — IT coordination and process optimization, but not the right long-term perspective.",
-        "narrative": "A short engagement via temporary agency that confirmed: My place isn't in pure technology, but at the intersection of analysis and IT.",
+        "body": "IT project coordination and process optimization focused on external vendor coordination, infrastructure topics, and clear documentation.",
+        "narrative": "Short engagement, clear takeaway: my strength is analysis, structuring, and coordination at the intersection of technology and organization.",
         "technologies": "IT Infrastructure, Project Coordination",
         "details": [
           "Quick onboarding and analysis of existing processes",
@@ -271,8 +271,8 @@
         "company": "Self-employed",
         "role": "Freelancer — DevOps, Web Development & IT Consulting",
         "subtitle": "Part-time",
-        "body": "Part-time DevOps tasks, web development, and server setup for clients — from project planning to delivery.",
-        "narrative": "As a freelancer, I bring everything together: understanding client requirements, planning projects, delivering technically — the essence of the business analyst role in self-employment.",
+        "body": "Part-time client projects from requirement clarification to operations: captured needs, structured solutions, delivered web/server implementations, and operated them reliably.",
+        "narrative": "Freelancing sharpened the BA lens: understand needs, prioritize, decide, and communicate clearly with stakeholders.",
         "technologies": "DevOps, Docker, Linux, Next.js, Web Development, Servers",
         "details": [
           "Client meetings and project planning",
@@ -301,27 +301,33 @@
         "period": "Feb 2025 – present",
         "company": "Xecuro GmbH",
         "role": "IT System Administrator Secure Client Manager",
-        "body": "SINA-based secure clients in security-critical environment — shaping security concepts, the direct bridge to IAM.",
-        "narrative": "Deepening SINA expertise, actively shaping security concepts — the technical bridge to the IAM world.",
+        "body": "Administration of SINA-based secure clients and SINA CA. Contributed to security concepts, worked with Jira and Confluence, and maintained the internal intranet during idle periods.",
+        "narrative": "Deepened SINA expertise while translating security requirements into workable processes, tickets, and documentation with cross-functional teams.",
         "technologies": "SINA, Windows, Linux, Hardening, Security Concepts",
         "details": [
           "Administration and advancement of SINA-based secure clients",
           "Active contribution to security concepts and access policies",
+          "Ticket and knowledge workflows with Jira and Confluence in daily operations",
+          "Maintenance and updates of the internal intranet during idle periods",
           "Collaboration with security teams on identity and access topics",
           "Analysis of security requirements and their technical implementation"
         ],
         "detailPage": {
-          "overview": "At Xecuro, I'm deepening my SINA expertise in an environment with the highest security requirements. I administer and advance SINA-based secure clients, actively contribute to security concepts, and work closely with security and infrastructure teams.",
+          "overview": "At Xecuro, I'm deepening my SINA expertise in an environment with the highest security requirements. I administer and advance SINA-based secure clients, actively contribute to security concepts, and work closely with security and infrastructure teams. In day-to-day work, I also use Jira and Confluence and maintain the internal intranet during idle periods.",
           "baRelevance": "This role is the direct bridge to the IAM world at Bitmarck: SINA systems, security concepts, access policies — all central topics in Identity and Access Management. I understand not just the theory but have practical experience with the systems also used in the healthcare telematics infrastructure.",
           "achievements": [
             "Deepening SINA expertise at architecture and concept level",
             "Contributing to security concepts for regulated environments",
+            "Regular Jira and Confluence usage for tickets, coordination, and documentation",
+            "Maintenance and structuring of internal intranet content for knowledge sharing",
             "Analysis of access requirements and translation into policies",
             "Provisioning and maintaining test and integration environments"
           ],
           "skillsGained": [
             "SINA Architecture",
             "Security Concepts",
+            "Jira/Confluence Workflows",
+            "Intranet Maintenance",
             "Access Policies",
             "Regulated IT Environments"
           ]
@@ -557,7 +563,7 @@
       },
       "tools": {
         "question": "Confluence & Jira?",
-        "answer": "Professional experience with Jira (BWI) and comparable ticketing systems (IBM Maximo). Transitioning to Confluence + Jira in the Bitmarck context is seamless — the principle is the same, only the interface differs."
+        "answer": "Yes — hands-on Jira and Confluence experience at Xecuro, plus IBM Maximo at BWI. I work confidently with ticket workflows, documentation, and clean handoffs between business and engineering."
       }
     }
   },
@@ -600,8 +606,8 @@
     "bewerbung": "Match Score: 92%\n\nTop 3 reasons why Tobias fits Bitmarck:\n  1. SINA experience from two security-critical environments (BWI + Xecuro) -- directly transferable to bitIAM and Telematik infrastructure\n  2. Independently built Auth Service with JWT/RBAC -- IAM understood practically, not just theoretically\n  3. Analytical approach at every career station -- from measurement teams to requirements gathering, always at the interface between tech and business",
     "iam": "Tobias' IAM Skills:\n  SINA          -- Secure Inter-Network Architecture (BWI, Xecuro)\n  SINA CA       -- Certificate Authority Administration (Xecuro)\n  JWT           -- Token flow with access/refresh rotation (Auth API)\n  RBAC          -- Fine-grained permission system (Auth API)\n  RLS           -- Row-Level Security / multi-tenancy (Next CMS)\n  Auth Systems  -- Session, OAuth, MFA (multiple projects)\n  API Design    -- RESTful APIs with security focus",
     "projekte": "Projects with BA framing:\n  1. Auth API Service    -- Central IAM: access concept defined, data model designed, RBAC implemented\n  2. Next CMS            -- Client requirements gathered, headless architecture with RLS designed\n  3. MyFitCoach PRO      -- Stakeholder analysis with 2 user groups, requirements prioritized\n  4. Partner App         -- Privacy requirements analysis, privacy-by-design architecture\n  5. Logbuch App         -- Field requirements gathered with end users, system integration\n  6. MPA Nutrition Shop  -- E-commerce business processes modeled end-to-end",
-    "verfuegbar": "Available from Jul/Aug 2026 \u00b7 Full-time \u00b7 Remote/Hybrid \u00b7 Relocation to Essen planned",
-    "match": "Match Score: 92%\n\nRequirements Checklist:\n  [x] Analytical thinking           -- 10+ years practice\n  [x] SINA experience               -- BWI + Xecuro\n  [x] IAM understanding             -- Built Auth API with JWT/RBAC\n  [x] Requirements analysis         -- BHF Group, own projects\n  [x] Stakeholder management        -- Biermann, BHF, clients\n  [x] ITIL processes                -- ITIL Foundation certified\n  [x] Documentation                 -- All career stations\n  [x] Process optimization          -- BHF, Xecuro, Persona\n  [x] Technical understanding       -- Full-stack developer\n  [ ] Confluence/Jira               -- Comparable tools (IBM Maximo, Jira at BWI)",
+    "verfuegbar": "Available from Jul/Aug 2026 · Full-time · Remote/Hybrid · Relocation to Essen planned",
+    "match": "Match Score: 92%\n\nRequirements Checklist:\n  [x] Analytical thinking           -- 10+ years practice\n  [x] SINA experience               -- BWI + Xecuro\n  [x] IAM understanding             -- Built Auth API with JWT/RBAC\n  [x] Requirements analysis         -- BHF Group, own projects\n  [x] Stakeholder management        -- Biermann, BHF, clients\n  [x] ITIL processes                -- ITIL Foundation certified\n  [x] Documentation                 -- All career stations\n  [x] Process optimization          -- BHF, Xecuro, Persona\n  [x] Technical understanding       -- Full-stack developer\n  [x] Confluence/Jira               -- Jira + Confluence at Xecuro, IBM Maximo at BWI",
     "help": "Available commands:\n  whoami      -- Who is Tobias?\n  skills      -- Technical skills\n  projects    -- Project highlights\n  motivation  -- Why Bitmarck?\n  contact     -- Contact info\n  bewerbung   -- Match score + top 3 reasons\n  iam         -- IAM skills in detail\n  projekte    -- Projects with BA framing\n  verfuegbar  -- Availability & location\n  match       -- Match percentage + requirements checklist\n  help        -- Show this help\n  clear       -- Clear terminal\n  exit        -- Close terminal",
     "unknown": "Command not found: {cmd}. Type 'help' for a list of commands.",
     "prompt": "tobias@bitmarck:~$",
@@ -869,7 +875,7 @@
       },
       "tools": {
         "requirement": "Confluence and JIRA",
-        "evidence": "IBM Maximo at BWI, Jira experience, structured ticketing"
+        "evidence": "Jira + Confluence at Xecuro, IBM Maximo at BWI, structured ticketing and documentation"
       },
       "analytical": {
         "requirement": "Solution-oriented analytical work style",
@@ -952,7 +958,7 @@
         },
         "q4": {
           "question": "Does he have experience with ITIL processes and structured work?",
-          "match": "Yes -- ITIL Foundation certified, hands-on experience with IBM Maximo at BWI."
+          "match": "Yes -- ITIL Foundation certified, practical IBM Maximo experience at BWI, and Jira/Confluence workflows at Xecuro."
         },
         "q5": {
           "question": "Is he willing to relocate to Essen?",
@@ -1001,7 +1007,7 @@
           "period": "2025 -- present",
           "company": "Xecuro GmbH",
           "role": "Secure Client Manager",
-          "funFact": "Deepened SINA expertise, actively shaped security concepts -- the direct bridge to IAM."
+          "funFact": "Deepened SINA expertise, worked with Jira/Confluence, and maintained the intranet during idle periods -- the direct bridge to IAM."
         },
         "bitmarck": {
           "period": "Target",
