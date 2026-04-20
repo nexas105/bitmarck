@@ -23,6 +23,7 @@
     "valueProposition": "I analyze business processes and translate them into precise requirements — with 10+ years at the intersection of IT and business.",
     "cta": "Download CV",
     "ctaCoverLetter": "Cover Letter",
+    "eyebrow": "Application \u00b7 Business Analyst IAM \u00b7 Bitmarck",
     "ctaDisabled": "CV coming soon",
     "cvFormat": {
       "pdf": {
@@ -39,15 +40,34 @@
       }
     }
   },
+  "TrustStrip": {
+    "location": "Königswinter · Relocation to Essen planned",
+    "available": "Available from Jul/Aug 2026",
+    "languages": "German C2 · English B2",
+    "domainFit": "SINA experience from 2 security-critical environments"
+  },
   "Metrics": {
     "experience": "10+ Years IT",
     "experienceLabel": "Professional Experience",
+    "experienceContext": "From fiber optics to SINA to software development",
     "projects": "6 Projects",
     "projectsLabel": "Analysis, Design & Implementation",
+    "projectsContext": "Independently designed and run in production",
     "certificates": "10 Certificates",
     "certificatesLabel": "Professional Qualifications",
+    "certificatesContext": "Incl. ITIL, SINA CORE, SINA BASICS",
     "degree": "B.Sc. Computer Science",
-    "degreeLabel": "Degree (in progress)"
+    "degreeLabel": "Degree (in progress)",
+    "degreeContext": "FernUniversität Hagen, part-time"
+  },
+  "WhyBitmarck": {
+    "heading": "Why Bitmarck",
+    "card1Title": "GKV Digitalization",
+    "card1Description": "Digitizing healthcare — with real impact on millions of insured people. Bitmarck shapes the IT infrastructure of Germany's statutory health insurers.",
+    "card2Title": "IAM Expertise Meets Practice",
+    "card2Description": "SINA experience from two security-critical environments, self-built auth service with RBAC — directly transferable to bitIAM and the telematics infrastructure.",
+    "card3Title": "The Right Role",
+    "card3Description": "Requirements analysis, process modeling, stakeholder coordination — not as a job title, but as what I've done in every position."
   },
   "Career": {
     "heading": "My Path to Business Analyst",
@@ -340,7 +360,7 @@
     "skillsGained": "Skills Developed"
   },
   "Projects": {
-    "heading": "Projects — Analysis, Design, Implementation",
+    "heading": "Case Studies from Practice",
     "intro": "Each project follows the same cycle: understand the business problem, analyze requirements, design the solution, deliver results.",
     "detailsLink": "Details →",
     "languages": "Languages",
@@ -358,7 +378,7 @@
     "viewOnGithub": "View on GitHub"
   },
   "Skills": {
-    "heading": "Skills & Competencies",
+    "heading": "Stack for This Role",
     "intro": "My competency profile combines analytical methods with technical depth — the ideal combination for a business analyst with an IT background.",
     "detailLink": "Learn more →",
     "categories": {
@@ -560,7 +580,8 @@
   },
   "Footer": {
     "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Self-hosted with Docker",
-    "terminalHint": "Press Ctrl+` for a surprise"
+    "terminalHint": "Press Ctrl+` for a surprise",
+    "signature": "Custom-built for Bitmarck \u00b7 Business Analyst IAM \u00b7 April 2026 \u00b7 v1.0"
   },
   "Terminal": {
     "greeting": "tobias@bitmarck:~$ Welcome! Type 'help' for a list of commands.",

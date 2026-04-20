@@ -2,6 +2,7 @@
 
 import {useTranslations} from 'next-intl';
 import {ChevronDown} from 'lucide-react';
+import {SectionHeader} from '@/components/section-header';
 
 const FAQ_KEYS = ['location', 'startDate', 'whyBitmarck', 'whyBA'] as const;
 
@@ -15,13 +16,8 @@ export function FAQSection() {
       className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-primary-50"
     >
       <div className="mx-auto max-w-4xl">
-        <h2
-          id="faq-heading"
-          className="text-section font-bold text-text-primary mb-xl tracking-tight inline-block"
-        >
-          {t('heading')}
-          <span className="block h-1 w-16 bg-linear-to-r from-accent to-accent/40 rounded-full mt-sm" aria-hidden="true" />
-        </h2>
+        <SectionHeader number="05" eyebrow="FAQ" heading={t('heading')} id="faq-heading" />
+        <div className="mt-xl" />
         <div className="rounded-2xl border border-border/60 bg-surface-raised overflow-hidden shadow-card">
           {FAQ_KEYS.map((key, index) => (
             <details key={key} className={`group ${index < FAQ_KEYS.length - 1 ? 'border-b border-border/50' : ''}`}>

@@ -1,4 +1,8 @@
-import {getTranslations} from 'next-intl/server'
+'use client'
+
+import {useRef, useEffect, useState} from 'react'
+import {motion, useScroll, useTransform} from 'motion/react'
+import {useTranslations} from 'next-intl'
 import {CareerStationCard} from '@/components/career-station-card'
 
 const STATION_KEYS = [
@@ -13,20 +17,65 @@ const STATION_KEYS = [
   'telekom',
 ] as const
 
-export async function CareerTimeline() {
-  const t = await getTranslations('Career')
+export function CareerTimeline() {
+  const t = useTranslations('Career')
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [prefersReduced, setPrefersReduced] = useState(false)
+
+  useEffect(() => {
+    setPrefersReduced(window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+  }, [])
+
+  const {scrollYProgress} = useScroll({
+    target: containerRef,
+    offset: ['start end', 'end start'],
+  })
+
+  const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   const expandLabel = t('expandLabel')
   const collapseLabel = t('collapseLabel')
   const detailLink = t('detailLink')
 
   return (
-    <div className="relative pl-xl">
-      {/* Vertical accent gradient line */}
-      <div
-        className="absolute left-[3px] top-[4px] bottom-[4px] w-[2px] bg-linear-to-b from-accent via-accent/50 to-accent/10 rounded-full"
+    <div className="relative pl-xl" ref={containerRef}>
+      {/* SVG vertical accent gradient line with draw-on-scroll */}
+      <svg
+        className="absolute left-[3px] top-[4px] bottom-[4px] w-[2px]"
+        style={{height: 'calc(100% - 8px)'}}
+        preserveAspectRatio="none"
         aria-hidden="true"
-      />
+      >
+        <defs>
+          <linearGradient id="timeline-gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="var(--color-accent)" stopOpacity="1" />
+            <stop offset="50%" stopColor="var(--color-accent)" stopOpacity="0.5" />
+            <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0.1" />
+          </linearGradient>
+        </defs>
+        {prefersReduced ? (
+          <line
+            x1="1"
+            y1="0"
+            x2="1"
+            y2="100%"
+            stroke="url(#timeline-gradient)"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        ) : (
+          <motion.line
+            x1="1"
+            y1="0"
+            x2="1"
+            y2="100%"
+            stroke="url(#timeline-gradient)"
+            strokeWidth="2"
+            strokeLinecap="round"
+            style={{pathLength}}
+          />
+        )}
+      </svg>
 
       <ol className="relative flex flex-col gap-lg">
         {STATION_KEYS.map((key, index) => {

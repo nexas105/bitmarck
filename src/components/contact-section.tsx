@@ -1,6 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Mail, Phone, Globe, Code2} from 'lucide-react';
 import {ContactForm} from '@/components/contact-form';
+import {SectionHeader} from '@/components/section-header';
 
 export async function ContactSection() {
   const t = await getTranslations('Contact');
@@ -12,16 +13,12 @@ export async function ContactSection() {
       className="py-4xl px-md md:px-xl scroll-mt-[64px]"
     >
       <div className="mx-auto max-w-4xl">
-        <h2
-          id="contact-heading"
-          className="text-section font-bold text-text-primary mb-sm tracking-tight inline-block"
-        >
-          {t('heading')}
-          <span className="block h-1 w-16 bg-linear-to-r from-accent to-accent/40 rounded-full mt-sm" aria-hidden="true" />
-        </h2>
-        <p className="text-body text-text-secondary mb-xl max-w-2xl">
-          {t('intro')}
-        </p>
+        <SectionHeader number="06" eyebrow="KONTAKT" heading={t('heading')} id="contact-heading">
+          <p className="text-body text-text-secondary max-w-2xl">
+            {t('intro')}
+          </p>
+        </SectionHeader>
+        <div className="mb-xl" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
           {/* Left: Contact form */}

@@ -5,10 +5,10 @@ export async function MetricsDashboard() {
   const t = await getTranslations('Metrics');
 
   const metrics = [
-    {value: t('experience'), label: t('experienceLabel')},
-    {value: t('projects'), label: t('projectsLabel')},
-    {value: t('certificates'), label: t('certificatesLabel')},
-    {value: t('degree'), label: t('degreeLabel')},
+    {value: t('experience'), label: t('experienceLabel'), context: t('experienceContext')},
+    {value: t('projects'), label: t('projectsLabel'), context: t('projectsContext')},
+    {value: t('certificates'), label: t('certificatesLabel'), context: t('certificatesContext')},
+    {value: t('degree'), label: t('degreeLabel'), context: t('degreeContext')},
   ];
 
   return (
@@ -18,6 +18,7 @@ export async function MetricsDashboard() {
           key={metric.label}
           value={metric.value}
           label={metric.label}
+          context={metric.context}
           index={index}
         />
       ))}

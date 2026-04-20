@@ -87,6 +87,9 @@ export async function Footer() {
             </p>
           </div>
         </div>
+        <p className="text-center text-xs text-white/30 mt-md font-mono tracking-wide">
+          {t('signature')}
+        </p>
       </div>
     </footer>
   );

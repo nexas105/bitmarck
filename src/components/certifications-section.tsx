@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server'
 import {Link} from '@/i18n/navigation'
+import {SectionHeader} from '@/components/section-header'
 
 const CERT_KEYS = [
   'itil',
@@ -26,13 +27,7 @@ export async function CertificationsSection() {
       className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-primary-50"
     >
       <div className="mx-auto max-w-4xl">
-        <h2
-          id="certifications-heading"
-          className="text-section font-bold text-text-primary tracking-tight inline-block"
-        >
-          {t('heading')}
-          <span className="block h-1 w-16 bg-linear-to-r from-accent to-accent/40 rounded-full mt-sm" aria-hidden="true" />
-        </h2>
+        <SectionHeader number="04" eyebrow="QUALIFIKATIONEN" heading={t('heading')} id="certifications-heading" />
 
         {/* Certifications */}
         <div className="mt-2xl">

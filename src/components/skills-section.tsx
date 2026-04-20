@@ -1,6 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Tag} from '@/components/tag';
+import {SectionHeader} from '@/components/section-header';
 
 
 const SKILL_CATEGORIES = [
@@ -32,16 +33,11 @@ export async function SkillsSection() {
       className="py-4xl px-md md:px-xl scroll-mt-[64px]"
     >
       <div className="mx-auto max-w-4xl">
-        <h2
-          id="skills-heading"
-          className="text-section font-bold text-text-primary mb-md tracking-tight inline-block"
-        >
-          {t('heading')}
-          <span className="block h-1 w-16 bg-linear-to-r from-accent to-accent/40 rounded-full mt-sm" aria-hidden="true" />
-        </h2>
-        <p className="text-lg text-text-secondary mt-md leading-relaxed max-w-2xl">
-          {t('intro')}
-        </p>
+        <SectionHeader number="03" eyebrow="KOMPETENZEN" heading={t('heading')} id="skills-heading">
+          <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
+            {t('intro')}
+          </p>
+        </SectionHeader>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mt-xl">
           {SKILL_CATEGORIES.map((category) => (
             <div key={category.key} className="rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">

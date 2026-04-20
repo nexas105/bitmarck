@@ -23,6 +23,7 @@
     "valueProposition": "Ich analysiere Gesch\u00e4ftsprozesse und \u00fcbersetze sie in pr\u00e4zise Anforderungen \u2014 mit 10+ Jahren Erfahrung an der Schnittstelle zwischen IT und Fachbereich.",
     "cta": "CV herunterladen",
     "ctaCoverLetter": "Anschreiben",
+    "eyebrow": "Bewerbung \u00b7 Business Analyst IAM \u00b7 Bitmarck",
     "ctaDisabled": "CV in K\u00fcrze verf\u00fcgbar",
     "cvFormat": {
       "pdf": {"label": "PDF", "desc": "Gestylter Lebenslauf (2 Seiten, ATS-kompatibel)"},
@@ -30,15 +31,34 @@
       "llm": {"label": "LLM-optimiert", "desc": "Klartext für KI-Parsing und Analyse"}
     }
   },
+  "TrustStrip": {
+    "location": "Königswinter · Umzug nach Essen geplant",
+    "available": "Verfügbar ab Jul/Aug 2026",
+    "languages": "Deutsch C2 · Englisch B2",
+    "domainFit": "SINA-Erfahrung aus 2 sicherheitskritischen Umgebungen"
+  },
   "Metrics": {
     "experience": "10+ Jahre IT",
     "experienceLabel": "Berufserfahrung",
+    "experienceContext": "Von Glasfaser über SINA bis Softwareentwicklung",
     "projects": "6 Projekte",
     "projectsLabel": "Analyse, Konzeption & Umsetzung",
+    "projectsContext": "Eigenständig konzipiert und produktiv betrieben",
     "certificates": "10 Zertifikate",
     "certificatesLabel": "Fachliche Qualifikationen",
+    "certificatesContext": "Inkl. ITIL, SINA CORE, SINA BASICS",
     "degree": "B.Sc. Informatik",
-    "degreeLabel": "Studium (laufend)"
+    "degreeLabel": "Studium (laufend)",
+    "degreeContext": "FernUniversität Hagen, berufsbegleitend"
+  },
+  "WhyBitmarck": {
+    "heading": "Warum Bitmarck",
+    "card1Title": "GKV-Digitalisierung",
+    "card1Description": "Gesundheitswesen digitalisieren — mit echtem Impact auf Millionen Versicherte. Bitmarck gestaltet die IT-Infrastruktur der gesetzlichen Krankenversicherungen.",
+    "card2Title": "IAM-Expertise trifft Praxis",
+    "card2Description": "SINA-Erfahrung aus zwei sicherheitskritischen Umgebungen, eigenständig gebauter Auth-Service mit RBAC — direkt übertragbar auf bitIAM und Telematikinfrastruktur.",
+    "card3Title": "Die richtige Rolle",
+    "card3Description": "Anforderungsanalyse, Prozessmodellierung, Stakeholder-Koordination — nicht als Jobtitel, sondern als das, was ich in jeder Position gemacht habe."
   },
   "Career": {
     "heading": "Berufserfahrung",
@@ -289,7 +309,7 @@
     "skillsGained": "Entwickelte Kompetenzen"
   },
   "Projects": {
-    "heading": "Projekte \u2014 Analyse, Konzeption, Umsetzung",
+    "heading": "Fallstudien aus der Praxis",
     "intro": "Jedes dieser Projekte zeigt denselben Zyklus: Gesch\u00e4ftsproblem verstehen, Anforderungen analysieren, L\u00f6sung konzipieren, Ergebnis liefern.",
     "detailsLink": "Details \u2192",
     "languages": "Sprachen",
@@ -307,7 +327,7 @@
     "viewOnGithub": "Auf GitHub ansehen"
   },
   "Skills": {
-    "heading": "Skills & Kompetenzen",
+    "heading": "Stack für diese Rolle",
     "intro": "Mein Kompetenzprofil verbindet analytische Methoden mit technischem Tiefgang \u2014 die ideale Kombination f\u00fcr einen Business Analyst mit IT-Hintergrund.",
     "detailLink": "Mehr erfahren \u2192",
     "categories": {
@@ -509,7 +529,8 @@
   },
   "Footer": {
     "builtWith": "Gebaut mit Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl \u00b7 Selbst gehostet mit Docker",
-    "terminalHint": "Druecke Ctrl+` für eine Überraschung"
+    "terminalHint": "Druecke Ctrl+` für eine Überraschung",
+    "signature": "Ma\u00dfgefertigt f\u00fcr Bitmarck \u00b7 Business Analyst IAM \u00b7 April 2026 \u00b7 v1.0"
   },
   "Terminal": {
     "greeting": "tobias@bitmarck:~$ Willkommen! Tippe 'help' für eine Liste der Befehle.",

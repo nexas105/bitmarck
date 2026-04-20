@@ -58,6 +58,17 @@ export async function ProjectCard({project}: ProjectCardProps) {
           )}
         </div>
       )}
+      {/* Mini case study preview */}
+      <div className="mt-md pt-md border-t border-border/40">
+        <div className="flex items-start gap-xs mb-xs">
+          <span className="text-xs font-bold text-destructive/70 uppercase tracking-wide shrink-0">Problem</span>
+        </div>
+        <p className="text-xs text-text-secondary line-clamp-2">{t(project.detail.problemKey)}</p>
+        <div className="flex items-start gap-xs mb-xs mt-sm">
+          <span className="text-xs font-bold text-emerald-600/70 uppercase tracking-wide shrink-0">Ergebnis</span>
+        </div>
+        <p className="text-xs text-text-secondary line-clamp-2">{t(project.detail.resultKey)}</p>
+      </div>
       <div className="flex items-center gap-md">
         <Link
           href={`/projekte/${project.slug}`}

@@ -71,13 +71,31 @@ export function StickyHeader() {
               )}
             </button>
           ))}
-          <div className="ml-sm pl-sm border-l border-border/50">
+          <div className="ml-sm pl-sm border-l border-border/50 flex items-center gap-sm">
             <LocaleToggle />
+          </div>
+          <div className="ml-sm pl-sm border-l border-border/50 flex items-center gap-md">
+            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
+            <button
+              onClick={() => {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+              }}
+              className="text-label font-medium text-accent hover:text-accent-hover transition-colors duration-200"
+            >
+              CV
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="bg-accent text-white px-md py-xs rounded-full text-label font-medium hover:bg-accent-hover transition-colors duration-200"
+            >
+              {t('contact')}
+            </button>
           </div>
         </nav>
 
-        {/* Right: Hamburger menu (visible on mobile only) */}
-        <div className="md:hidden">
+        {/* Right: Hamburger menu + availability dot (visible on mobile only) */}
+        <div className="md:hidden flex items-center gap-sm">
+          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
           <HamburgerMenu
             activeSection={activeSection}
             onNavigate={(id) => {

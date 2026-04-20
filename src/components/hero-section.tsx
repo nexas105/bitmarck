@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import {getTranslations} from 'next-intl/server';
+import {MapPin, Calendar, Globe, Shield} from 'lucide-react';
 import {MetricsDashboard} from '@/components/metrics-dashboard';
 import {CvDownload} from '@/components/cv-download';
 import {HeroAnimations} from '@/components/hero-animations';
 
 export async function HeroSection() {
   const t = await getTranslations('Hero');
+  const tt = await getTranslations('TrustStrip');
 
   return (
     <section id="hero" className="relative px-md md:px-xl py-4xl md:py-5xl scroll-mt-[64px] bg-linear-to-br from-primary-900 via-primary-800 to-primary-700 overflow-hidden">
@@ -43,11 +45,9 @@ export async function HeroSection() {
                 <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full bg-emerald-400 border-2 border-primary-900 animate-pulse" aria-hidden="true" />
               </div>
               <div>
-                <div className="inline-flex items-center gap-sm rounded-full bg-white/[0.07] border border-white/10 px-md py-xs mb-sm">
-                  <p className="text-xs font-medium text-white/70 tracking-wide uppercase">
-                    {t('role')}
-                  </p>
-                </div>
+                <p className="font-mono text-xs tracking-[0.2em] uppercase text-white/50 mb-sm">
+                  {t('eyebrow')}
+                </p>
                 <h1 className="text-display md:text-hero font-bold text-white leading-tight tracking-tight">
                   {t('name')}
                 </h1>
@@ -56,6 +56,20 @@ export async function HeroSection() {
             <p className="text-lg text-white/75 leading-relaxed max-w-[480px]">
               {t('valueProposition')}
             </p>
+            {/* Trust Strip */}
+            <div className="flex flex-wrap gap-sm mt-lg">
+              {[
+                {icon: <MapPin className="h-3.5 w-3.5" />, text: tt('location')},
+                {icon: <Calendar className="h-3.5 w-3.5" />, text: tt('available')},
+                {icon: <Globe className="h-3.5 w-3.5" />, text: tt('languages')},
+                {icon: <Shield className="h-3.5 w-3.5" />, text: tt('domainFit')},
+              ].map((chip) => (
+                <span key={chip.text} className="inline-flex items-center gap-xs rounded-full bg-white/[0.07] border border-white/10 px-sm py-xs text-xs text-white/60">
+                  {chip.icon}
+                  {chip.text}
+                </span>
+              ))}
+            </div>
             {/* CTA buttons — CV formats dropdown + cover letter */}
             <div className="mt-xl">
               <CvDownload />
