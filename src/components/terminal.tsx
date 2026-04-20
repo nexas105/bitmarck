@@ -26,6 +26,24 @@ function TerminalInner({onClose}: {onClose: () => void}) {
     contact: () => (
       <span style={{whiteSpace: 'pre-wrap'}}>{t('contact')}</span>
     ),
+    bewerbung: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('bewerbung')}</span>
+    ),
+    iam: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('iam')}</span>
+    ),
+    projekte: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('projekte')}</span>
+    ),
+    verfügbar: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('verfuegbar')}</span>
+    ),
+    verfuegbar: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('verfuegbar')}</span>
+    ),
+    match: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('match')}</span>
+    ),
     help: () => <span style={{whiteSpace: 'pre-wrap'}}>{t('help')}</span>,
     exit: () => {
       // Defer the close to after render cycle

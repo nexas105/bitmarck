@@ -3,136 +3,153 @@
 import {useState} from 'react';
 import {motion, AnimatePresence} from 'motion/react';
 import {useTranslations} from 'next-intl';
-import {CheckCircle2, XCircle, RotateCcw} from 'lucide-react';
+import {CheckCircle2, RotateCcw, Search} from 'lucide-react';
 
-type QuizState = 'playing' | 'finished';
+type ItemState = 'pending' | 'revealed';
+
+const REQUIREMENTS = [
+  {key: 'q1'},
+  {key: 'q2'},
+  {key: 'q3'},
+  {key: 'q4'},
+  {key: 'q5'},
+];
 
 export function QuizGame() {
   const t = useTranslations('Interactive.quiz');
-  const [current, setCurrent] = useState(0);
-  const [score, setScore] = useState(0);
-  const [state, setState] = useState<QuizState>('playing');
-  const [revealed, setRevealed] = useState<boolean | null>(null);
+  const [states, setStates] = useState<Record<string, ItemState>>(
+    Object.fromEntries(REQUIREMENTS.map((r) => [r.key, 'pending']))
+  );
 
-  const questions = [
-    {key: 'q1', answer: true},
-    {key: 'q2', answer: true},
-    {key: 'q3', answer: true},
-    {key: 'q4', answer: true},
-    {key: 'q5', answer: true},
-  ];
+  const revealedCount = Object.values(states).filter((s) => s === 'revealed').length;
+  const allRevealed = revealedCount === REQUIREMENTS.length;
 
-  function handleAnswer(answer: boolean) {
-    const correct = answer === questions[current].answer;
-    if (correct) setScore((s) => s + 1);
-    setRevealed(correct);
-
-    setTimeout(() => {
-      setRevealed(null);
-      if (current + 1 >= questions.length) {
-        setState('finished');
-      } else {
-        setCurrent((c) => c + 1);
-      }
-    }, 1500);
+  function reveal(key: string) {
+    setStates((prev) => ({...prev, [key]: 'revealed'}));
   }
 
   function reset() {
-    setCurrent(0);
-    setScore(0);
-    setState('playing');
-    setRevealed(null);
+    setStates(Object.fromEntries(REQUIREMENTS.map((r) => [r.key, 'pending'])));
   }
 
   return (
-    <div className="flex flex-col gap-lg">
-      <AnimatePresence mode="wait">
-        {state === 'playing' ? (
+    <div className="flex flex-col gap-md">
+      {/* Progress bar */}
+      <div className="flex items-center gap-sm">
+        <div className="flex-1 h-1.5 bg-surface-subtle rounded-full overflow-hidden">
           <motion.div
-            key={`q-${current}`}
-            initial={{opacity: 0, x: 20}}
-            animate={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -20}}
-            transition={{duration: 0.3}}
-            className="flex flex-col gap-md"
-          >
-            {/* Progress */}
-            <div className="flex items-center gap-sm">
-              <div className="flex-1 h-1.5 bg-surface-subtle rounded-full overflow-hidden">
-                <motion.div
-                  className="h-full bg-accent rounded-full"
-                  initial={{width: `${(current / questions.length) * 100}%`}}
-                  animate={{width: `${((current + 1) / questions.length) * 100}%`}}
-                  transition={{duration: 0.4}}
-                />
-              </div>
-              <span className="text-xs text-text-tertiary font-mono">
-                {current + 1}/{questions.length}
-              </span>
-            </div>
+            className="h-full bg-accent rounded-full"
+            initial={{width: '0%'}}
+            animate={{width: `${(revealedCount / REQUIREMENTS.length) * 100}%`}}
+            transition={{duration: 0.4}}
+          />
+        </div>
+        <span className="text-xs text-text-tertiary font-mono">
+          {revealedCount}/{REQUIREMENTS.length}
+        </span>
+      </div>
 
-            {/* Question */}
-            <p className="text-body font-medium text-text-primary leading-relaxed">
-              {t(`questions.${questions[current].key}.question`)}
-            </p>
+      {/* Requirement checklist */}
+      <div className="flex flex-col gap-sm">
+        {REQUIREMENTS.map((req, i) => {
+          const state = states[req.key];
+          return (
+            <motion.div
+              key={req.key}
+              initial={{opacity: 0, y: 8}}
+              animate={{opacity: 1, y: 0}}
+              transition={{delay: i * 0.06, duration: 0.3}}
+              className={`rounded-xl border px-md py-sm transition-colors duration-300 ${
+                state === 'revealed'
+                  ? 'border-green-200 bg-green-50/50'
+                  : 'border-border/60 bg-white'
+              }`}
+            >
+              <div className="flex items-start gap-sm">
+                {/* Icon area */}
+                <div className="mt-0.5 shrink-0">
+                  <AnimatePresence mode="wait">
+                    {state === 'revealed' ? (
+                      <motion.div
+                        key="check"
+                        initial={{scale: 0, rotate: -90}}
+                        animate={{scale: 1, rotate: 0}}
+                        transition={{type: 'spring', stiffness: 500, damping: 15}}
+                      >
+                        <CheckCircle2 className="h-5 w-5 text-green-600" />
+                      </motion.div>
+                    ) : (
+                      <motion.div
+                        key="pending"
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                      >
+                        <div className="h-5 w-5 rounded-full border-2 border-border" />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
 
-            {/* Answer feedback */}
-            {revealed !== null && (
-              <motion.div
-                initial={{opacity: 0, y: -8}}
-                animate={{opacity: 1, y: 0}}
-                className={`flex items-center gap-sm rounded-xl px-md py-sm text-sm font-medium ${
-                  revealed
-                    ? 'bg-green-50 text-green-700'
-                    : 'bg-amber-50 text-amber-700'
-                }`}
-              >
-                {revealed ? (
-                  <CheckCircle2 className="h-4 w-4 shrink-0" />
-                ) : (
-                  <XCircle className="h-4 w-4 shrink-0" />
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <p className={`text-sm font-medium leading-snug ${
+                    state === 'revealed' ? 'text-text-primary' : 'text-text-secondary'
+                  }`}>
+                    {t(`questions.${req.key}.question`)}
+                  </p>
+
+                  {/* Match reveal */}
+                  <AnimatePresence>
+                    {state === 'revealed' && (
+                      <motion.p
+                        initial={{height: 0, opacity: 0}}
+                        animate={{height: 'auto', opacity: 1}}
+                        exit={{height: 0, opacity: 0}}
+                        transition={{duration: 0.3}}
+                        className="text-xs text-green-700 mt-xs leading-relaxed overflow-hidden"
+                      >
+                        {t(`questions.${req.key}.match`)}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                {/* Action button */}
+                {state === 'pending' && (
+                  <button
+                    onClick={() => reveal(req.key)}
+                    className="shrink-0 inline-flex items-center gap-1 min-h-[32px] px-sm rounded-lg bg-accent/8 text-accent text-xs font-semibold hover:bg-accent/15 transition-colors duration-200"
+                  >
+                    <Search className="h-3 w-3" />
+                    Pr&uuml;fen
+                  </button>
                 )}
-                {t(`questions.${questions[current].key}.match`)}
-              </motion.div>
-            )}
-
-            {/* Buttons */}
-            {revealed === null && (
-              <div className="flex gap-md">
-                <button
-                  onClick={() => handleAnswer(true)}
-                  className="flex-1 min-h-[44px] rounded-xl bg-accent text-white font-semibold text-body hover:bg-accent-hover transition-colors duration-200"
-                >
-                  {t('yes')}
-                </button>
-                <button
-                  onClick={() => handleAnswer(false)}
-                  className="flex-1 min-h-[44px] rounded-xl border border-border bg-white text-text-primary font-semibold text-body hover:bg-surface-subtle transition-colors duration-200"
-                >
-                  {t('no')}
-                </button>
               </div>
-            )}
-          </motion.div>
-        ) : (
+            </motion.div>
+          );
+        })}
+      </div>
+
+      {/* Result when all revealed */}
+      <AnimatePresence>
+        {allRevealed && (
           <motion.div
-            key="result"
             initial={{opacity: 0, scale: 0.95}}
             animate={{opacity: 1, scale: 1}}
-            className="flex flex-col items-center gap-md text-center py-md"
+            className="flex flex-col items-center gap-sm text-center py-md rounded-xl bg-green-50 border border-green-200"
           >
-            <div className="text-4xl font-bold text-accent">
-              {score}/{questions.length}
+            <div className="text-3xl font-bold text-accent">
+              {revealedCount}/{REQUIREMENTS.length}
             </div>
             <p className="text-heading font-bold text-text-primary">
               {t('resultTitle')}
             </p>
-            <p className="text-body text-text-secondary">
+            <p className="text-sm text-text-secondary px-md">
               {t('resultDescription')}
             </p>
             <button
               onClick={reset}
-              className="inline-flex items-center gap-sm mt-sm text-caption font-medium text-accent hover:text-accent-hover transition-colors"
+              className="inline-flex items-center gap-sm mt-xs text-caption font-medium text-accent hover:text-accent-hover transition-colors"
             >
               <RotateCcw className="h-3.5 w-3.5" />
               {t('restart')}

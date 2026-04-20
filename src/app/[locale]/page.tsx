@@ -1,6 +1,7 @@
 import {setRequestLocale} from 'next-intl/server';
 import {HeroSection} from '@/components/hero-section';
 import {WhyBitmarckSection} from '@/components/why-bitmarck-section';
+import {JobMatchSection} from '@/components/job-match-section';
 import {CareerSection} from '@/components/career-section';
 import {ProjectsSection} from '@/components/projects-section';
 import {SkillsSection} from '@/components/skills-section';
@@ -23,6 +24,9 @@ export default async function HomePage({params}: Props) {
       <HeroSection />
       <AnimateOnScroll preset="fadeUp">
         <WhyBitmarckSection />
+      </AnimateOnScroll>
+      <AnimateOnScroll preset="fadeUp" delay={0.05}>
+        <JobMatchSection />
       </AnimateOnScroll>
 
       {/* Light sections with subtle stepping */}

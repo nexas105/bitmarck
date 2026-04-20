@@ -41,7 +41,7 @@ export function UniversalCarousel({
   showNavigation = true,
   autoplayDelay = 4000,
 }: Props) {
-  const [activeView, setActiveView] = useState<View>('Carousel')
+  const [activeView, setActiveView] = useState<View>('Grid')
   const [activeEffect, setActiveEffect] = useState<SwiperEffect>(defaultEffect)
   const items = React.Children.toArray(children)
 

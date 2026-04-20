@@ -19,6 +19,7 @@ type CareerStationCardProps = {
   detailLink: string
   isLast?: boolean
   index: number
+  dataMatch?: boolean
 }
 
 export function CareerStationCard({
@@ -35,6 +36,7 @@ export function CareerStationCard({
   detailLink,
   isLast = false,
   index,
+  dataMatch,
 }: CareerStationCardProps) {
   const [isExpanded, setIsExpanded] = useState(false)
 
@@ -49,6 +51,7 @@ export function CareerStationCard({
         delay: index * 0.08,
         ease: [0.16, 1, 0.3, 1],
       }}
+      {...(dataMatch !== undefined ? {'data-match': String(dataMatch)} : {})}
     >
       {/* Timeline dot with ring animation */}
       <motion.div

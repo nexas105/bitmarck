@@ -110,7 +110,6 @@ body {
   font-family: var(--font-family-sans);
   font-size: var(--text-body);
   line-height: var(--line-height-loose);
-  overflow-x: hidden;
 }
 
 /* Global focus-visible */
@@ -172,7 +171,22 @@ section + section {
   position: relative;
 }
 
-/* Focus mode — hide optional sections */
-.focus-mode .section-optional {
+/* Recruiter mode — compact layout + hide optional sections */
+.recruiter-mode .section-optional {
   display: none;
+}
+.recruiter-mode section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Match mode — highlight relevant sections */
+.match-mode [data-match="true"] {
+  outline: 2px solid var(--color-success);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+.match-mode [data-match="false"] {
+  opacity: 0.3;
+  filter: grayscale(0.5);
 }

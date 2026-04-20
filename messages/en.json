@@ -597,7 +597,12 @@
     "projects": "1. Auth API Service -- Central IAM system: requirements analysis, access concept, implementation\n2. Next CMS -- Client requirements analyzed, architecture designed, multi-tenant implementation\n3. MyFitCoach PRO -- Stakeholder requirements prioritized, multi-platform solution designed\n4. EroHub -- Privacy requirements analyzed, privacy-by-design architecture implemented\n5. Logbuch App -- Field requirements gathered, dynamic forms and system integration designed\n6. MPA Nutrition Shop -- E-commerce business processes modeled and implemented end-to-end",
     "motivation": "Bitmarck digitizes healthcare -- a domain with real impact on millions of insured people. As a Business Analyst IAM, I can combine my SINA experience, my understanding of auth architectures, and my analytical approach with a task that truly matters: making digital insured identities secure and usable.",
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
-    "help": "Available commands:\n  whoami      -- Who is Tobias?\n  skills      -- Technical skills\n  projects    -- Project highlights\n  motivation  -- Why Bitmarck?\n  contact     -- Contact info\n  help        -- Show this help\n  clear       -- Clear terminal\n  exit        -- Close terminal",
+    "bewerbung": "Match Score: 92%\n\nTop 3 reasons why Tobias fits Bitmarck:\n  1. SINA experience from two security-critical environments (BWI + Xecuro) -- directly transferable to bitIAM and Telematik infrastructure\n  2. Independently built Auth Service with JWT/RBAC -- IAM understood practically, not just theoretically\n  3. Analytical approach at every career station -- from measurement teams to requirements gathering, always at the interface between tech and business",
+    "iam": "Tobias' IAM Skills:\n  SINA          -- Secure Inter-Network Architecture (BWI, Xecuro)\n  SINA CA       -- Certificate Authority Administration (Xecuro)\n  JWT           -- Token flow with access/refresh rotation (Auth API)\n  RBAC          -- Fine-grained permission system (Auth API)\n  RLS           -- Row-Level Security / multi-tenancy (Next CMS)\n  Auth Systems  -- Session, OAuth, MFA (multiple projects)\n  API Design    -- RESTful APIs with security focus",
+    "projekte": "Projects with BA framing:\n  1. Auth API Service    -- Central IAM: access concept defined, data model designed, RBAC implemented\n  2. Next CMS            -- Client requirements gathered, headless architecture with RLS designed\n  3. MyFitCoach PRO      -- Stakeholder analysis with 2 user groups, requirements prioritized\n  4. Partner App         -- Privacy requirements analysis, privacy-by-design architecture\n  5. Logbuch App         -- Field requirements gathered with end users, system integration\n  6. MPA Nutrition Shop  -- E-commerce business processes modeled end-to-end",
+    "verfuegbar": "Available from Jul/Aug 2026 \u00b7 Full-time \u00b7 Remote/Hybrid \u00b7 Relocation to Essen planned",
+    "match": "Match Score: 92%\n\nRequirements Checklist:\n  [x] Analytical thinking           -- 10+ years practice\n  [x] SINA experience               -- BWI + Xecuro\n  [x] IAM understanding             -- Built Auth API with JWT/RBAC\n  [x] Requirements analysis         -- BHF Group, own projects\n  [x] Stakeholder management        -- Biermann, BHF, clients\n  [x] ITIL processes                -- ITIL Foundation certified\n  [x] Documentation                 -- All career stations\n  [x] Process optimization          -- BHF, Xecuro, Persona\n  [x] Technical understanding       -- Full-stack developer\n  [ ] Confluence/Jira               -- Comparable tools (IBM Maximo, Jira at BWI)",
+    "help": "Available commands:\n  whoami      -- Who is Tobias?\n  skills      -- Technical skills\n  projects    -- Project highlights\n  motivation  -- Why Bitmarck?\n  contact     -- Contact info\n  bewerbung   -- Match score + top 3 reasons\n  iam         -- IAM skills in detail\n  projekte    -- Projects with BA framing\n  verfuegbar  -- Availability & location\n  match       -- Match percentage + requirements checklist\n  help        -- Show this help\n  clear       -- Clear terminal\n  exit        -- Close terminal",
     "unknown": "Command not found: {cmd}. Type 'help' for a list of commands.",
     "prompt": "tobias@bitmarck:~$",
     "fabLabel": "Open terminal"
@@ -834,12 +839,99 @@
       }
     }
   },
+  "JobMatch": {
+    "eyebrow": "Job Profile Match",
+    "heading": "Requirements vs. Qualifications",
+    "intro": "Point-by-point comparison: What Bitmarck is looking for and what I bring to the table.",
+    "colBitmarck": "Bitmarck is looking for",
+    "colTobias": "Tobias brings",
+    "matchLabel": "Match",
+    "items": {
+      "digitalization": {
+        "requirement": "Experience in digitalization projects",
+        "evidence": "6 independent software projects, CRM at BHF Group"
+      },
+      "requirements": {
+        "requirement": "Requirements analysis, ideally telematics infrastructure",
+        "evidence": "SINA experience at BWI + Xecuro, auth service with RBAC"
+      },
+      "useCases": {
+        "requirement": "Use cases, epics, user stories",
+        "evidence": "Own projects: use cases defined, data models designed"
+      },
+      "bpmn": {
+        "requirement": "Process modeling (BPMN)",
+        "evidence": "Process optimization at BHF, Persona, Xecuro"
+      },
+      "testing": {
+        "requirement": "Interface to test management",
+        "evidence": "Quality assurance in every project, ITIL Foundation"
+      },
+      "tools": {
+        "requirement": "Confluence and JIRA",
+        "evidence": "IBM Maximo at BWI, Jira experience, structured ticketing"
+      },
+      "analytical": {
+        "requirement": "Solution-oriented analytical work style",
+        "evidence": "Took on an analytical role at every position"
+      }
+    }
+  },
+  "CommandPalette": {
+    "placeholder": "Type a keyword...",
+    "noResults": "No results found.",
+    "hintNavigate": "Navigate",
+    "hintSelect": "Select",
+    "hintClose": "Close",
+    "items": {
+      "iam": {
+        "keyword": "IAM",
+        "description": "Skills — IAM & Security"
+      },
+      "sina": {
+        "keyword": "SINA",
+        "description": "Career — BWI / Xecuro"
+      },
+      "anforderungsanalyse": {
+        "keyword": "Requirements Analysis",
+        "description": "Skills — BA Methods"
+      },
+      "projekte": {
+        "keyword": "Projects",
+        "description": "Case studies from practice"
+      },
+      "verfuegbar": {
+        "keyword": "Available",
+        "description": "FAQ — Start date"
+      },
+      "standort": {
+        "keyword": "Location",
+        "description": "FAQ — Location & Relocation"
+      },
+      "kontakt": {
+        "keyword": "Contact",
+        "description": "Contact form & direct contact"
+      },
+      "cv": {
+        "keyword": "CV",
+        "description": "View resume"
+      },
+      "erfahrung": {
+        "keyword": "Experience",
+        "description": "Professional experience & career"
+      },
+      "zertifikate": {
+        "keyword": "Certifications",
+        "description": "Certifications & Education"
+      }
+    }
+  },
   "Interactive": {
     "badge": "Interactive",
     "pageTitle": "Explore Interactively",
     "pageIntro": "Get to know me in a playful way -- three mini-games that show why I'm a great fit for Bitmarck.",
     "quiz": {
-      "title": "Does Tobias Fit Bitmarck?",
+      "title": "Requirements Check",
       "yes": "Yes",
       "no": "No",
       "restart": "Play again",

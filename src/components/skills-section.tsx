@@ -32,18 +32,22 @@ const SKILL_CATEGORIES = [
   {
     key: 'iam' as const,
     skills: ['SINA', 'RLS', 'JWT', 'RBAC', 'Auth Systems', 'API Design'],
+    dataMatch: true,
   },
   {
     key: 'ba' as const,
     skills: ['Anforderungsanalyse', 'Use Cases', 'DSGVO', 'Prozessoptimierung', 'Dokumentation', 'Stakeholder Management'],
+    dataMatch: true,
   },
   {
     key: 'devops' as const,
     skills: ['Docker', 'Linux', 'Self-Hosting', 'CI/CD', 'Cisco', 'LANCOM', 'VLAN', 'Git'],
+    dataMatch: false,
   },
   {
     key: 'languages' as const,
     skills: ['TypeScript', 'JavaScript', 'Dart', 'Java', 'SQL', 'Next.js', 'React', 'Flutter', 'Node.js', 'Tailwind CSS'],
+    dataMatch: false,
   },
 ] as const;
 
@@ -72,6 +76,7 @@ export async function SkillsSection() {
                 <div
                   key={category.key}
                   className="rounded-2xl border border-border/50 bg-surface-raised shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden h-full"
+                  data-match={String(category.dataMatch)}
                 >
                   <div className={`h-1.5 bg-linear-to-r ${style.gradient}`} />
                   <div className="p-lg">

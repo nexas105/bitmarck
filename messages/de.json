@@ -600,7 +600,12 @@
     "projects": "1. Auth API Service -- Zentrales IAM-System: Anforderungsanalyse, Zugriffskonzept, Implementierung\n2. Next CMS -- Kundenanforderung analysiert, Architektur konzipiert, mandantenfähig umgesetzt\n3. MyFitCoach PRO -- Stakeholder-Anforderungen priorisiert, Multi-Platform-Lösung konzipiert\n4. EroHub -- Datenschutzanforderungen analysiert, Privacy-by-Design-Architektur umgesetzt\n5. Logbuch App -- Feldanforderungen erhoben, dynamische Formulare und Systemintegration konzipiert\n6. MPA Nutrition Shop -- E-Commerce-Geschäftsprozesse End-to-End modelliert und umgesetzt",
     "motivation": "Bitmarck digitalisiert das Gesundheitswesen -- ein Bereich mit echtem Impact auf Millionen Versicherte. Als Business Analyst IAM kann ich meine SINA-Erfahrung, mein Verständnis für Auth-Architekturen und meine analytische Arbeitsweise mit einer Aufgabe verbinden, die wirklich zaehlt: digitale Versichertenidentitaeten sicher und nutzbar zu gestalten.",
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
-    "help": "Verfuegbare Befehle:\n  whoami      -- Wer ist Tobias?\n  skills      -- Technische Skills\n  projects    -- Projekt-Highlights\n  motivation  -- Warum Bitmarck?\n  contact     -- Kontaktdaten\n  help        -- Diese Hilfe\n  clear       -- Terminal leeren\n  exit        -- Terminal schliessen",
+    "bewerbung": "Match-Score: 92%\n\nTop 3 Gruende, warum Tobias zu Bitmarck passt:\n  1. SINA-Erfahrung aus zwei sicherheitskritischen Umgebungen (BWI + Xecuro) -- direkt uebertragbar auf bitIAM und Telematikinfrastruktur\n  2. Eigenstaendig gebauter Auth-Service mit JWT/RBAC -- IAM nicht nur theoretisch, sondern praktisch verstanden\n  3. Analytische Arbeitsweise in jeder Station -- vom Messteam bis zur Anforderungserhebung, immer an der Schnittstelle zwischen Technik und Fachbereich",
+    "iam": "IAM-Skills von Tobias:\n  SINA          -- Secure Inter-Netzwerk Architektur (BWI, Xecuro)\n  SINA CA       -- Certificate Authority Administration (Xecuro)\n  JWT           -- Token-Flow mit Access/Refresh-Rotation (Auth API)\n  RBAC          -- Feingranulares Berechtigungssystem (Auth API)\n  RLS           -- Row-Level Security / Mandantentrennung (Next CMS)\n  Auth Systems  -- Session, OAuth, MFA (mehrere Projekte)\n  API Design    -- RESTful APIs mit Sicherheitsfokus",
+    "projekte": "Projekte mit BA-Framing:\n  1. Auth API Service    -- Zentrales IAM: Zugriffskonzept definiert, Datenmodell entworfen, RBAC implementiert\n  2. Next CMS            -- Kundenanforderungen erhoben, Headless-Architektur mit RLS konzipiert\n  3. MyFitCoach PRO      -- Stakeholder-Analyse mit 2 Nutzergruppen, Anforderungen priorisiert\n  4. Partner App         -- Datenschutz-Anforderungsanalyse, Privacy-by-Design-Architektur\n  5. Logbuch App         -- Feldanforderungen mit Endanwendern erhoben, Systemintegration\n  6. MPA Nutrition Shop  -- E-Commerce-Geschaeftsprozesse End-to-End modelliert",
+    "verfuegbar": "Ab Jul/Aug 2026 \u00b7 Vollzeit \u00b7 Remote/Hybrid \u00b7 Umzug nach Essen geplant",
+    "match": "Match-Score: 92%\n\nAnforderungs-Checkliste:\n  [x] Analytisches Denken          -- 10+ Jahre Praxis\n  [x] SINA-Erfahrung               -- BWI + Xecuro\n  [x] IAM-Verstaendnis             -- Auth API mit JWT/RBAC gebaut\n  [x] Anforderungsanalyse          -- BHF Group, Eigenprojekte\n  [x] Stakeholder-Management       -- Biermann, BHF, Kunden\n  [x] ITIL-Prozesse                -- ITIL Foundation zertifiziert\n  [x] Dokumentation                -- Alle Stationen\n  [x] Prozessoptimierung           -- BHF, Xecuro, Persona\n  [x] Technisches Verstaendnis     -- Full-Stack-Entwickler\n  [ ] Confluence/Jira              -- Vergleichbare Tools (IBM Maximo, Jira bei BWI)",
+    "help": "Verfuegbare Befehle:\n  whoami      -- Wer ist Tobias?\n  skills      -- Technische Skills\n  projects    -- Projekt-Highlights\n  motivation  -- Warum Bitmarck?\n  contact     -- Kontaktdaten\n  bewerbung   -- Match-Score + Top 3 Gruende\n  iam         -- IAM-Skills im Detail\n  projekte    -- Projekte mit BA-Framing\n  verfuegbar  -- Verfuegbarkeit & Standort\n  match       -- Match-Prozent + Anforderungs-Checkliste\n  help        -- Diese Hilfe\n  clear       -- Terminal leeren\n  exit        -- Terminal schliessen",
     "unknown": "Befehl nicht gefunden: {cmd}. Tippe 'help' für eine Liste der Befehle.",
     "prompt": "tobias@bitmarck:~$",
     "fabLabel": "Terminal oeffnen"
@@ -837,12 +842,99 @@
       }
     }
   },
+  "JobMatch": {
+    "eyebrow": "Stellenprofil-Abgleich",
+    "heading": "Anforderungen vs. Qualifikation",
+    "intro": "Punkt-für-Punkt-Abgleich: Was Bitmarck sucht und was ich mitbringe.",
+    "colBitmarck": "Bitmarck sucht",
+    "colTobias": "Tobias bringt mit",
+    "matchLabel": "Match",
+    "items": {
+      "digitalization": {
+        "requirement": "Erfahrung in Digitalisierungsprojekten",
+        "evidence": "6 eigenständige Softwareprojekte, CRM bei BHF Group"
+      },
+      "requirements": {
+        "requirement": "Anforderungsanalyse, idealerweise Telematikinfrastruktur",
+        "evidence": "SINA-Erfahrung bei BWI + Xecuro, Auth-Service mit RBAC"
+      },
+      "useCases": {
+        "requirement": "Use Cases, Epics, User Stories",
+        "evidence": "Eigene Projekte: Use Cases definiert, Datenmodelle entworfen"
+      },
+      "bpmn": {
+        "requirement": "Prozessmodellierung (BPMN)",
+        "evidence": "Prozessoptimierung bei BHF, Persona, Xecuro"
+      },
+      "testing": {
+        "requirement": "Schnittstelle zum Testmanagement",
+        "evidence": "Qualitätssicherung in jedem Projekt, ITIL Foundation"
+      },
+      "tools": {
+        "requirement": "Confluence und JIRA",
+        "evidence": "IBM Maximo bei BWI, Jira-Erfahrung, strukturiertes Ticketing"
+      },
+      "analytical": {
+        "requirement": "Lösungsorientierter analytischer Arbeitsstil",
+        "evidence": "In jeder Station analytische Rolle eingenommen"
+      }
+    }
+  },
+  "CommandPalette": {
+    "placeholder": "Stichwort eingeben...",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "hintNavigate": "Navigieren",
+    "hintSelect": "Auswählen",
+    "hintClose": "Schließen",
+    "items": {
+      "iam": {
+        "keyword": "IAM",
+        "description": "Skills — IAM & Security"
+      },
+      "sina": {
+        "keyword": "SINA",
+        "description": "Karriere — BWI / Xecuro"
+      },
+      "anforderungsanalyse": {
+        "keyword": "Anforderungsanalyse",
+        "description": "Skills — BA-Methoden"
+      },
+      "projekte": {
+        "keyword": "Projekte",
+        "description": "Fallstudien aus der Praxis"
+      },
+      "verfuegbar": {
+        "keyword": "Verfügbar",
+        "description": "FAQ — Starttermin"
+      },
+      "standort": {
+        "keyword": "Standort",
+        "description": "FAQ — Standort & Umzug"
+      },
+      "kontakt": {
+        "keyword": "Kontakt",
+        "description": "Kontaktformular & Direktkontakt"
+      },
+      "cv": {
+        "keyword": "CV",
+        "description": "Lebenslauf ansehen"
+      },
+      "erfahrung": {
+        "keyword": "Erfahrung",
+        "description": "Berufserfahrung & Karriere"
+      },
+      "zertifikate": {
+        "keyword": "Zertifikate",
+        "description": "Zertifikate & Ausbildung"
+      }
+    }
+  },
   "Interactive": {
     "badge": "Interaktiv",
     "pageTitle": "Interaktiv entdecken",
     "pageIntro": "Lernen Sie mich auf spielerische Weise kennen -- drei Mini-Games, die zeigen, warum ich zu Bitmarck passe.",
     "quiz": {
-      "title": "Passt Tobias zu Bitmarck?",
+      "title": "Anforderungs-Check",
       "yes": "Ja",
       "no": "Nein",
       "restart": "Nochmal spielen",

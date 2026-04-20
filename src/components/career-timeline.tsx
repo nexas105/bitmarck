@@ -17,6 +17,18 @@ const STATION_KEYS = [
   'telekom',
 ] as const
 
+const STATION_MATCH: Record<string, boolean> = {
+  bwi: true,
+  xecuro: true,
+  bhf: true,
+  bitmarck: true,
+  telekom: false,
+  mediacom: false,
+  biermann: false,
+  persona: false,
+  freelancer: false,
+}
+
 export function CareerTimeline() {
   const t = useTranslations('Career')
   const containerRef = useRef<HTMLDivElement>(null)
@@ -97,6 +109,7 @@ export function CareerTimeline() {
               detailLink={detailLink}
               isLast={index === STATION_KEYS.length - 1}
               index={index}
+              dataMatch={STATION_MATCH[key]}
             />
           )
         })}

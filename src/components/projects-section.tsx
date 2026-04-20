@@ -4,6 +4,15 @@ import {getAllProjects} from '@/data/projects';
 import {SectionHeader} from '@/components/section-header';
 import {UniversalCarousel} from '@/components/universal-carousel';
 
+const PROJECT_MATCH: Record<string, boolean> = {
+  'auth-api': true,
+  'next-cms': true,
+  'myfitcoach': false,
+  'partner-app': false,
+  'logbuch-app': false,
+  'mpa-nutrition': false,
+};
+
 export async function ProjectsSection() {
   const t = await getTranslations('Projects');
   const projects = getAllProjects();
@@ -19,7 +28,7 @@ export async function ProjectsSection() {
         <div className="mt-xl">
           <UniversalCarousel id="projects" defaultEffect="Coverflow" gridCols={3} autoplayDelay={4000}>
             {projects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+              <ProjectCard key={project.slug} project={project} dataMatch={PROJECT_MATCH[project.slug]} />
             ))}
           </UniversalCarousel>
         </div>

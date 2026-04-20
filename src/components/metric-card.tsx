@@ -1,13 +1,15 @@
 'use client'
 
-import {useEffect, useRef} from 'react'
-import {motion, useInView, animate} from 'motion/react'
+import {useEffect, useRef, useState} from 'react'
+import {motion, useInView, animate, AnimatePresence} from 'motion/react'
+import {ChevronDown} from 'lucide-react'
 
 type MetricCardProps = {
   value: string
   label: string
   context: string
   index: number
+  proof?: string[]
 }
 
 function parseNumericValue(value: string): {num: number; prefix: string; suffix: string} | null {
@@ -57,7 +59,9 @@ function AnimatedNumber({value}: {value: string}) {
   )
 }
 
-export function MetricCard({value, label, context, index}: MetricCardProps) {
+export function MetricCard({value, label, context, index, proof}: MetricCardProps) {
+  const [expanded, setExpanded] = useState(false)
+
   return (
     <motion.div
       initial={{opacity: 0, y: 24, scale: 0.92}}
@@ -68,11 +72,12 @@ export function MetricCard({value, label, context, index}: MetricCardProps) {
         ease: [0.16, 1, 0.3, 1],
       }}
       whileHover={{
-        scale: 1.04,
+        scale: expanded ? 1 : 1.04,
         borderColor: 'rgba(255,255,255,0.3)',
         transition: {type: 'spring', stiffness: 400, damping: 20},
       }}
-      className="group relative rounded-2xl border border-white/[0.15] bg-white/[0.08] backdrop-blur-md p-xl text-center overflow-hidden cursor-default"
+      onClick={() => proof && proof.length > 0 && setExpanded(!expanded)}
+      className={`group relative rounded-2xl border border-white/[0.15] bg-white/[0.08] backdrop-blur-md p-xl text-center overflow-hidden ${proof && proof.length > 0 ? 'cursor-pointer' : 'cursor-default'}`}
     >
       {/* Subtle gradient shimmer on hover */}
       <div className="absolute inset-0 bg-linear-to-br from-accent/[0.06] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true" />
@@ -88,7 +93,44 @@ export function MetricCard({value, label, context, index}: MetricCardProps) {
         <p className="text-[10px] text-white/40 mt-xs leading-snug">
           {context}
         </p>
+        {/* Tap hint */}
+        {proof && proof.length > 0 && (
+          <p className="text-[9px] text-white/30 mt-sm flex items-center justify-center gap-1 tracking-wide">
+            <ChevronDown className={`h-2.5 w-2.5 transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`} />
+            Details antippen
+          </p>
+        )}
       </div>
+
+      {/* Proof expansion */}
+      <AnimatePresence>
+        {expanded && proof && (
+          <motion.div
+            initial={{height: 0, opacity: 0}}
+            animate={{height: 'auto', opacity: 1}}
+            exit={{height: 0, opacity: 0}}
+            transition={{duration: 0.3, ease: [0.16, 1, 0.3, 1]}}
+            className="relative overflow-hidden"
+          >
+            <div className="mt-md pt-md border-t border-white/10">
+              <ul className="space-y-1 text-left">
+                {proof.map((item, i) => (
+                  <motion.li
+                    key={item}
+                    initial={{opacity: 0, x: -8}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{delay: i * 0.05, duration: 0.25}}
+                    className="text-[11px] text-white/60 flex items-start gap-1.5"
+                  >
+                    <span className="text-accent mt-px shrink-0">&#x2713;</span>
+                    {item}
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   )
 }

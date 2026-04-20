@@ -6,6 +6,7 @@ import {getRepoData} from '@/lib/github';
 
 type ProjectCardProps = {
   project: Project;
+  dataMatch?: boolean;
 };
 
 const PROJECT_COLORS: Record<string, string> = {
@@ -31,7 +32,7 @@ function getDaysAgo(dateString: string): number {
   return Math.floor((now.getTime() - then.getTime()) / (1000 * 60 * 60 * 24));
 }
 
-export async function ProjectCard({project}: ProjectCardProps) {
+export async function ProjectCard({project, dataMatch}: ProjectCardProps) {
   const t = await getTranslations();
 
   const githubData =
@@ -42,7 +43,7 @@ export async function ProjectCard({project}: ProjectCardProps) {
   const gradient = PROJECT_COLORS[project.slug] || 'from-accent to-accent/70';
 
   return (
-    <article className="group rounded-2xl border border-border/50 bg-surface-raised flex flex-col shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 ease-out overflow-hidden h-full">
+    <article className="group rounded-2xl border border-border/50 bg-surface-raised flex flex-col shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 ease-out overflow-hidden h-full" {...(dataMatch !== undefined ? {'data-match': String(dataMatch)} : {})}>
       {/* Color accent top bar */}
       <div className={`h-1.5 bg-linear-to-r ${gradient}`} />
 

@@ -10,6 +10,8 @@ import {Footer} from '@/components/footer';
 import {MotionProvider} from '@/components/motion-provider';
 import {Terminal} from '@/components/terminal';
 import {InteractiveFab} from '@/components/interactive-fab';
+import {CommandPalette} from '@/components/command-palette';
+import {ScrollStory} from '@/components/scroll-story';
 import '../globals.css';
 
 const spaceGrotesk = Space_Grotesk({
@@ -46,6 +48,8 @@ export default async function LocaleLayout({children, params}: Props) {
             <Footer />
             <Terminal />
             <InteractiveFab />
+            <CommandPalette />
+            <ScrollStory />
           </MotionProvider>
         </NextIntlClientProvider>
       </body>

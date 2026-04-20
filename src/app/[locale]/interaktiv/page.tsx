@@ -3,7 +3,7 @@ import {getTranslations} from 'next-intl/server';
 import {QuizGame} from '@/components/interactive/quiz-game';
 import {CareerExplorer} from '@/components/interactive/career-explorer';
 import {SkillRadar} from '@/components/interactive/skill-radar';
-import {Sparkles, HelpCircle, Map, Radar} from 'lucide-react';
+import {Sparkles, ClipboardCheck, Map, Radar} from 'lucide-react';
 
 type Props = {
   params: Promise<{locale: string}>;
@@ -37,7 +37,7 @@ export default async function InteractivePage({params}: Props) {
           <div className="rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card md:col-span-2">
             <div className="flex items-center gap-sm mb-lg">
               <div className="h-9 w-9 rounded-xl bg-accent/10 flex items-center justify-center">
-                <HelpCircle className="h-4.5 w-4.5 text-accent" />
+                <ClipboardCheck className="h-4.5 w-4.5 text-accent" />
               </div>
               <h2 className="text-heading font-bold text-text-primary tracking-tight">
                 {t('quiz.title')}
