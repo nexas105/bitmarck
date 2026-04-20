@@ -937,14 +937,14 @@
   "Interactive": {
     "badge": "Interactive",
     "pageTitle": "Explore Interactively",
-    "pageIntro": "Get to know me in a playful way -- three mini-games that show why I'm a great fit for Bitmarck.",
+    "pageIntro": "Get to know me in a playful way -- three mini-games with the most relevant and evidence-based points of this application.",
     "quiz": {
       "title": "Requirements Check",
       "yes": "Yes",
       "no": "No",
       "restart": "Play again",
       "resultTitle": "Strong Fit",
-      "resultDescription": "Many requirements are well covered. Formal BA methods are currently being deepened further.",
+      "resultDescription": "Many requirements are well covered. Formal BA methods are currently being strengthened further.",
       "questions": {
         "q1": {
           "question": "Does Tobias have hands-on experience with SINA systems?",
@@ -952,11 +952,11 @@
         },
         "q2": {
           "question": "Can he gather and prioritize requirements from different stakeholders?",
-          "match": "Yes -- at BHF Group with management, trainers, and clients. In own projects with end users."
+          "match": "Yes -- at BHF Group with management, trainers, and clients. In own projects, requirements were structured and prioritized."
         },
         "q3": {
           "question": "Does he understand IAM architectures like JWT, RBAC, and token flows?",
-          "match": "Yes -- he built his own auth service with JWT rotation and fine-grained RBAC."
+          "match": "Yes -- he built an own auth API in TypeScript with JWT and session management."
         },
         "q4": {
           "question": "Does he have experience with ITIL processes and structured work?",
@@ -1003,19 +1003,19 @@
           "period": "2023 -- 2024",
           "company": "BHF Group",
           "role": "IT Consultant",
-          "funFact": "First time owning the complete BA cycle independently: requirements, architecture, implementation."
+          "funFact": "This is where the first structured requirements work in an own software project started."
         },
         "xecuro": {
           "period": "2025 -- present",
           "company": "Xecuro GmbH",
           "role": "Secure Client Manager",
-          "funFact": "Deepened SINA expertise, structured security requirements, and translated them into reliable Jira/Confluence workflows -- direct IAM bridge."
+          "funFact": "Deepened SINA expertise, structured Jira/Confluence workflows, and handled customer alignment in a confidential project context."
         },
         "bitmarck": {
           "period": "Target",
           "company": "Bitmarck",
           "role": "Business Analyst IAM",
-          "funFact": "All threads come together: technology + analysis + security + coordination = the perfect role."
+          "funFact": "Technology, analysis, security, and coordination align cleanly for this role."
         }
       }
     },

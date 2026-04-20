@@ -940,14 +940,14 @@
   "Interactive": {
     "badge": "Interaktiv",
     "pageTitle": "Interaktiv entdecken",
-    "pageIntro": "Lernen Sie mich auf spielerische Weise kennen -- drei Mini-Games, die zeigen, warum ich zu Bitmarck passe.",
+    "pageIntro": "Lernen Sie mich auf spielerische Weise kennen -- drei Mini-Games mit den wichtigsten, belastbaren Punkten zur Bewerbung.",
     "quiz": {
       "title": "Anforderungs-Check",
       "yes": "Ja",
       "no": "Nein",
       "restart": "Nochmal spielen",
       "resultTitle": "Starker Fit",
-      "resultDescription": "Viele Anforderungen sind gut abgedeckt. Formale BA-Methoden werden aktuell weiter vertieft.",
+      "resultDescription": "Viele Anforderungen sind gut abgedeckt. Formale BA-Methoden vertiefe ich aktuell weiter.",
       "questions": {
         "q1": {
           "question": "Hat Tobias praktische Erfahrung mit SINA-Systemen?",
@@ -955,11 +955,11 @@
         },
         "q2": {
           "question": "Kann er Anforderungen von verschiedenen Stakeholdern erheben und priorisieren?",
-          "match": "Ja -- bei BHF Group mit Geschaeftsfuehrung, Trainern und Kunden. In Eigenprojekten mit Endanwendern."
+          "match": "Ja -- bei BHF Group mit Geschaeftsfuehrung, Trainern und Kunden. In eigenen Projekten Anforderungen strukturiert und priorisiert."
         },
         "q3": {
           "question": "Versteht er IAM-Architekturen wie JWT, RBAC und Token-Flows?",
-          "match": "Ja -- er hat einen eigenen Auth-Service mit JWT-Rotation und feingranularem RBAC gebaut."
+          "match": "Ja -- er hat eine eigene Auth-API in TypeScript mit JWT und Session-Management umgesetzt."
         },
         "q4": {
           "question": "Hat er Erfahrung mit ITIL-Prozessen und strukturiertem Arbeiten?",
@@ -1006,19 +1006,19 @@
           "period": "2023 -- 2024",
           "company": "BHF Group",
           "role": "IT-Berater",
-          "funFact": "Den gesamten BA-Zyklus zum ersten Mal eigenverantwortlich durchlaufen: Anforderung, Architektur, Umsetzung."
+          "funFact": "Hier entstand die erste strukturierte Anforderungsarbeit in einem eigenen Softwareprojekt."
         },
         "xecuro": {
           "period": "2025 -- heute",
           "company": "Xecuro GmbH",
           "role": "Secure Client Manager",
-          "funFact": "SINA-Expertise vertieft, Sicherheitsanforderungen strukturiert und mit Jira/Confluence in belastbare Abläufe überführt -- direkte IAM-Brücke."
+          "funFact": "SINA-Expertise vertieft, Jira/Confluence-Abläufe strukturiert und Abstimmungen mit Kunden im vertraulichen Projektkontext uebernommen."
         },
         "bitmarck": {
           "period": "Ziel",
           "company": "Bitmarck",
           "role": "Business Analyst IAM",
-          "funFact": "Alle Faeden laufen zusammen: Technik + Analyse + Sicherheit + Koordination = die perfekte Rolle."
+          "funFact": "Technik, Analyse, Security und Koordination kommen hier fachlich sauber zusammen."
         }
       }
     },

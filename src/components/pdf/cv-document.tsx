@@ -21,11 +21,11 @@ const TEXT2 = colors.textSecondary;
 const BORDER = colors.border;
 const SURFACE = colors.surface;
 
-const PAGE_H_PAD = 36;
+const PAGE_H_PAD = 30;
 const PAGE_V_PAD = 32;
-const LEFT_COL = "32%";
-const RIGHT_COL = "68%";
-const GUTTER = 16;
+const LEFT_COL = "30%";
+const RIGHT_COL = "70%";
+const GUTTER = 12;
 
 /* ------------------------------------------------------------------ */
 /*  Styles                                                             */
@@ -217,7 +217,7 @@ const s = StyleSheet.create({
     fontWeight: 700,
     color: TEXT,
     flexShrink: 1,
-    maxWidth: "70%",
+    maxWidth: "76%",
   },
   expDate: {
     fontSize: 7.5,

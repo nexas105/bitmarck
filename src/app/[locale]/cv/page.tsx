@@ -81,7 +81,7 @@ export default async function CvPage({params}: Props) {
   return (
     <main className="py-4xl px-md md:px-xl print:py-md print:px-sm">
       <CvScrollRail />
-      <div className="mx-auto max-w-4xl xl:pr-[120px]">
+      <div className="mx-auto max-w-4xl xl:pr-[104px] print:pr-0">
         {/* Back link + Download */}
         <div className="flex items-center justify-between mb-2xl print:hidden">
           <I18nLink
