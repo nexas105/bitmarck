@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from 'react';
 import {useTranslations} from 'next-intl';
+import {Link} from '@/i18n/navigation';
 import {LocaleToggle} from '@/components/locale-toggle';
 import {HamburgerMenu} from '@/components/hamburger-menu';
 
@@ -42,16 +43,13 @@ export function StickyHeader() {
   return (
     <header className="sticky top-0 z-50 h-[64px] border-b border-border/50 bg-[#FFFFFF] md:bg-surface-raised/85 md:backdrop-blur-xl md:backdrop-saturate-150">
       <div className="mx-auto flex h-full max-w-6xl items-center justify-between px-md md:px-xl">
-        {/* Left: Name/Logo */}
-        <button
-          onClick={() => {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-            setActiveSection('hero');
-          }}
+        {/* Left: Name/Logo — links to home */}
+        <Link
+          href="/"
           className="text-label font-bold text-text-primary min-h-[44px] flex items-center tracking-tight hover:text-accent transition-colors duration-200"
         >
           Tobias Ludwig
-        </button>
+        </Link>
 
         {/* Center/Right: Desktop nav links (hidden on mobile) */}
         <nav className="hidden md:flex items-center gap-xs" aria-label="Main navigation">
