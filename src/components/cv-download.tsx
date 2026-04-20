@@ -106,17 +106,14 @@ export function CvDownload() {
         {t('ctaCoverLetter')}
       </a>
 
-      <button
-        onClick={() => {
-          const el = document.getElementById('why-bitmarck');
-          if (el) el.scrollIntoView({behavior: 'smooth'});
-        }}
+      <Link
+        href="/interaktiv"
         className="group relative inline-flex items-center gap-sm rounded-xl bg-accent px-xl py-sm text-label font-bold text-white hover:bg-accent-hover transition-all duration-200 shadow-elevated"
       >
         <span className="absolute inset-0 rounded-xl animate-pulse ring-2 ring-accent/50 ring-offset-0" aria-hidden="true" />
         <Sparkles className="h-4 w-4" />
         Interaktiv entdecken
-      </button>
+      </Link>
     </div>
   );
 }

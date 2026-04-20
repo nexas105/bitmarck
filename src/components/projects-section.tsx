@@ -12,7 +12,7 @@ export async function ProjectsSection() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="relative py-4xl px-md md:px-xl scroll-mt-[64px] bg-white overflow-hidden"
+      className="relative py-4xl px-md md:px-xl scroll-mt-[64px] overflow-hidden"
     >
       {/* Top gradient fade from surface */}
       <div className="absolute top-0 left-0 right-0 h-24 bg-linear-to-b from-surface to-transparent" aria-hidden="true" />
