@@ -11,6 +11,7 @@ import {CommandPaletteHint} from '@/components/command-palette';
 
 const SECTION_IDS = ['career', 'projects', 'skills', 'certifications', 'faq', 'contact'] as const;
 const NAV_KEYS = ['career', 'projects', 'skills', 'certifications', 'faq', 'contact'] as const;
+type SectionId = (typeof SECTION_IDS)[number];
 
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
@@ -40,13 +41,12 @@ export function StickyHeader() {
   // Deterministic scroll-spy for homepage sections
   useEffect(() => {
     if (!isHome) {
-      setActiveSection('hero');
       return;
     }
 
     const tracked = SECTION_IDS
       .map((id) => ({id, el: document.getElementById(id)}))
-      .filter((entry): entry is {id: string; el: HTMLElement} => entry.el !== null);
+      .filter((entry): entry is {id: SectionId; el: HTMLElement} => entry.el !== null);
 
     if (tracked.length === 0) {
       return;
@@ -143,7 +143,7 @@ export function StickyHeader() {
         <div className="md:hidden flex items-center gap-sm">
           <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
           <HamburgerMenu
-            activeSection={activeSection}
+            activeSection={isHome ? activeSection : ''}
             onNavigate={(id) => {
               handleSectionNavigate(id);
             }}

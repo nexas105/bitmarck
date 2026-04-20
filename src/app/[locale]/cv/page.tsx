@@ -1,8 +1,9 @@
 import {setRequestLocale, getTranslations} from 'next-intl/server';
-import {Link} from '@/i18n/navigation';
+import NextLink from 'next/link';
+import {Link as I18nLink} from '@/i18n/navigation';
 import {ArrowLeft, Download, Briefcase, GraduationCap, Award, FolderOpen, Cpu, Heart} from 'lucide-react';
 import {getAllProjects} from '@/data/projects';
-import {Tag} from '@/components/tag';
+import {CvScrollRail} from '@/components/cv-scroll-rail';
 
 const STATION_KEYS = [
   'xecuro',
@@ -55,23 +56,24 @@ export default async function CvPage({params}: Props) {
 
   return (
     <main className="py-4xl px-md md:px-xl print:py-md print:px-sm">
-      <div className="mx-auto max-w-4xl">
+      <CvScrollRail />
+      <div className="mx-auto max-w-4xl xl:pr-[120px]">
         {/* Back link + Download */}
         <div className="flex items-center justify-between mb-2xl print:hidden">
-          <Link
+          <I18nLink
             href="/#career"
             className="group inline-flex items-center gap-sm text-label font-medium text-accent hover:text-accent-hover transition-colors duration-200"
           >
             <ArrowLeft className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-1" aria-hidden="true" />
             {locale === 'de' ? 'Zurueck' : 'Back'}
-          </Link>
-          <a
+          </I18nLink>
+          <NextLink
             href="/api/pdf/cv"
             className="inline-flex items-center gap-sm px-lg py-sm rounded-full bg-accent text-white text-label font-medium hover:bg-accent-hover transition-colors duration-200"
           >
             <Download className="h-4 w-4" aria-hidden="true" />
             {tHero('cta')}
-          </a>
+          </NextLink>
         </div>
 
         {/* Header / Profile */}
@@ -88,7 +90,7 @@ export default async function CvPage({params}: Props) {
         </header>
 
         {/* Berufserfahrung */}
-        <section className="mb-3xl">
+        <section id="cv-experience" className="mb-3xl scroll-mt-[88px]">
           <div className="flex items-center gap-sm mb-xl">
             <Briefcase className="h-5 w-5 text-accent" aria-hidden="true" />
             <h2 className="text-section font-bold text-text-primary tracking-tight">
@@ -139,7 +141,7 @@ export default async function CvPage({params}: Props) {
         </section>
 
         {/* Ausbildung */}
-        <section className="mb-3xl">
+        <section id="cv-education" className="mb-3xl scroll-mt-[88px]">
           <div className="flex items-center gap-sm mb-xl">
             <GraduationCap className="h-5 w-5 text-accent" aria-hidden="true" />
             <h2 className="text-section font-bold text-text-primary tracking-tight">
@@ -177,7 +179,7 @@ export default async function CvPage({params}: Props) {
         </section>
 
         {/* Zertifikate */}
-        <section className="mb-3xl">
+        <section id="cv-certifications" className="mb-3xl scroll-mt-[88px]">
           <div className="flex items-center gap-sm mb-xl">
             <Award className="h-5 w-5 text-accent" aria-hidden="true" />
             <h2 className="text-section font-bold text-text-primary tracking-tight">
@@ -206,7 +208,7 @@ export default async function CvPage({params}: Props) {
         </section>
 
         {/* Projekte */}
-        <section className="mb-3xl">
+        <section id="cv-projects" className="mb-3xl scroll-mt-[88px]">
           <div className="flex items-center gap-sm mb-xl">
             <FolderOpen className="h-5 w-5 text-accent" aria-hidden="true" />
             <h2 className="text-section font-bold text-text-primary tracking-tight">
@@ -235,7 +237,7 @@ export default async function CvPage({params}: Props) {
         </section>
 
         {/* Skills */}
-        <section className="mb-3xl">
+        <section id="cv-skills" className="mb-3xl scroll-mt-[88px]">
           <div className="flex items-center gap-sm mb-xl">
             <Cpu className="h-5 w-5 text-accent" aria-hidden="true" />
             <h2 className="text-section font-bold text-text-primary tracking-tight">
@@ -257,7 +259,7 @@ export default async function CvPage({params}: Props) {
         </section>
 
         {/* Ehrenamt */}
-        <section className="mb-3xl">
+        <section id="cv-volunteering" className="mb-3xl scroll-mt-[88px]">
           <div className="flex items-center gap-sm mb-xl">
             <Heart className="h-5 w-5 text-accent" aria-hidden="true" />
             <h2 className="text-section font-bold text-text-primary tracking-tight">
