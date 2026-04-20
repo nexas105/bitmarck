@@ -58,15 +58,20 @@ export function StickyHeader() {
         return;
       }
 
-      const activationLine = 96; // header + breathing room
+      const probeLine = Math.max(120, Math.round(window.innerHeight * 0.35));
       let current = tracked[0].id;
+      let bestDistance = Number.POSITIVE_INFINITY;
 
       for (const section of tracked) {
-        const top = section.el.getBoundingClientRect().top;
-        if (top <= activationLine) {
+        const rect = section.el.getBoundingClientRect();
+        if (rect.bottom <= 72) {
+          continue;
+        }
+
+        const distance = Math.abs(rect.top - probeLine);
+        if (distance < bestDistance) {
+          bestDistance = distance;
           current = section.id;
-        } else {
-          break;
         }
       }
 

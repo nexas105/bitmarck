@@ -1,9 +1,12 @@
 import {setRequestLocale, getTranslations} from 'next-intl/server';
+import type {Metadata} from 'next';
 import NextLink from 'next/link';
 import {Link as I18nLink} from '@/i18n/navigation';
 import {ArrowLeft, Download, Briefcase, GraduationCap, Award, FolderOpen, Cpu, Heart} from 'lucide-react';
 import {getAllProjects} from '@/data/projects';
 import {CvScrollRail} from '@/components/cv-scroll-rail';
+import {hasLocale} from 'next-intl';
+import {routing} from '@/i18n/routing';
 
 const STATION_KEYS = [
   'xecuro',
@@ -40,6 +43,27 @@ const SKILL_CATEGORIES = ['iam', 'ba', 'devops', 'languages'] as const;
 type Props = {
   params: Promise<{locale: string}>;
 };
+
+export async function generateMetadata({params}: Props): Promise<Metadata> {
+  const {locale: rawLocale} = await params;
+  const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
+  const isDe = locale === 'de';
+
+  return {
+    title: isDe ? 'CV & Berufserfahrung' : 'CV & Professional Experience',
+    description: isDe
+      ? 'Lebenslauf, Projektüberblick, Skills, Zertifikate und beruflicher Werdegang von Tobias Ludwig.'
+      : 'Resume, project overview, skills, certifications, and professional track record of Tobias Ludwig.',
+    alternates: {
+      canonical: `/${locale}/cv`,
+      languages: {
+        de: '/de/cv',
+        en: '/en/cv',
+        'x-default': '/de/cv',
+      },
+    },
+  };
+}
 
 export default async function CvPage({params}: Props) {
   const {locale} = await params;
