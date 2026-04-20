@@ -85,7 +85,7 @@ export default async function CareerDetailPage({params}: Props) {
         {/* Content sections */}
         <div className="flex flex-col gap-2xl">
           {/* Overview */}
-          <div className="relative pl-lg border-l-2 border-accent/20">
+          <div className="relative pl-lg border-l-2 border-accent/40">
             <h2 className="text-heading font-bold text-text-primary mb-sm tracking-tight flex items-center gap-sm">
               <Briefcase className="h-5 w-5 text-accent" aria-hidden="true" />
               {td('overview')}
@@ -96,12 +96,12 @@ export default async function CareerDetailPage({params}: Props) {
           </div>
 
           {/* BA Relevance */}
-          <div className="relative pl-lg border-l-2 border-emerald-500/30">
+          <div className="relative pl-lg border-l-2 border-accent/40">
             <h2 className="text-heading font-bold text-text-primary mb-sm tracking-tight flex items-center gap-sm">
-              <Target className="h-5 w-5 text-emerald-500" aria-hidden="true" />
+              <Target className="h-5 w-5 text-accent" aria-hidden="true" />
               {td('baRelevance')}
             </h2>
-            <div className="rounded-lg bg-emerald-500/5 border border-emerald-500/15 px-lg py-md">
+            <div className="rounded-lg bg-accent/5 border border-accent/20 px-lg py-md">
               <p className="text-body text-text-secondary leading-loose">
                 {station.baRelevance}
               </p>
@@ -109,15 +109,15 @@ export default async function CareerDetailPage({params}: Props) {
           </div>
 
           {/* Achievements */}
-          <div className="relative pl-lg border-l-2 border-amber-500/30">
+          <div className="relative pl-lg border-l-2 border-accent/40">
             <h2 className="text-heading font-bold text-text-primary mb-md tracking-tight flex items-center gap-sm">
-              <Trophy className="h-5 w-5 text-amber-500" aria-hidden="true" />
+              <Trophy className="h-5 w-5 text-accent" aria-hidden="true" />
               {td('achievements')}
             </h2>
             <ul className="flex flex-col gap-sm">
               {station.achievements.map((item) => (
                 <li key={item} className="flex items-start gap-sm text-body text-text-secondary leading-loose">
-                  <Trophy className="h-4 w-4 text-amber-500/60 mt-1.5 shrink-0" aria-hidden="true" />
+                  <Trophy className="h-4 w-4 text-accent/60 mt-1.5 shrink-0" aria-hidden="true" />
                   {item}
                 </li>
               ))}
@@ -125,7 +125,7 @@ export default async function CareerDetailPage({params}: Props) {
           </div>
 
           {/* Skills Gained */}
-          <div className="relative pl-lg border-l-2 border-accent/20">
+          <div className="relative pl-lg border-l-2 border-accent/40">
             <h2 className="text-heading font-bold text-text-primary mb-md tracking-tight flex items-center gap-sm">
               <Zap className="h-5 w-5 text-accent" aria-hidden="true" />
               {td('skillsGained')}

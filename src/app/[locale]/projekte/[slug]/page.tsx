@@ -72,7 +72,7 @@ export default async function ProjectDetailPage({params}: Props) {
         {/* Problem / Ansatz / Ergebnis sections */}
         <div className="mt-3xl flex flex-col gap-2xl">
           {sections.map((section) => (
-            <div key={section.heading} className="relative pl-lg border-l-2 border-accent/20">
+            <div key={section.heading} className="relative pl-lg border-l-2 border-accent/40">
               <h2 className="text-heading font-bold text-text-primary mb-sm tracking-tight">
                 {section.heading}
               </h2>
@@ -84,15 +84,15 @@ export default async function ProjectDetailPage({params}: Props) {
 
           {/* Highlights section */}
           {project.detail.highlightsKey && (
-            <div className="relative pl-lg border-l-2 border-emerald-500/30">
+            <div className="relative pl-lg border-l-2 border-accent/40">
               <h2 className="text-heading font-bold text-text-primary mb-md tracking-tight flex items-center gap-sm">
-                <CheckCircle2 className="h-5 w-5 text-emerald-500" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-accent" aria-hidden="true" />
                 {td('highlights')}
               </h2>
               <ul className="flex flex-col gap-sm">
                 {t(project.detail.highlightsKey).split('\n').map((item) => (
                   <li key={item} className="flex items-start gap-sm text-body text-text-secondary leading-loose">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-500/60 mt-1.5 shrink-0" aria-hidden="true" />
+                    <CheckCircle2 className="h-4 w-4 text-accent/60 mt-1.5 shrink-0" aria-hidden="true" />
                     {item}
                   </li>
                 ))}
@@ -102,12 +102,12 @@ export default async function ProjectDetailPage({params}: Props) {
 
           {/* Learnings section */}
           {project.detail.learningsKey && (
-            <div className="relative pl-lg border-l-2 border-amber-500/30">
+            <div className="relative pl-lg border-l-2 border-accent/40">
               <h2 className="text-heading font-bold text-text-primary mb-md tracking-tight flex items-center gap-sm">
-                <Lightbulb className="h-5 w-5 text-amber-500" aria-hidden="true" />
+                <Lightbulb className="h-5 w-5 text-accent" aria-hidden="true" />
                 {td('learnings')}
               </h2>
-              <div className="rounded-lg bg-surface-secondary/50 border border-border/50 px-lg py-md">
+              <div className="rounded-lg bg-accent/8 border border-accent/20 px-lg py-md">
                 <p className="text-body text-text-secondary leading-loose italic">
                   {t(project.detail.learningsKey)}
                 </p>

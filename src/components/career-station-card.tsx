@@ -65,7 +65,7 @@ export function CareerStationCard({
         className={`group rounded-2xl border bg-surface-raised p-lg shadow-card cursor-pointer transition-all duration-300 ${
           isExpanded
             ? 'border-accent/30 shadow-card-hover ring-1 ring-accent/10'
-            : 'border-border/50 hover:border-accent/20 hover:shadow-card-hover'
+            : 'border-border/60 hover:border-accent/20 hover:shadow-card-hover'
         }`}
         onClick={() => setIsExpanded(!isExpanded)}
         whileHover={{y: isExpanded ? 0 : -3}}
@@ -124,7 +124,7 @@ export function CareerStationCard({
               }}
               className="overflow-hidden"
             >
-              <div className="mt-lg pt-lg border-t border-border/40">
+              <div className="mt-lg pt-lg border-t border-border/50">
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-xs mb-lg">
                   {technologies.split(', ').map((tech) => (

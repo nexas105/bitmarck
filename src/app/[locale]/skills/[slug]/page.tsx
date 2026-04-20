@@ -110,7 +110,7 @@ export default async function SkillDetailPage({params}: Props) {
             return (
               <div
                 key={key}
-                className="rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card hover:shadow-card-hover transition-shadow duration-300"
+                className="rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card hover:shadow-card-hover transition-shadow duration-300"
               >
                 <div className="flex items-start justify-between gap-md mb-sm">
                   <h2 className="text-heading font-bold text-text-primary tracking-tight">
@@ -122,7 +122,7 @@ export default async function SkillDetailPage({params}: Props) {
                   {description}
                 </p>
                 <div className="flex items-center gap-xs text-xs text-text-tertiary">
-                  <Icon className="h-3.5 w-3.5" aria-hidden="true" />
+                  <Icon className="h-3.5 w-3.5 opacity-70" aria-hidden="true" />
                   <span>Kontext: {context}</span>
                 </div>
               </div>

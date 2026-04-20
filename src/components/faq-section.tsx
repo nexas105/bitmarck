@@ -22,9 +22,9 @@ export function FAQSection() {
           {t('heading')}
           <span className="block h-1 w-16 bg-linear-to-r from-accent to-accent/40 rounded-full mt-sm" aria-hidden="true" />
         </h2>
-        <div className="rounded-2xl border border-border/50 bg-surface-raised overflow-hidden shadow-card">
+        <div className="rounded-2xl border border-border/60 bg-surface-raised overflow-hidden shadow-card">
           {FAQ_KEYS.map((key, index) => (
-            <details key={key} className={`group ${index < FAQ_KEYS.length - 1 ? 'border-b border-border/40' : ''}`}>
+            <details key={key} className={`group ${index < FAQ_KEYS.length - 1 ? 'border-b border-border/50' : ''}`}>
               <summary className="flex items-center justify-between min-h-[44px] py-lg px-lg cursor-pointer list-none text-body font-semibold text-text-primary hover:bg-surface-subtle/50 transition-colors duration-200">
                 {t(`items.${key}.question`)}
                 <div className="shrink-0 ml-md p-xs rounded-full bg-surface-subtle group-hover:bg-accent/10 transition-colors duration-200">

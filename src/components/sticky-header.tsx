@@ -40,7 +40,7 @@ export function StickyHeader() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 h-[64px] border-b border-border/30 bg-[#FFFFFF] md:bg-surface-raised/85 md:backdrop-blur-xl md:backdrop-saturate-150">
+    <header className="sticky top-0 z-50 h-[64px] border-b border-border/50 bg-[#FFFFFF] md:bg-surface-raised/85 md:backdrop-blur-xl md:backdrop-saturate-150">
       <div className="mx-auto flex h-full max-w-6xl items-center justify-between px-md md:px-xl">
         {/* Left: Name/Logo */}
         <button

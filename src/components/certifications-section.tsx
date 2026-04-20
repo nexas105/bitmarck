@@ -68,7 +68,7 @@ export async function CertificationsSection() {
             {EDU_KEYS.map((key) => (
               <div
                 key={key}
-                className="group rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
+                className="group rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
               >
                 <p className="text-body font-bold text-text-primary tracking-tight">
                   {t(`education.${key}.degree`)}
@@ -76,7 +76,7 @@ export async function CertificationsSection() {
                 <p className="text-label text-text-secondary mt-xs">
                   {t(`education.${key}.institution`)}
                 </p>
-                <div className="flex items-center justify-between mt-md pt-md border-t border-border/30">
+                <div className="flex items-center justify-between mt-md pt-md border-t border-border/50">
                   <p className="text-xs text-text-tertiary font-medium">
                     {t(`education.${key}.period`)}
                   </p>

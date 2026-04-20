@@ -83,7 +83,7 @@ export default async function CertificationsDetailPage({params}: Props) {
             return (
               <div key={category}>
                 {/* Category heading */}
-                <div className="flex items-center gap-sm mb-lg">
+                <div className="flex items-center gap-sm mb-lg border-b border-border/40 pb-sm">
                   <Icon className="h-5 w-5 text-accent" aria-hidden="true" />
                   <h2 className="text-heading font-bold text-text-primary tracking-tight">
                     {t(`categories.${category}`)}
@@ -99,7 +99,7 @@ export default async function CertificationsDetailPage({params}: Props) {
                     return (
                       <div
                         key={key}
-                        className="rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card hover:shadow-card-hover transition-shadow duration-300"
+                        className="rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card hover:shadow-card-hover transition-shadow duration-300"
                       >
                         <div className="flex items-start justify-between gap-md mb-sm">
                           <h3 className="text-body font-bold text-text-primary tracking-tight">
@@ -108,8 +108,8 @@ export default async function CertificationsDetailPage({params}: Props) {
                           <span
                             className={`shrink-0 inline-flex items-center gap-xs text-xs font-semibold rounded-full px-2.5 py-0.5 ${
                               isInProgress
-                                ? 'bg-accent/10 text-accent'
-                                : 'bg-emerald-500/10 text-emerald-600'
+                                ? 'bg-amber-500/10 text-amber-600 border border-amber-500/20'
+                                : 'bg-emerald-500/10 text-emerald-600 border border-emerald-500/20'
                             }`}
                           >
                             {isInProgress ? (
@@ -132,7 +132,7 @@ export default async function CertificationsDetailPage({params}: Props) {
                         </p>
 
                         {/* BA Relevance */}
-                        <div className="rounded-lg bg-accent/5 border border-accent/15 px-md py-sm">
+                        <div className="rounded-lg bg-accent/8 border border-accent/20 px-md py-sm">
                           <div className="flex items-center gap-xs mb-xs">
                             <BookOpen className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
                             <span className="text-xs font-semibold text-accent uppercase tracking-wide">
@@ -154,7 +154,7 @@ export default async function CertificationsDetailPage({params}: Props) {
 
         {/* Education section */}
         <div className="mt-4xl">
-          <div className="flex items-center gap-sm mb-lg">
+          <div className="flex items-center gap-sm mb-lg border-b border-border/40 pb-sm">
             <GraduationCap className="h-5 w-5 text-accent" aria-hidden="true" />
             <h2 className="text-heading font-bold text-text-primary tracking-tight">
               {tCerts('eduLabel')}

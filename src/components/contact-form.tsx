@@ -86,60 +86,60 @@ export function ContactForm() {
         >
           {/* Name */}
           <div className="flex flex-col gap-xs">
-            <label htmlFor="contact-name" className="text-caption font-medium text-text-secondary">
-              {t('name')} *
+            <label htmlFor="contact-name" className="text-caption text-text-primary font-medium">
+              {t('name')} <span className="text-destructive text-sm">*</span>
             </label>
             <input
               id="contact-name"
               name="name"
               type="text"
               required
-              className="min-h-[44px] rounded-xl border border-border/50 bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-colors duration-200"
+              className="min-h-[44px] rounded-xl border border-border bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40 transition-colors duration-200"
               placeholder={t('namePlaceholder')}
             />
           </div>
 
           {/* Email */}
           <div className="flex flex-col gap-xs">
-            <label htmlFor="contact-email" className="text-caption font-medium text-text-secondary">
-              {t('email')} *
+            <label htmlFor="contact-email" className="text-caption text-text-primary font-medium">
+              {t('email')} <span className="text-destructive text-sm">*</span>
             </label>
             <input
               id="contact-email"
               name="email"
               type="email"
               required
-              className="min-h-[44px] rounded-xl border border-border/50 bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-colors duration-200"
+              className="min-h-[44px] rounded-xl border border-border bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40 transition-colors duration-200"
               placeholder={t('emailPlaceholder')}
             />
           </div>
 
           {/* Subject */}
           <div className="flex flex-col gap-xs">
-            <label htmlFor="contact-subject" className="text-caption font-medium text-text-secondary">
-              {t('subject')} *
+            <label htmlFor="contact-subject" className="text-caption text-text-primary font-medium">
+              {t('subject')} <span className="text-destructive text-sm">*</span>
             </label>
             <input
               id="contact-subject"
               name="subject"
               type="text"
               required
-              className="min-h-[44px] rounded-xl border border-border/50 bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-colors duration-200"
+              className="min-h-[44px] rounded-xl border border-border bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40 transition-colors duration-200"
               placeholder={t('subjectPlaceholder')}
             />
           </div>
 
           {/* Message */}
           <div className="flex flex-col gap-xs">
-            <label htmlFor="contact-message" className="text-caption font-medium text-text-secondary">
-              {t('message')} *
+            <label htmlFor="contact-message" className="text-caption text-text-primary font-medium">
+              {t('message')} <span className="text-destructive text-sm">*</span>
             </label>
             <textarea
               id="contact-message"
               name="message"
               required
               rows={5}
-              className="rounded-xl border border-border/50 bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-colors duration-200 resize-y"
+              className="rounded-xl border border-border bg-white px-md py-sm text-body text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40 transition-colors duration-200 resize-y"
               placeholder={t('messagePlaceholder')}
             />
           </div>
@@ -159,7 +159,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={formState === 'loading'}
-            className="inline-flex min-h-[44px] items-center justify-center gap-sm rounded-xl bg-accent px-xl py-sm text-body font-semibold text-white shadow-sm hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200"
+            className="inline-flex min-h-[44px] items-center justify-center gap-sm rounded-xl bg-accent px-xl py-sm text-body font-semibold text-white shadow-sm hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200"
           >
             {formState === 'loading' ? (
               <>

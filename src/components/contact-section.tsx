@@ -25,7 +25,7 @@ export async function ContactSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
           {/* Left: Contact form */}
-          <div className="rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card">
+          <div className="rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card">
             <h3 className="text-body font-semibold text-text-primary mb-lg">
               {t('formHeading')}
             </h3>
@@ -33,7 +33,7 @@ export async function ContactSection() {
           </div>
 
           {/* Right: Direct contact info */}
-          <div className="rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card flex flex-col justify-between">
+          <div className="rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card flex flex-col justify-between">
             <div>
               <h3 className="text-body font-semibold text-text-primary mb-lg">
                 {t('directHeading')}

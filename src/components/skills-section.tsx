@@ -1,7 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Tag} from '@/components/tag';
-import {GlassCardLight} from '@/components/glass-card';
+
 
 const SKILL_CATEGORIES = [
   {
@@ -44,7 +44,7 @@ export async function SkillsSection() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mt-xl">
           {SKILL_CATEGORIES.map((category) => (
-            <GlassCardLight key={category.key} className="p-lg shadow-card">
+            <div key={category.key} className="rounded-2xl border border-border/50 bg-surface-raised p-lg shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
               <h3 className="text-label font-semibold text-text-primary mb-xs uppercase tracking-wide">
                 {t(`categories.${category.key}`)}
               </h3>
@@ -63,7 +63,7 @@ export async function SkillsSection() {
                 {t('detailLink')}
                 <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">&rarr;</span>
               </Link>
-            </GlassCardLight>
+            </div>
           ))}
         </div>
       </div>
