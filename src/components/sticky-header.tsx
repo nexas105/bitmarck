@@ -58,21 +58,25 @@ export function StickyHeader() {
         return;
       }
 
-      const probeLine = Math.max(120, Math.round(window.innerHeight * 0.35));
-      let current = tracked[0].id;
-      let bestDistance = Number.POSITIVE_INFINITY;
+      const probeLine = Math.max(140, Math.round(window.innerHeight * 0.3));
+      const firstRect = tracked[0].el.getBoundingClientRect();
+      if (firstRect.top > probeLine) {
+        setActiveSection('hero');
+        return;
+      }
 
+      let current = tracked[0].id;
       for (const section of tracked) {
         const rect = section.el.getBoundingClientRect();
-        if (rect.bottom <= 72) {
-          continue;
-        }
-
-        const distance = Math.abs(rect.top - probeLine);
-        if (distance < bestDistance) {
-          bestDistance = distance;
+        if (rect.top <= probeLine) {
           current = section.id;
         }
+      }
+
+      const isAtPageEnd =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      if (isAtPageEnd) {
+        current = tracked[tracked.length - 1].id;
       }
 
       setActiveSection(current);

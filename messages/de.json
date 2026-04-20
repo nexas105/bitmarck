@@ -20,7 +20,7 @@
   "Hero": {
     "name": "Tobias Ludwig",
     "role": "Business Analyst IAM",
-    "valueProposition": "Ich analysiere Geschäftsprozesse und übersetze sie in präzise Anforderungen — mit 10+ Jahren Erfahrung an der Schnittstelle zwischen IT und Fachbereich.",
+    "valueProposition": "Ich verbinde 10+ Jahre IT-Praxis mit klarer BA-Denke: von Außendienst und Betrieb bis zu sicherheitskritischen Systemen und Softwareprojekten. Mein Fokus heute: komplexe Prozesse sauber analysieren und in umsetzbare Anforderungen überführen.",
     "cta": "CV herunterladen",
     "ctaCoverLetter": "Anschreiben",
     "eyebrow": "Bewerbung · Business Analyst IAM · Bitmarck",
@@ -38,7 +38,8 @@
         "label": "LLM-optimiert",
         "desc": "Klartext für KI-Parsing und Analyse"
       }
-    }
+    },
+    "focusLine": "Erfahrung in der Analyse und Optimierung von Prozessen in sicherheitskritischen IT-Umgebungen"
   },
   "TrustStrip": {
     "location": "Königswinter · Umzug nach Essen geplant",
@@ -63,15 +64,15 @@
   "WhyBitmarck": {
     "heading": "Warum Bitmarck",
     "card1Title": "GKV-Digitalisierung",
-    "card1Description": "Gesundheitswesen digitalisieren — mit echtem Impact auf Millionen Versicherte. Bitmarck gestaltet die IT-Infrastruktur der gesetzlichen Krankenversicherungen.",
+    "card1Description": "Mich reizt an Bitmarck der konkrete Nutzen: Digitalisierung im Gesundheitswesen, die Millionen Versicherte direkt betrifft. Genau in diesem Umfeld möchte ich Verantwortung übernehmen.",
     "card2Title": "IAM-Expertise trifft Praxis",
-    "card2Description": "SINA-Erfahrung aus zwei sicherheitskritischen Umgebungen, eigenständig gebauter Auth-Service mit RBAC — direkt übertragbar auf bitIAM und Telematikinfrastruktur.",
+    "card2Description": "Ich bringe dafür die passende Basis mit: SINA-Erfahrung aus zwei sicherheitskritischen Umgebungen und einen selbst konzipierten Auth-Service mit RBAC — fachlich nah an bitIAM und Telematik.",
     "card3Title": "Die richtige Rolle",
-    "card3Description": "Anforderungsanalyse, Prozessmodellierung, Stakeholder-Koordination — nicht als Jobtitel, sondern als das, was ich in jeder Position gemacht habe."
+    "card3Description": "Ich arbeite an der Schnittstelle: Problemverständnis auf Fachseite, strukturierte Anforderungen für die Umsetzung und saubere Abstimmung zwischen allen Beteiligten. Genau dafür steht die Rolle bei Bitmarck."
   },
   "Career": {
     "heading": "Berufserfahrung",
-    "intro": "10+ Jahre IT-Erfahrung — von Telekommunikation über sicherheitskritische Infrastruktur bis zur Softwareentwicklung, mit Fokus auf Analyse, Strukturierung und Abstimmung zwischen Technik und Fachbereich.",
+    "intro": "Mein Weg ging vom Techniker im Feld über sicherheitskritische Infrastruktur bis in die Softwareentwicklung. Der rote Faden war immer derselbe: Probleme sauber analysieren, Prioritäten setzen und Lösungen so strukturieren, dass Technik und Fachbereich zusammenfinden.",
     "expandLabel": "Details anzeigen",
     "collapseLabel": "Details ausblenden",
     "detailLink": "Ausführlich ansehen",
@@ -274,8 +275,8 @@
         "company": "Selbstständig",
         "role": "Freelancer — DevOps, Webentwicklung & IT-Beratung",
         "subtitle": "Nebenberuflich",
-        "body": "Nebenberuflich Kundenprojekte von der Bedarfsklärung bis zum Betrieb begleitet: Anforderungen aufgenommen, Lösungen strukturiert, Web- und Serverprojekte umgesetzt und stabil betrieben.",
-        "narrative": "Freelancing schärft die BA-Perspektive: Bedarf verstehen, priorisieren, entscheiden und transparent mit Stakeholdern abstimmen.",
+        "body": "Nebenberuflich begleite ich Kundenprojekte von der Bedarfsklärung bis zum Betrieb: Anforderungen aufgenommen, Prozesse vereinfacht, mit Automatisierungen beschleunigt sowie Web- und Serverlösungen kosten- und performanceorientiert umgesetzt.",
+        "narrative": "Freelancing macht die BA-Perspektive maximal greifbar: allein Verantwortung tragen, Bedarf präzise erfassen, klar entscheiden und Verbesserungen mit messbarem Nutzen liefern.",
         "technologies": "DevOps, Docker, Linux, Next.js, Webentwicklung, Server",
         "details": [
           "Anforderungsgespräche und Projektplanung mit Kunden",
@@ -284,11 +285,12 @@
           "Eigenverantwortliche Projektsteuerung und Kundenkommunikation"
         ],
         "detailPage": {
-          "overview": "Seit Januar 2026 bin ich nebenberuflich als Freelancer tätig. Ich übernehme DevOps-Aufgaben, entwickle und betreibe Websites und richte Server für Kunden ein. Der wichtigste Teil: Die Zusammenarbeit mit Kunden — ihre Anforderungen verstehen, Projekte planen und pragmatische Lösungen liefern.",
-          "baRelevance": "Die Freelancer-Tätigkeit ist die reinste Form der Business-Analyst-Arbeit: Ich sitze direkt beim Kunden, höre zu, analysiere den Bedarf, erstelle ein Konzept und setze es um. Keine Zwischenebene, keine Abstraktionsschicht — direktes Feedback, ob meine Analyse den Bedarf getroffen hat.",
+          "overview": "Seit Januar 2026 bin ich nebenberuflich als Freelancer tätig. Ich übernehme DevOps-Aufgaben, entwickle und betreibe Websites und richte Server für Kunden ein. Als Ein-Personen-Setup optimiere ich Abläufe kontinuierlich, setze Automatisierungen ein und achte auf einen pragmatischen Mix aus Kosten, Performance und Wartbarkeit.",
+          "baRelevance": "In der Freelancer-Rolle passiert BA-Arbeit ohne Sicherheitsnetz: Ich kläre den Bedarf direkt mit dem Kunden, zerlege ihn in priorisierte Anforderungen, definiere die Lösung und führe sie in den Betrieb. Da ich alles selbst verantworte, müssen Entscheidungen fachlich sauber, wirtschaftlich sinnvoll und technisch tragfähig sein.",
           "achievements": [
             "Eigenständige Kundenakquise, Anforderungserhebung und Projektplanung",
             "End-to-End-Verantwortung: Vom Erstgespräch bis zum produktiven Betrieb",
+            "Prozesse durch Automatisierungen beschleunigt und Betriebsaufwände reduziert",
             "DevOps und Infrastruktur: Server, Docker, CI/CD für Kundenprojekte",
             "Webentwicklung mit modernem Stack (Next.js, Tailwind, Self-Hosting)"
           ],
@@ -304,8 +306,8 @@
         "period": "Feb 2025 – heute",
         "company": "Xecuro GmbH",
         "role": "IT-Systemadministrator Secure Client Manager",
-        "body": "Administration von SINA-basierten Secure Clients und SINA CA. Mitgestaltung von Sicherheitskonzepten, Arbeit mit Jira und Confluence sowie Pflege des Intranets in Leerlaufzeiten. Sicherheitssektor (Geheimhaltung).",
-        "narrative": "SINA-Expertise vertieft und Sicherheitsanforderungen gemeinsam mit Teams in tragfähige Prozesse, Tickets und Dokumentation überführt.",
+        "body": "Administration von SINA-basierten Secure Clients und SINA CA, inklusive Analyse von Sicherheitsanforderungen und Ableitung tragfähiger Abläufe. Tagesgeschäft mit Jira/Confluence sowie Intranet-Pflege in Leerlaufzeiten (Sicherheitssektor, Geheimhaltung).",
+        "narrative": "Hier verbinde ich Security-Praxis mit BA-Arbeit: Anforderungen strukturieren, mit Teams abstimmen und in belastbare Prozesse und Dokumentation überführen.",
         "technologies": "SINA, Windows, Linux, Härtung, Sicherheitskonzepte",
         "details": [
           "Administration und Weiterentwicklung von SINA-basierten Secure Clients",
@@ -316,15 +318,15 @@
           "Analyse von Sicherheitsanforderungen und deren technische Umsetzung"
         ],
         "detailPage": {
-          "overview": "Xecuro ist ein Start-up im Sicherheitssektor, in dem alle Mitarbeiter aktiv mitgestalten. Ich administriere SINA-basierte Secure Clients, arbeite mit SINA CA und weiteren sicherheitskritischen Systemen. Zusätzlich arbeite ich im Tagesgeschäft mit Jira und Confluence und übernehme in Leerlaufzeiten die Pflege des internen Intranets. Da ich in einem kleinen Team schnell Verantwortung übernommen habe, treibe ich die interne Prozessoptimierung voran. Details zur Arbeit unterliegen der Geheimhaltung.",
-          "baRelevance": "Diese Rolle ist die direkte Brücke zur IAM-Welt bei Bitmarck: SINA-Systeme, Sicherheitskonzepte, SINA CA, Zugriffsrichtlinien — all das sind Kernthemen im Identity and Access Management. Als Start-up mit flachen Hierarchien hatte ich von Anfang an Mitspracherecht bei Sicherheitskonzepten und habe die Optimierung interner Prozesse eigenständig übernommen — genau die proaktive, analytische Arbeitsweise, die Bitmarck sucht.",
+          "overview": "Xecuro ist ein Start-up im Sicherheitssektor mit hoher Eigenverantwortung. Ich administriere SINA-basierte Secure Clients, arbeite mit SINA CA und weiteren sicherheitskritischen Systemen. Parallel nutze ich Jira und Confluence im Tagesgeschäft und pflege in Leerlaufzeiten das interne Intranet. In der kleinen Teamstruktur übernehme ich zusätzlich Prozessanalyse und Prozessverbesserung, damit Security-Aufgaben nachvollziehbar und effizient laufen. Details zur Arbeit unterliegen der Geheimhaltung.",
+          "baRelevance": "Diese Rolle ist die direkte Brücke zur IAM-Welt bei Bitmarck: SINA-Systeme, Sicherheitskonzepte, SINA CA und Zugriffsrichtlinien sind zentrale IAM-Themen. Gleichzeitig ist es BA-Arbeit im Alltag: Sicherheitsanforderungen analysieren, in strukturierte Tickets und Dokumentation überführen und mit beteiligten Teams abstimmen. Genau diese Verbindung aus Analyse, Struktur und Security sucht Bitmarck.",
           "achievements": [
             "SINA-Expertise vertieft: Secure Clients, SINA CA, sicherheitskritische Systeme",
+            "Sicherheitsanforderungen analysiert und in klare Prozessschritte überführt",
             "Aktive Mitgestaltung von Sicherheitskonzepten im Start-up-Umfeld",
             "Regelmäßige Nutzung von Jira und Confluence für Tickets, Abstimmung und Dokumentation",
             "Pflege und Strukturierung von Intranet-Inhalten zur internen Wissenssicherung",
-            "Eigenständige Übernahme der internen Prozessoptimierung",
-            "Schnelle Verantwortungsübernahme in flacher Hierarchie"
+            "Eigenständige Übernahme der internen Prozessoptimierung"
           ],
           "skillsGained": [
             "SINA-Architektur",
@@ -377,7 +379,7 @@
   },
   "Projects": {
     "heading": "Fallstudien aus der Praxis",
-    "intro": "Jedes dieser Projekte zeigt denselben Zyklus: Geschäftsproblem verstehen, Anforderungen analysieren, Lösung konzipieren, Ergebnis liefern.",
+    "intro": "Jedes Projekt folgt derselben Logik: Problem verstehen, Anforderungen analysieren, Lösung definieren, Ergebnis liefern.",
     "detailsLink": "Details →",
     "languages": "Sprachen",
     "lastCommit": "Letzter Commit",
@@ -572,7 +574,7 @@
   },
   "Contact": {
     "heading": "Kontakt",
-    "intro": "Interesse geweckt? Ich freue mich über Ihre Nachricht — ob Fragen zur Bewerbung, zum Werdegang oder für ein persönliches Gespräch.",
+    "intro": "Wenn Sie jemanden suchen, der Anforderungen strukturiert, technische Auswirkungen realistisch bewertet und in umsetzbare Lösungen übersetzt, freue ich mich auf Ihre Nachricht.",
     "formHeading": "Nachricht senden",
     "directHeading": "Direkt erreichen",
     "directIntro": "Sie können mich auch direkt über die folgenden Kanäle kontaktieren.",
@@ -603,7 +605,7 @@
     "greeting": "tobias@bitmarck:~$ Willkommen! Tippe 'help' für eine Liste der Befehle.",
     "whoami": "Tobias Ludwig -- Business Analyst IAM Kandidat bei Bitmarck. 10+ Jahre IT-Erfahrung, von strukturierter Fehleranalyse über SINA-Systeme bis zur eigenständigen Anforderungsanalyse. Ich analysiere Geschäftsprozesse und übersetze sie in praezise Anforderungen.",
     "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA-Methoden: Anforderungsanalyse, Use Cases, DSGVO, Prozessoptimierung, Stakeholder Management\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nSprachen: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSprachen: Deutsch (C2), Englisch (B2)",
-    "projects": "1. Auth API Service -- Zentrales IAM-System: Anforderungsanalyse, Zugriffskonzept, Implementierung\n2. Next CMS -- Kundenanforderung analysiert, Architektur konzipiert, mandantenfähig umgesetzt\n3. MyFitCoach PRO -- Stakeholder-Anforderungen priorisiert, Multi-Platform-Lösung konzipiert\n4. EroHub -- Datenschutzanforderungen analysiert, Privacy-by-Design-Architektur umgesetzt\n5. Logbuch App -- Feldanforderungen erhoben, dynamische Formulare und Systemintegration konzipiert\n6. MPA Nutrition Shop -- E-Commerce-Geschäftsprozesse End-to-End modelliert und umgesetzt",
+    "projects": "1. Auth API Service -- Zentrales IAM-System: Anforderungsanalyse, Zugriffskonzept, Implementierung\n2. Next CMS -- Kundenanforderung analysiert, Architektur konzipiert, mandantenfähig und setup-automatisiert umgesetzt\n3. MyFitCoach PRO -- Stakeholder-Anforderungen priorisiert, Multi-Platform-Lösung konzipiert\n4. EroHub -- Datenschutzanforderungen analysiert, Privacy-by-Design-Architektur umgesetzt\n5. Logbuch App -- Feldanforderungen erhoben, dynamische Formulare und automatisierter Datenexport zur Prozessbeschleunigung\n6. MPA Nutrition Shop -- E-Commerce-Geschäftsprozesse End-to-End modelliert und effizient umgesetzt",
     "motivation": "Bitmarck digitalisiert das Gesundheitswesen -- ein Bereich mit echtem Impact auf Millionen Versicherte. Als Business Analyst IAM kann ich meine SINA-Erfahrung, mein Verständnis für Auth-Architekturen und meine analytische Arbeitsweise mit einer Aufgabe verbinden, die wirklich zaehlt: digitale Versichertenidentitaeten sicher und nutzbar zu gestalten.",
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
     "bewerbung": "Match-Score: 92%\n\nTop 3 Gruende, warum Tobias zu Bitmarck passt:\n  1. SINA-Erfahrung aus zwei sicherheitskritischen Umgebungen (BWI + Xecuro) -- direkt uebertragbar auf bitIAM und Telematikinfrastruktur\n  2. Eigenstaendig gebauter Auth-Service mit JWT/RBAC -- IAM nicht nur theoretisch, sondern praktisch verstanden\n  3. Analytische Arbeitsweise in jeder Station -- vom Messteam bis zur Anforderungserhebung, immer an der Schnittstelle zwischen Technik und Fachbereich",
@@ -630,7 +632,7 @@
       "title": "Next CMS",
       "description": "Kundenanforderungen analysiert, Architektur konzipiert und mandantenfähiges CMS umgesetzt — von der Erhebung bis zum Self-Hosting.",
       "problem": "Kunden brauchten ein flexibles Content-Management-System ohne die Komplexität und Kosten von WordPress oder Strapi. Kernanforderungen: einfache Bedienung für nicht-technische Nutzer, schnelle Performance und eigenständige Hosting-Möglichkeit.",
-      "approach": "Anforderungserhebung mit nicht-technischen Kunden, Übersetzung in technische Spezifikation. Headless-Architektur mit mandantenfähiger Datentrennung (Row-Level Security). Auto-Install für technisch unerfahrene Nutzer. Docker-basiertes Self-Hosting.",
+      "approach": "Anforderungserhebung mit nicht-technischen Kunden, Übersetzung in technische Spezifikation. Headless-Architektur mit mandantenfähiger Datentrennung (Row-Level Security). Setup-Automatisierung per Auto-Install für technisch unerfahrene Nutzer. Docker-basiertes Self-Hosting mit Fokus auf Kostenkontrolle und Performance.",
       "result": "Voll funktionsfähiges CMS im produktiven Einsatz bei mehreren Kunden mit unterschiedlichen Anforderungen. Zentrale Erkenntnis: Die Qualität einer Lösung misst sich nicht an technischer Komplexitt, sondern daran, wie gut sie die Anforderungen der Nutzer erfüllt.",
       "highlights": "Row-Level Security (RLS) für vollständige Mandantentrennung auf Datenbankebene\nAuto-Install Script für Ein-Klick-Setup ohne technische Vorkenntnisse\nDocker-basiertes Self-Hosting mit automatischem Backup auf eigenem Server\nProduktiver Einsatz bei mehreren Kunden mit unterschiedlichen Anforderungen",
       "learnings": "Die Anforderungsanalyse für nicht-technische Kunden hat mich gelehrt, komplexe Systeme in einfache Bedienkonzepte zu übersetzen — eine Kernkompetenz für die Kommunikation zwischen Fachbereich und Technik."
@@ -657,7 +659,7 @@
       "title": "Logbuch App",
       "description": "Feldanforderungen mit Endanwendern erhoben, dynamische Formulare konzipiert und nahtlose Systemintegration umgesetzt.",
       "problem": "Fachkräfte im Außendienst brauchten eine mobile Lösung für strukturierte Datenerfassung — mit flexiblen Formularen, Offline-Fähigkeit und automatisiertem Datenexport an Bestandssysteme. Bestehende Lösungen waren zu starr oder zu kompliziert.",
-      "approach": "Anforderungserhebung direkt mit Endanwendern im Feld. Konzeption einer dynamischen Formularengine mit konfigurierbaren Feldern und Validierungen. Offline-Sync für zuverlässige Datenerfassung ohne Netzwerk. REST-API-Integration für automatisierten Export an Bestandssysteme.",
+      "approach": "Anforderungserhebung direkt mit Endanwendern im Feld. Konzeption einer dynamischen Formularengine mit konfigurierbaren Feldern und Validierungen. Offline-Sync für zuverlässige Datenerfassung ohne Netzwerk. REST-API-Integration für automatisierten Export an Bestandssysteme und schnellere Abläufe.",
       "result": "Mobile Datenerfassungs-App im produktiven Einsatz. Zentrale Erkenntnis: Anforderungen entstehen im Feld, nicht am Schreibtisch — wer die realen Arbeitsbedingungen nicht versteht, baut die falsche Lösung.",
       "highlights": "Offline-Sync-Mechanismus für zuverlässige Datenerfassung ohne Netzwerk\nBarcode-Scanner-Integration für schnelle Produktidentifikation im Feld\nDynamische Formularengine mit konfigurierbaren Feldern und Validierungen\nREST-API-Integration für automatisierten Datenexport an Bestandssysteme",
       "learnings": "Die Anforderungserhebung mit Außendienst-Nutzern hat gezeigt, wie wichtig es ist, reale Arbeitsbedingungen zu verstehen — Anforderungen entstehen im Feld, nicht am Schreibtisch."
@@ -666,7 +668,7 @@
       "title": "MPA Nutrition Shop",
       "description": "E-Commerce-Geschäftsprozesse End-to-End modelliert: Bestellprozess, Zahlungsabwicklung, Versandlogik und Marketing.",
       "problem": "Ein Nutrition-Unternehmen brauchte einen eigenen Online-Shop ohne Abhängigkeit von Shopify oder WooCommerce. Kernanforderung: volle Kontrolle über Design, Zahlungsfluss, Kundendaten und Marketingmaßnahmen.",
-      "approach": "Analyse der E-Commerce-Geschäftsprozesse End-to-End: Produktverwaltung, Warenkorb-Logik, Zahlungsabwicklung (Stripe), Versand mit Tracking, Kundenkonto-Management. Zusätzlich: Marketing-Tools (Rabattcodes, Newsletter) und integriertes Analytics-Dashboard.",
+      "approach": "Analyse der E-Commerce-Geschäftsprozesse End-to-End: Produktverwaltung, Warenkorb-Logik, Zahlungsabwicklung (Stripe), Versand mit Tracking, Kundenkonto-Management. Zusätzlich: Marketing-Tools (Rabattcodes, Newsletter) und integriertes Analytics-Dashboard — mit Fokus auf effiziente Abläufe und stabile Performance.",
       "result": "Funktionsfähiger Online-Shop mit vollständigem Bestellprozess im produktiven Betrieb. Die End-to-End-Modellierung aller Geschäftsprozesse — vom Warenkorb über Zahlung bis Versand — war das wertvollste Learning.",
       "highlights": "Stripe-Zahlungsintegration mit vollständigem Checkout-Flow und Fehlerbehandlung\nVersandlogik mit Tracking und automatischer Statusaktualisierung\nMarketing-Tools: Rabattcodes, Newsletter-System und Analytics-Dashboard\nKundenkonto mit Bestellhistorie und Session-basiertem Warenkorb",
       "learnings": "Die Analyse von E-Commerce-Geschäftsprozessen — vom Warenkorb über Zahlung bis Versand — hat mein Verständnis für End-to-End-Prozessmodellierung und Business-Anforderungen geschaerft."
@@ -851,14 +853,14 @@
   "JobMatch": {
     "eyebrow": "Stellenprofil-Abgleich",
     "heading": "Anforderungen vs. Qualifikation",
-    "intro": "Punkt-für-Punkt-Abgleich: Was Bitmarck sucht und was ich mitbringe.",
+    "intro": "Ich habe die Rolle bewusst gegen meinen Werdegang gespiegelt: von Prozessanalyse und Strukturierung bis zur Umsetzung in sicherheitskritischen IT-Umgebungen.",
     "colBitmarck": "Bitmarck sucht",
     "colTobias": "Tobias bringt mit",
     "matchLabel": "Match",
     "items": {
       "digitalization": {
         "requirement": "Erfahrung in Digitalisierungsprojekten",
-        "evidence": "6 eigenständige Softwareprojekte, CRM bei BHF Group"
+        "evidence": "6 eigenständige Softwareprojekte, CRM bei BHF Group, Prozesse in Freelancer-Projekten durch Automatisierung beschleunigt"
       },
       "requirements": {
         "requirement": "Anforderungsanalyse, idealerweise Telematikinfrastruktur",
@@ -870,7 +872,7 @@
       },
       "bpmn": {
         "requirement": "Prozessmodellierung (BPMN)",
-        "evidence": "Prozessoptimierung bei BHF, Persona, Xecuro"
+        "evidence": "Prozessoptimierung bei BHF, Persona, Xecuro und in Freelancer-Projekten"
       },
       "testing": {
         "requirement": "Schnittstelle zum Testmanagement",
@@ -882,7 +884,7 @@
       },
       "analytical": {
         "requirement": "Lösungsorientierter analytischer Arbeitsstil",
-        "evidence": "In jeder Station analytische Rolle eingenommen"
+        "evidence": "Ob Messtechnik, SINA oder Eigenprojekte: Ich arbeite strukturiert von der Ursachenanalyse über Priorisierung bis zur tragfähigen Lösung."
       }
     }
   },
@@ -1010,7 +1012,7 @@
           "period": "2025 -- heute",
           "company": "Xecuro GmbH",
           "role": "Secure Client Manager",
-          "funFact": "SINA-Expertise vertieft, mit Jira/Confluence gearbeitet und in Leerlaufzeiten das Intranet gepflegt -- die direkte Bruecke zu IAM."
+          "funFact": "SINA-Expertise vertieft, Sicherheitsanforderungen strukturiert und mit Jira/Confluence in belastbare Abläufe überführt -- direkte IAM-Brücke."
         },
         "bitmarck": {
           "period": "Ziel",

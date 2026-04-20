@@ -55,6 +55,9 @@ export async function HeroSection() {
             <p className="text-lg text-white/75 leading-relaxed max-w-[480px]">
               {t('valueProposition')}
             </p>
+            <p className="mt-md inline-flex items-center rounded-full border border-emerald-300/35 bg-emerald-400/10 px-sm py-xs text-xs font-semibold tracking-wide text-emerald-200">
+              {t('focusLine')}
+            </p>
             {/* Trust Strip */}
             <div className="flex flex-wrap gap-sm mt-lg">
               {[

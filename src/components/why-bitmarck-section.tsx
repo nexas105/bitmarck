@@ -11,7 +11,7 @@ export async function WhyBitmarckSection() {
   const t = await getTranslations('WhyBitmarck');
 
   return (
-    <section id="why-bitmarck" className="relative px-md md:px-xl pt-xl pb-4xl md:pt-2xl md:pb-5xl bg-linear-to-br from-primary-900 via-primary-800 to-primary-700 overflow-hidden">
+    <section id="why-bitmarck" className="section-optional relative px-md md:px-xl pt-xl pb-4xl md:pt-2xl md:pb-5xl bg-linear-to-br from-primary-900 via-primary-800 to-primary-700 overflow-hidden">
       {/* Subtle radial glow */}
       <div className="absolute inset-0 bg-radial-[at_50%_40%] from-accent/8 to-transparent" aria-hidden="true" />
 

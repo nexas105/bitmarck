@@ -20,7 +20,7 @@
   "Hero": {
     "name": "Tobias Ludwig",
     "role": "Business Analyst IAM",
-    "valueProposition": "I analyze business processes and translate them into precise requirements — with 10+ years at the intersection of IT and business.",
+    "valueProposition": "I combine 10+ years of IT practice with a clear BA mindset: from field operations and IT service to security-critical systems and software projects. My focus today is to analyze complex processes and translate them into implementable requirements.",
     "cta": "Download CV",
     "ctaCoverLetter": "Cover Letter",
     "eyebrow": "Application · Business Analyst IAM · Bitmarck",
@@ -38,7 +38,8 @@
         "label": "LLM-optimized",
         "desc": "Plain text for AI parsing and analysis"
       }
-    }
+    },
+    "focusLine": "Experience in analyzing and optimizing processes in security-critical IT environments"
   },
   "TrustStrip": {
     "location": "Königswinter · Relocation to Essen planned",
@@ -63,15 +64,15 @@
   "WhyBitmarck": {
     "heading": "Why Bitmarck",
     "card1Title": "GKV Digitalization",
-    "card1Description": "Digitizing healthcare — with real impact on millions of insured people. Bitmarck shapes the IT infrastructure of Germany's statutory health insurers.",
+    "card1Description": "What motivates me about Bitmarck is the concrete impact: healthcare digitization that directly affects millions of insured people. That is exactly the environment where I want to take ownership.",
     "card2Title": "IAM Expertise Meets Practice",
-    "card2Description": "SINA experience from two security-critical environments, self-built auth service with RBAC — directly transferable to bitIAM and the telematics infrastructure.",
+    "card2Description": "I bring a fitting foundation: SINA experience from two security-critical environments and a self-designed auth service with RBAC — closely aligned with bitIAM and telematics needs.",
     "card3Title": "The Right Role",
-    "card3Description": "Requirements analysis, process modeling, stakeholder coordination — not as a job title, but as what I've done in every position."
+    "card3Description": "I work at the intersection: understanding business-side problems, structuring implementation-ready requirements, and aligning stakeholders across teams. That is exactly what this role at Bitmarck requires."
   },
   "Career": {
     "heading": "My Path to Business Analyst",
-    "intro": "10+ years of IT experience — from telecommunications and security-critical infrastructure to software delivery, with a consistent focus on analysis, structuring, and alignment between business and engineering.",
+    "intro": "My path moved from field technician work to security-critical infrastructure and then software delivery. The common thread stayed the same: analyze problems clearly, set priorities, and structure solutions so business and engineering can move together.",
     "expandLabel": "Show details",
     "collapseLabel": "Hide details",
     "detailLink": "View full details",
@@ -271,8 +272,8 @@
         "company": "Self-employed",
         "role": "Freelancer — DevOps, Web Development & IT Consulting",
         "subtitle": "Part-time",
-        "body": "Part-time client projects from requirement clarification to operations: captured needs, structured solutions, delivered web/server implementations, and operated them reliably.",
-        "narrative": "Freelancing sharpened the BA lens: understand needs, prioritize, decide, and communicate clearly with stakeholders.",
+        "body": "Part-time, I run client projects end-to-end: captured requirements, simplified processes, accelerated workflows through automation, and delivered web/server solutions with a strong focus on cost-efficiency and performance.",
+        "narrative": "Freelancing makes the BA perspective tangible: full ownership, precise requirement capture, clear decisions, and improvements with measurable impact.",
         "technologies": "DevOps, Docker, Linux, Next.js, Web Development, Servers",
         "details": [
           "Client meetings and project planning",
@@ -281,11 +282,12 @@
           "Independent project management and client communication"
         ],
         "detailPage": {
-          "overview": "Since January 2026, I've been working part-time as a freelancer. I handle DevOps tasks, develop and operate websites, and set up servers for clients. The most important part: working with clients — understanding their requirements, planning projects, and delivering pragmatic solutions.",
-          "baRelevance": "Freelancing is the purest form of business analyst work: I sit directly with the client, listen, analyze the need, create a concept, and implement it. No intermediary layer, no abstraction — direct feedback on whether my analysis met the actual need.",
+          "overview": "Since January 2026, I've been working part-time as a freelancer. I handle DevOps tasks, develop and operate websites, and set up servers for clients. In a one-person setup, I continuously optimize workflows, use automation where useful, and balance cost, performance, and maintainability.",
+          "baRelevance": "In freelancing, BA work is direct and accountable: I clarify needs with clients, break them into prioritized requirements, define the solution, and carry it into operations. Because I own the full scope, decisions must be analytically sound, economically sensible, and technically sustainable.",
           "achievements": [
             "Independent client acquisition, requirements gathering, and project planning",
             "End-to-end responsibility: from initial meeting to productive operation",
+            "Accelerated processes through automation and reduced operational overhead",
             "DevOps and infrastructure: servers, Docker, CI/CD for client projects",
             "Web development with modern stack (Next.js, Tailwind, self-hosting)"
           ],
@@ -301,8 +303,8 @@
         "period": "Feb 2025 – present",
         "company": "Xecuro GmbH",
         "role": "IT System Administrator Secure Client Manager",
-        "body": "Administration of SINA-based secure clients and SINA CA. Contributed to security concepts, worked with Jira and Confluence, and maintained the internal intranet during idle periods.",
-        "narrative": "Deepened SINA expertise while translating security requirements into workable processes, tickets, and documentation with cross-functional teams.",
+        "body": "Administration of SINA-based secure clients and SINA CA, including analysis of security requirements and translation into workable operating flows. Daily work with Jira/Confluence plus intranet maintenance during idle periods (security sector, confidentiality).",
+        "narrative": "Here I combine security practice with BA execution: structuring requirements, aligning across teams, and turning them into reliable processes and documentation.",
         "technologies": "SINA, Windows, Linux, Hardening, Security Concepts",
         "details": [
           "Administration and advancement of SINA-based secure clients",
@@ -313,15 +315,15 @@
           "Analysis of security requirements and their technical implementation"
         ],
         "detailPage": {
-          "overview": "At Xecuro, I'm deepening my SINA expertise in an environment with the highest security requirements. I administer and advance SINA-based secure clients, actively contribute to security concepts, and work closely with security and infrastructure teams. In day-to-day work, I also use Jira and Confluence and maintain the internal intranet during idle periods.",
-          "baRelevance": "This role is the direct bridge to the IAM world at Bitmarck: SINA systems, security concepts, access policies — all central topics in Identity and Access Management. I understand not just the theory but have practical experience with the systems also used in the healthcare telematics infrastructure.",
+          "overview": "Xecuro is a security-sector startup with high ownership and short decision paths. I administer SINA-based secure clients, work with SINA CA, and handle additional security-critical systems. In daily operations I work with Jira and Confluence and maintain internal intranet content during idle periods. In this small-team setup, I also drive process analysis and process improvement so security work stays traceable and efficient. Details remain confidential.",
+          "baRelevance": "This role is a direct bridge to Bitmarck IAM: SINA systems, security concepts, SINA CA, and access policies are core IAM topics. It is also BA work in practice: analyzing security requirements, translating them into structured tickets and documentation, and aligning with involved teams. This is exactly the mix of analysis, structure, and security expected for the role.",
           "achievements": [
-            "Deepening SINA expertise at architecture and concept level",
-            "Contributing to security concepts for regulated environments",
-            "Regular Jira and Confluence usage for tickets, coordination, and documentation",
-            "Maintenance and structuring of internal intranet content for knowledge sharing",
-            "Analysis of access requirements and translation into policies",
-            "Provisioning and maintaining test and integration environments"
+            "Deepened SINA expertise: secure clients, SINA CA, and security-critical systems",
+            "Analyzed security requirements and translated them into clear process steps",
+            "Contributed actively to security concepts in a startup environment",
+            "Regular Jira and Confluence usage for ticketing, alignment, and documentation",
+            "Maintained and structured internal intranet content for knowledge continuity",
+            "Independently drove internal process optimization"
           ],
           "skillsGained": [
             "SINA Architecture",
@@ -374,7 +376,7 @@
   },
   "Projects": {
     "heading": "Case Studies from Practice",
-    "intro": "Each project follows the same cycle: understand the business problem, analyze requirements, design the solution, deliver results.",
+    "intro": "Every project follows the same logic: understand the problem, analyze requirements, define the solution, deliver the result.",
     "detailsLink": "Details →",
     "languages": "Languages",
     "lastCommit": "Last commit",
@@ -569,7 +571,7 @@
   },
   "Contact": {
     "heading": "Contact",
-    "intro": "Interested? I look forward to hearing from you — whether you have questions about the application, my background, or would like to arrange a personal conversation.",
+    "intro": "If you are looking for someone who structures requirements, realistically assesses technical impact, and translates both into executable solutions, I would value the conversation.",
     "formHeading": "Send a message",
     "directHeading": "Reach me directly",
     "directIntro": "You can also contact me directly through the following channels.",
@@ -600,7 +602,7 @@
     "greeting": "tobias@bitmarck:~$ Welcome! Type 'help' for a list of commands.",
     "whoami": "Tobias Ludwig -- Business Analyst IAM candidate at Bitmarck. 10+ years IT experience, from structured fault analysis to SINA systems to independent requirements analysis. I analyze business processes and translate them into precise requirements.",
     "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA Methods: Requirements analysis, Use Cases, GDPR, Process optimization, Stakeholder Management\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nLanguages: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSpoken: German (C2), English (B2)",
-    "projects": "1. Auth API Service -- Central IAM system: requirements analysis, access concept, implementation\n2. Next CMS -- Client requirements analyzed, architecture designed, multi-tenant implementation\n3. MyFitCoach PRO -- Stakeholder requirements prioritized, multi-platform solution designed\n4. EroHub -- Privacy requirements analyzed, privacy-by-design architecture implemented\n5. Logbuch App -- Field requirements gathered, dynamic forms and system integration designed\n6. MPA Nutrition Shop -- E-commerce business processes modeled and implemented end-to-end",
+    "projects": "1. Auth API Service -- Central IAM system: requirements analysis, access concept, implementation\n2. Next CMS -- Client requirements analyzed, architecture designed, multi-tenant and setup-automated delivery\n3. MyFitCoach PRO -- Stakeholder requirements prioritized, multi-platform solution designed\n4. EroHub -- Privacy requirements analyzed, privacy-by-design architecture implemented\n5. Logbuch App -- Field requirements gathered, dynamic forms plus automated export to speed up workflows\n6. MPA Nutrition Shop -- E-commerce business processes modeled end-to-end and delivered efficiently",
     "motivation": "Bitmarck digitizes healthcare -- a domain with real impact on millions of insured people. As a Business Analyst IAM, I can combine my SINA experience, my understanding of auth architectures, and my analytical approach with a task that truly matters: making digital insured identities secure and usable.",
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
     "bewerbung": "Match Score: 92%\n\nTop 3 reasons why Tobias fits Bitmarck:\n  1. SINA experience from two security-critical environments (BWI + Xecuro) -- directly transferable to bitIAM and Telematik infrastructure\n  2. Independently built Auth Service with JWT/RBAC -- IAM understood practically, not just theoretically\n  3. Analytical approach at every career station -- from measurement teams to requirements gathering, always at the interface between tech and business",
@@ -627,7 +629,7 @@
       "title": "Next CMS",
       "description": "Client requirements analyzed, architecture designed, and multi-tenant CMS implemented — from gathering to self-hosting.",
       "problem": "Clients needed a flexible content management system without the complexity and cost of WordPress or Strapi. Core requirements: simple operation for non-technical users, fast performance, and independent hosting capability.",
-      "approach": "Requirements gathering with non-technical clients, translation into technical specification. Headless architecture with multi-tenant data separation (Row-Level Security). Auto-install for technically inexperienced users. Docker-based self-hosting.",
+      "approach": "Requirements gathering with non-technical clients, translation into technical specification. Headless architecture with multi-tenant data separation (Row-Level Security). Setup automation via auto-install for non-technical users. Docker-based self-hosting with focus on cost control and performance.",
       "result": "Fully functional CMS in production use by multiple clients with different requirements. Key insight: A solution's quality is not measured by technical complexity but by how well it meets user requirements.",
       "highlights": "Row-Level Security (RLS) for complete multi-tenant data separation at database level\nAuto-install script for one-click setup without technical knowledge\nDocker-based self-hosting with automated backups on own server\nProduction use by multiple clients with different requirements",
       "learnings": "Requirements analysis for non-technical clients taught me to translate complex systems into simple usage concepts — a core competency for communication between business and technology."
@@ -654,7 +656,7 @@
       "title": "Logbuch App",
       "description": "Field requirements gathered with end users, dynamic forms designed, and seamless system integration implemented.",
       "problem": "Field workers needed a mobile solution for structured data capture — with flexible forms, offline capability, and automated data export to existing systems. Existing solutions were too rigid or too complicated.",
-      "approach": "Requirements gathering directly with end users in the field. Design of a dynamic form engine with configurable fields and validations. Offline sync for reliable data capture without network. REST API integration for automated export to existing systems.",
+      "approach": "Requirements gathering directly with end users in the field. Design of a dynamic form engine with configurable fields and validations. Offline sync for reliable data capture without network. REST API integration for automated export to existing systems and faster workflows.",
       "result": "Mobile data capture app in production use. Key insight: Requirements emerge in the field, not at the desk — whoever doesn't understand real working conditions builds the wrong solution.",
       "highlights": "Offline sync mechanism for reliable data capture without network connectivity\nBarcode scanner integration for rapid product identification in the field\nDynamic form engine with configurable fields and validations\nREST API integration for automated data export to existing systems",
       "learnings": "Requirements gathering with field users showed how important it is to understand real working conditions — requirements emerge in the field, not at the desk."
@@ -663,7 +665,7 @@
       "title": "MPA Nutrition Shop",
       "description": "E-commerce business processes modeled end-to-end: order process, payment processing, shipping logic, and marketing.",
       "problem": "A nutrition company needed their own online shop without dependency on Shopify or WooCommerce. Core requirement: full control over design, payment flow, customer data, and marketing measures.",
-      "approach": "End-to-end analysis of e-commerce business processes: product management, cart logic, payment processing (Stripe), shipping with tracking, customer account management. Additionally: marketing tools (discount codes, newsletter) and integrated analytics dashboard.",
+      "approach": "End-to-end analysis of e-commerce business processes: product management, cart logic, payment processing (Stripe), shipping with tracking, customer account management. Additionally: marketing tools (discount codes, newsletter) and integrated analytics dashboard — with focus on efficient operations and stable performance.",
       "result": "Functional online shop with complete order flow in production. The end-to-end modeling of all business processes — from cart through payment to shipping — was the most valuable learning.",
       "highlights": "Stripe payment integration with complete checkout flow and error handling\nShipping logic with tracking and automatic status updates\nMarketing tools: discount codes, newsletter system, and analytics dashboard\nCustomer accounts with order history and session-based cart",
       "learnings": "Analyzing e-commerce business processes — from cart through payment to shipping — sharpened my understanding of end-to-end process modeling and business requirements."
@@ -848,14 +850,14 @@
   "JobMatch": {
     "eyebrow": "Job Profile Match",
     "heading": "Requirements vs. Qualifications",
-    "intro": "Point-by-point comparison: What Bitmarck is looking for and what I bring to the table.",
+    "intro": "I intentionally mapped this role against my track record: from process analysis and structuring to delivery in security-critical IT environments.",
     "colBitmarck": "Bitmarck is looking for",
     "colTobias": "Tobias brings",
     "matchLabel": "Match",
     "items": {
       "digitalization": {
         "requirement": "Experience in digitalization projects",
-        "evidence": "6 independent software projects, CRM at BHF Group"
+        "evidence": "6 independent software projects, CRM at BHF Group, and accelerated workflows in freelance projects through automation"
       },
       "requirements": {
         "requirement": "Requirements analysis, ideally telematics infrastructure",
@@ -867,7 +869,7 @@
       },
       "bpmn": {
         "requirement": "Process modeling (BPMN)",
-        "evidence": "Process optimization at BHF, Persona, Xecuro"
+        "evidence": "Process optimization at BHF, Persona, Xecuro, and in freelance projects"
       },
       "testing": {
         "requirement": "Interface to test management",
@@ -879,7 +881,7 @@
       },
       "analytical": {
         "requirement": "Solution-oriented analytical work style",
-        "evidence": "Took on an analytical role at every position"
+        "evidence": "Whether in measurement operations, SINA environments, or own projects, I work in a structured flow: root-cause analysis, prioritization, then implementable solutions."
       }
     }
   },
@@ -1007,7 +1009,7 @@
           "period": "2025 -- present",
           "company": "Xecuro GmbH",
           "role": "Secure Client Manager",
-          "funFact": "Deepened SINA expertise, worked with Jira/Confluence, and maintained the intranet during idle periods -- the direct bridge to IAM."
+          "funFact": "Deepened SINA expertise, structured security requirements, and translated them into reliable Jira/Confluence workflows -- direct IAM bridge."
         },
         "bitmarck": {
           "period": "Target",
