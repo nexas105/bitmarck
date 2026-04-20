@@ -12,8 +12,12 @@ export async function ProjectsSection() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-primary-50"
+      className="relative py-4xl px-md md:px-xl scroll-mt-[64px] bg-white overflow-hidden"
     >
+      {/* Top gradient fade from surface */}
+      <div className="absolute top-0 left-0 right-0 h-24 bg-linear-to-b from-surface to-transparent" aria-hidden="true" />
+      {/* Bottom gradient fade to surface */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-surface to-transparent" aria-hidden="true" />
       <div className="mx-auto max-w-6xl">
         <SectionHeader number="02" eyebrow="PROJEKTE" heading={t('heading')} id="projects-heading" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg mt-xl">

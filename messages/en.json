@@ -826,5 +826,100 @@
         "status": "completed"
       }
     }
+  },
+  "Interactive": {
+    "badge": "Interactive",
+    "pageTitle": "Explore Interactively",
+    "pageIntro": "Get to know me in a playful way -- three mini-games that show why I'm a great fit for Bitmarck.",
+    "quiz": {
+      "title": "Does Tobias Fit Bitmarck?",
+      "yes": "Yes",
+      "no": "No",
+      "restart": "Play again",
+      "resultTitle": "Perfect Match!",
+      "resultDescription": "All qualifications match the Business Analyst IAM role at Bitmarck.",
+      "questions": {
+        "q1": {
+          "question": "Does Tobias have hands-on experience with SINA systems?",
+          "match": "Yes -- at BWI (armed forces) and Xecuro, in two security-critical environments."
+        },
+        "q2": {
+          "question": "Can he gather and prioritize requirements from different stakeholders?",
+          "match": "Yes -- at BHF Group with management, trainers, and clients. In own projects with end users."
+        },
+        "q3": {
+          "question": "Does he understand IAM architectures like JWT, RBAC, and token flows?",
+          "match": "Yes -- he built his own auth service with JWT rotation and fine-grained RBAC."
+        },
+        "q4": {
+          "question": "Does he have experience with ITIL processes and structured work?",
+          "match": "Yes -- ITIL Foundation certified, hands-on experience with IBM Maximo at BWI."
+        },
+        "q5": {
+          "question": "Is he willing to relocate to Essen?",
+          "match": "Yes -- relocation to the Essen area is already planned."
+        }
+      }
+    },
+    "careerExplorer": {
+      "title": "Career Explorer",
+      "startText": "Click through 10+ years of IT career and discover interesting facts.",
+      "startButton": "Start",
+      "next": "Next",
+      "restart": "Start over",
+      "stations": {
+        "telekom": {
+          "period": "2014 -- 2016",
+          "company": "Deutsche Telekom",
+          "role": "Service Technician",
+          "funFact": "Promoted from construction crew to measurement team -- because analytical thinking mattered more than manual labor."
+        },
+        "mediacom": {
+          "period": "2016 -- 2018",
+          "company": "Media.com GmbH",
+          "role": "Expert Technician",
+          "funFact": "12 tickets per day in the field -- and still promoted to expert for the tough cases."
+        },
+        "biermann": {
+          "period": "2018 -- 2021",
+          "company": "Biermann Telekom",
+          "role": "Construction Lead",
+          "funFact": "Led teams of 5-10 people, coordinated civil engineering -- classic project management without the title."
+        },
+        "bwi": {
+          "period": "2021 -- 2023",
+          "company": "BWI GmbH",
+          "role": "IT Service Technician",
+          "funFact": "First contact with SINA systems -- the same technology used in the healthcare telematics infrastructure."
+        },
+        "bhf": {
+          "period": "2023 -- 2024",
+          "company": "BHF Group",
+          "role": "IT Consultant",
+          "funFact": "First time owning the complete BA cycle independently: requirements, architecture, implementation."
+        },
+        "xecuro": {
+          "period": "2025 -- present",
+          "company": "Xecuro GmbH",
+          "role": "Secure Client Manager",
+          "funFact": "Deepened SINA expertise, actively shaped security concepts -- the direct bridge to IAM."
+        },
+        "bitmarck": {
+          "period": "Target",
+          "company": "Bitmarck",
+          "role": "Business Analyst IAM",
+          "funFact": "All threads come together: technology + analysis + security + coordination = the perfect role."
+        }
+      }
+    },
+    "skillRadar": {
+      "title": "Skill Radar",
+      "categories": {
+        "iam": "IAM",
+        "ba": "BA Methods",
+        "devops": "DevOps",
+        "dev": "Development"
+      }
+    }
   }
 }

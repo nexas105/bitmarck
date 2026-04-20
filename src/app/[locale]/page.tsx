@@ -20,8 +20,6 @@ export default async function HomePage({params}: Props) {
   return (
     <main>
       <HeroSection />
-      {/* Gradient divider: hero → why-bitmarck */}
-      <div className="h-px bg-linear-to-r from-transparent via-white/10 to-transparent" aria-hidden="true" />
       <AnimateOnScroll preset="fadeUp">
         <WhyBitmarckSection />
       </AnimateOnScroll>

@@ -152,6 +152,12 @@ summary {
   66% { transform: translate(-30px, -20px) scale(0.97); }
 }
 
+/* Subtle dot-grid pattern for light sections */
+.bg-dot-pattern {
+  background-image: radial-gradient(circle at 1px 1px, var(--color-border) 0.5px, transparent 0);
+  background-size: 24px 24px;
+}
+
 /* Smooth section transitions */
 section + section {
   position: relative;

@@ -9,6 +9,7 @@ import {StickyHeader} from '@/components/sticky-header';
 import {Footer} from '@/components/footer';
 import {MotionProvider} from '@/components/motion-provider';
 import {Terminal} from '@/components/terminal';
+import {InteractiveFab} from '@/components/interactive-fab';
 import '../globals.css';
 
 const inter = Inter({
@@ -44,6 +45,7 @@ export default async function LocaleLayout({children, params}: Props) {
             {children}
             <Footer />
             <Terminal />
+            <InteractiveFab />
           </MotionProvider>
         </NextIntlClientProvider>
       </body>

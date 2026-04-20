@@ -30,28 +30,27 @@ export async function HeroSection() {
         {/* Left: Photo + Name, Role, Value Prop, CTA */}
         <HeroAnimations>
           <div>
-            {/* Profile photo + badge */}
-            <div className="flex items-center gap-lg mb-xl">
+            {/* Eyebrow */}
+            <p className="font-mono text-xs tracking-[0.2em] uppercase text-white/50 mb-lg">
+              {t('eyebrow')}
+            </p>
+            {/* Profile photo + Name */}
+            <div className="flex items-center gap-lg mb-md">
               <div className="relative shrink-0">
                 <Image
                   src="/tobias-ludwig.jpg"
                   alt="Tobias Ludwig"
-                  width={120}
-                  height={120}
-                  className="rounded-full object-cover object-top border-2 border-white/20 shadow-lg w-[96px] h-[96px] md:w-[120px] md:h-[120px]"
+                  width={80}
+                  height={80}
+                  className="rounded-full object-cover object-top border-2 border-white/20 shadow-lg"
+                  style={{width: 80, height: 80}}
                   priority
                 />
-                {/* Online indicator */}
-                <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full bg-emerald-400 border-2 border-primary-900 animate-pulse" aria-hidden="true" />
+                <span className="absolute bottom-0.5 right-0.5 h-3 w-3 rounded-full bg-emerald-400 border-2 border-primary-900 animate-pulse" aria-hidden="true" />
               </div>
-              <div>
-                <p className="font-mono text-xs tracking-[0.2em] uppercase text-white/50 mb-sm">
-                  {t('eyebrow')}
-                </p>
-                <h1 className="text-display md:text-hero font-bold text-white leading-tight tracking-tight">
-                  {t('name')}
-                </h1>
-              </div>
+              <h1 className="text-hero font-bold text-white leading-none tracking-tight">
+                {t('name')}
+              </h1>
             </div>
             <p className="text-lg text-white/75 leading-relaxed max-w-[480px]">
               {t('valueProposition')}
@@ -80,8 +79,7 @@ export async function HeroSection() {
         <MetricsDashboard />
       </div>
 
-      {/* Bottom edge gradient for smooth section transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-surface" aria-hidden="true" />
+      {/* Bottom edge gradient removed — hero flows seamlessly into WhyBitmarck dark section */}
     </section>
   );
 }

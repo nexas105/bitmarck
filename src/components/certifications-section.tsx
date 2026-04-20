@@ -24,7 +24,7 @@ export async function CertificationsSection() {
     <section
       id="certifications"
       aria-labelledby="certifications-heading"
-      className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-primary-50"
+      className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-white"
     >
       <div className="mx-auto max-w-4xl">
         <SectionHeader number="04" eyebrow="QUALIFIKATIONEN" heading={t('heading')} id="certifications-heading" />

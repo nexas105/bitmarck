@@ -30,7 +30,7 @@ export async function SkillsSection() {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="py-4xl px-md md:px-xl scroll-mt-[64px]"
+      className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-surface bg-dot-pattern"
     >
       <div className="mx-auto max-w-4xl">
         <SectionHeader number="03" eyebrow="KOMPETENZEN" heading={t('heading')} id="skills-heading">

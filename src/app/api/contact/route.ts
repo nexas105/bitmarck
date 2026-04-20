@@ -82,9 +82,9 @@ export async function POST(request: NextRequest) {
     });
 
     await transporter.sendMail({
-      from: `"${name}" <${SMTP_USER}>`,
+      from: `"Bewerbungswebsite" <${SMTP_USER}>`,
       replyTo: email,
-      to: CONTACT_TO,
+      to: SMTP_USER,
       subject: `[Bewerbung Kontakt] ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\nBetreff: ${subject}\n\n${message}`,
       html: `

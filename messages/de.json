@@ -775,5 +775,100 @@
         "status": "abgeschlossen"
       }
     }
+  },
+  "Interactive": {
+    "badge": "Interaktiv",
+    "pageTitle": "Interaktiv entdecken",
+    "pageIntro": "Lernen Sie mich auf spielerische Weise kennen -- drei Mini-Games, die zeigen, warum ich zu Bitmarck passe.",
+    "quiz": {
+      "title": "Passt Tobias zu Bitmarck?",
+      "yes": "Ja",
+      "no": "Nein",
+      "restart": "Nochmal spielen",
+      "resultTitle": "Perfekter Match!",
+      "resultDescription": "Alle Qualifikationen passen zur Rolle als Business Analyst IAM bei Bitmarck.",
+      "questions": {
+        "q1": {
+          "question": "Hat Tobias praktische Erfahrung mit SINA-Systemen?",
+          "match": "Ja -- bei BWI (Bundeswehr) und Xecuro, in zwei sicherheitskritischen Umgebungen."
+        },
+        "q2": {
+          "question": "Kann er Anforderungen von verschiedenen Stakeholdern erheben und priorisieren?",
+          "match": "Ja -- bei BHF Group mit Geschaeftsfuehrung, Trainern und Kunden. In Eigenprojekten mit Endanwendern."
+        },
+        "q3": {
+          "question": "Versteht er IAM-Architekturen wie JWT, RBAC und Token-Flows?",
+          "match": "Ja -- er hat einen eigenen Auth-Service mit JWT-Rotation und feingranularem RBAC gebaut."
+        },
+        "q4": {
+          "question": "Hat er Erfahrung mit ITIL-Prozessen und strukturiertem Arbeiten?",
+          "match": "Ja -- ITIL Foundation zertifiziert, praktische Erfahrung mit IBM Maximo bei BWI."
+        },
+        "q5": {
+          "question": "Ist er bereit, nach Essen umzuziehen?",
+          "match": "Ja -- der Umzug in die Region Essen ist bereits geplant."
+        }
+      }
+    },
+    "careerExplorer": {
+      "title": "Karriere-Explorer",
+      "startText": "Klicken Sie sich durch 10+ Jahre IT-Karriere und entdecken Sie spannende Fakten.",
+      "startButton": "Starten",
+      "next": "Weiter",
+      "restart": "Von vorne",
+      "stations": {
+        "telekom": {
+          "period": "2014 -- 2016",
+          "company": "Deutsche Telekom",
+          "role": "Service Techniker",
+          "funFact": "Vom Bautrupp ins Messteam befoerdert -- weil analytisches Denken wichtiger war als Muskelkraft."
+        },
+        "mediacom": {
+          "period": "2016 -- 2018",
+          "company": "Media.com GmbH",
+          "role": "Expertentechniker",
+          "funFact": "12 Tickets pro Tag im Aussendienst -- und trotzdem zum Experten fuer die Schwerfaelle aufgestiegen."
+        },
+        "biermann": {
+          "period": "2018 -- 2021",
+          "company": "Biermann Telekom",
+          "role": "Messbaufuehrer",
+          "funFact": "Teams von 5-10 Personen gefuehrt, Tiefbau koordiniert -- klassisches Projektmanagement ohne den Titel."
+        },
+        "bwi": {
+          "period": "2021 -- 2023",
+          "company": "BWI GmbH",
+          "role": "IT-Service Techniker",
+          "funFact": "Erster Kontakt mit SINA-Systemen -- die gleiche Technologie, die in der Telematikinfrastruktur eingesetzt wird."
+        },
+        "bhf": {
+          "period": "2023 -- 2024",
+          "company": "BHF Group",
+          "role": "IT-Berater",
+          "funFact": "Den gesamten BA-Zyklus zum ersten Mal eigenverantwortlich durchlaufen: Anforderung, Architektur, Umsetzung."
+        },
+        "xecuro": {
+          "period": "2025 -- heute",
+          "company": "Xecuro GmbH",
+          "role": "Secure Client Manager",
+          "funFact": "SINA-Expertise vertieft, Sicherheitskonzepte aktiv mitgestaltet -- die direkte Bruecke zu IAM."
+        },
+        "bitmarck": {
+          "period": "Ziel",
+          "company": "Bitmarck",
+          "role": "Business Analyst IAM",
+          "funFact": "Alle Faeden laufen zusammen: Technik + Analyse + Sicherheit + Koordination = die perfekte Rolle."
+        }
+      }
+    },
+    "skillRadar": {
+      "title": "Skill-Radar",
+      "categories": {
+        "iam": "IAM",
+        "ba": "BA-Methoden",
+        "devops": "DevOps",
+        "dev": "Development"
+      }
+    }
   }
 }

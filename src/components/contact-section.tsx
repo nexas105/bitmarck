@@ -10,11 +10,14 @@ export async function ContactSection() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="py-4xl px-md md:px-xl scroll-mt-[64px]"
+      className="relative py-4xl px-md md:px-xl scroll-mt-[64px] bg-linear-to-br from-primary-900 via-primary-800 to-primary-700 overflow-hidden"
     >
-      <div className="mx-auto max-w-4xl">
-        <SectionHeader number="06" eyebrow="KONTAKT" heading={t('heading')} id="contact-heading">
-          <p className="text-body text-text-secondary max-w-2xl">
+      {/* Subtle radial glow */}
+      <div className="absolute inset-0 bg-radial-[at_30%_60%] from-accent/8 to-transparent" aria-hidden="true" />
+
+      <div className="relative mx-auto max-w-4xl">
+        <SectionHeader number="06" eyebrow="KONTAKT" heading={t('heading')} id="contact-heading" variant="dark">
+          <p className="text-body text-white/70 max-w-2xl">
             {t('intro')}
           </p>
         </SectionHeader>
@@ -22,20 +25,20 @@ export async function ContactSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
           {/* Left: Contact form */}
-          <div className="rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card">
-            <h3 className="text-body font-semibold text-text-primary mb-lg">
+          <div className="rounded-2xl border border-white/[0.12] bg-white/[0.06] backdrop-blur-md p-lg shadow-card">
+            <h3 className="text-body font-semibold text-white mb-lg">
               {t('formHeading')}
             </h3>
-            <ContactForm />
+            <ContactForm variant="dark" />
           </div>
 
           {/* Right: Direct contact info */}
-          <div className="rounded-2xl border border-border/60 bg-surface-raised p-lg shadow-card flex flex-col justify-between">
+          <div className="rounded-2xl border border-white/[0.12] bg-white/[0.06] backdrop-blur-md p-lg shadow-card flex flex-col justify-between">
             <div>
-              <h3 className="text-body font-semibold text-text-primary mb-lg">
+              <h3 className="text-body font-semibold text-white mb-lg">
                 {t('directHeading')}
               </h3>
-              <p className="text-caption text-text-secondary mb-xl">
+              <p className="text-caption text-white/60 mb-xl">
                 {t('directIntro')}
               </p>
 
@@ -43,28 +46,28 @@ export async function ContactSection() {
                 {/* Email */}
                 <a
                   href="mailto:Ludwig.tobias105@t-online.de"
-                  className="group flex items-center gap-md text-body text-text-primary hover:text-accent transition-colors duration-200"
+                  className="group flex items-center gap-md text-body text-white hover:text-emerald-400 transition-colors duration-200"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-200">
-                    <Mail className="h-5 w-5 text-accent" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.08] group-hover:bg-white/[0.12] transition-colors duration-200">
+                    <Mail className="h-5 w-5 text-emerald-400" />
                   </div>
                   <div>
-                    <p className="text-caption font-medium text-text-secondary">{t('emailLabel')}</p>
-                    <p className="text-body">Ludwig.tobias105@t-online.de</p>
+                    <p className="text-caption font-medium text-white/60">{t('emailLabel')}</p>
+                    <p className="text-body text-white">Ludwig.tobias105@t-online.de</p>
                   </div>
                 </a>
 
                 {/* Phone */}
                 <a
                   href="tel:+491731948945"
-                  className="group flex items-center gap-md text-body text-text-primary hover:text-accent transition-colors duration-200"
+                  className="group flex items-center gap-md text-body text-white hover:text-emerald-400 transition-colors duration-200"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-200">
-                    <Phone className="h-5 w-5 text-accent" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.08] group-hover:bg-white/[0.12] transition-colors duration-200">
+                    <Phone className="h-5 w-5 text-emerald-400" />
                   </div>
                   <div>
-                    <p className="text-caption font-medium text-text-secondary">{t('phoneLabel')}</p>
-                    <p className="text-body">+49 173 1948 945</p>
+                    <p className="text-caption font-medium text-white/60">{t('phoneLabel')}</p>
+                    <p className="text-body text-white">+49 173 1948 945</p>
                   </div>
                 </a>
 
@@ -73,14 +76,14 @@ export async function ContactSection() {
                   href="https://www.tobiasjonas-ludwig.de"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-md text-body text-text-primary hover:text-accent transition-colors duration-200"
+                  className="group flex items-center gap-md text-body text-white hover:text-emerald-400 transition-colors duration-200"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-200">
-                    <Globe className="h-5 w-5 text-accent" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.08] group-hover:bg-white/[0.12] transition-colors duration-200">
+                    <Globe className="h-5 w-5 text-emerald-400" />
                   </div>
                   <div>
-                    <p className="text-caption font-medium text-text-secondary">{t('websiteLabel')}</p>
-                    <p className="text-body">www.tobiasjonas-ludwig.de</p>
+                    <p className="text-caption font-medium text-white/60">{t('websiteLabel')}</p>
+                    <p className="text-body text-white">www.tobiasjonas-ludwig.de</p>
                   </div>
                 </a>
 
@@ -89,14 +92,14 @@ export async function ContactSection() {
                   href="https://github.com/nexas105"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-md text-body text-text-primary hover:text-accent transition-colors duration-200"
+                  className="group flex items-center gap-md text-body text-white hover:text-emerald-400 transition-colors duration-200"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-200">
-                    <Code2 className="h-5 w-5 text-accent" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.08] group-hover:bg-white/[0.12] transition-colors duration-200">
+                    <Code2 className="h-5 w-5 text-emerald-400" />
                   </div>
                   <div>
-                    <p className="text-caption font-medium text-text-secondary">{t('githubLabel')}</p>
-                    <p className="text-body">github.com/nexas105</p>
+                    <p className="text-caption font-medium text-white/60">{t('githubLabel')}</p>
+                    <p className="text-body text-white">github.com/nexas105</p>
                   </div>
                 </a>
               </div>
