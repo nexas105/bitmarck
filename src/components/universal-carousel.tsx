@@ -3,7 +3,7 @@
 import React, {useState} from 'react'
 import {AnimatePresence, motion} from 'motion/react'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCoverflow, EffectCards, EffectCube, EffectFlip, Pagination, Autoplay} from 'swiper/modules'
+import {EffectCoverflow, EffectCards, EffectCube, EffectFlip, Pagination, Navigation, Autoplay} from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
@@ -11,10 +11,7 @@ import 'swiper/css/effect-cards'
 import 'swiper/css/effect-cube'
 import 'swiper/css/effect-flip'
 import 'swiper/css/pagination'
-
-type Props = {
-  children: React.ReactNode
-}
+import 'swiper/css/navigation'
 
 const views = ['Carousel', 'Grid'] as const
 type View = (typeof views)[number]
@@ -22,15 +19,45 @@ type View = (typeof views)[number]
 const swiperEffects = ['Coverflow', 'Cards', 'Cube', 'Flip', 'Slide'] as const
 type SwiperEffect = (typeof swiperEffects)[number]
 
-export function SkillsCarousel({children}: Props) {
+type Props = {
+  children: React.ReactNode
+  /** Unique ID for layoutId animations (prevents conflicts between multiple instances) */
+  id: string
+  /** Default swiper effect */
+  defaultEffect?: SwiperEffect
+  /** Grid columns on desktop */
+  gridCols?: 2 | 3
+  /** Show navigation arrows on coverflow/slide */
+  showNavigation?: boolean
+  /** Autoplay delay in ms (0 = disabled) */
+  autoplayDelay?: number
+}
+
+export function UniversalCarousel({
+  children,
+  id,
+  defaultEffect = 'Coverflow',
+  gridCols = 2,
+  showNavigation = true,
+  autoplayDelay = 4000,
+}: Props) {
   const [activeView, setActiveView] = useState<View>('Carousel')
-  const [activeEffect, setActiveEffect] = useState<SwiperEffect>('Cube')
+  const [activeEffect, setActiveEffect] = useState<SwiperEffect>(defaultEffect)
   const items = React.Children.toArray(children)
+
+  const gridClass = gridCols === 3
+    ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg'
+    : 'grid grid-cols-1 md:grid-cols-2 gap-lg'
+
+  const autoplay = autoplayDelay > 0
+    ? {delay: autoplayDelay, disableOnInteraction: true}
+    : false
 
   return (
     <div>
       <style>{`
-        .skills-swiper .swiper-pagination-bullet-active { background: var(--color-accent) !important; }
+        .${id}-swiper .swiper-pagination-bullet-active { background: var(--color-accent) !important; }
+        .${id}-swiper .swiper-button-next, .${id}-swiper .swiper-button-prev { color: var(--color-accent) !important; }
       `}</style>
 
       {/* Main View Toggle */}
@@ -46,7 +73,7 @@ export function SkillsCarousel({children}: Props) {
             >
               {activeView === view && (
                 <motion.div
-                  layoutId="skills-main-tab"
+                  layoutId={`${id}-main-tab`}
                   className="absolute inset-0 bg-white shadow-sm rounded-lg"
                   transition={{type: 'spring', stiffness: 400, damping: 30}}
                 />
@@ -78,7 +105,7 @@ export function SkillsCarousel({children}: Props) {
                 >
                   {activeEffect === effect && (
                     <motion.div
-                      layoutId="skills-effect-tab"
+                      layoutId={`${id}-effect-tab`}
                       className="absolute inset-0 bg-white shadow-sm rounded-full"
                       transition={{type: 'spring', stiffness: 400, damping: 30}}
                     />
@@ -103,15 +130,16 @@ export function SkillsCarousel({children}: Props) {
           >
             {activeEffect === 'Coverflow' && (
               <Swiper
-                className="skills-swiper !pb-xl"
-                modules={[EffectCoverflow, Pagination, Autoplay]}
+                className={`${id}-swiper !pb-xl`}
+                modules={[EffectCoverflow, Pagination, ...(showNavigation ? [Navigation] : []), ...(autoplay ? [Autoplay] : [])]}
                 effect="coverflow"
                 grabCursor centeredSlides
                 slidesPerView={1.2}
-                breakpoints={{768: {slidesPerView: 2}}}
+                breakpoints={{640: {slidesPerView: 1.8}, 1024: {slidesPerView: 2.5}}}
                 coverflowEffect={{rotate: 0, stretch: 0, depth: 100, modifier: 2.5, slideShadows: false}}
                 pagination={{clickable: true}}
-                autoplay={{delay: 3500, disableOnInteraction: true}}
+                navigation={showNavigation}
+                autoplay={autoplay || undefined}
                 loop spaceBetween={20}
               >
                 {items.map((child, i) => (
@@ -123,12 +151,11 @@ export function SkillsCarousel({children}: Props) {
             {activeEffect === 'Cards' && (
               <div className="max-w-[400px] mx-auto">
                 <Swiper
-                  className="skills-swiper !pb-xl"
-                  modules={[EffectCards, Pagination, Autoplay]}
-                  effect="cards"
-                  grabCursor
+                  className={`${id}-swiper !pb-xl`}
+                  modules={[EffectCards, Pagination, ...(autoplay ? [Autoplay] : [])]}
+                  effect="cards" grabCursor
                   pagination={{clickable: true}}
-                  autoplay={{delay: 3500, disableOnInteraction: true}}
+                  autoplay={autoplay || undefined}
                   cardsEffect={{perSlideOffset: 8, perSlideRotate: 2, rotate: true, slideShadows: false}}
                 >
                   {items.map((child, i) => (
@@ -141,12 +168,11 @@ export function SkillsCarousel({children}: Props) {
             {activeEffect === 'Cube' && (
               <div className="max-w-[400px] mx-auto">
                 <Swiper
-                  className="skills-swiper !pb-xl"
-                  modules={[EffectCube, Pagination, Autoplay]}
-                  effect="cube"
-                  grabCursor
+                  className={`${id}-swiper !pb-xl`}
+                  modules={[EffectCube, Pagination, ...(autoplay ? [Autoplay] : [])]}
+                  effect="cube" grabCursor
                   pagination={{clickable: true}}
-                  autoplay={{delay: 3500, disableOnInteraction: true}}
+                  autoplay={autoplay || undefined}
                   cubeEffect={{shadow: false, slideShadows: false}}
                 >
                   {items.map((child, i) => (
@@ -159,12 +185,11 @@ export function SkillsCarousel({children}: Props) {
             {activeEffect === 'Flip' && (
               <div className="max-w-[400px] mx-auto">
                 <Swiper
-                  className="skills-swiper !pb-xl"
-                  modules={[EffectFlip, Pagination, Autoplay]}
-                  effect="flip"
-                  grabCursor
+                  className={`${id}-swiper !pb-xl`}
+                  modules={[EffectFlip, Pagination, ...(autoplay ? [Autoplay] : [])]}
+                  effect="flip" grabCursor
                   pagination={{clickable: true}}
-                  autoplay={{delay: 3500, disableOnInteraction: true}}
+                  autoplay={autoplay || undefined}
                   flipEffect={{slideShadows: false}}
                 >
                   {items.map((child, i) => (
@@ -176,14 +201,15 @@ export function SkillsCarousel({children}: Props) {
 
             {activeEffect === 'Slide' && (
               <Swiper
-                className="skills-swiper !pb-xl"
-                modules={[Pagination, Autoplay]}
+                className={`${id}-swiper !pb-xl`}
+                modules={[Pagination, ...(showNavigation ? [Navigation] : []), ...(autoplay ? [Autoplay] : [])]}
                 grabCursor
                 pagination={{clickable: true}}
-                autoplay={{delay: 3500, disableOnInteraction: true}}
+                navigation={showNavigation}
+                autoplay={autoplay || undefined}
                 loop spaceBetween={20}
                 slidesPerView={1}
-                breakpoints={{768: {slidesPerView: 2}}}
+                breakpoints={{768: {slidesPerView: gridCols === 3 ? 3 : 2}}}
               >
                 {items.map((child, i) => (
                   <SwiperSlide key={i} className="!h-auto">{child}</SwiperSlide>
@@ -198,7 +224,7 @@ export function SkillsCarousel({children}: Props) {
             animate={{opacity: 1, y: 0}}
             exit={{opacity: 0, y: -12}}
             transition={{duration: 0.3}}
-            className="grid grid-cols-1 md:grid-cols-2 gap-lg"
+            className={gridClass}
           >
             {items.map((child, i) => (
               <div key={i}>{child}</div>

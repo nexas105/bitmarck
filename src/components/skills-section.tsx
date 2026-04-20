@@ -2,7 +2,7 @@ import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Tag} from '@/components/tag';
 import {SectionHeader} from '@/components/section-header';
-import {SkillsCarousel} from '@/components/skills-carousel';
+import {UniversalCarousel} from '@/components/universal-carousel';
 import {Shield, BarChart3, Server, Code} from 'lucide-react';
 
 const CATEGORY_STYLES = {
@@ -63,7 +63,7 @@ export async function SkillsSection() {
           </p>
         </SectionHeader>
         <div className="mt-xl">
-          <SkillsCarousel>
+          <UniversalCarousel id="skills" defaultEffect="Cube" gridCols={2} autoplayDelay={3500}>
             {SKILL_CATEGORIES.map((category) => {
               const style = CATEGORY_STYLES[category.key];
               const Icon = style.icon;
@@ -104,7 +104,7 @@ export async function SkillsSection() {
                 </div>
               );
             })}
-          </SkillsCarousel>
+          </UniversalCarousel>
         </div>
       </div>
     </section>

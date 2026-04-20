@@ -2,7 +2,7 @@ import {getTranslations} from 'next-intl/server';
 import {ProjectCard} from '@/components/project-card';
 import {getAllProjects} from '@/data/projects';
 import {SectionHeader} from '@/components/section-header';
-import {ProjectCarousel} from '@/components/project-carousel';
+import {UniversalCarousel} from '@/components/universal-carousel';
 
 export async function ProjectsSection() {
   const t = await getTranslations('Projects');
@@ -17,11 +17,11 @@ export async function ProjectsSection() {
       <div className="mx-auto max-w-6xl">
         <SectionHeader number="02" eyebrow="PROJEKTE" heading={t('heading')} id="projects-heading" />
         <div className="mt-xl">
-          <ProjectCarousel>
+          <UniversalCarousel id="projects" defaultEffect="Coverflow" gridCols={3} autoplayDelay={4000}>
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
-          </ProjectCarousel>
+          </UniversalCarousel>
         </div>
       </div>
     </section>
