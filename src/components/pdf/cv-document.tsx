@@ -3,112 +3,183 @@ import {
   Page,
   Text,
   View,
+  Image,
   StyleSheet,
 } from "@react-pdf/renderer";
+import { join } from "path";
 import { getCvData } from "@/lib/pdf-data";
 import { colors } from "./pdf-styles";
 // Importing pdf-styles triggers Font.register at module level
 import "./pdf-styles";
 
-const styles = StyleSheet.create({
+/* ------------------------------------------------------------------ */
+/*  Design tokens                                                      */
+/* ------------------------------------------------------------------ */
+const ACCENT = colors.accent;
+const TEXT = colors.textPrimary;
+const TEXT2 = colors.textSecondary;
+const BORDER = colors.border;
+const SURFACE = colors.surface;
+
+const PAGE_H_PAD = 36;
+const PAGE_V_PAD = 32;
+const LEFT_COL = "32%";
+const RIGHT_COL = "68%";
+const GUTTER = 16;
+
+/* ------------------------------------------------------------------ */
+/*  Styles                                                             */
+/* ------------------------------------------------------------------ */
+const s = StyleSheet.create({
+  /* Page */
   page: {
     fontFamily: "Inter",
-    fontSize: 9,
-    color: colors.textPrimary,
-    paddingTop: 32,
-    paddingBottom: 32,
-    paddingHorizontal: 36,
-    lineHeight: 1.4,
+    fontSize: 8.5,
+    color: TEXT,
+    lineHeight: 1.45,
+    paddingTop: PAGE_V_PAD,
+    paddingBottom: PAGE_V_PAD,
+    paddingHorizontal: PAGE_H_PAD,
   },
-  headerBar: {
-    backgroundColor: colors.accent,
-    height: 4,
-    marginBottom: 12,
-    marginHorizontal: -36,
-    marginTop: -32,
+
+  /* ---- HEADER ---- */
+  headerWrap: {
+    marginBottom: 14,
   },
-  header: {
+  accentBar: {
+    height: 3,
+    backgroundColor: ACCENT,
+    marginHorizontal: -PAGE_H_PAD,
+    marginTop: -PAGE_V_PAD,
+    marginBottom: 16,
+  },
+  headerRow: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginBottom: 12,
-    paddingBottom: 10,
-    borderBottomWidth: 2,
-    borderBottomColor: colors.accent,
+    alignItems: "center",
+    paddingBottom: 12,
+    borderBottomWidth: 1.5,
+    borderBottomColor: ACCENT,
   },
+  headerLeft: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 14,
+  },
+  profilePhoto: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    objectFit: "cover",
+    objectPosition: "center top",
+  },
+  headerNameBlock: {},
   headerName: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 700,
-    color: colors.textPrimary,
+    color: TEXT,
+    letterSpacing: 0.3,
   },
   headerSubtitle: {
-    fontSize: 12,
-    color: colors.accent,
-    marginTop: 3,
+    fontSize: 10,
     fontWeight: 500,
+    color: ACCENT,
+    marginTop: 3,
   },
-  contactBlock: {
+  headerRight: {
     alignItems: "flex-end",
-    justifyContent: "center",
   },
-  contactText: {
-    fontSize: 8,
-    color: colors.textSecondary,
-    marginBottom: 1,
+  contactLine: {
+    fontSize: 7.5,
+    color: TEXT2,
+    marginBottom: 1.5,
   },
-  twoColumn: {
+
+  /* ---- TWO-COLUMN LAYOUT ---- */
+  columns: {
     flexDirection: "row",
     flexGrow: 1,
   },
-  leftColumn: {
-    width: "33%",
-    paddingRight: 14,
+  colLeft: {
+    width: LEFT_COL,
+    paddingRight: GUTTER,
   },
-  rightColumn: {
-    width: "67%",
-    paddingLeft: 14,
-    borderLeftWidth: 1,
-    borderLeftColor: colors.border,
+  colRight: {
+    width: RIGHT_COL,
+    paddingLeft: GUTTER,
+    borderLeftWidth: 0.75,
+    borderLeftColor: BORDER,
   },
-  sectionTitle: {
-    fontSize: 10,
+
+  /* ---- SECTION HEADINGS ---- */
+  sectionHead: {
+    fontSize: 9,
     fontWeight: 700,
     textTransform: "uppercase",
-    letterSpacing: 1,
-    color: colors.accent,
+    letterSpacing: 1.2,
+    color: ACCENT,
+    marginTop: 12,
     marginBottom: 5,
-    marginTop: 10,
+    paddingBottom: 2,
+    borderBottomWidth: 0.5,
+    borderBottomColor: BORDER,
   },
-  sectionTitleFirst: {
-    fontSize: 10,
+  sectionHeadFirst: {
+    fontSize: 9,
     fontWeight: 700,
     textTransform: "uppercase",
-    letterSpacing: 1,
-    color: colors.accent,
-    marginBottom: 5,
+    letterSpacing: 1.2,
+    color: ACCENT,
     marginTop: 0,
+    marginBottom: 5,
+    paddingBottom: 2,
+    borderBottomWidth: 0.5,
+    borderBottomColor: BORDER,
   },
+
+  /* ---- PROFILE ---- */
   profileText: {
     fontSize: 8,
-    color: colors.textSecondary,
-    lineHeight: 1.5,
+    color: TEXT2,
+    lineHeight: 1.55,
   },
+
+  /* ---- STRENGTHS ---- */
+  strengthRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    marginBottom: 1.5,
+  },
+  strengthDot: {
+    fontSize: 6,
+    color: ACCENT,
+    marginRight: 4,
+    marginTop: 1,
+  },
+  strengthText: {
+    fontSize: 8,
+    color: TEXT,
+  },
+
+  /* ---- SKILLS ---- */
   skillGroup: {
     marginBottom: 4,
   },
   skillLabel: {
-    fontSize: 8,
-    fontWeight: 500,
-    color: colors.textPrimary,
-  },
-  skillValue: {
-    fontSize: 8,
-    color: colors.textSecondary,
-  },
-  certItem: {
-    fontSize: 8,
-    color: colors.textSecondary,
+    fontSize: 7.5,
+    fontWeight: 700,
+    color: TEXT,
+    textTransform: "uppercase",
+    letterSpacing: 0.5,
     marginBottom: 1,
   },
+  skillValue: {
+    fontSize: 7.5,
+    color: TEXT2,
+    lineHeight: 1.4,
+  },
+
+  /* ---- LANGUAGES ---- */
   langRow: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -116,190 +187,290 @@ const styles = StyleSheet.create({
   },
   langLabel: {
     fontSize: 8,
-    color: colors.textPrimary,
+    color: TEXT,
   },
   langLevel: {
     fontSize: 8,
-    color: colors.textSecondary,
+    color: TEXT2,
+    fontWeight: 500,
   },
+
+  /* ---- CERTIFICATIONS ---- */
+  certItem: {
+    fontSize: 7.5,
+    color: TEXT2,
+    marginBottom: 1.5,
+  },
+
+  /* ---- EXPERIENCE ---- */
   expEntry: {
-    marginBottom: 6,
+    marginBottom: 7,
+  },
+  expHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    marginBottom: 1,
   },
   expRole: {
     fontSize: 9,
     fontWeight: 700,
-    color: colors.textPrimary,
+    color: TEXT,
+    flexShrink: 1,
+    maxWidth: "70%",
   },
-  expMeta: {
+  expDate: {
+    fontSize: 7.5,
+    color: TEXT2,
+    fontWeight: 500,
+    textAlign: "right",
+  },
+  expCompany: {
     fontSize: 8,
-    color: colors.textSecondary,
+    color: ACCENT,
+    fontWeight: 500,
     marginBottom: 2,
   },
   bullet: {
-    fontSize: 8,
-    color: colors.textPrimary,
-    marginLeft: 6,
+    flexDirection: "row",
+    alignItems: "flex-start",
     marginBottom: 1,
+    paddingLeft: 2,
   },
+  bulletDot: {
+    fontSize: 7,
+    color: TEXT2,
+    marginRight: 4,
+    marginTop: 0.5,
+  },
+  bulletText: {
+    fontSize: 8,
+    color: TEXT,
+    flexShrink: 1,
+  },
+
+  /* ---- EDUCATION ---- */
   eduEntry: {
-    marginBottom: 4,
+    marginBottom: 5,
   },
   eduDegree: {
     fontSize: 9,
-    fontWeight: 500,
-    color: colors.textPrimary,
+    fontWeight: 700,
+    color: TEXT,
   },
   eduMeta: {
-    fontSize: 8,
-    color: colors.textSecondary,
+    fontSize: 7.5,
+    color: TEXT2,
   },
+
+  /* ---- PROJECTS ---- */
   projEntry: {
-    marginBottom: 4,
+    marginBottom: 5,
   },
-  projName: {
-    fontSize: 9,
-    fontWeight: 500,
-    color: colors.textPrimary,
-  },
-  projType: {
-    fontSize: 8,
-    color: colors.accent,
-  },
-  projDetail: {
-    fontSize: 8,
-    color: colors.textSecondary,
-    marginLeft: 6,
+  projHeader: {
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: 1,
   },
+  projName: {
+    fontSize: 8.5,
+    fontWeight: 700,
+    color: TEXT,
+  },
+  projBadge: {
+    fontSize: 6.5,
+    color: ACCENT,
+    fontWeight: 500,
+    backgroundColor: "#EFF6FF",
+    paddingHorizontal: 4,
+    paddingVertical: 1,
+    borderRadius: 2,
+    marginLeft: 5,
+  },
+  projDetail: {
+    fontSize: 7.5,
+    color: TEXT2,
+    marginLeft: 2,
+    marginBottom: 0.5,
+  },
+
+  /* ---- VOLUNTEERING ---- */
   volEntry: {
     marginBottom: 4,
   },
   volRole: {
-    fontSize: 9,
-    fontWeight: 500,
+    fontSize: 8.5,
+    fontWeight: 700,
+    color: TEXT,
   },
   volOrg: {
-    fontSize: 8,
-    color: colors.textSecondary,
-  },
-  strengthItem: {
-    fontSize: 8,
-    color: colors.textSecondary,
+    fontSize: 7.5,
+    color: TEXT2,
     marginBottom: 1,
+  },
+
+  /* ---- INTERESTS ---- */
+  interestsText: {
+    fontSize: 8,
+    color: TEXT2,
+    lineHeight: 1.5,
+  },
+
+  /* ---- PAGE 2 HEADER STRIP ---- */
+  page2Header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 12,
+    paddingBottom: 6,
+    borderBottomWidth: 1.5,
+    borderBottomColor: ACCENT,
+  },
+  page2Name: {
+    fontSize: 11,
+    fontWeight: 700,
+    color: TEXT,
+  },
+  page2Label: {
+    fontSize: 8,
+    color: TEXT2,
   },
 });
 
+/* ------------------------------------------------------------------ */
+/*  Helpers                                                            */
+/* ------------------------------------------------------------------ */
 function formatDate(d: string): string {
   if (d === "heute" || d === "present") return "heute";
   const [year, month] = d.split("-");
   const months = [
-    "Jan",
-    "Feb",
-    "Mär",
-    "Apr",
-    "Mai",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Okt",
-    "Nov",
-    "Dez",
+    "Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
+    "Jul", "Aug", "Sep", "Okt", "Nov", "Dez",
   ];
   return `${months[parseInt(month, 10) - 1]} ${year}`;
 }
 
+/* ------------------------------------------------------------------ */
+/*  Reusable sub-components                                            */
+/* ------------------------------------------------------------------ */
+function SectionTitle({ children, first = false }: { children: string; first?: boolean }) {
+  return <Text style={first ? s.sectionHeadFirst : s.sectionHead}>{children}</Text>;
+}
+
+function BulletItem({ text }: { text: string }) {
+  return (
+    <View style={s.bullet}>
+      <Text style={s.bulletDot}>{"--"}</Text>
+      <Text style={s.bulletText}>{text}</Text>
+    </View>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Document                                                           */
+/* ------------------------------------------------------------------ */
 export function CvDocument() {
   const cv = getCvData();
   const { contact } = cv.personalInformation;
 
-  // Split experience: first 4 on page 1, rest on page 2
-  const page1Experience = cv.professionalExperience.slice(0, 4);
-  const page2Experience = cv.professionalExperience.slice(4);
+  // Split experience across pages — 5 on page 1, rest on page 2
+  const page1Experience = cv.professionalExperience.slice(0, 5);
+  const page2Experience = cv.professionalExperience.slice(5);
 
   return (
     <Document title="Tobias Ludwig - CV" author="Tobias Ludwig">
-      {/* Page 1: Header + Profile + Skills + Top Experience */}
-      <Page size="A4" style={styles.page}>
-        {/* Accent bar */}
-        <View style={styles.headerBar} />
+      {/* ========== PAGE 1 ========== */}
+      <Page size="A4" style={s.page}>
+        {/* Accent top bar */}
+        <View style={s.accentBar} />
+
         {/* Header */}
-        <View style={styles.header}>
-          <View>
-            <Text style={styles.headerName}>{cv.personalInformation.name}</Text>
-            <Text style={styles.headerSubtitle}>Business Analyst IAM</Text>
-          </View>
-          <View style={styles.contactBlock}>
-            <Text style={styles.contactText}>{contact.email}</Text>
-            <Text style={styles.contactText}>{contact.phone}</Text>
-            <Text style={styles.contactText}>{contact.website}</Text>
-            <Text style={styles.contactText}>{contact.github}</Text>
+        <View style={s.headerWrap}>
+          <View style={s.headerRow}>
+            <View style={s.headerLeft}>
+              <Image
+                src={join(process.cwd(), "public/tobias-ludwig.jpg")}
+                style={s.profilePhoto}
+              />
+              <View>
+                <Text style={s.headerName}>{cv.personalInformation.name}</Text>
+                <Text style={s.headerSubtitle}>Business Analyst IAM (Bewerbung)</Text>
+              </View>
+            </View>
+            <View style={s.headerRight}>
+              <Text style={s.contactLine}>{contact.email}</Text>
+              <Text style={s.contactLine}>{contact.phone}</Text>
+              <Text style={s.contactLine}>{contact.website}</Text>
+              <Text style={s.contactLine}>{contact.github}</Text>
+            </View>
           </View>
         </View>
 
-        {/* Two-column layout */}
-        <View style={styles.twoColumn}>
-          {/* Left column: Profile, Skills, Languages, Certifications */}
-          <View style={styles.leftColumn}>
+        {/* Two-column body */}
+        <View style={s.columns}>
+          {/* ---- LEFT COLUMN ---- */}
+          <View style={s.colLeft}>
             {/* Profile */}
-            <Text style={styles.sectionTitleFirst}>Profil</Text>
-            <Text style={styles.profileText}>{cv.profile.summary}</Text>
+            <SectionTitle first>Profil</SectionTitle>
+            <Text style={s.profileText}>{cv.profile.summary}</Text>
 
             {/* Strengths */}
-            <Text style={styles.sectionTitle}>Stärken</Text>
-            {cv.profile.strengths.map((s, i) => (
-              <Text key={i} style={styles.strengthItem}>
-                {s}
-              </Text>
+            <SectionTitle>Stärken</SectionTitle>
+            {cv.profile.strengths.map((str, i) => (
+              <View key={i} style={s.strengthRow}>
+                <Text style={s.strengthDot}>{"●"}</Text>
+                <Text style={s.strengthText}>{str}</Text>
+              </View>
             ))}
 
             {/* Technical Skills */}
-            <Text style={styles.sectionTitle}>Technische Skills</Text>
+            <SectionTitle>Technische Skills</SectionTitle>
             {Object.entries(cv.technicalSkills).map(([group, skills]) => (
-              <View key={group} style={styles.skillGroup}>
-                <Text style={styles.skillLabel}>
+              <View key={group} style={s.skillGroup}>
+                <Text style={s.skillLabel}>
                   {group.charAt(0).toUpperCase() + group.slice(1)}
                 </Text>
-                <Text style={styles.skillValue}>{skills.join(", ")}</Text>
+                <Text style={s.skillValue}>{skills.join(", ")}</Text>
               </View>
             ))}
 
             {/* Languages */}
-            <Text style={styles.sectionTitle}>Sprachen</Text>
+            <SectionTitle>Sprachen</SectionTitle>
             {Object.entries(cv.spokenLanguages).map(([lang, level]) => (
-              <View key={lang} style={styles.langRow}>
-                <Text style={styles.langLabel}>
+              <View key={lang} style={s.langRow}>
+                <Text style={s.langLabel}>
                   {lang === "German" ? "Deutsch" : "Englisch"}
                 </Text>
-                <Text style={styles.langLevel}>{level}</Text>
+                <Text style={s.langLevel}>{level}</Text>
               </View>
             ))}
 
             {/* Certifications */}
-            <Text style={styles.sectionTitle}>Zertifikate</Text>
+            <SectionTitle>Zertifikate</SectionTitle>
             {cv.certifications.map((cert, i) => (
-              <Text key={i} style={styles.certItem}>
-                {cert}
+              <Text key={i} style={s.certItem}>
+                {"·  "}{cert}
               </Text>
             ))}
           </View>
 
-          {/* Right column: Professional Experience */}
-          <View style={styles.rightColumn}>
-            <Text style={styles.sectionTitleFirst}>Berufserfahrung</Text>
+          {/* ---- RIGHT COLUMN ---- */}
+          <View style={s.colRight}>
+            <SectionTitle first>Berufserfahrung</SectionTitle>
             {page1Experience.map((exp, i) => (
-              <View key={i} style={styles.expEntry}>
-                <Text style={styles.expRole}>{exp.role}</Text>
-                <Text style={styles.expMeta}>
-                  {exp.company}
-                  {exp.location ? `, ${exp.location}` : ""} |{" "}
-                  {formatDate(exp.start)} - {formatDate(exp.end)}
-                </Text>
-                {exp.details.slice(0, 4).map((d, j) => (
-                  <Text key={j} style={styles.bullet}>
-                    {"• "}
-                    {d}
+              <View key={i} style={s.expEntry}>
+                <View style={s.expHeader}>
+                  <Text style={s.expRole}>{exp.role}</Text>
+                  <Text style={s.expDate}>
+                    {formatDate(exp.start)} – {formatDate(exp.end)}
                   </Text>
+                </View>
+                <Text style={s.expCompany}>
+                  {exp.company}
+                  {exp.location ? ` · ${exp.location}` : ""}
+                </Text>
+                {exp.details.slice(0, 5).map((d, j) => (
+                  <BulletItem key={j} text={d} />
                 ))}
               </View>
             ))}
@@ -307,78 +478,78 @@ export function CvDocument() {
         </View>
       </Page>
 
-      {/* Page 2: Remaining Experience + Education + Projects + Volunteering */}
-      <Page size="A4" style={styles.page} break>
-        <View style={styles.twoColumn}>
-          {/* Left column: Education + Volunteering */}
-          <View style={styles.leftColumn}>
+      {/* ========== PAGE 2 ========== */}
+      <Page size="A4" style={s.page}>
+        {/* Slim continuation header */}
+        <View style={s.page2Header}>
+          <Text style={s.page2Name}>Tobias Ludwig</Text>
+          <Text style={s.page2Label}>Seite 2 / 2</Text>
+        </View>
+
+        <View style={s.columns}>
+          {/* ---- LEFT COLUMN ---- */}
+          <View style={s.colLeft}>
             {/* Education */}
-            <Text style={styles.sectionTitleFirst}>Ausbildung</Text>
+            <SectionTitle first>Ausbildung</SectionTitle>
             {cv.education.map((edu, i) => (
-              <View key={i} style={styles.eduEntry}>
-                <Text style={styles.eduDegree}>{edu.degree}</Text>
-                <Text style={styles.eduMeta}>
-                  {edu.institution} | {formatDate(edu.start)} -{" "}
-                  {formatDate(edu.end)}
+              <View key={i} style={s.eduEntry}>
+                <Text style={s.eduDegree}>{edu.degree}</Text>
+                <Text style={s.eduMeta}>
+                  {edu.institution} · {formatDate(edu.start)} – {formatDate(edu.end)}
                 </Text>
               </View>
             ))}
 
             {/* Volunteering */}
-            <Text style={styles.sectionTitle}>Ehrenamt</Text>
+            <SectionTitle>Ehrenamt</SectionTitle>
             {cv.volunteering.map((vol, i) => (
-              <View key={i} style={styles.volEntry}>
-                <Text style={styles.volRole}>{vol.role}</Text>
-                <Text style={styles.volOrg}>{vol.organization}</Text>
+              <View key={i} style={s.volEntry}>
+                <Text style={s.volRole}>{vol.role}</Text>
+                <Text style={s.volOrg}>{vol.organization}</Text>
                 {vol.details.map((d, j) => (
-                  <Text key={j} style={styles.bullet}>
-                    {"• "}
-                    {d}
-                  </Text>
+                  <BulletItem key={j} text={d} />
                 ))}
               </View>
             ))}
 
             {/* Interests */}
-            <Text style={styles.sectionTitle}>Interessen</Text>
-            <Text style={styles.certItem}>{cv.interests.join(", ")}</Text>
+            <SectionTitle>Interessen</SectionTitle>
+            <Text style={s.interestsText}>{cv.interests.join(", ")}</Text>
           </View>
 
-          {/* Right column: Remaining experience + Projects */}
-          <View style={styles.rightColumn}>
+          {/* ---- RIGHT COLUMN ---- */}
+          <View style={s.colRight}>
             {/* Remaining experience */}
-            <Text style={styles.sectionTitleFirst}>
-              Berufserfahrung (Fortsetzung)
-            </Text>
+            <SectionTitle first>Berufserfahrung (Forts.)</SectionTitle>
             {page2Experience.map((exp, i) => (
-              <View key={i} style={styles.expEntry}>
-                <Text style={styles.expRole}>{exp.role}</Text>
-                <Text style={styles.expMeta}>
+              <View key={i} style={s.expEntry}>
+                <View style={s.expHeader}>
+                  <Text style={s.expRole}>{exp.role}</Text>
+                  <Text style={s.expDate}>
+                    {formatDate(exp.start)} – {formatDate(exp.end)}
+                  </Text>
+                </View>
+                <Text style={s.expCompany}>
                   {exp.company}
-                  {exp.location ? `, ${exp.location}` : ""} |{" "}
-                  {formatDate(exp.start)} - {formatDate(exp.end)}
+                  {exp.location ? ` · ${exp.location}` : ""}
                 </Text>
                 {exp.details.map((d, j) => (
-                  <Text key={j} style={styles.bullet}>
-                    {"• "}
-                    {d}
-                  </Text>
+                  <BulletItem key={j} text={d} />
                 ))}
               </View>
             ))}
 
             {/* Projects */}
-            <Text style={styles.sectionTitle}>Projekte</Text>
+            <SectionTitle>Projekte</SectionTitle>
             {cv.projects.map((proj, i) => (
-              <View key={i} style={styles.projEntry}>
-                <Text style={styles.projName}>
-                  {proj.name}{" "}
-                  <Text style={styles.projType}>({proj.type})</Text>
-                </Text>
+              <View key={i} style={s.projEntry}>
+                <View style={s.projHeader}>
+                  <Text style={s.projName}>{proj.name}</Text>
+                  <Text style={s.projBadge}>{proj.type}</Text>
+                </View>
                 {proj.details.map((d, j) => (
-                  <Text key={j} style={styles.projDetail}>
-                    {"• "}
-                    {d}
+                  <Text key={j} style={s.projDetail}>
+                    {"·  "}{d}
                   </Text>
                 ))}
               </View>

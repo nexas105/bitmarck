@@ -58,13 +58,25 @@ export async function ProjectCard({project}: ProjectCardProps) {
           )}
         </div>
       )}
-      <Link
-        href={`/projekte/${project.slug}`}
-        className="inline-flex items-center gap-xs text-label font-medium text-accent hover:text-accent-hover transition-colors duration-150 ease group-hover:gap-sm"
-      >
-        {t('Projects.detailsLink')}
-        <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">&rarr;</span>
-      </Link>
+      <div className="flex items-center gap-md">
+        <Link
+          href={`/projekte/${project.slug}`}
+          className="inline-flex items-center gap-xs text-label font-medium text-accent hover:text-accent-hover transition-colors duration-150 ease group-hover:gap-sm"
+        >
+          {t('Projects.detailsLink')}
+          <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">&rarr;</span>
+        </Link>
+        {project.githubOwner && project.githubRepo && (
+          <a
+            href={`https://github.com/${project.githubOwner}/${project.githubRepo}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-xs text-label font-medium text-text-tertiary hover:text-accent transition-colors duration-150"
+          >
+            GitHub &rarr;
+          </a>
+        )}
+      </div>
     </article>
   );
 }

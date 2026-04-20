@@ -57,9 +57,9 @@ export default async function ProjectDetailPage({params}: Props) {
         </div>
 
         {/* GitHub link (optional) */}
-        {project.githubUrl && (
+        {(project.githubUrl || (project.githubOwner && project.githubRepo)) && (
           <a
-            href={project.githubUrl}
+            href={project.githubUrl || `https://github.com/${project.githubOwner}/${project.githubRepo}`}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-sm text-label font-medium text-accent hover:text-accent-hover transition-colors duration-200 mt-lg"

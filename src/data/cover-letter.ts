@@ -17,6 +17,7 @@ type CoverLetterData = {
   recipient: {
     company: string;
     department: string;
+    street: string;
     city: string;
   };
   de: CoverLetterContent;
@@ -32,30 +33,35 @@ const coverLetterData: CoverLetterData = {
     phone: "+49 173 19 480 45",
   },
   recipient: {
-    company: "Bitmarck GmbH",
-    department: "Personalwesen",
+    company: "BITMARCK Holding GmbH",
+    department: "Recruiting — Benedikt Kölsch",
+    street: "",
     city: "Essen",
   },
   de: {
-    subject: "Bewerbung als Business Analyst IAM",
-    salutation: "Sehr geehrte Damen und Herren,",
+    subject: "Bewerbung als Business Analyst IAM (m/w/d)",
+    salutation: "Sehr geehrter Herr Kölsch,",
     paragraphs: [
-      "mit großem Interesse bewerbe ich mich auf die Position als Business Analyst IAM bei Bitmarck. Die Verbindung aus technischem Verständnis und analytischer Anforderungsarbeit im Bereich Identity & Access Management entspricht genau meinem beruflichen Profil und meinen Ambitionen.",
-      "In meiner bisherigen Laufbahn habe ich umfangreiche Erfahrung im IT-Service und Betrieb sicherheitskritischer Systeme gesammelt -- unter anderem bei der BWI GmbH im Rahmen von Infrastrukturprojekten für das BMVg sowie aktuell bei der Xecuro GmbH in der Administration von SINA-basierten Secure Clients. Dabei habe ich gelernt, komplexe technische Anforderungen zu analysieren, Sicherheitskonzepte mitzugestalten und mit verschiedenen Fachteams effizient zusammenzuarbeiten.",
-      "Parallel habe ich mich durch eine Weiterbildung zum Software Developer Expert an der IU und mein laufendes Informatikstudium an der Fernuni Hagen gezielt weiterentwickelt. In eigenen Projekten -- von CRM-Systemen über Auth-Services bis hin zu einem eigenen CMS -- habe ich Anforderungen selbstständig erhoben, technisch umgesetzt und dokumentiert. Diese Kombination aus praktischer IT-Erfahrung und analytischer Softwareentwicklung ermöglicht es mir, die Brücke zwischen Fachbereich und Technik zu schlagen.",
-      "Ich bin flexibel einsetzbar, bringe eine hohe Arbeitsmoral mit und freue mich darauf, das IAM-Team bei Bitmarck mit meinem analytischen Denken und meiner technischen Expertise zu verstärken. Meine Verfügbarkeit beträgt 1-3 Monate, und ich bin offen für verschiedene Standortmodelle.",
+      "mit dieser Bewerbung möchte ich Ihnen zeigen, warum ich die richtige Besetzung für die Position als Business Analyst IAM bei BITMARCK bin — nicht nur auf dem Papier, sondern durch eine eigens für diese Stelle entwickelte Bewerbungswebsite unter bitmarck-bewerbung.tjl-it.de.",
+      "Identity & Access Management ist für mich kein abstraktes Thema. Bei der BWI GmbH habe ich über zwei Jahre mit SINA-Systemen gearbeitet — Rollouts koordiniert, Incidents eigenständig bearbeitet und mit secunet bei Tamper-Fällen zusammengearbeitet. Aktuell vertiefe ich diese Expertise bei der Xecuro GmbH, wo ich SINA-basierte Secure Clients administriere, an Sicherheitskonzepten mitarbeite und die interne Prozessoptimierung eigenständig vorantreibe. Dass SINA auch in der Telematikinfrastruktur des Gesundheitswesens zum Einsatz kommt, macht diese Erfahrung direkt übertragbar auf die Arbeit an bitIAM.",
+      "Was mich von einem reinen Techniker unterscheidet: Ich habe in jedem meiner Jobs die analytische Seite gesucht und gefunden. Bei der Telekom wurde ich vom Bautrupp ins Messteam geholt, bei Media.com vom Standardtechniker zum Expertentechniker für Schwerfälle befördert, bei Biermann vom Monteur zum Messbauführer. Bei der BHF Group habe ich erstmals eigenständig Geschäftsprozesse analysiert, Anforderungen erhoben und in Software übersetzt. In meinen eigenen Projekten — einem Auth-Service mit RBAC, einem mandantenfähigen CMS, einer Privacy-by-Design App — habe ich Use Cases definiert, Datenmodelle entworfen und Zugriffskonzepte erarbeitet.",
+      "Die Rolle bei BITMARCK reizt mich, weil sie genau an dieser Schnittstelle liegt: Anforderungen von Krankenkassen und Telematik verstehen, fachliche Spezifikationen für bitIAM erstellen, Use Cases und Epics entwickeln. Mein technisches Verständnis ermöglicht mir dabei, auf Augenhöhe mit der Entwicklung zu kommunizieren — und meine praktische SINA-Erfahrung gibt mir einen Vorsprung beim Einstieg in den IAM-Kontext.",
+      "Ich bin sicherheitsüberprüft, studiere berufsbegleitend Informatik an der FernUniversität Hagen und bin bereit, in die Region Essen umzuziehen. Meine Kündigungsfrist beträgt drei Monate.",
+      "Ich freue mich auf ein persönliches Gespräch.",
     ],
     closing: "Mit freundlichen Grüßen",
     signature: "Tobias Ludwig",
   },
   en: {
-    subject: "Application as Business Analyst IAM",
-    salutation: "Dear Sir or Madam,",
+    subject: "Application as Business Analyst IAM (m/f/d)",
+    salutation: "Dear Mr. Kölsch,",
     paragraphs: [
-      "I am writing to apply for the Business Analyst IAM position at Bitmarck with great interest. The combination of technical understanding and analytical requirements work in the field of Identity & Access Management aligns perfectly with my professional profile and ambitions.",
-      "Throughout my career, I have gained extensive experience in IT service and the operation of security-critical systems -- including infrastructure projects for the German Ministry of Defence at BWI GmbH and currently in the administration of SINA-based Secure Clients at Xecuro GmbH. This experience has taught me to analyze complex technical requirements, contribute to security concepts, and collaborate efficiently with cross-functional teams.",
-      "In parallel, I have systematically developed my skills through a Software Developer Expert certification at IU and my ongoing Computer Science degree at Fernuni Hagen. In personal projects -- from CRM systems and auth services to a custom CMS -- I have independently gathered requirements, implemented solutions, and documented results. This combination of hands-on IT experience and analytical software development enables me to bridge the gap between business stakeholders and technical teams.",
-      "I am flexible, bring a strong work ethic, and look forward to strengthening the IAM team at Bitmarck with my analytical thinking and technical expertise. My availability is 1-3 months, and I am open to various location arrangements.",
+      "With this application, I want to show you why I am the right fit for the Business Analyst IAM position at BITMARCK — not just on paper, but through a dedicated application website built specifically for this role at bitmarck-bewerbung.tjl-it.de.",
+      "Identity & Access Management is not an abstract topic for me. At BWI GmbH, I worked with SINA systems for over two years — coordinating rollouts, independently handling incidents, and collaborating with secunet on tamper cases. Currently, I'm deepening this expertise at Xecuro GmbH, where I administer SINA-based Secure Clients, contribute to security concepts, and independently drive internal process optimization. The fact that SINA is also used in the healthcare telematics infrastructure makes this experience directly transferable to working on bitIAM.",
+      "What sets me apart from a pure technician: In every job, I sought out and found the analytical side. At Telekom, I was moved from the construction crew to the measurement team. At Media.com, I was promoted from standard technician to expert technician for complex cases. At Biermann, from installer to construction lead. At BHF Group, I independently analyzed business processes, gathered requirements, and translated them into software. In my own projects — an auth service with RBAC, a multi-tenant CMS, a privacy-by-design app — I defined use cases, designed data models, and developed access concepts.",
+      "The role at BITMARCK excites me because it sits exactly at this intersection: understanding requirements from health insurers and telematics, creating technical specifications for bitIAM, developing use cases and epics. My technical understanding allows me to communicate at eye level with development — and my practical SINA experience gives me a head start in the IAM context.",
+      "I hold a security clearance, am studying Computer Science part-time at FernUniversität Hagen, and am ready to relocate to the Essen area. My notice period is three months.",
+      "I look forward to a personal conversation.",
     ],
     closing: "Kind regards",
     signature: "Tobias Ludwig",

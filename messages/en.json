@@ -12,6 +12,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "faq": "FAQ",
+    "contact": "Contact",
     "certifications": "Certifications",
     "menuOpen": "Open menu",
     "menuClose": "Close menu"
@@ -19,159 +20,328 @@
   "Hero": {
     "name": "Tobias Ludwig",
     "role": "Business Analyst IAM",
-    "valueProposition": "I translate technology into requirements — 10+ years in IT, now with an analytical focus.",
+    "valueProposition": "I analyze business processes and translate them into precise requirements — with 10+ years at the intersection of IT and business.",
     "cta": "Download CV",
     "ctaCoverLetter": "Cover Letter",
     "ctaDisabled": "CV coming soon",
     "cvFormat": {
-      "pdf": {"label": "PDF", "desc": "Styled resume (2 pages, ATS-compatible)"},
-      "json": {"label": "JSON", "desc": "Structured data for API integration"},
-      "llm": {"label": "LLM-optimized", "desc": "Plain text for AI parsing and analysis"}
+      "pdf": {
+        "label": "PDF",
+        "desc": "Styled resume (2 pages, ATS-compatible)"
+      },
+      "json": {
+        "label": "JSON",
+        "desc": "Structured data for API integration"
+      },
+      "llm": {
+        "label": "LLM-optimized",
+        "desc": "Plain text for AI parsing and analysis"
+      }
     }
   },
   "Metrics": {
     "experience": "10+ Years IT",
     "experienceLabel": "Professional Experience",
     "projects": "6 Projects",
-    "projectsLabel": "Own Software Projects",
+    "projectsLabel": "Analysis, Design & Implementation",
     "certificates": "10 Certificates",
-    "certificatesLabel": "Certifications",
+    "certificatesLabel": "Professional Qualifications",
     "degree": "B.Sc. Computer Science",
     "degreeLabel": "Degree (in progress)"
   },
   "Career": {
     "heading": "My Path to Business Analyst",
-    "intro": "My professional path leads from technician to analyst — not a career change, but an arrival. In every role, I brought analytical thinking, coordination, and a big-picture perspective.",
+    "intro": "From technician to analyst — not a career change, but a consistent evolution. Every role sharpened my analytical thinking, strengthened my coordination skills, and deepened my understanding of the bridge between technology and business.",
     "expandLabel": "Show details",
     "collapseLabel": "Hide details",
+    "detailLink": "View full details",
     "stations": {
       "telekom": {
-        "period": "2014 – 2016",
+        "period": "Jul 2014 – Mar 2016",
         "company": "Deutsche Telekom",
         "role": "Fiber Optic Service Technician",
-        "body": "Fiber optic installation and network expansion — structured fault analysis and quality assurance as analytical foundation.",
+        "body": "Structured fault analysis and quality assurance in fiber optic deployment — systematic methodology as analytical foundation.",
         "narrative": "This is where I learned to systematically analyze complex technical systems — the basis for any requirements analysis.",
         "technologies": "FTTH, Fiber Optics, Splicing, Measurement Technology",
         "details": [
-          "Fiber optic installation and network expansion",
-          "Splicing and installation work",
-          "Measurements and quality assurance",
-          "Fault resolution and maintenance"
-        ]
+          "Systematic fault analysis with structured methodology",
+          "Quality assurance through measurement-based testing",
+          "Coordination with internal teams and external partners",
+          "Technical documentation of processes and results"
+        ],
+        "detailPage": {
+          "overview": "My entry into the IT world at Germany's largest telecommunications company. In the fiber optic deployment program, I was responsible for installation, setup, and quality assurance of FTTH connections. What looks like manual work at first glance was actually a crash course in structured problem-solving.",
+          "baRelevance": "The ability to systematically narrow down technical problems and document solutions is the foundation of any requirements analysis. At Telekom, I learned that every problem has a root cause — and that you find it through structured methodology, not guessing.",
+          "achievements": [
+            "Independent fault diagnosis and resolution with defined escalation process",
+            "Quality assurance through standardized measurement procedures (OTDR, power measurement)",
+            "Documentation of all installations for traceability",
+            "Collaboration with planning department and external contractors"
+          ],
+          "skillsGained": [
+            "Structured Fault Analysis",
+            "Quality Assurance",
+            "Technical Documentation",
+            "Process-Oriented Work"
+          ]
+        }
       },
       "mediacom": {
-        "period": "2016 – 2018",
+        "period": "Sep 2016 – Mar 2018",
         "company": "Media.com GmbH",
         "role": "IT Service Technician Network Level 4",
-        "body": "Coaxial network maintenance and signal analysis — data-driven fault diagnosis using MER and BER metrics.",
+        "body": "Data-driven fault diagnosis using MER and BER metrics — my first contact with analytical decision-making based on data.",
         "narrative": "Signal analysis with concrete metrics was my first contact with data-driven decision making.",
         "technologies": "Coaxial Networks, MER, BER, Signal Analysis",
         "details": [
-          "Coaxial network maintenance",
-          "Signal disruption analysis",
-          "Network quality optimization (MER, BER)",
-          "Cross-department collaboration"
-        ]
+          "Data-driven fault diagnosis based on signal metrics",
+          "Analysis and optimization of network quality (MER, BER)",
+          "Coordination with departments for root cause analysis",
+          "Systematic documentation of disruption patterns"
+        ],
+        "detailPage": {
+          "overview": "At Media.com, I was responsible for maintaining and optimizing coaxial networks at network level 4. The focus was on analyzing signal quality using concrete metrics — MER (Modulation Error Ratio) and BER (Bit Error Ratio). This is where the technician first became an analyst.",
+          "baRelevance": "Working with signal metrics was my first systematic contact with data-driven decision making. I learned to recognize patterns from raw data, derive causes, and propose solutions — exactly what a business analyst does daily, just in a different context.",
+          "achievements": [
+            "Developed a systematic approach to signal disruption analysis",
+            "Collaboration with network planners for sustainable quality improvement",
+            "Documentation of recurring disruption patterns for preventive measures",
+            "Translation of technical measurements for non-technical stakeholders"
+          ],
+          "skillsGained": [
+            "Data-Based Analysis",
+            "Metric-Driven Decision Making",
+            "Stakeholder Communication",
+            "Pattern Recognition"
+          ]
+        }
       },
       "biermann": {
-        "period": "2018 – 2021",
+        "period": "Jul 2018 – Mar 2021",
         "company": "Biermann Telekommunikationstechnik",
         "role": "Construction Lead Telecommunications",
-        "body": "Planning and organizing civil engineering works, leading technician teams — project management and coordination in practice.",
+        "body": "Project planning, team leadership and external partner coordination — classic project management in practice.",
         "narrative": "Team leadership, planning, and coordination of external partners — classic project management skills every business analyst needs.",
         "technologies": "Copper Network, Civil Engineering, Project Planning",
         "details": [
-          "Planning and organizing civil engineering works",
-          "Coordination of external contractors",
-          "Fault analysis in copper networks",
-          "Leading technician teams",
-          "Technical documentation"
-        ]
+          "Independent project planning and resource coordination",
+          "Leading technician teams (5–10 people)",
+          "Alignment with clients and external service providers",
+          "Technical documentation and progress tracking"
+        ],
+        "detailPage": {
+          "overview": "As construction lead, I was responsible for planning, execution, and quality assurance of civil engineering works in telecommunications. I coordinated teams of 5–10 technicians, aligned with clients, and managed schedules and resources — essentially pure project management.",
+          "baRelevance": "Here I developed the ability to mediate between different stakeholders: clients with their requirements, technicians with their capacity, external companies with their schedules. Exactly this coordination skill is what a business analyst needs to translate between business and IT.",
+          "achievements": [
+            "Independent management of parallel construction projects with team coordination",
+            "Balancing competing requirements between client and execution",
+            "Development of efficient workflows for schedule optimization",
+            "Quality assurance through structured acceptance protocols"
+          ],
+          "skillsGained": [
+            "Project Management",
+            "Stakeholder Coordination",
+            "Team Leadership",
+            "Requirements Alignment"
+          ]
+        }
       },
       "bwi": {
-        "period": "2021 – 2023",
+        "period": "Apr 2021 – Sep 2023",
         "company": "BWI GmbH",
         "role": "IT Service Technician",
-        "body": "IT infrastructure projects for the German Ministry of Defence — working with security-critical SINA systems and structured ticketing.",
+        "body": "IT infrastructure projects for the Ministry of Defence — working with security-critical SINA systems, structured ticketing, and ITIL-based processes.",
         "narrative": "Security-critical systems, SINA experience, and structured processes — directly relevant to IAM at Bitmarck.",
         "technologies": "Cisco, LANCOM, VLAN, SINA, IBM Maximo",
         "details": [
-          "IT infrastructure projects for Ministry of Defence",
-          "System installation and configuration (Cisco, LANCOM, VLAN)",
-          "Ticket-based support (IBM Maximo)",
-          "Working with security-critical systems (SINA)",
-          "Documentation and process optimization"
-        ]
-      },
-      "persona": {
-        "period": "2024-12 – 2025-01",
-        "company": "Persona GmbH",
-        "role": "IT Client Technician",
-        "body": "IT project coordination and process optimization — leading small IT projects and coordinating external service providers.",
-        "narrative": "Short-term assignment focused on coordination and process optimization — analytical work under time pressure.",
-        "technologies": "IT Infrastructure, Project Coordination",
-        "details": [
-          "IT appointment and client coordination",
-          "Planning and implementing infrastructure projects",
-          "IT support and problem resolution",
-          "Leading small IT projects",
-          "Coordinating external service providers",
-          "IT process optimization",
-          "Documentation and software installation"
-        ]
+          "Working with security-critical SINA systems (directly relevant to IAM)",
+          "Structured support with IBM Maximo following ITIL processes",
+          "IT infrastructure projects with Ministry of Defence security requirements",
+          "Documentation and process optimization in regulated environments"
+        ],
+        "detailPage": {
+          "overview": "At BWI, the IT service provider for the German armed forces, I worked on IT infrastructure projects for the Ministry of Defence. The focus was on security-critical systems, especially SINA (Secure Inter-Network Architecture) — the same technology used in the healthcare telematics infrastructure.",
+          "baRelevance": "BWI was my entry into regulated IT environments with high security requirements. Structured ITIL-based work, documented processes, and coordination between technical teams and departments — all directly transferable to working as a Business Analyst IAM in healthcare. My SINA experience is a direct bridge to Bitmarck.",
+          "achievements": [
+            "Building deep SINA expertise in security-critical environment",
+            "Process-oriented ITIL-based work with structured ticketing",
+            "Coordination between technical teams and Ministry departments",
+            "Documentation of security requirements and configuration standards"
+          ],
+          "skillsGained": [
+            "SINA Systems",
+            "ITIL Processes",
+            "Security-Critical Environments",
+            "Regulated IT Infrastructure"
+          ]
+        }
       },
       "bhf": {
-        "period": "2023 – 2024",
+        "period": "Dec 2023 – Oct 2024",
         "company": "BHF Group GmbH",
         "role": "Assistant Studio Management / IT Consultant",
-        "body": "Developed CRM and training software — from concept through database design to productive operations.",
-        "narrative": "First time owning the entire software development cycle — requirements analysis, architecture, implementation. The turning point toward analyst.",
-        "technologies": "Node.js, PostgreSQL, REST APIs, UI/UX Design",
+        "subtitle": "Fixed-term position · Parallel: Software Developer Expert training (IU)",
+        "body": "Analyzed business processes, gathered requirements, and translated them into CRM and training software — while completing Software Developer Expert training in parallel.",
+        "narrative": "What started as a fixed-term position became a turning point: First time owning the complete cycle — requirements analysis, architecture, implementation. Parallel: Software Developer Expert training.",
+        "technologies": "Requirements Analysis, Process Optimization, Node.js, PostgreSQL",
         "details": [
-          "Development of CRM and training software",
-          "Backend with Node.js and REST APIs",
-          "Database design with PostgreSQL",
-          "UI/UX Design",
-          "GDPR-compliant security concepts",
-          "Workflow automation",
-          "Analytics and reporting",
-          "Organization and staff planning"
-        ]
+          "Analysis of existing business processes and identification of optimization potential",
+          "Requirements gathering with stakeholders (management, trainers, clients)",
+          "Design and implementation of custom CRM solution",
+          "GDPR-compliant data processing and security concepts",
+          "Parallel: Software Developer Expert training (IU) completed"
+        ],
+        "detailPage": {
+          "overview": "BHF Group was a fixed-term position — but one with maximum learning impact. In parallel, I completed my Software Developer Expert training at IU. In practice, I took full responsibility for a digitalization project: from analyzing existing business processes through requirements gathering to designing and implementing CRM and training software.",
+          "baRelevance": "This role was the turning point. For the first time, I wasn't on the tech side but at the intersection: management, trainers, and clients had different requirements that I had to prioritize, align, and translate into a technical solution. The parallel training provided the theoretical foundation. This is the core of the business analyst role.",
+          "achievements": [
+            "Complete requirements analysis with three different stakeholder groups",
+            "Process modeling of existing workflows and identification of automation potential",
+            "Design and implementation of GDPR-compliant data processing",
+            "Parallel: Software Developer Expert training (IU) successfully completed"
+          ],
+          "skillsGained": [
+            "Requirements Analysis",
+            "Process Modeling",
+            "Stakeholder Management",
+            "GDPR Compliance"
+          ]
+        }
+      },
+      "persona": {
+        "period": "Dec 2024 – Jan 2025",
+        "company": "Persona GmbH",
+        "role": "IT Client Technician",
+        "subtitle": "Temporary agency · Transitional role",
+        "body": "Short engagement via temporary agency — IT coordination and process optimization, but not the right long-term perspective.",
+        "narrative": "A short engagement via temporary agency that confirmed: My place isn't in pure technology, but at the intersection of analysis and IT.",
+        "technologies": "IT Infrastructure, Project Coordination",
+        "details": [
+          "Quick onboarding and analysis of existing processes",
+          "Coordination of IT projects and external service providers",
+          "Identification and implementation of process improvements",
+          "Structured documentation and knowledge transfer"
+        ],
+        "detailPage": {
+          "overview": "A short engagement through a temporary agency, intended as a transitional solution. The work itself — IT coordination and process optimization — went well, but the role wasn't the right long-term perspective. This experience sharpened my clarity about the next career step.",
+          "baRelevance": "Even in this short engagement, my analytical approach proved its worth: quick onboarding, pragmatic prioritization, structured documentation. The experience confirmed that I'm most productive in roles that combine analytical thinking with IT understanding.",
+          "achievements": [
+            "Quick analysis and documentation of existing IT processes",
+            "Coordination of infrastructure projects with multiple service providers",
+            "Implementation of process improvements within short timeframes",
+            "Gained clarity about professional direction"
+          ],
+          "skillsGained": [
+            "Quick Analysis",
+            "Pragmatic Problem Solving",
+            "Process Optimization Under Pressure",
+            "Knowledge Transfer"
+          ]
+        }
+      },
+      "freelancer": {
+        "period": "2026 – present",
+        "company": "Self-employed",
+        "role": "Freelancer — DevOps, Web Development & IT Consulting",
+        "subtitle": "Part-time",
+        "body": "Part-time DevOps tasks, web development, and server setup for clients — from project planning to delivery.",
+        "narrative": "As a freelancer, I bring everything together: understanding client requirements, planning projects, delivering technically — the essence of the business analyst role in self-employment.",
+        "technologies": "DevOps, Docker, Linux, Next.js, Web Development, Servers",
+        "details": [
+          "Client meetings and project planning",
+          "Web development and hosting (concept to go-live)",
+          "Server setup and DevOps tasks",
+          "Independent project management and client communication"
+        ],
+        "detailPage": {
+          "overview": "Since January 2026, I've been working part-time as a freelancer. I handle DevOps tasks, develop and operate websites, and set up servers for clients. The most important part: working with clients — understanding their requirements, planning projects, and delivering pragmatic solutions.",
+          "baRelevance": "Freelancing is the purest form of business analyst work: I sit directly with the client, listen, analyze the need, create a concept, and implement it. No intermediary layer, no abstraction — direct feedback on whether my analysis met the actual need.",
+          "achievements": [
+            "Independent client acquisition, requirements gathering, and project planning",
+            "End-to-end responsibility: from initial meeting to productive operation",
+            "DevOps and infrastructure: servers, Docker, CI/CD for client projects",
+            "Web development with modern stack (Next.js, Tailwind, self-hosting)"
+          ],
+          "skillsGained": [
+            "Client Consulting",
+            "Project Planning",
+            "End-to-End Responsibility",
+            "DevOps"
+          ]
+        }
       },
       "xecuro": {
-        "period": "2025 – present",
+        "period": "Feb 2025 – present",
         "company": "Xecuro GmbH",
         "role": "IT System Administrator Secure Client Manager",
-        "body": "Administering and advancing SINA-based secure clients — contributing to security concepts.",
+        "body": "SINA-based secure clients in security-critical environment — shaping security concepts, the direct bridge to IAM.",
         "narrative": "Deepening SINA expertise, actively shaping security concepts — the technical bridge to the IAM world.",
         "technologies": "SINA, Windows, Linux, Hardening, Security Concepts",
         "details": [
           "Administration and advancement of SINA-based secure clients",
-          "Hardening Windows and Linux systems under security policies",
-          "Building and operating IT infrastructure",
-          "Incident analysis and performance optimization",
-          "Contributing to security concepts",
-          "Collaboration with security and infrastructure teams",
-          "Provisioning test and integration environments"
-        ]
+          "Active contribution to security concepts and access policies",
+          "Collaboration with security teams on identity and access topics",
+          "Analysis of security requirements and their technical implementation"
+        ],
+        "detailPage": {
+          "overview": "At Xecuro, I'm deepening my SINA expertise in an environment with the highest security requirements. I administer and advance SINA-based secure clients, actively contribute to security concepts, and work closely with security and infrastructure teams.",
+          "baRelevance": "This role is the direct bridge to the IAM world at Bitmarck: SINA systems, security concepts, access policies — all central topics in Identity and Access Management. I understand not just the theory but have practical experience with the systems also used in the healthcare telematics infrastructure.",
+          "achievements": [
+            "Deepening SINA expertise at architecture and concept level",
+            "Contributing to security concepts for regulated environments",
+            "Analysis of access requirements and translation into policies",
+            "Provisioning and maintaining test and integration environments"
+          ],
+          "skillsGained": [
+            "SINA Architecture",
+            "Security Concepts",
+            "Access Policies",
+            "Regulated IT Environments"
+          ]
+        }
       },
       "bitmarck": {
-        "period": "Next Step",
+        "period": "Target Position",
         "company": "Bitmarck",
         "role": "Business Analyst IAM",
-        "body": "The logical consequence: Analytical thinking and technical understanding as an official role — shaping digital identities in healthcare.",
+        "body": "The logical consequence: Analytical thinking, technical understanding, and SINA experience as an official role — shaping digital identities in healthcare.",
         "narrative": "All threads come together here — technology, analysis, security, coordination.",
-        "technologies": "IAM, Identity Management, Healthcare",
+        "technologies": "IAM, Identity Management, Healthcare, Telematics",
         "details": [
-          "Requirements analysis for IAM systems",
-          "Translating between technology and business",
-          "Shaping digital identities in healthcare"
-        ]
+          "Technical specifications for IAM systems (bitIAM)",
+          "Requirements alignment with health insurers and telematics stakeholders",
+          "Process modeling and use case development",
+          "Translation between business and IT development"
+        ],
+        "detailPage": {
+          "overview": "The Business Analyst IAM role at Bitmarck is the logical consequence of my entire career. All threads come together here: technical understanding from 10+ years in IT, SINA experience from security-critical environments, analytical thinking from every project, and the ability to translate between technology and business.",
+          "baRelevance": "Shaping digital insured identities in healthcare, aligning requirements from health insurers and telematics, creating technical specifications for bitIAM — this is exactly the intersection my entire career has prepared me for.",
+          "achievements": [
+            "10+ years IT experience with increasing analytical focus",
+            "Practical SINA expertise from two security-critical environments",
+            "Proven ability for independent requirements analysis and process modeling",
+            "Technical understanding that bridges business and development"
+          ],
+          "skillsGained": [
+            "IAM Architecture",
+            "Requirements Analysis",
+            "Telematics Infrastructure",
+            "Digital Identities"
+          ]
+        }
       }
     }
   },
+  "CareerDetail": {
+    "back": "← Back",
+    "overview": "Overview",
+    "baRelevance": "Relevance for Business Analyst",
+    "achievements": "Key Achievements",
+    "skillsGained": "Skills Developed"
+  },
   "Projects": {
-    "heading": "Projects",
+    "heading": "Projects — Analysis, Design, Implementation",
+    "intro": "Each project follows the same cycle: understand the business problem, analyze requirements, design the solution, deliver results.",
     "detailsLink": "Details →",
     "languages": "Languages",
     "lastCommit": "Last commit",
@@ -179,21 +349,160 @@
   },
   "ProjectDetail": {
     "back": "← Back",
-    "problem": "Problem",
-    "approach": "Approach",
-    "result": "Result",
-    "techStack": "Tech Stack",
+    "problem": "Starting Situation",
+    "approach": "Analysis & Solution Approach",
+    "result": "Result & Impact",
+    "techStack": "Technologies Used",
     "highlights": "Highlights",
     "learnings": "What I Learned",
     "viewOnGithub": "View on GitHub"
   },
   "Skills": {
     "heading": "Skills & Competencies",
+    "intro": "My competency profile combines analytical methods with technical depth — the ideal combination for a business analyst with an IT background.",
+    "detailLink": "Learn more →",
     "categories": {
       "iam": "IAM & Security",
       "ba": "BA Methods",
       "devops": "DevOps & Infra",
       "languages": "Languages & Frameworks"
+    },
+    "categoryDescriptions": {
+      "iam": "Practical experience with identity and access management from own projects and security-critical environments.",
+      "ba": "Analytical methods and tools that I've applied in every project — from requirements gathering to process optimization.",
+      "devops": "Infrastructure know-how that enables me to realistically assess technical requirements and communicate at eye level with developers.",
+      "languages": "Programming languages and frameworks that I've used productively in own projects — not theoretical knowledge, but practice."
+    },
+    "detailPages": {
+      "iam": {
+        "title": "IAM & Security — Competency Details",
+        "overview": "My IAM experience isn't textbook theory but grown practice: I built my own auth service with JWT and RBAC, administered SINA systems in security-critical environments, and actively contributed to security concepts.",
+        "skills": {
+          "SINA": {
+            "description": "Secure Inter-Network Architecture — practical experience from BWI (armed forces) and Xecuro. Administration, hardening, and concept work with the system also used in the healthcare telematics infrastructure.",
+            "level": "Advanced",
+            "context": "BWI GmbH, Xecuro GmbH"
+          },
+          "JWT": {
+            "description": "JSON Web Tokens — independently implemented token flow with access and refresh token rotation in the Auth API Service. Understanding of token lifecycle, signing, and validation.",
+            "level": "Advanced",
+            "context": "Auth API Service (own project)"
+          },
+          "RBAC": {
+            "description": "Role-Based Access Control — fine-grained permission system with configurable roles and rights. From access model design to implementation.",
+            "level": "Advanced",
+            "context": "Auth API Service (own project)"
+          },
+          "RLS": {
+            "description": "Row-Level Security — multi-tenant data separation at database level with Supabase/PostgreSQL. Ensuring each user only sees their own data.",
+            "level": "Advanced",
+            "context": "Next CMS (own project)"
+          },
+          "AuthSystems": {
+            "description": "Holistic understanding of authentication and authorization systems: session management, token-based auth, OAuth flows, multi-factor authentication.",
+            "level": "Advanced",
+            "context": "Auth API Service, EroHub"
+          },
+          "ApiDesign": {
+            "description": "RESTful API design with focus on security, documentation, and error handling. Understanding of API gateways and interface specifications.",
+            "level": "Advanced",
+            "context": "Auth API Service, Next CMS, Logbuch App"
+          }
+        }
+      },
+      "ba": {
+        "title": "BA Methods — Competency Details",
+        "overview": "Analytical methods aren't just my toolkit — they're my way of thinking. In every project, I've gathered requirements, analyzed processes, coordinated stakeholders, and documented solutions.",
+        "skills": {
+          "Anforderungsanalyse": {
+            "description": "Systematic gathering and documentation of requirements with various stakeholder groups. Prioritization by business value, alignment of competing requirements, translation into technical specifications.",
+            "level": "Advanced",
+            "context": "BHF Group, Own Projects"
+          },
+          "UseCases": {
+            "description": "Creating use cases and user stories as a bridge between business and development. Deriving test criteria from use cases for quality assurance.",
+            "level": "Advanced",
+            "context": "Auth API, MyFitCoach PRO, Next CMS"
+          },
+          "DSGVO": {
+            "description": "Practical experience with GDPR-compliant data processing: privacy-by-design, data minimization, consent management, deletion concepts. Directly relevant for health data.",
+            "level": "Advanced",
+            "context": "BHF Group, EroHub"
+          },
+          "Prozessoptimierung": {
+            "description": "Analysis of existing business processes, identification of inefficiencies and automation potential, design of optimized workflows.",
+            "level": "Advanced",
+            "context": "BHF Group, Persona GmbH"
+          },
+          "Dokumentation": {
+            "description": "Structured technical and business documentation: API docs, process descriptions, decision protocols, handover documents.",
+            "level": "Advanced",
+            "context": "All positions"
+          },
+          "StakeholderManagement": {
+            "description": "Coordination of diverse stakeholder groups with different interests. Moderation of requirement conflicts, expectation management, regular reporting.",
+            "level": "Advanced",
+            "context": "Biermann, BHF Group, MyFitCoach PRO"
+          }
+        }
+      },
+      "devops": {
+        "title": "DevOps & Infra — Competency Details",
+        "overview": "My infrastructure know-how enables me to realistically assess technical requirements and communicate at eye level with developers. I understand what happens behind the scenes — and can therefore write better requirements.",
+        "skills": {
+          "Docker": {
+            "description": "Container-based deployments for all own projects. Docker Compose for multi-service architectures, self-hosting on own servers.",
+            "level": "Advanced",
+            "context": "Next CMS, Auth API, this website"
+          },
+          "Linux": {
+            "description": "System administration, scripting, server hardening. Production systems operated and maintained on Linux.",
+            "level": "Advanced",
+            "context": "BWI, Xecuro, own servers"
+          },
+          "Cisco": {
+            "description": "Network configuration, VLAN segmentation, routing and switching in enterprise environments.",
+            "level": "Intermediate",
+            "context": "BWI GmbH"
+          },
+          "LANCOM": {
+            "description": "LANCOM routers and switches configured and managed in security-critical networks.",
+            "level": "Intermediate",
+            "context": "BWI GmbH"
+          },
+          "Git": {
+            "description": "Version control with Git and GitHub: branching strategies, pull requests, code reviews, CI/CD integration.",
+            "level": "Advanced",
+            "context": "All own projects"
+          }
+        }
+      },
+      "languages": {
+        "title": "Languages & Frameworks — Competency Details",
+        "overview": "Programming isn't my main focus as a business analyst — but it gives me a decisive advantage: I understand what's technically feasible, can realistically estimate effort, and speak the developers' language.",
+        "skills": {
+          "TypeScript": {
+            "description": "Primary language for backend and frontend development. Type-safe codebases with strict configuration.",
+            "level": "Advanced",
+            "context": "Auth API, Next CMS, this website"
+          },
+          "Flutter": {
+            "description": "Cross-platform mobile development with Dart. Three production apps built and published.",
+            "level": "Advanced",
+            "context": "MyFitCoach, EroHub, Logbuch App"
+          },
+          "SQL": {
+            "description": "Database design, complex queries, performance optimization. PostgreSQL with Prisma and Supabase.",
+            "level": "Advanced",
+            "context": "All database-backed projects"
+          },
+          "NextJs": {
+            "description": "React-based fullstack framework. Server-side rendering, API routes, App Router.",
+            "level": "Advanced",
+            "context": "Next CMS, MyFitCoach Dashboard, this website"
+          }
+        }
+      }
     }
   },
   "FAQ": {
@@ -201,21 +510,53 @@
     "items": {
       "location": {
         "question": "Location",
-        "answer": "Flexible — remote and on-site both work. I'm mobile and currently based in the Cologne/Bonn area."
+        "answer": "Relocation to the Essen area or any Bitmarck location is already planned and not an issue. Flexibility for remote and on-site work is given."
       },
       "startDate": {
         "question": "Start Date",
-        "answer": "Available within 1–3 months of offer."
+        "answer": "3 months notice period — available immediately after."
       },
       "whyBitmarck": {
         "question": "Why Bitmarck?",
-        "answer": "Bitmarck digitizes healthcare — a domain with real impact. The Business Analyst IAM role connects my technical experience with analytical work on digital identities. Exactly what I'm looking for."
+        "answer": "Bitmarck digitizes healthcare — a domain with real impact on millions of insured people. The Business Analyst IAM role connects my SINA experience, my understanding of auth architectures, and my analytical approach with a task that truly matters: making digital insured identities secure and usable."
       },
       "whyBA": {
         "question": "Why Business Analyst?",
-        "answer": "Analytical thinking has been present in every one of my roles — from infrastructure planning to API architecture. Business Analyst makes this strength an official role."
+        "answer": "Analytical thinking has been present in every one of my roles — from data-driven signal analysis to project coordination to independent requirements gathering. Business Analyst makes this strength an official role. And my technical background ensures I understand both sides."
+      },
+      "experience": {
+        "question": "Do I have BA experience?",
+        "answer": "Yes — not by title, but in substance. At BHF Group, I analyzed business processes, gathered requirements with stakeholders, and translated them into software. In my own projects, I defined use cases, designed data models, and developed access concepts. And at BWI and Xecuro, I worked in regulated environments with documented processes."
+      },
+      "tools": {
+        "question": "Confluence & Jira?",
+        "answer": "Professional experience with Jira (BWI) and comparable ticketing systems (IBM Maximo). Transitioning to Confluence + Jira in the Bitmarck context is seamless — the principle is the same, only the interface differs."
       }
     }
+  },
+  "Contact": {
+    "heading": "Contact",
+    "intro": "Interested? I look forward to hearing from you \u2014 whether you have questions about the application, my background, or would like to arrange a personal conversation.",
+    "formHeading": "Send a message",
+    "directHeading": "Reach me directly",
+    "directIntro": "You can also contact me directly through the following channels.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "What is this about?",
+    "message": "Message",
+    "messagePlaceholder": "Your message to me...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "successMessage": "Thank you! Your message has been sent successfully. I will get back to you shortly.",
+    "errorMessage": "An error occurred while sending. Please try again or contact me directly via email.",
+    "sendAnother": "Send another message",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "websiteLabel": "Website",
+    "githubLabel": "GitHub"
   },
   "Footer": {
     "builtWith": "Built with Next.js, Tailwind CSS, Framer Motion, TypeScript, next-intl · Self-hosted with Docker",
@@ -223,10 +564,10 @@
   },
   "Terminal": {
     "greeting": "tobias@bitmarck:~$ Welcome! Type 'help' for a list of commands.",
-    "whoami": "Tobias Ludwig -- Business Analyst IAM candidate at Bitmarck. 10+ years IT experience, from service technician to SINA administration to software developer. I translate between technology and business.",
-    "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA Methods: Requirements analysis, Use Cases, GDPR, Process optimization, Documentation\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nLanguages: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSpoken: German (C2), English (B2)",
-    "projects": "1. Auth API Service -- JWT-based auth service with RBAC, PostgreSQL and Prisma\n2. Next CMS -- Custom headless CMS with Next.js, Supabase and RLS\n3. MyFitCoach PRO -- Coaching platform with Flutter, Next.js and Strapi\n4. Partner App -- Flutter app with realtime chat and push notifications\n5. Logbuch App -- Structured data capture with Flutter and Supabase\n6. MPA Nutrition Shop -- Custom shop system with payment and shipping integration",
-    "motivation": "Bitmarck digitizes healthcare -- a domain with real impact. As a Business Analyst IAM, I can combine my technical experience with SINA systems and auth architectures with analytical thinking -- exactly the intersection that drives me.",
+    "whoami": "Tobias Ludwig -- Business Analyst IAM candidate at Bitmarck. 10+ years IT experience, from structured fault analysis to SINA systems to independent requirements analysis. I analyze business processes and translate them into precise requirements.",
+    "skills": "IAM & Security: SINA, JWT, RBAC, RLS, Auth Systems, API Design\nBA Methods: Requirements analysis, Use Cases, GDPR, Process optimization, Stakeholder Management\nDevOps: Docker, Linux, Self-Hosting, CI/CD, Cisco, LANCOM, VLAN\nLanguages: TypeScript, JavaScript, Dart, Java, SQL, Next.js, React, Flutter, Node.js\nSpoken: German (C2), English (B2)",
+    "projects": "1. Auth API Service -- Central IAM system: requirements analysis, access concept, implementation\n2. Next CMS -- Client requirements analyzed, architecture designed, multi-tenant implementation\n3. MyFitCoach PRO -- Stakeholder requirements prioritized, multi-platform solution designed\n4. EroHub -- Privacy requirements analyzed, privacy-by-design architecture implemented\n5. Logbuch App -- Field requirements gathered, dynamic forms and system integration designed\n6. MPA Nutrition Shop -- E-commerce business processes modeled and implemented end-to-end",
+    "motivation": "Bitmarck digitizes healthcare -- a domain with real impact on millions of insured people. As a Business Analyst IAM, I can combine my SINA experience, my understanding of auth architectures, and my analytical approach with a task that truly matters: making digital insured identities secure and usable.",
     "contact": "Email: Ludwig.tobias105@t-online.de\nWebsite: www.tobiasjonas-ludwig.de\nGitHub: github.com/nexas105",
     "help": "Available commands:\n  whoami      -- Who is Tobias?\n  skills      -- Technical skills\n  projects    -- Project highlights\n  motivation  -- Why Bitmarck?\n  contact     -- Contact info\n  help        -- Show this help\n  clear       -- Clear terminal\n  exit        -- Close terminal",
     "unknown": "Command not found: {cmd}. Type 'help' for a list of commands.",
@@ -236,62 +577,197 @@
   "ProjectData": {
     "authApi": {
       "title": "Auth API Service",
-      "description": "Central authentication service with JWT, RBAC and Prisma — the core of my IAM experience.",
-      "problem": "Multiple independent applications needed unified authentication and authorization. Each app had its own login logic — no central user management, no consistent permission model, no single sign-on.",
-      "approach": "Self-designed RESTful auth service with Node.js and TypeScript. JWT token flow with access and refresh token rotation, role-based access control (RBAC) with fine-grained permissions, PostgreSQL with Prisma ORM. Clean API documentation and error handling.",
-      "result": "Production-ready auth service centrally serving multiple applications. Use cases defined, data model designed, access concepts developed and implemented — completely independently from concept to deployment.",
+      "description": "Central IAM system independently designed: access concepts defined, data model designed, role-based authorization implemented.",
+      "problem": "Multiple independent applications needed unified authentication and authorization. Each app had its own login logic — no central user management, no consistent permission model, no single sign-on. A classic IAM problem.",
+      "approach": "Analysis of existing auth landscape and identification of requirements per application. Design of a central access model with JWT token flow (access/refresh rotation) and fine-grained RBAC. Data modeling with PostgreSQL/Prisma. API specification with standardized error handling.",
+      "result": "Production-ready auth service centrally serving multiple applications. Result: unified identity management, consistent permissions, documented API. Independently responsible from concept to deployment.",
       "highlights": "Secure token rotation with access/refresh token pairs prevents session hijacking\nCentral service serving multiple applications with unified authentication\nFine-grained RBAC system with configurable roles and permissions\nClean API documentation with standardized error handling",
       "learnings": "This project fundamentally shaped my understanding of IAM architectures: token lifecycle management, access concepts, and the challenge of balancing security with usability — exactly the mindset a Business Analyst IAM needs every day."
     },
     "nextCms": {
       "title": "Next CMS",
-      "description": "Custom headless CMS with Next.js and Supabase — from client requirements to self-hosting.",
-      "problem": "Clients needed a flexible content management system without the complexity and cost of WordPress or Strapi. Requirements: simple operation, fast performance, self-hostable.",
-      "approach": "Headless architecture with Next.js frontend and Supabase backend (Auth, DB, Storage). Row-level security (RLS) for multi-tenant data separation. Auto-install script for one-click setup. Docker-based self-hosting on own server with automated backups.",
-      "result": "Fully functional CMS in production use by multiple clients. Requirements analysis conducted, architecture designed, frontend and backend independently implemented and documented.",
+      "description": "Client requirements analyzed, architecture designed, and multi-tenant CMS implemented — from gathering to self-hosting.",
+      "problem": "Clients needed a flexible content management system without the complexity and cost of WordPress or Strapi. Core requirements: simple operation for non-technical users, fast performance, and independent hosting capability.",
+      "approach": "Requirements gathering with non-technical clients, translation into technical specification. Headless architecture with multi-tenant data separation (Row-Level Security). Auto-install for technically inexperienced users. Docker-based self-hosting.",
+      "result": "Fully functional CMS in production use by multiple clients with different requirements. Key insight: A solution's quality is not measured by technical complexity but by how well it meets user requirements.",
       "highlights": "Row-Level Security (RLS) for complete multi-tenant data separation at database level\nAuto-install script for one-click setup without technical knowledge\nDocker-based self-hosting with automated backups on own server\nProduction use by multiple clients with different requirements",
       "learnings": "Requirements analysis for non-technical clients taught me to translate complex systems into simple usage concepts — a core competency for communication between business and technology."
     },
     "myfitcoach": {
       "title": "MyFitCoach PRO",
-      "description": "Fullstack coaching platform with Flutter, Next.js and Strapi — multi-platform with analytics.",
-      "problem": "Personal trainers and coaches needed a digital platform combining training planning, client management, progress tracking and communication in one app — mobile and desktop.",
-      "approach": "Multi-platform solution: Flutter mobile app for trainers and clients, Next.js web dashboard for administration and analytics, Strapi as headless backend. Realtime features for live updates, integrated analytics dashboard with progress charts and export functionality.",
-      "result": "Working coaching platform with iOS/Android app and web dashboard. Business requirements analyzed, multi-platform architecture designed and implemented across all layers.",
+      "description": "Stakeholder requirements from trainers and clients prioritized, multi-platform architecture designed and implemented across all layers.",
+      "problem": "Personal trainers and coaches needed a digital platform combining training planning, client management, progress tracking, and communication — with different requirements per user role (trainers vs. clients).",
+      "approach": "Stakeholder analysis with two user groups. Prioritization of competing requirements and derivation of a multi-platform strategy: mobile app for daily use, web dashboard for administration and analytics. Role-based views for different user groups.",
+      "result": "Working coaching platform with iOS/Android app and web dashboard. The key to success was prioritization: not everything for everyone, but the right thing for each role.",
       "highlights": "Multi-platform architecture: Flutter mobile app, Next.js web dashboard, and Strapi backend\nIntegrated analytics dashboard with progress charts and export functionality\nRealtime features for live updates between trainer and client\nRole-based views for trainers, clients, and administration",
       "learnings": "Stakeholder management across different user groups (trainers vs. clients) demonstrated how important it is to prioritize competing requirements and find sustainable compromises."
     },
     "partnerApp": {
       "title": "Partner App",
-      "description": "Private social app with Flutter and Supabase — realtime chat, media sharing and end-to-end privacy.",
-      "problem": "A private community needed a protected platform for communication and media exchange — focused on privacy, realtime interaction and seamless mobile experience. No third-party platform dependency.",
-      "approach": "Native Flutter app (iOS/Android) with Supabase backend. Realtime chat via WebSockets, media upload with compressed previews, push notifications via FCM (Android) and APNs (iOS). Authentication with session management, content moderation and reporting system. GDPR-compliant data handling.",
-      "result": "Production mobile app with active user base. Complete feature set independently designed: realtime messaging, media gallery, push notifications, user management and moderation tools.",
-      "highlights": "Realtime WebSocket architecture for low-latency messaging\nContent moderation and reporting system for community safety\nGDPR-compliant data handling with privacy-by-design approach\nProduction app with active user base and stable infrastructure",
+      "description": "Privacy requirements analyzed, privacy-by-design architecture designed, and secure community platform with end-to-end encryption implemented.",
+      "problem": "A private community needed a protected platform for communication and media exchange with the highest privacy requirements — end-to-end encryption, GDPR compliance, and no third-party platform dependency.",
+      "approach": "Privacy requirements analysis following privacy-by-design principles. Architecture with end-to-end encryption, secure vault system for media, Riverpod state management, and Supabase backend. Content moderation and reporting system for community safety. GDPR-compliant data handling.",
+      "result": "Production mobile app with active user base and end-to-end privacy concept. From requirements analysis through security architecture to moderation system, independently designed — directly transferable to GDPR compliance in healthcare.",
+      "highlights": "End-to-end encryption with secure vault system for sensitive media\nPrivacy-by-design architecture with GDPR-compliant data handling\nContent moderation and reporting system for community safety\nRiverpod state management for reactive, testable app architecture",
       "learnings": "Privacy-by-design and moderation workflows sharpened my understanding of data protection requirements — from concept to technical implementation, directly transferable to GDPR compliance in healthcare."
     },
     "logbuchApp": {
       "title": "Logbuch App",
-      "description": "Mobile data capture with Flutter and Supabase — dynamic forms and structured export.",
-      "problem": "Field workers needed a mobile solution for structured data capture with flexible forms, offline capability and automated data export to existing systems.",
-      "approach": "Flutter app with Supabase backend, dynamic form engine (configurable fields and validations), offline sync mechanism and REST API integration for automatic data export. User-friendly UI with barcode scanner integration.",
-      "result": "Mobile data capture app in production use. Requirements gathered with end users, data model designed, form logic and export interfaces independently implemented.",
+      "description": "Field requirements gathered with end users, dynamic forms designed, and seamless system integration implemented.",
+      "problem": "Field workers needed a mobile solution for structured data capture — with flexible forms, offline capability, and automated data export to existing systems. Existing solutions were too rigid or too complicated.",
+      "approach": "Requirements gathering directly with end users in the field. Design of a dynamic form engine with configurable fields and validations. Offline sync for reliable data capture without network. REST API integration for automated export to existing systems.",
+      "result": "Mobile data capture app in production use. Key insight: Requirements emerge in the field, not at the desk — whoever doesn't understand real working conditions builds the wrong solution.",
       "highlights": "Offline sync mechanism for reliable data capture without network connectivity\nBarcode scanner integration for rapid product identification in the field\nDynamic form engine with configurable fields and validations\nREST API integration for automated data export to existing systems",
       "learnings": "Requirements gathering with field users showed how important it is to understand real working conditions — requirements emerge in the field, not at the desk."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
-      "description": "Custom e-commerce system — payment processing, shipping logic and marketing in one package.",
-      "problem": "A nutrition company needed their own online shop without dependency on Shopify or WooCommerce. Requirements: full control over design, payment flow and customer data.",
-      "approach": "Custom shop system from scratch: product catalog with variants, cart with session persistence, payment integration (Stripe), shipping logic with tracking, customer accounts with order history. Marketing tools (discount codes, newsletter) and integrated analytics dashboard.",
-      "result": "Functional online shop with complete order flow in production. Business requirements analyzed, UX designed and full-stack independently implemented.",
+      "description": "E-commerce business processes modeled end-to-end: order process, payment processing, shipping logic, and marketing.",
+      "problem": "A nutrition company needed their own online shop without dependency on Shopify or WooCommerce. Core requirement: full control over design, payment flow, customer data, and marketing measures.",
+      "approach": "End-to-end analysis of e-commerce business processes: product management, cart logic, payment processing (Stripe), shipping with tracking, customer account management. Additionally: marketing tools (discount codes, newsletter) and integrated analytics dashboard.",
+      "result": "Functional online shop with complete order flow in production. The end-to-end modeling of all business processes — from cart through payment to shipping — was the most valuable learning.",
       "highlights": "Stripe payment integration with complete checkout flow and error handling\nShipping logic with tracking and automatic status updates\nMarketing tools: discount codes, newsletter system, and analytics dashboard\nCustomer accounts with order history and session-based cart",
       "learnings": "Analyzing e-commerce business processes — from cart through payment to shipping — sharpened my understanding of end-to-end process modeling and business requirements."
+    },
+    "dbfv": {
+      "title": "DBFV Competition Software",
+      "description": "Volunteer development of competition software for the German Bodybuilding & Fitness Federation (DBFV). Scoring system, athlete management, jury interface.",
+      "problem": "DBFV needed a digital solution for conducting bodybuilding competitions: athlete registration, real-time jury scoring, result calculation, and rankings.",
+      "approach": "Design and development of competition software: athlete and competition data management, digital scoring system for the jury, automatic result calculation and ranking generation.",
+      "result": "Functional competition software in volunteer use at DBFV. Complete competition workflow digitized: registration, scoring, results.",
+      "highlights": "Digital scoring system for jury with real-time input\nAutomatic result calculation and ranking generation\nAthlete management with competition history\nVolunteer engagement for the German Bodybuilding & Fitness Federation",
+      "learnings": "Requirements gathering with jury members and competition organizers showed how important it is to understand domain processes before building a technical solution."
+    }
+  },
+  "CertificationDetail": {
+    "back": "← Back",
+    "badge": "Qualifications",
+    "heading": "Certifications & Qualifications in Detail",
+    "intro": "Each certification represents targeted competency building — from IT service management to security architectures to infrastructure know-how. Here you can see what each qualification covers and why it is relevant for the Business Analyst IAM role.",
+    "baRelevanceLabel": "BA Relevance",
+    "allCertsLabel": "All Certifications at a Glance",
+    "categories": {
+      "iamSecurity": "IAM & Security",
+      "itMethoden": "IT Methods & Software Engineering",
+      "infrastructure": "Infrastructure & Networking",
+      "branche": "Industry Qualifications"
+    },
+    "certs": {
+      "sinaCore": {
+        "name": "SINA CORE",
+        "provider": "secunet Security Networks AG",
+        "status": "completed",
+        "description": "Advanced certification for Secure Inter-Network Architecture (SINA). Covers architecture concepts, cryptography fundamentals, network segmentation, and administration of SINA components in classified environments. Includes thin clients, SINA workstations, and central management systems.",
+        "baRelevance": "SINA is the foundational technology for secure communication in the healthcare telematics infrastructure. As a Business Analyst IAM at Bitmarck, understanding this architecture is essential for correctly specifying requirements for secure identity systems."
+      },
+      "sinaBasics": {
+        "name": "SINA BASICS",
+        "provider": "secunet Security Networks AG",
+        "status": "completed",
+        "description": "Foundation certification for SINA systems. Covers core concepts of secure network communication, classified information handling, basic SINA components, and their interaction in security-critical infrastructures.",
+        "baRelevance": "The foundation for working with security-critical systems. This knowledge enables proper classification of security requirements in the IAM context and communication at eye level with developers and security teams."
+      },
+      "itil": {
+        "name": "ITIL Foundation",
+        "provider": "AXELOS / PeopleCert",
+        "status": "completed",
+        "description": "Certification in the ITIL IT Service Management framework. Covers the service lifecycle (Service Strategy, Design, Transition, Operation, Continual Improvement), incident, problem, and change management, as well as service level agreements and process documentation.",
+        "baRelevance": "ITIL processes are the foundation for structured IT service management at Bitmarck. As a business analyst, I use ITIL concepts for requirements gathering, process modeling, and aligning service level requirements with health insurers."
+      },
+      "devops": {
+        "name": "DevOps Fundamentals",
+        "provider": "Online Certification",
+        "status": "completed",
+        "description": "Fundamentals of DevOps culture and practices: CI/CD pipelines, Infrastructure as Code, monitoring, automated testing, and collaboration between development and operations. Containerization with Docker and orchestration.",
+        "baRelevance": "Understanding DevOps processes enables realistic specification of deployment, monitoring, and operations requirements — a decisive advantage when technical and business requirements need to be brought together."
+      },
+      "databases": {
+        "name": "Databases",
+        "provider": "Online Certification",
+        "status": "completed",
+        "description": "Relational databases and SQL: database design, normalization, complex queries, indexing, transactions, and performance optimization. Practical experience with PostgreSQL.",
+        "baRelevance": "Data modeling is a core tool for business analysts. Understanding database structures enables precise requirements for data management, permission concepts (RLS), and data integrity in the IAM context."
+      },
+      "sapErp": {
+        "name": "SAP ERP Basics",
+        "provider": "LinkedIn Learning",
+        "status": "completed",
+        "description": "Introduction to SAP ERP systems: module overview (FI, CO, MM, SD, HR), SAP GUI navigation, business processes in SAP, master data management, and basic transactions. Understanding of integration between SAP modules.",
+        "baRelevance": "SAP knowledge is relevant in the GKV IT landscape, as many health insurers use SAP-based systems. As a business analyst, this knowledge helps correctly specify interface requirements between IAM systems and existing ERP processes."
+      },
+      "qualitaetssicherung": {
+        "name": "Quality Assurance in Software Processes",
+        "provider": "IU International University (SDE Training)",
+        "status": "completed",
+        "description": "Methods and tools for software quality assurance: test planning, test levels (unit, integration, system tests), test automation, code reviews, static analysis, metrics, and quality standards (ISO 25010).",
+        "baRelevance": "Quality assurance is an integral part of BA work: from defining acceptance criteria to deriving test cases from use cases to evaluating test results — directly relevant for specifying IAM systems."
+      },
+      "softwaretechnik": {
+        "name": "Fundamentals of Industrial Software Engineering",
+        "provider": "IU International University (SDE Training)",
+        "status": "completed",
+        "description": "Software engineering methods for industrial applications: process models (Waterfall, V-Model, Scrum), requirements management, software architecture, design patterns, UML modeling, and project management in software development.",
+        "baRelevance": "The theoretical foundation for the BA role: process models, UML diagrams, and requirements management are daily tools. This knowledge enables structured requirements documents and precise communication with development teams."
+      },
+      "businessAnalyst": {
+        "name": "Business Analyst Learning Path",
+        "provider": "LinkedIn Learning",
+        "status": "in progress",
+        "description": "Comprehensive learning path for business analysis competencies: requirements elicitation techniques, stakeholder analysis, process modeling (BPMN), user stories, acceptance criteria, business cases, gap analysis, and agile BA methods.",
+        "baRelevance": "Direct competency building for the target role. The learning path systematically deepens the methods a Business Analyst IAM uses daily — from requirements elicitation to process modeling."
+      },
+      "linuxAdmin": {
+        "name": "Linux System Administration",
+        "provider": "Online Certification",
+        "status": "completed",
+        "description": "Linux system administration: user management, filesystems, network configuration, service management (systemd), shell scripting, security hardening, package management, and monitoring. Practical server management in production environments.",
+        "baRelevance": "Linux is the operating system for many IAM components and server infrastructures. Understanding user management and permission concepts at the OS level is directly transferable to IAM requirements."
+      },
+      "lancom": {
+        "name": "LANCOM Certification",
+        "provider": "LANCOM Systems",
+        "status": "completed",
+        "description": "Certification for LANCOM network components: router configuration, VPN setup, VLAN segmentation, firewall rules, and central management via LANCOM Management Cloud. Focus on security-critical networks.",
+        "baRelevance": "Network segmentation and VPN concepts are building blocks for secure IAM architectures. Understanding network infrastructure helps formulate requirements for network security and access control correctly."
+      },
+      "ftth": {
+        "name": "FTTH Fiber Optics",
+        "provider": "Deutsche Telekom (Apprenticeship)",
+        "status": "completed",
+        "description": "Fiber-to-the-Home technology: fiber splicing, OTDR measurement, attenuation measurement, network planning, and installation of fiber optic connections. Quality assurance through standardized measurement procedures.",
+        "baRelevance": "The telecommunications foundation training instilled systematic work, structured fault analysis, and quality assurance — baseline competencies that are indispensable in any analytical role."
+      },
+      "fitTrainer": {
+        "name": "Fitness Trainer B License",
+        "provider": "IST Study Institute",
+        "status": "completed",
+        "description": "Professional qualification as fitness trainer: training science, anatomy, nutrition science, training plan creation, and client support. Understanding of systematic goal pursuit and individual needs analysis.",
+        "baRelevance": "Seemingly unrelated, but at its core it's the same: individual needs analysis, goal definition, plan development, and progress monitoring. The same thinking applies to stakeholder requirements and project goals."
+      },
+      "nutritionist": {
+        "name": "Certified Nutritionist",
+        "provider": "IST Study Institute",
+        "status": "completed",
+        "description": "Qualification as nutritional consultant: nutritional physiology, macro- and micronutrients, nutrition planning, consulting methodology, and communication techniques.",
+        "baRelevance": "The consulting methodology — needs analysis, goal setting, individual plan development, and success monitoring — is directly transferable to requirements gathering and stakeholder consulting in the BA context."
+      }
+    },
+    "education": {
+      "bsc": {
+        "description": "Ongoing computer science degree with focus areas in software engineering, theoretical computer science, databases, and algorithms. Systematically building the theoretical foundation for analytical work as a business analyst."
+      },
+      "sde": {
+        "description": "Completed training with focus areas in software engineering, quality assurance, industrial software engineering, and project management. Provided the methodical toolkit for structured requirements analysis and process modeling."
+      },
+      "itse": {
+        "description": "Three-year dual apprenticeship at Deutsche Telekom. Foundation in IT infrastructure, network technology, system administration, and structured problem-solving — the technical basis of my entire career."
+      }
     }
   },
   "Certifications": {
     "heading": "Certifications & Education",
     "certLabel": "Certifications",
+    "detailLink": "Details →",
     "eduLabel": "Education",
     "certs": {
       "itil": "ITIL Foundation",
@@ -303,7 +779,11 @@
       "fitTrainer": "Fitness Trainer B License",
       "nutritionist": "Certified Nutritionist",
       "lancom": "LANCOM Certification",
-      "ftth": "FTTH Fiber Optics"
+      "ftth": "FTTH Fiber Optics",
+      "sapErp": "SAP ERP Basics",
+      "qualitaetssicherung": "Quality Assurance in Software Processes",
+      "softwaretechnik": "Fundamentals of Industrial Software Engineering",
+      "businessAnalyst": "Business Analyst Learning Path"
     },
     "education": {
       "bsc": {

@@ -9,7 +9,9 @@
     "detail": {
       "problemKey": "ProjectData.authApi.problem",
       "approachKey": "ProjectData.authApi.approach",
-      "resultKey": "ProjectData.authApi.result"
+      "resultKey": "ProjectData.authApi.result",
+      "highlightsKey": "ProjectData.authApi.highlights",
+      "learningsKey": "ProjectData.authApi.learnings"
     }
   },
   {
@@ -22,7 +24,9 @@
     "detail": {
       "problemKey": "ProjectData.nextCms.problem",
       "approachKey": "ProjectData.nextCms.approach",
-      "resultKey": "ProjectData.nextCms.result"
+      "resultKey": "ProjectData.nextCms.result",
+      "highlightsKey": "ProjectData.nextCms.highlights",
+      "learningsKey": "ProjectData.nextCms.learnings"
     }
   },
   {
@@ -35,7 +39,61 @@
     "detail": {
       "problemKey": "ProjectData.myfitcoach.problem",
       "approachKey": "ProjectData.myfitcoach.approach",
-      "resultKey": "ProjectData.myfitcoach.result"
+      "resultKey": "ProjectData.myfitcoach.result",
+      "highlightsKey": "ProjectData.myfitcoach.highlights",
+      "learningsKey": "ProjectData.myfitcoach.learnings"
+    }
+  },
+  {
+    "slug": "partner-app",
+    "titleKey": "ProjectData.partnerApp.title",
+    "descriptionKey": "ProjectData.partnerApp.description",
+    "techStack": ["Flutter", "Riverpod", "Supabase", "E2E-Encryption", "Privacy-by-Design", "DSGVO"],
+    "detail": {
+      "problemKey": "ProjectData.partnerApp.problem",
+      "approachKey": "ProjectData.partnerApp.approach",
+      "resultKey": "ProjectData.partnerApp.result",
+      "highlightsKey": "ProjectData.partnerApp.highlights",
+      "learningsKey": "ProjectData.partnerApp.learnings"
+    }
+  },
+  {
+    "slug": "logbuch-app",
+    "titleKey": "ProjectData.logbuchApp.title",
+    "descriptionKey": "ProjectData.logbuchApp.description",
+    "techStack": ["Flutter", "Dart", "Supabase", "REST API"],
+    "detail": {
+      "problemKey": "ProjectData.logbuchApp.problem",
+      "approachKey": "ProjectData.logbuchApp.approach",
+      "resultKey": "ProjectData.logbuchApp.result",
+      "highlightsKey": "ProjectData.logbuchApp.highlights",
+      "learningsKey": "ProjectData.logbuchApp.learnings"
+    }
+  },
+  {
+    "slug": "mpa-nutrition",
+    "titleKey": "ProjectData.mpaNutrition.title",
+    "descriptionKey": "ProjectData.mpaNutrition.description",
+    "techStack": ["E-Commerce", "Payment", "Shipping", "Analytics", "Marketing"],
+    "detail": {
+      "problemKey": "ProjectData.mpaNutrition.problem",
+      "approachKey": "ProjectData.mpaNutrition.approach",
+      "resultKey": "ProjectData.mpaNutrition.result",
+      "highlightsKey": "ProjectData.mpaNutrition.highlights",
+      "learningsKey": "ProjectData.mpaNutrition.learnings"
+    }
+  },
+  {
+    "slug": "dbfv",
+    "titleKey": "ProjectData.dbfv.title",
+    "descriptionKey": "ProjectData.dbfv.description",
+    "techStack": ["Wettkampfsoftware", "Bewertungssystem", "Datenverwaltung"],
+    "detail": {
+      "problemKey": "ProjectData.dbfv.problem",
+      "approachKey": "ProjectData.dbfv.approach",
+      "resultKey": "ProjectData.dbfv.result",
+      "highlightsKey": "ProjectData.dbfv.highlights",
+      "learningsKey": "ProjectData.dbfv.learnings"
     }
   }
 ]

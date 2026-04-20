@@ -1,4 +1,5 @@
 import {getTranslations} from 'next-intl/server'
+import {Link} from '@/i18n/navigation'
 
 const CERT_KEYS = [
   'itil',
@@ -35,9 +36,17 @@ export async function CertificationsSection() {
 
         {/* Certifications */}
         <div className="mt-2xl">
-          <h3 className="text-label font-semibold text-text-primary mb-md uppercase tracking-wide">
-            {t('certLabel')}
-          </h3>
+          <div className="flex items-center justify-between mb-md">
+            <h3 className="text-label font-semibold text-text-primary uppercase tracking-wide">
+              {t('certLabel')}
+            </h3>
+            <Link
+              href="/zertifikate"
+              className="text-label font-medium text-accent hover:text-accent-hover transition-colors duration-200"
+            >
+              {t('detailLink')}
+            </Link>
+          </div>
           <div className="flex flex-wrap gap-sm">
             {CERT_KEYS.map((key) => (
               <span

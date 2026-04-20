@@ -101,6 +101,7 @@
 html {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -109,6 +110,7 @@ body {
   font-family: var(--font-family-sans);
   font-size: var(--text-body);
   line-height: var(--line-height-loose);
+  overflow-x: hidden;
 }
 
 /* Global focus-visible */

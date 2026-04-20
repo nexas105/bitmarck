@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {getTranslations} from 'next-intl/server';
 import {MetricsDashboard} from '@/components/metrics-dashboard';
 import {CvDownload} from '@/components/cv-download';
@@ -17,19 +18,36 @@ export async function HeroSection() {
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-accent/[0.04] blur-3xl" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-xl md:gap-3xl items-center">
-        {/* Left: Name, Role, Value Prop, CTA */}
+        {/* Left: Photo + Name, Role, Value Prop, CTA */}
         <HeroAnimations>
           <div>
-            <div className="inline-flex items-center gap-sm rounded-full bg-white/[0.07] border border-white/10 px-md py-xs mb-lg">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
-              <p className="text-xs font-medium text-white/70 tracking-wide uppercase">
-                {t('role')}
-              </p>
+            {/* Profile photo + badge */}
+            <div className="flex items-center gap-lg mb-xl">
+              <div className="relative shrink-0">
+                <Image
+                  src="/tobias-ludwig.jpg"
+                  alt="Tobias Ludwig"
+                  width={96}
+                  height={96}
+                  className="rounded-full object-cover object-top border-2 border-white/20 shadow-lg"
+                  style={{width: 96, height: 96}}
+                  priority
+                />
+                {/* Online indicator */}
+                <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full bg-emerald-400 border-2 border-primary-900 animate-pulse" aria-hidden="true" />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-sm rounded-full bg-white/[0.07] border border-white/10 px-md py-xs mb-sm">
+                  <p className="text-xs font-medium text-white/70 tracking-wide uppercase">
+                    {t('role')}
+                  </p>
+                </div>
+                <h1 className="text-display md:text-hero font-bold text-white leading-tight tracking-tight">
+                  {t('name')}
+                </h1>
+              </div>
             </div>
-            <h1 className="text-hero font-bold text-white leading-tight tracking-tight">
-              {t('name')}
-            </h1>
-            <p className="text-lg text-white/50 mt-lg leading-relaxed max-w-[480px]">
+            <p className="text-lg text-white/75 leading-relaxed max-w-[480px]">
               {t('valueProposition')}
             </p>
             {/* CTA buttons — CV formats dropdown + cover letter */}

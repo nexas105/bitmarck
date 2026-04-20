@@ -2,14 +2,15 @@ import {getTranslations} from 'next-intl/server'
 import {CareerStationCard} from '@/components/career-station-card'
 
 const STATION_KEYS = [
-  'telekom',
-  'mediacom',
-  'biermann',
-  'bwi',
+  'bitmarck',
+  'freelancer',
+  'xecuro',
   'persona',
   'bhf',
-  'xecuro',
-  'bitmarck',
+  'bwi',
+  'biermann',
+  'mediacom',
+  'telekom',
 ] as const
 
 export async function CareerTimeline() {
@@ -17,6 +18,7 @@ export async function CareerTimeline() {
 
   const expandLabel = t('expandLabel')
   const collapseLabel = t('collapseLabel')
+  const detailLink = t('detailLink')
 
   return (
     <div className="relative pl-xl">
@@ -43,6 +45,7 @@ export async function CareerTimeline() {
               details={detailKeys}
               expandLabel={expandLabel}
               collapseLabel={collapseLabel}
+              detailLink={detailLink}
               isLast={index === STATION_KEYS.length - 1}
               index={index}
             />

@@ -94,7 +94,7 @@ const cvData: CvData = {
 
   profile: {
     summary:
-      "Software Developer mit Weiterbildung zum Software Developer Expert und laufendem Informatikstudium. Langjährige Erfahrung im IT-Service und Betrieb sicherheitskritischer Systeme sowie Aufbau und Betrieb moderner Software- und Infrastrukturprojekte (Linux, Docker, Self-Hosting).",
+      "IT-Fachkraft mit 10+ Jahren Erfahrung an der Schnittstelle zwischen Technik und Fachbereich. Weiterbildung zum Software Developer Expert, laufendes Informatikstudium. Erfahrung mit SINA-Systemen, Anforderungsanalyse und Prozessoptimierung in sicherheitskritischen Umgebungen.",
     strengths: [
       "Schnelle Auffassungsgabe",
       "Hohe Arbeitsmoral und Engagement",
@@ -135,6 +135,18 @@ const cvData: CvData = {
         "Mitwirkung an Sicherheitskonzepten",
         "Zusammenarbeit mit Security- und Infrastrukturteams",
         "Bereitstellung von Test- und Integrationsumgebungen",
+      ],
+    },
+    {
+      role: "Freelancer — DevOps, Web & IT-Beratung",
+      company: "Selbstständig",
+      start: "2026-01",
+      end: "heute",
+      details: [
+        "Webentwicklung und Hosting für Kunden",
+        "Servereinrichtung und DevOps",
+        "Anforderungsgespräche und Projektplanung",
+        "Eigenverantwortliche Projektsteuerung",
       ],
     },
     {
@@ -186,7 +198,7 @@ const cvData: CvData = {
     },
     {
       role: "Messbauführer Fernmeldetechnik",
-      company: "Biermann Telekommunikationstechnik / Rhön Fernmeldebau",
+      company: "Biermann Telekommunikationstechnik",
       start: "2018-07",
       end: "2021-03",
       details: [
@@ -283,6 +295,15 @@ const cvData: CvData = {
         "Marketing & Analytics",
       ],
     },
+    {
+      name: "DBFV Wettkampfsoftware",
+      type: "Ehrenamt",
+      details: [
+        "Wettkampfsoftware für DBFV",
+        "Bewertungssystem für Jury",
+        "Athleten- und Wettkampfdatenverwaltung",
+      ],
+    },
   ],
 
   education: [
@@ -313,6 +334,9 @@ const cvData: CvData = {
     "DevOps",
     "Datenbanken",
     "Linux System Admin",
+    "SAP ERP Grundkurs",
+    "Qualitätssicherung im Softwareprozess",
+    "Grundlagen der industriellen Softwaretechnik",
     "Fitness Trainer B",
     "Ernährungsberater",
     "LANCOM",

@@ -3,6 +3,7 @@
 import {useState} from 'react'
 import {motion, AnimatePresence} from 'motion/react'
 import {ChevronDown} from 'lucide-react'
+import {Link} from '@/i18n/navigation'
 
 type CareerStationCardProps = {
   stationKey: string
@@ -15,11 +16,13 @@ type CareerStationCardProps = {
   details: string[]
   expandLabel: string
   collapseLabel: string
+  detailLink: string
   isLast?: boolean
   index: number
 }
 
 export function CareerStationCard({
+  stationKey,
   period,
   company,
   role,
@@ -29,6 +32,7 @@ export function CareerStationCard({
   details,
   expandLabel,
   collapseLabel,
+  detailLink,
   isLast = false,
   index,
 }: CareerStationCardProps) {
@@ -121,11 +125,6 @@ export function CareerStationCard({
               className="overflow-hidden"
             >
               <div className="mt-lg pt-lg border-t border-border/40">
-                {/* Narrative: the red thread */}
-                <p className="text-body text-accent/80 italic mb-lg leading-relaxed">
-                  &ldquo;{narrative}&rdquo;
-                </p>
-
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-xs mb-lg">
                   {technologies.split(', ').map((tech) => (
@@ -153,6 +152,16 @@ export function CareerStationCard({
                     </motion.li>
                   ))}
                 </ul>
+
+                {/* Detail page link */}
+                <Link
+                  href={`/karriere/${stationKey}`}
+                  className="inline-flex items-center gap-xs text-label font-medium text-accent hover:text-accent-hover transition-colors duration-150 mt-lg"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {detailLink}
+                  <span aria-hidden="true" className="transition-transform duration-200 hover:translate-x-0.5">&rarr;</span>
+                </Link>
               </div>
             </motion.div>
           )}

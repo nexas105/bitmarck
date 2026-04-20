@@ -33,7 +33,7 @@ export function MetricCard({value, label, index}: MetricCardProps) {
         <p className="text-section font-bold text-white tracking-tight leading-none">
           {value}
         </p>
-        <p className="text-xs text-white/40 mt-sm font-medium tracking-widest uppercase">
+        <p className="text-xs text-white/70 mt-sm font-medium tracking-widest uppercase">
           {label}
         </p>
       </div>

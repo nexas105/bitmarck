@@ -1,24 +1,66 @@
 'use client'
 
-import {useState, useEffect, useRef, useCallback} from 'react'
+import {useState, useEffect, useCallback, useContext} from 'react'
 import {AnimatePresence, motion} from 'motion/react'
 import {useTranslations} from 'next-intl'
 import {Terminal as TerminalIcon, X} from 'lucide-react'
+import {
+  ReactTerminal,
+  TerminalContextProvider,
+  TerminalContext,
+} from 'react-terminal'
 
-type TerminalLine = {
-  type: 'input' | 'output'
-  text: string
+function TerminalInner({onClose}: {onClose: () => void}) {
+  const t = useTranslations('Terminal')
+  const {setBufferedContent} = useContext(TerminalContext)
+
+  const commands = {
+    whoami: () => <span style={{whiteSpace: 'pre-wrap'}}>{t('whoami')}</span>,
+    skills: () => <span style={{whiteSpace: 'pre-wrap'}}>{t('skills')}</span>,
+    projects: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('projects')}</span>
+    ),
+    motivation: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('motivation')}</span>
+    ),
+    contact: () => (
+      <span style={{whiteSpace: 'pre-wrap'}}>{t('contact')}</span>
+    ),
+    help: () => <span style={{whiteSpace: 'pre-wrap'}}>{t('help')}</span>,
+    exit: () => {
+      // Defer the close to after render cycle
+      setTimeout(() => {
+        setBufferedContent('')
+        onClose()
+      }, 100)
+      return ''
+    },
+  }
+
+  return (
+    <div className="h-full [&>div]:!h-full [&>div>div]:!h-full">
+      <ReactTerminal
+        commands={commands}
+        theme="material-ocean"
+        prompt={t('prompt')}
+        welcomeMessage={
+          <span style={{whiteSpace: 'pre-wrap'}}>{t('greeting')}</span>
+        }
+        errorMessage={t('unknown', {cmd: ''})}
+        showControlBar={false}
+        defaultHandler={(cmd: string) => t('unknown', {cmd})}
+      />
+    </div>
+  )
 }
-
-const COMMANDS = ['whoami', 'skills', 'projects', 'motivation', 'contact', 'help'] as const
 
 export function Terminal() {
   const [isOpen, setIsOpen] = useState(false)
-  const [lines, setLines] = useState<TerminalLine[]>([])
-  const [input, setInput] = useState('')
   const t = useTranslations('Terminal')
-  const inputRef = useRef<HTMLInputElement>(null)
-  const scrollRef = useRef<HTMLDivElement>(null)
+
+  const handleClose = useCallback(() => {
+    setIsOpen(false)
+  }, [])
 
   // Keyboard shortcut: Ctrl+` to toggle, Escape to close
   useEffect(() => {
@@ -34,47 +76,6 @@ export function Terminal() {
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [isOpen])
-
-  // Auto-focus input when opened + show greeting
-  useEffect(() => {
-    if (isOpen) {
-      inputRef.current?.focus()
-      setLines((prev) =>
-        prev.length === 0
-          ? [{type: 'output', text: t('greeting')}]
-          : prev
-      )
-    }
-  }, [isOpen, t])
-
-  // Scroll to bottom when lines change
-  useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight
-    }
-  }, [lines])
-
-  const handleCommand = useCallback(
-    (cmd: string) => {
-      const trimmed = cmd.trim().toLowerCase()
-      if (!trimmed) return
-
-      setLines((prev) => [...prev, {type: 'input', text: `${t('prompt')} ${cmd.trim()}`}])
-
-      if (trimmed === 'clear') {
-        setLines([])
-      } else if (trimmed === 'exit') {
-        setIsOpen(false)
-        setLines([])
-      } else if ((COMMANDS as readonly string[]).includes(trimmed)) {
-        setLines((prev) => [...prev, {type: 'output', text: t(trimmed as typeof COMMANDS[number])}])
-      } else {
-        setLines((prev) => [...prev, {type: 'output', text: t('unknown', {cmd: trimmed})}])
-      }
-      setInput('')
-    },
-    [t]
-  )
 
   return (
     <>
@@ -107,11 +108,11 @@ export function Terminal() {
               animate={{opacity: 1, y: 0, scale: 1}}
               exit={{opacity: 0, y: 40, scale: 0.95}}
               transition={{duration: 0.2, ease: [0.16, 1, 0.3, 1]}}
-              className="w-full max-w-2xl max-h-[70vh] flex flex-col rounded-xl overflow-hidden shadow-2xl"
+              className="w-full max-w-2xl h-[70vh] flex flex-col rounded-xl overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Title bar — glassmorphism */}
-              <div className="flex items-center justify-between px-md py-sm bg-[#0d1117] border-b border-white/10">
+              {/* Title bar */}
+              <div className="flex items-center justify-between px-md py-sm bg-[#0f111a] border-b border-white/10">
                 <div className="flex items-center gap-sm">
                   <div className="flex gap-xs">
                     <button
@@ -135,43 +136,11 @@ export function Terminal() {
                 </button>
               </div>
 
-              {/* Output area — dark theme */}
-              <div
-                ref={scrollRef}
-                className="flex-1 overflow-y-auto p-md bg-[#0d1117] font-mono text-[13px] leading-relaxed"
-              >
-                {lines.map((line, i) => (
-                  <div
-                    key={i}
-                    className={
-                      line.type === 'input'
-                        ? 'text-[#58a6ff] mb-xs'
-                        : 'text-[#c9d1d9] whitespace-pre-wrap mb-sm'
-                    }
-                  >
-                    {line.text}
-                  </div>
-                ))}
-              </div>
-
-              {/* Input row */}
-              <div className="flex items-center gap-sm px-md py-sm bg-[#0d1117] border-t border-white/10 font-mono text-[13px]">
-                <span className="text-[#58a6ff] shrink-0">{t('prompt')}</span>
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
-                      handleCommand(input)
-                    }
-                  }}
-                  className="bg-transparent border-none outline-none flex-1 text-[#c9d1d9] font-mono text-[13px] caret-[#58a6ff] placeholder:text-[#484f58]"
-                  autoComplete="off"
-                  spellCheck={false}
-                  placeholder="Type a command..."
-                />
+              {/* Terminal body */}
+              <div className="flex-1 overflow-hidden">
+                <TerminalContextProvider>
+                  <TerminalInner onClose={handleClose} />
+                </TerminalContextProvider>
               </div>
             </motion.div>
           </motion.div>
