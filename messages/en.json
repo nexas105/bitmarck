@@ -303,26 +303,26 @@
         "period": "Feb 2025 – present",
         "company": "Xecuro GmbH",
         "role": "IT System Administrator Secure Client Manager",
-        "body": "Administration of SINA-based secure clients and SINA CA, including analysis of security requirements and translation into workable operating flows. Daily work with Jira/Confluence plus intranet maintenance during idle periods (security sector, confidentiality).",
-        "narrative": "Here I combine security practice with BA execution: structuring requirements, aligning across teams, and turning them into reliable processes and documentation.",
+        "body": "Administration of SINA-based secure clients and SINA CA, including analysis of security requirements and translation into traceable ticketing/documentation workflows (Jira/Confluence). Also includes customer alignment on the ongoing project within confidentiality limits.",
+        "narrative": "Here I combine security practice with BA execution: structuring requirements, aligning with teams and customers, and translating them into reliable processes and documentation.",
         "technologies": "SINA, Windows, Linux, Hardening, Security Concepts",
         "details": [
           "Administration and advancement of SINA-based secure clients",
           "Active contribution to security concepts and access policies",
           "Ticket and knowledge workflows with Jira and Confluence in daily operations",
+          "Customer alignment in project context under confidentiality constraints",
           "Maintenance and updates of the internal intranet during idle periods",
-          "Collaboration with security teams on identity and access topics",
           "Analysis of security requirements and their technical implementation"
         ],
         "detailPage": {
-          "overview": "Xecuro is a security-sector startup with high ownership and short decision paths. I administer SINA-based secure clients, work with SINA CA, and handle additional security-critical systems. In daily operations I work with Jira and Confluence and maintain internal intranet content during idle periods. In this small-team setup, I also drive process analysis and process improvement so security work stays traceable and efficient. Details remain confidential.",
+          "overview": "Xecuro is a security-sector startup with high ownership and short decision paths. I administer SINA-based secure clients, work with SINA CA, and handle additional security-critical systems. In daily operations I work with Jira and Confluence and maintain internal intranet content during idle periods. I also align with customers on the ongoing project, while details remain limited due to confidentiality.",
           "baRelevance": "This role is a direct bridge to Bitmarck IAM: SINA systems, security concepts, SINA CA, and access policies are core IAM topics. It is also BA work in practice: analyzing security requirements, translating them into structured tickets and documentation, and aligning with involved teams. This is exactly the mix of analysis, structure, and security expected for the role.",
           "achievements": [
             "Deepened SINA expertise: secure clients, SINA CA, and security-critical systems",
             "Analyzed security requirements and translated them into clear process steps",
+            "Concrete process work: structured ticketing and documentation workflows in Jira/Confluence",
+            "Regular customer alignment in project context (confidential setting)",
             "Contributed actively to security concepts in a startup environment",
-            "Regular Jira and Confluence usage for ticketing, alignment, and documentation",
-            "Maintained and structured internal intranet content for knowledge continuity",
             "Independently drove internal process optimization"
           ],
           "skillsGained": [
@@ -618,12 +618,12 @@
   "ProjectData": {
     "authApi": {
       "title": "Auth API Service",
-      "description": "Central IAM system independently designed: access concepts defined, data model designed, role-based authorization implemented.",
-      "problem": "Multiple independent applications needed unified authentication and authorization. Each app had its own login logic — no central user management, no consistent permission model, no single sign-on. A classic IAM problem.",
-      "approach": "Analysis of existing auth landscape and identification of requirements per application. Design of a central access model with JWT token flow (access/refresh rotation) and fine-grained RBAC. Data modeling with PostgreSQL/Prisma. API specification with standardized error handling.",
-      "result": "Production-ready auth service centrally serving multiple applications. Result: unified identity management, consistent permissions, documented API. Independently responsible from concept to deployment.",
-      "highlights": "Secure token rotation with access/refresh token pairs prevents session hijacking\nCentral service serving multiple applications with unified authentication\nFine-grained RBAC system with configurable roles and permissions\nClean API documentation with standardized error handling",
-      "learnings": "This project fundamentally shaped my understanding of IAM architectures: token lifecycle management, access concepts, and the challenge of balancing security with usability — exactly the mindset a Business Analyst IAM needs every day."
+      "description": "Web auth API implemented in TypeScript with JWT and session management.",
+      "problem": "Goal: build an own auth backend component for login, token issuance, and session handling.",
+      "approach": "Implemented with TypeScript/Node.js: JWT-based authentication, session management, and API endpoints for login and token handling.",
+      "result": "Working auth API for web applications with login, token handling, and sessions.",
+      "highlights": "JWT handling for authentication\nSession management in the backend\nTypeScript implementation of auth endpoints\nBasic login flow including token issuance",
+      "learnings": "Practical deepening in auth flows, token handling, and session management."
     },
     "nextCms": {
       "title": "Next CMS",
@@ -654,12 +654,12 @@
     },
     "logbuchApp": {
       "title": "Logbuch App",
-      "description": "Field requirements gathered with end users, dynamic forms designed, and seamless system integration implemented.",
-      "problem": "Field workers needed a mobile solution for structured data capture — with flexible forms, offline capability, and automated data export to existing systems. Existing solutions were too rigid or too complicated.",
-      "approach": "Requirements gathering directly with end users in the field. Design of a dynamic form engine with configurable fields and validations. Offline sync for reliable data capture without network. REST API integration for automated export to existing systems and faster workflows.",
-      "result": "Mobile data capture app in production use. Key insight: Requirements emerge in the field, not at the desk — whoever doesn't understand real working conditions builds the wrong solution.",
-      "highlights": "Offline sync mechanism for reliable data capture without network connectivity\nBarcode scanner integration for rapid product identification in the field\nDynamic form engine with configurable fields and validations\nREST API integration for automated data export to existing systems",
-      "learnings": "Requirements gathering with field users showed how important it is to understand real working conditions — requirements emerge in the field, not at the desk."
+      "description": "Logbook app implemented with dynamic forms and data export.",
+      "problem": "A mobile solution for structured data capture was needed.",
+      "approach": "Implemented an app with dynamic forms, validations, and an interface for exporting captured data.",
+      "result": "Functional logbook app with structured capture and export functionality.",
+      "highlights": "Dynamic form fields with validations\nStructured data capture in the app\nData export via API\nFocus on simple day-to-day usability",
+      "learnings": "This project improved my understanding of mobile data capture and clean data flows."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
@@ -853,7 +853,7 @@
     "intro": "I intentionally mapped this role against my track record: from process analysis and structuring to delivery in security-critical IT environments.",
     "colBitmarck": "Bitmarck is looking for",
     "colTobias": "Tobias brings",
-    "matchLabel": "Match",
+    "matchLabel": "Assessment",
     "items": {
       "digitalization": {
         "requirement": "Experience in digitalization projects",
@@ -861,15 +861,15 @@
       },
       "requirements": {
         "requirement": "Requirements analysis, ideally telematics infrastructure",
-        "evidence": "SINA experience at BWI + Xecuro, auth service with RBAC"
+        "evidence": "Hands-on requirement clarification with stakeholders (e.g., BHF, freelance projects) plus SINA context from BWI/Xecuro"
       },
       "useCases": {
         "requirement": "Use cases, epics, user stories",
-        "evidence": "Own projects: use cases defined, data models designed"
+        "evidence": "User stories and workflow descriptions in own projects; formal use-case documents used only selectively"
       },
       "bpmn": {
         "requirement": "Process modeling (BPMN)",
-        "evidence": "Process optimization at BHF, Persona, Xecuro, and in freelance projects"
+        "evidence": "Processes analyzed and improved in practice; BPMN currently in learning path, so far rarely modeled formally"
       },
       "testing": {
         "requirement": "Interface to test management",
@@ -943,8 +943,8 @@
       "yes": "Yes",
       "no": "No",
       "restart": "Play again",
-      "resultTitle": "Perfect Match!",
-      "resultDescription": "All qualifications match the Business Analyst IAM role at Bitmarck.",
+      "resultTitle": "Strong Fit",
+      "resultDescription": "Many requirements are well covered. Formal BA methods are currently being deepened further.",
       "questions": {
         "q1": {
           "question": "Does Tobias have hands-on experience with SINA systems?",

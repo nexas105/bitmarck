@@ -306,26 +306,26 @@
         "period": "Feb 2025 – heute",
         "company": "Xecuro GmbH",
         "role": "IT-Systemadministrator Secure Client Manager",
-        "body": "Administration von SINA-basierten Secure Clients und SINA CA, inklusive Analyse von Sicherheitsanforderungen und Ableitung tragfähiger Abläufe. Tagesgeschäft mit Jira/Confluence sowie Intranet-Pflege in Leerlaufzeiten (Sicherheitssektor, Geheimhaltung).",
-        "narrative": "Hier verbinde ich Security-Praxis mit BA-Arbeit: Anforderungen strukturieren, mit Teams abstimmen und in belastbare Prozesse und Dokumentation überführen.",
+        "body": "Administration von SINA-basierten Secure Clients und SINA CA, inklusive Analyse von Sicherheitsanforderungen und Überführung in nachvollziehbare Ticket- und Dokumentationsabläufe (Jira/Confluence). Zusätzlich Abstimmung mit Kunden zum laufenden Projekt innerhalb des zulässigen Geheimhaltungsrahmens.",
+        "narrative": "Hier verbinde ich Security-Praxis mit BA-Arbeit: Anforderungen strukturieren, mit Teams und Kunden abstimmen und in belastbare Prozesse und Dokumentation überführen.",
         "technologies": "SINA, Windows, Linux, Härtung, Sicherheitskonzepte",
         "details": [
           "Administration und Weiterentwicklung von SINA-basierten Secure Clients",
           "Aktive Mitgestaltung von Sicherheitskonzepten und Zugriffsrichtlinien",
           "Ticket- und Wissensarbeit mit Jira und Confluence im Teamalltag",
+          "Abstimmung mit Kunden im Projektkontext unter Geheimhaltung",
           "Pflege und Aktualisierung des internen Intranets in Leerlaufzeiten",
-          "Zusammenarbeit mit Security-Teams an Identity- und Access-Themen",
           "Analyse von Sicherheitsanforderungen und deren technische Umsetzung"
         ],
         "detailPage": {
-          "overview": "Xecuro ist ein Start-up im Sicherheitssektor mit hoher Eigenverantwortung. Ich administriere SINA-basierte Secure Clients, arbeite mit SINA CA und weiteren sicherheitskritischen Systemen. Parallel nutze ich Jira und Confluence im Tagesgeschäft und pflege in Leerlaufzeiten das interne Intranet. In der kleinen Teamstruktur übernehme ich zusätzlich Prozessanalyse und Prozessverbesserung, damit Security-Aufgaben nachvollziehbar und effizient laufen. Details zur Arbeit unterliegen der Geheimhaltung.",
+          "overview": "Xecuro ist ein Start-up im Sicherheitssektor mit hoher Eigenverantwortung. Ich administriere SINA-basierte Secure Clients, arbeite mit SINA CA und weiteren sicherheitskritischen Systemen. Parallel nutze ich Jira und Confluence im Tagesgeschäft und pflege in Leerlaufzeiten das interne Intranet. Außerdem stimme ich mich im laufenden Projekt mit Kunden ab, kann dazu aber aus Geheimhaltungsgründen nur eingeschränkt ins Detail gehen.",
           "baRelevance": "Diese Rolle ist die direkte Brücke zur IAM-Welt bei Bitmarck: SINA-Systeme, Sicherheitskonzepte, SINA CA und Zugriffsrichtlinien sind zentrale IAM-Themen. Gleichzeitig ist es BA-Arbeit im Alltag: Sicherheitsanforderungen analysieren, in strukturierte Tickets und Dokumentation überführen und mit beteiligten Teams abstimmen. Genau diese Verbindung aus Analyse, Struktur und Security sucht Bitmarck.",
           "achievements": [
             "SINA-Expertise vertieft: Secure Clients, SINA CA, sicherheitskritische Systeme",
             "Sicherheitsanforderungen analysiert und in klare Prozessschritte überführt",
+            "Konkrete Prozessarbeit: Ticket- und Dokumentationsabläufe in Jira/Confluence strukturiert",
+            "Regelmäßige Abstimmung mit Kunden im Projektkontext (vertraulicher Rahmen)",
             "Aktive Mitgestaltung von Sicherheitskonzepten im Start-up-Umfeld",
-            "Regelmäßige Nutzung von Jira und Confluence für Tickets, Abstimmung und Dokumentation",
-            "Pflege und Strukturierung von Intranet-Inhalten zur internen Wissenssicherung",
             "Eigenständige Übernahme der internen Prozessoptimierung"
           ],
           "skillsGained": [
@@ -621,12 +621,12 @@
   "ProjectData": {
     "authApi": {
       "title": "Auth API Service",
-      "description": "Zentrales IAM-System eigenständig konzipiert: Zugriffskonzepte definiert, Datenmodell entworfen, rollenbasierte Autorisierung umgesetzt.",
-      "problem": "Mehrere eigenständige Anwendungen brauchten einheitliche Authentifizierung und Autorisierung. Jede App hatte eigene Login-Logik — keine zentrale Benutzerverwaltung, keine konsistente Rechtevergabe, kein Single Sign-On. Ein klassisches IAM-Problem.",
-      "approach": "Analyse der bestehenden Auth-Landschaft und Identifikation der Anforderungen pro Anwendung. Konzeption eines zentralen Zugriffsmodells mit JWT-Token-Flow (Access/Refresh-Rotation) und feingranularem RBAC. Datenmodellierung mit PostgreSQL/Prisma. API-Spezifikation mit standardisierter Fehlerbehandlung.",
-      "result": "Produktionsreifer Auth-Service, der mehrere Anwendungen zentral bedient. Ergebnis: Einheitliches Identitätsmanagement, konsistente Rechtevergabe, dokumentierte API. Vom Konzept bis zum Deployment eigenständig verantwortet.",
-      "highlights": "Sichere Token-Rotation mit Access- und Refresh-Token-Paar verhindert Session-Hijacking\nZentraler Service bedient mehrere Anwendungen mit einheitlicher Authentifizierung\nFeingranulares RBAC-System mit konfigurierbaren Rollen und Berechtigungen\nSaubere API-Dokumentation mit standardisierter Fehlerbehandlung",
-      "learnings": "Dieses Projekt hat mein Verständnis für IAM-Architekturen grundlegend gepraegt: Token-Lifecycle-Management, Zugriffskonzepte und die Herausforderung, Sicherheit und Benutzerfreundlichkeit in Einklang zu bringen — genau die Denkweise, die ein Business Analyst IAM taeglich braucht."
+      "description": "Web-Auth-API in TypeScript mit JWT und Session-Management umgesetzt.",
+      "problem": "Ziel war ein eigener Auth-Backend-Baustein für Login, Token-Ausgabe und Session-Verwaltung.",
+      "approach": "Implementierung mit TypeScript/Node.js: JWT-basierte Authentifizierung, Session-Management und API-Endpunkte für Login und Token-Handling.",
+      "result": "Lauffähige Auth-API für Web-Anwendungen mit Login, Token-Handling und Sessions.",
+      "highlights": "JWT-Handling für Authentifizierung\nSession-Management im Backend\nTypeScript-Implementierung der Auth-Endpunkte\nGrundlegender Login-Flow inklusive Token-Ausgabe",
+      "learnings": "Praktische Vertiefung in Auth-Flows, Token-Handling und Session-Verwaltung."
     },
     "nextCms": {
       "title": "Next CMS",
@@ -657,12 +657,12 @@
     },
     "logbuchApp": {
       "title": "Logbuch App",
-      "description": "Feldanforderungen mit Endanwendern erhoben, dynamische Formulare konzipiert und nahtlose Systemintegration umgesetzt.",
-      "problem": "Fachkräfte im Außendienst brauchten eine mobile Lösung für strukturierte Datenerfassung — mit flexiblen Formularen, Offline-Fähigkeit und automatisiertem Datenexport an Bestandssysteme. Bestehende Lösungen waren zu starr oder zu kompliziert.",
-      "approach": "Anforderungserhebung direkt mit Endanwendern im Feld. Konzeption einer dynamischen Formularengine mit konfigurierbaren Feldern und Validierungen. Offline-Sync für zuverlässige Datenerfassung ohne Netzwerk. REST-API-Integration für automatisierten Export an Bestandssysteme und schnellere Abläufe.",
-      "result": "Mobile Datenerfassungs-App im produktiven Einsatz. Zentrale Erkenntnis: Anforderungen entstehen im Feld, nicht am Schreibtisch — wer die realen Arbeitsbedingungen nicht versteht, baut die falsche Lösung.",
-      "highlights": "Offline-Sync-Mechanismus für zuverlässige Datenerfassung ohne Netzwerk\nBarcode-Scanner-Integration für schnelle Produktidentifikation im Feld\nDynamische Formularengine mit konfigurierbaren Feldern und Validierungen\nREST-API-Integration für automatisierten Datenexport an Bestandssysteme",
-      "learnings": "Die Anforderungserhebung mit Außendienst-Nutzern hat gezeigt, wie wichtig es ist, reale Arbeitsbedingungen zu verstehen — Anforderungen entstehen im Feld, nicht am Schreibtisch."
+      "description": "Logbuch-App mit dynamischen Formularen und Datenexport umgesetzt.",
+      "problem": "Es wurde eine mobile Lösung zur strukturierten Datenerfassung benötigt.",
+      "approach": "Umsetzung einer App mit dynamischen Formularen, Validierungen und Schnittstelle für den Export der erfassten Daten.",
+      "result": "Funktionsfähige Logbuch-App mit strukturierter Erfassung und Exportfunktion.",
+      "highlights": "Dynamische Formularfelder mit Validierungen\nStrukturierte Datenerfassung in der App\nExport der Daten über API\nFokus auf einfache Nutzung im Alltag",
+      "learnings": "Das Projekt hat mein Verständnis für mobile Datenerfassung und saubere Datenflüsse verbessert."
     },
     "mpaNutrition": {
       "title": "MPA Nutrition Shop",
@@ -856,7 +856,7 @@
     "intro": "Ich habe die Rolle bewusst gegen meinen Werdegang gespiegelt: von Prozessanalyse und Strukturierung bis zur Umsetzung in sicherheitskritischen IT-Umgebungen.",
     "colBitmarck": "Bitmarck sucht",
     "colTobias": "Tobias bringt mit",
-    "matchLabel": "Match",
+    "matchLabel": "Einordnung",
     "items": {
       "digitalization": {
         "requirement": "Erfahrung in Digitalisierungsprojekten",
@@ -864,15 +864,15 @@
       },
       "requirements": {
         "requirement": "Anforderungsanalyse, idealerweise Telematikinfrastruktur",
-        "evidence": "SINA-Erfahrung bei BWI + Xecuro, Auth-Service mit RBAC"
+        "evidence": "Praxis in Anforderungsklärung mit Stakeholdern (u. a. BHF, Freelancer) plus SINA-Kontext aus BWI/Xecuro"
       },
       "useCases": {
         "requirement": "Use Cases, Epics, User Stories",
-        "evidence": "Eigene Projekte: Use Cases definiert, Datenmodelle entworfen"
+        "evidence": "User Stories und Ablaufbeschreibungen in eigenen Projekten; formale Use-Case-Dokumente bisher punktuell"
       },
       "bpmn": {
         "requirement": "Prozessmodellierung (BPMN)",
-        "evidence": "Prozessoptimierung bei BHF, Persona, Xecuro und in Freelancer-Projekten"
+        "evidence": "Prozesse praktisch analysiert und verbessert; BPMN aktuell im Lernpfad, bisher selten formal modelliert"
       },
       "testing": {
         "requirement": "Schnittstelle zum Testmanagement",
@@ -946,8 +946,8 @@
       "yes": "Ja",
       "no": "Nein",
       "restart": "Nochmal spielen",
-      "resultTitle": "Perfekter Match!",
-      "resultDescription": "Alle Qualifikationen passen zur Rolle als Business Analyst IAM bei Bitmarck.",
+      "resultTitle": "Starker Fit",
+      "resultDescription": "Viele Anforderungen sind gut abgedeckt. Formale BA-Methoden werden aktuell weiter vertieft.",
       "questions": {
         "q1": {
           "question": "Hat Tobias praktische Erfahrung mit SINA-Systemen?",
