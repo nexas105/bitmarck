@@ -2,8 +2,9 @@
 
 import {useState, useRef, useEffect, useCallback} from 'react';
 import {useTranslations} from 'next-intl';
-import {FileText, FileJson, FileCode, ChevronDown, Mail} from 'lucide-react';
+import {FileText, FileJson, FileCode, ChevronDown, Mail, Eye, Sparkles} from 'lucide-react';
 import {createPortal} from 'react-dom';
+import {Link} from '@/i18n/navigation';
 
 const CV_FORMATS = [
   {key: 'pdf', href: '/api/pdf/cv', icon: FileText},
@@ -88,6 +89,14 @@ export function CvDownload() {
         document.body
       )}
 
+      <Link
+        href="/cv"
+        className="inline-flex items-center gap-sm rounded-xl border border-white/20 px-xl py-sm text-label font-semibold text-white hover:bg-white/10 hover:border-white/40 transition-all duration-200"
+      >
+        <Eye className="h-4 w-4" />
+        CV ansehen
+      </Link>
+
       <a
         href="/api/pdf/cover-letter"
         download
@@ -96,6 +105,18 @@ export function CvDownload() {
         <Mail className="h-4 w-4" />
         {t('ctaCoverLetter')}
       </a>
+
+      <button
+        onClick={() => {
+          const el = document.getElementById('why-bitmarck');
+          if (el) el.scrollIntoView({behavior: 'smooth'});
+        }}
+        className="group relative inline-flex items-center gap-sm rounded-xl bg-accent px-xl py-sm text-label font-bold text-white hover:bg-accent-hover transition-all duration-200 shadow-elevated"
+      >
+        <span className="absolute inset-0 rounded-xl animate-pulse ring-2 ring-accent/50 ring-offset-0" aria-hidden="true" />
+        <Sparkles className="h-4 w-4" />
+        Interaktiv entdecken
+      </button>
     </div>
   );
 }

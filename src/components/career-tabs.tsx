@@ -4,9 +4,12 @@ import {useState} from 'react'
 import {motion, AnimatePresence} from 'motion/react'
 import {useTranslations} from 'next-intl'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCoverflow, Pagination} from 'swiper/modules'
+import {EffectCoverflow, EffectCards, EffectCube, EffectFlip, Pagination, Autoplay} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
+import 'swiper/css/effect-cards'
+import 'swiper/css/effect-cube'
+import 'swiper/css/effect-flip'
 import 'swiper/css/pagination'
 import {CareerTimeline} from '@/components/career-timeline'
 import {Link} from '@/i18n/navigation'
@@ -25,6 +28,9 @@ const STATION_KEYS = [
 
 type TabKey = 'timeline' | 'swiper' | 'compact' | 'cards'
 
+const swiperEffects = ['Coverflow', 'Cards', 'Cube', 'Flip', 'Slide'] as const
+type SwiperEffect = (typeof swiperEffects)[number]
+
 export function CareerTabs() {
   const t = useTranslations('Career')
   const [activeTab, setActiveTab] = useState<TabKey>('timeline')
@@ -39,27 +45,29 @@ export function CareerTabs() {
   return (
     <div>
       {/* Tab bar */}
-      <div className="flex gap-xs bg-surface-subtle rounded-full p-xs w-fit mx-auto mb-2xl">
-        {tabs.map((tab) => (
-          <button
-            key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
-            className={`relative px-lg py-sm text-label font-medium rounded-full transition-colors duration-200 ${
-              activeTab === tab.key
-                ? 'text-white'
-                : 'text-text-secondary hover:text-text-primary'
-            }`}
-          >
-            {activeTab === tab.key && (
-              <motion.div
-                layoutId="career-tab-bg"
-                className="absolute inset-0 bg-accent rounded-full"
-                transition={{type: 'spring', stiffness: 400, damping: 30}}
-              />
-            )}
-            <span className="relative z-10">{tab.label}</span>
-          </button>
-        ))}
+      <div className="flex justify-center mb-md">
+        <div className="bg-primary-900/5 backdrop-blur-sm rounded-xl p-1 border border-border/30 flex gap-1">
+          {tabs.map((tab) => (
+            <button
+              key={tab.key}
+              onClick={() => setActiveTab(tab.key)}
+              className={`relative px-lg py-sm text-label font-medium rounded-lg transition-colors duration-200 ${
+                activeTab === tab.key
+                  ? 'text-text-primary font-semibold'
+                  : 'text-text-secondary hover:text-text-primary'
+              }`}
+            >
+              {activeTab === tab.key && (
+                <motion.div
+                  layoutId="career-tab-bg"
+                  className="absolute inset-0 bg-white shadow-sm rounded-lg"
+                  transition={{type: 'spring', stiffness: 400, damping: 30}}
+                />
+              )}
+              <span className="relative z-10">{tab.label}</span>
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Tab content */}
@@ -177,6 +185,7 @@ function CardsView() {
 
 function SwiperView() {
   const t = useTranslations('Career')
+  const [activeEffect, setActiveEffect] = useState<SwiperEffect>('Coverflow')
 
   const colors = [
     'from-accent to-accent/70',
@@ -190,62 +199,185 @@ function SwiperView() {
     'from-teal-500 to-teal-400',
   ]
 
+  const renderCard = (key: (typeof STATION_KEYS)[number], i: number) => {
+    const company = t(`stations.${key}.company`)
+    const colorClass = colors[i % colors.length]
+
+    return (
+      <Link
+        href={`/karriere/${key}`}
+        className="block rounded-2xl border border-border/50 bg-surface-raised shadow-card hover:shadow-card-hover transition-shadow duration-300 overflow-hidden h-full"
+      >
+        <div className={`h-1.5 bg-linear-to-r ${colorClass}`} />
+        <div className="p-lg">
+          <p className="text-xs font-medium text-accent mb-xs">
+            {t(`stations.${key}.period`)}
+          </p>
+          <h3 className="text-body font-bold text-text-primary tracking-tight">
+            {t(`stations.${key}.role`)}
+          </h3>
+          <p className="text-label text-text-secondary mt-xs">{company}</p>
+          <p className="text-xs text-text-tertiary mt-md leading-relaxed line-clamp-3">
+            {t(`stations.${key}.body`)}
+          </p>
+          <div className="flex flex-wrap gap-xs mt-md">
+            {t(`stations.${key}.technologies`).split(', ').slice(0, 4).map((tech) => (
+              <span key={tech} className="text-[10px] bg-accent/10 text-accent font-medium rounded-full px-2 py-0.5">
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </Link>
+    )
+  }
+
   return (
     <div>
       <style>{`
         .career-swiper .swiper-pagination-bullet-active { background: var(--color-accent) !important; }
         .career-swiper .swiper-slide { height: auto; }
       `}</style>
-      <Swiper
-        className="career-swiper !pb-xl"
-        modules={[EffectCoverflow, Pagination]}
-        effect="coverflow"
-        grabCursor
-        centeredSlides
-        slidesPerView={1.3}
-        breakpoints={{
-          640: {slidesPerView: 1.8},
-          1024: {slidesPerView: 2.5},
-        }}
-        coverflowEffect={{rotate: 0, stretch: 0, depth: 120, modifier: 2, slideShadows: false}}
-        pagination={{clickable: true}}
-        spaceBetween={20}
-      >
-        {STATION_KEYS.map((key, i) => {
-          const company = t(`stations.${key}.company`)
-          const colorClass = colors[i % colors.length]
 
-          return (
-            <SwiperSlide key={key}>
-              <Link
-                href={`/karriere/${key}`}
-                className="block rounded-2xl border border-border/50 bg-surface-raised shadow-card hover:shadow-card-hover transition-shadow duration-300 overflow-hidden h-full"
+      {/* Effect Sub-Tabs */}
+      <div className="flex justify-center mb-lg">
+        <div className="flex gap-1">
+          {swiperEffects.map((effect) => (
+            <button
+              key={effect}
+              onClick={() => setActiveEffect(effect)}
+              className={`relative text-xs rounded-full px-sm py-xs font-medium transition-colors duration-200 ${
+                activeEffect === effect
+                  ? 'text-text-primary font-semibold'
+                  : 'text-text-secondary hover:text-text-primary'
+              }`}
+            >
+              {activeEffect === effect && (
+                <motion.div
+                  layoutId="career-effect-tab-bg"
+                  className="absolute inset-0 bg-white shadow-sm rounded-full"
+                  transition={{type: 'spring', stiffness: 400, damping: 30}}
+                />
+              )}
+              <span className="relative z-10">{effect}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeEffect}
+          initial={{opacity: 0, y: 12}}
+          animate={{opacity: 1, y: 0}}
+          exit={{opacity: 0, y: -12}}
+          transition={{duration: 0.3}}
+        >
+          {activeEffect === 'Coverflow' && (
+            <Swiper
+              className="career-swiper !pb-xl"
+              modules={[EffectCoverflow, Pagination]}
+              effect="coverflow"
+              grabCursor
+              centeredSlides
+              slidesPerView={1.3}
+              breakpoints={{
+                640: {slidesPerView: 1.8},
+                1024: {slidesPerView: 2.5},
+              }}
+              coverflowEffect={{rotate: 0, stretch: 0, depth: 120, modifier: 2, slideShadows: false}}
+              pagination={{clickable: true}}
+              spaceBetween={20}
+            >
+              {STATION_KEYS.map((key, i) => (
+                <SwiperSlide key={key}>{renderCard(key, i)}</SwiperSlide>
+              ))}
+            </Swiper>
+          )}
+
+          {activeEffect === 'Cards' && (
+            <div className="max-w-[380px] mx-auto">
+              <Swiper
+                className="career-swiper !pb-xl"
+                modules={[EffectCards, Pagination]}
+                effect="cards"
+                grabCursor
+                pagination={{clickable: true}}
+                cardsEffect={{
+                  perSlideOffset: 8,
+                  perSlideRotate: 2,
+                  rotate: true,
+                  slideShadows: false,
+                }}
               >
-                <div className={`h-1.5 bg-linear-to-r ${colorClass}`} />
-                <div className="p-lg">
-                  <p className="text-xs font-medium text-accent mb-xs">
-                    {t(`stations.${key}.period`)}
-                  </p>
-                  <h3 className="text-body font-bold text-text-primary tracking-tight">
-                    {t(`stations.${key}.role`)}
-                  </h3>
-                  <p className="text-label text-text-secondary mt-xs">{company}</p>
-                  <p className="text-xs text-text-tertiary mt-md leading-relaxed line-clamp-3">
-                    {t(`stations.${key}.body`)}
-                  </p>
-                  <div className="flex flex-wrap gap-xs mt-md">
-                    {t(`stations.${key}.technologies`).split(', ').slice(0, 4).map((tech) => (
-                      <span key={tech} className="text-[10px] bg-accent/10 text-accent font-medium rounded-full px-2 py-0.5">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </Link>
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
+                {STATION_KEYS.map((key, i) => (
+                  <SwiperSlide key={key}>{renderCard(key, i)}</SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )}
+
+          {activeEffect === 'Cube' && (
+            <div className="max-w-[380px] mx-auto">
+              <Swiper
+                className="career-swiper !pb-xl"
+                modules={[EffectCube, Pagination]}
+                effect="cube"
+                grabCursor
+                pagination={{clickable: true}}
+                cubeEffect={{
+                  shadow: false,
+                  slideShadows: false,
+                }}
+              >
+                {STATION_KEYS.map((key, i) => (
+                  <SwiperSlide key={key}>{renderCard(key, i)}</SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )}
+
+          {activeEffect === 'Flip' && (
+            <div className="max-w-[380px] mx-auto">
+              <Swiper
+                className="career-swiper !pb-xl"
+                modules={[EffectFlip, Pagination]}
+                effect="flip"
+                grabCursor
+                pagination={{clickable: true}}
+                flipEffect={{
+                  slideShadows: false,
+                }}
+              >
+                {STATION_KEYS.map((key, i) => (
+                  <SwiperSlide key={key}>{renderCard(key, i)}</SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )}
+
+          {activeEffect === 'Slide' && (
+            <Swiper
+              className="career-swiper !pb-xl"
+              modules={[Pagination, Autoplay]}
+              grabCursor
+              pagination={{clickable: true}}
+              autoplay={{delay: 3000, disableOnInteraction: true}}
+              loop
+              spaceBetween={20}
+              breakpoints={{
+                0: {slidesPerView: 1},
+                640: {slidesPerView: 2},
+                1024: {slidesPerView: 3},
+              }}
+            >
+              {STATION_KEYS.map((key, i) => (
+                <SwiperSlide key={key}>{renderCard(key, i)}</SwiperSlide>
+              ))}
+            </Swiper>
+          )}
+        </motion.div>
+      </AnimatePresence>
     </div>
   )
 }

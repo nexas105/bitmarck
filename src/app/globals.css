@@ -2,7 +2,7 @@
 
 @theme {
   /* Font */
-  --font-family-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-family-sans: var(--font-space), ui-sans-serif, system-ui, sans-serif;
 
   /* Spacing (8-point system) */
   --spacing-xs:  4px;
@@ -170,4 +170,9 @@ summary {
 /* Smooth section transitions */
 section + section {
   position: relative;
+}
+
+/* Focus mode — hide optional sections */
+.focus-mode .section-optional {
+  display: none;
 }

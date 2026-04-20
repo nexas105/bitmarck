@@ -4,7 +4,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-import {Inter} from 'next/font/google';
+import {Space_Grotesk} from 'next/font/google';
 import {StickyHeader} from '@/components/sticky-header';
 import {Footer} from '@/components/footer';
 import {MotionProvider} from '@/components/motion-provider';
@@ -12,10 +12,10 @@ import {Terminal} from '@/components/terminal';
 import {InteractiveFab} from '@/components/interactive-fab';
 import '../globals.css';
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-space',
 });
 
 export function generateStaticParams() {
@@ -37,7 +37,7 @@ export default async function LocaleLayout({children, params}: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={inter.variable}>
+    <html lang={locale} className={spaceGrotesk.variable}>
       <body>
         <NextIntlClientProvider messages={messages}>
           <MotionProvider>

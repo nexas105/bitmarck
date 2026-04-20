@@ -5,6 +5,7 @@ import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {LocaleToggle} from '@/components/locale-toggle';
 import {HamburgerMenu} from '@/components/hamburger-menu';
+import {FocusMode} from '@/components/focus-mode';
 
 const SECTION_IDS = ['career', 'projects', 'skills', 'certifications', 'faq', 'contact'] as const;
 const NAV_KEYS = ['career', 'projects', 'skills', 'certifications', 'faq', 'contact'] as const;
@@ -69,7 +70,8 @@ export function StickyHeader() {
               )}
             </button>
           ))}
-          <div className="ml-sm pl-sm border-l border-border/50 flex items-center gap-sm">
+          <div className="ml-sm pl-sm border-l border-border/50 flex items-center gap-xs">
+            <FocusMode />
             <LocaleToggle />
           </div>
           <div className="ml-sm pl-sm border-l border-border/50 flex items-center gap-md">
