@@ -18,11 +18,14 @@ export default async function HomePage({params}: Props) {
   setRequestLocale(locale);
 
   return (
-    <main className="bg-linear-to-b from-surface via-surface via-40% to-primary-900">
+    <main>
+      {/* Dark: Hero + WhyBitmarck */}
       <HeroSection />
       <AnimateOnScroll preset="fadeUp">
         <WhyBitmarckSection />
       </AnimateOnScroll>
+
+      {/* Light sections with subtle stepping */}
       <AnimateOnScroll preset="fadeUp">
         <CareerSection />
       </AnimateOnScroll>
@@ -32,15 +35,17 @@ export default async function HomePage({params}: Props) {
       <AnimateOnScroll preset="scaleUp" delay={0.05}>
         <SkillsSection />
       </AnimateOnScroll>
+
+      {/* Slightly darker stepping toward footer */}
       <AnimateOnScroll preset="fadeRight" delay={0.1}>
         <CertificationsSection />
       </AnimateOnScroll>
       <AnimateOnScroll preset="blur" delay={0.05}>
         <FAQSection />
       </AnimateOnScroll>
-      <AnimateOnScroll preset="fadeUp" delay={0.1}>
-        <ContactSection />
-      </AnimateOnScroll>
+
+      {/* Dark: Contact (no wrapper — flush with footer) */}
+      <ContactSection />
     </main>
   );
 }
