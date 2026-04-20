@@ -335,6 +335,12 @@ const s = StyleSheet.create({
     fontSize: 8,
     color: TEXT2,
   },
+  page2Content: {
+    flexDirection: "column",
+  },
+  page2SubsectionGap: {
+    marginTop: 6,
+  },
 });
 
 /* ------------------------------------------------------------------ */
@@ -394,7 +400,6 @@ export function CvDocument() {
               />
               <View>
                 <Text style={s.headerName}>{cv.personalInformation.name}</Text>
-                <Text style={s.headerSubtitle}>Business Analyst IAM (Bewerbung)</Text>
               </View>
             </View>
             <View style={s.headerRight}>
@@ -486,11 +491,44 @@ export function CvDocument() {
           <Text style={s.page2Label}>Seite 2 / 2</Text>
         </View>
 
-        <View style={s.columns}>
-          {/* ---- LEFT COLUMN ---- */}
-          <View style={s.colLeft}>
-            {/* Education */}
-            <SectionTitle first>Ausbildung</SectionTitle>
+        {/* Page 2 should continue with primary content first (no sidebar split). */}
+        <View style={s.page2Content}>
+          <SectionTitle first>Berufserfahrung (Forts.)</SectionTitle>
+          {page2Experience.map((exp, i) => (
+            <View key={i} style={s.expEntry}>
+              <View style={s.expHeader}>
+                <Text style={s.expRole}>{exp.role}</Text>
+                <Text style={s.expDate}>
+                  {formatDate(exp.start)} – {formatDate(exp.end)}
+                </Text>
+              </View>
+              <Text style={s.expCompany}>
+                {exp.company}
+                {exp.location ? ` · ${exp.location}` : ""}
+              </Text>
+              {exp.details.map((d, j) => (
+                <BulletItem key={j} text={d} />
+              ))}
+            </View>
+          ))}
+
+          <SectionTitle>Projekte</SectionTitle>
+          {cv.projects.map((proj, i) => (
+            <View key={i} style={s.projEntry}>
+              <View style={s.projHeader}>
+                <Text style={s.projName}>{proj.name}</Text>
+                <Text style={s.projBadge}>{proj.type}</Text>
+              </View>
+              {proj.details.map((d, j) => (
+                <Text key={j} style={s.projDetail}>
+                  {"·  "}{d}
+                </Text>
+              ))}
+            </View>
+          ))}
+
+          <View style={s.page2SubsectionGap}>
+            <SectionTitle>Ausbildung</SectionTitle>
             {cv.education.map((edu, i) => (
               <View key={i} style={s.eduEntry}>
                 <Text style={s.eduDegree}>{edu.degree}</Text>
@@ -499,62 +537,21 @@ export function CvDocument() {
                 </Text>
               </View>
             ))}
-
-            {/* Volunteering */}
-            <SectionTitle>Ehrenamt</SectionTitle>
-            {cv.volunteering.map((vol, i) => (
-              <View key={i} style={s.volEntry}>
-                <Text style={s.volRole}>{vol.role}</Text>
-                <Text style={s.volOrg}>{vol.organization}</Text>
-                {vol.details.map((d, j) => (
-                  <BulletItem key={j} text={d} />
-                ))}
-              </View>
-            ))}
-
-            {/* Interests */}
-            <SectionTitle>Interessen</SectionTitle>
-            <Text style={s.interestsText}>{cv.interests.join(", ")}</Text>
           </View>
 
-          {/* ---- RIGHT COLUMN ---- */}
-          <View style={s.colRight}>
-            {/* Remaining experience */}
-            <SectionTitle first>Berufserfahrung (Forts.)</SectionTitle>
-            {page2Experience.map((exp, i) => (
-              <View key={i} style={s.expEntry}>
-                <View style={s.expHeader}>
-                  <Text style={s.expRole}>{exp.role}</Text>
-                  <Text style={s.expDate}>
-                    {formatDate(exp.start)} – {formatDate(exp.end)}
-                  </Text>
-                </View>
-                <Text style={s.expCompany}>
-                  {exp.company}
-                  {exp.location ? ` · ${exp.location}` : ""}
-                </Text>
-                {exp.details.map((d, j) => (
-                  <BulletItem key={j} text={d} />
-                ))}
-              </View>
-            ))}
+          <SectionTitle>Ehrenamt</SectionTitle>
+          {cv.volunteering.map((vol, i) => (
+            <View key={i} style={s.volEntry}>
+              <Text style={s.volRole}>{vol.role}</Text>
+              <Text style={s.volOrg}>{vol.organization}</Text>
+              {vol.details.map((d, j) => (
+                <BulletItem key={j} text={d} />
+              ))}
+            </View>
+          ))}
 
-            {/* Projects */}
-            <SectionTitle>Projekte</SectionTitle>
-            {cv.projects.map((proj, i) => (
-              <View key={i} style={s.projEntry}>
-                <View style={s.projHeader}>
-                  <Text style={s.projName}>{proj.name}</Text>
-                  <Text style={s.projBadge}>{proj.type}</Text>
-                </View>
-                {proj.details.map((d, j) => (
-                  <Text key={j} style={s.projDetail}>
-                    {"·  "}{d}
-                  </Text>
-                ))}
-              </View>
-            ))}
-          </View>
+          <SectionTitle>Interessen</SectionTitle>
+          <Text style={s.interestsText}>{cv.interests.join(", ")}</Text>
         </View>
       </Page>
     </Document>
