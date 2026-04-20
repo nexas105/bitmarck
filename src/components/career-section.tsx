@@ -7,7 +7,7 @@ export async function CareerSection() {
   const t = await getTranslations('Career');
 
   return (
-    <section id="career" aria-labelledby="career-heading" className="py-4xl px-md md:px-xl scroll-mt-[64px]">
+    <section id="career" aria-labelledby="career-heading" className="py-4xl px-md md:px-xl scroll-mt-[64px] bg-surface">
       <div className="mx-auto max-w-4xl">
         <SectionHeader number="01" eyebrow="BERUFSERFAHRUNG" heading={t('heading')} id="career-heading">
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">

@@ -12,7 +12,7 @@ export async function ProjectsSection() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="relative py-4xl px-md md:px-xl scroll-mt-[64px] overflow-hidden"
+      className="relative py-4xl px-md md:px-xl scroll-mt-[64px] bg-white overflow-hidden"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeader number="02" eyebrow="PROJEKTE" heading={t('heading')} id="projects-heading" />

@@ -2,8 +2,8 @@ import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Tag} from '@/components/tag';
 import {SectionHeader} from '@/components/section-header';
+import {SkillsCarousel} from '@/components/skills-carousel';
 import {Shield, BarChart3, Server, Code} from 'lucide-react';
-
 
 const CATEGORY_STYLES = {
   iam: {
@@ -62,54 +62,49 @@ export async function SkillsSection() {
             {t('intro')}
           </p>
         </SectionHeader>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mt-xl">
-          {SKILL_CATEGORIES.map((category) => {
-            const style = CATEGORY_STYLES[category.key];
-            const Icon = style.icon;
+        <div className="mt-xl">
+          <SkillsCarousel>
+            {SKILL_CATEGORIES.map((category) => {
+              const style = CATEGORY_STYLES[category.key];
+              const Icon = style.icon;
 
-            return (
-              <div
-                key={category.key}
-                className="group rounded-2xl border border-border/50 bg-surface-raised shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
-              >
-                {/* Color accent top bar */}
-                <div className={`h-1.5 bg-linear-to-r ${style.gradient}`} />
-
-                <div className="p-lg">
-                  {/* Icon + Title */}
-                  <div className="flex items-start gap-md mb-md">
-                    <div className={`h-11 w-11 rounded-xl flex items-center justify-center shrink-0 ${style.iconBg}`}>
-                      <Icon className="h-5 w-5" />
+              return (
+                <div
+                  key={category.key}
+                  className="rounded-2xl border border-border/50 bg-surface-raised shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden h-full"
+                >
+                  <div className={`h-1.5 bg-linear-to-r ${style.gradient}`} />
+                  <div className="p-lg">
+                    <div className="flex items-start gap-md mb-md">
+                      <div className={`h-11 w-11 rounded-xl flex items-center justify-center shrink-0 ${style.iconBg}`}>
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h3 className="text-body font-bold text-text-primary tracking-tight">
+                          {t(`categories.${category.key}`)}
+                        </h3>
+                        <p className="text-xs text-text-tertiary mt-xs leading-relaxed">
+                          {t(`categoryDescriptions.${category.key}`)}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-body font-bold text-text-primary tracking-tight">
-                        {t(`categories.${category.key}`)}
-                      </h3>
-                      <p className="text-xs text-text-tertiary mt-xs leading-relaxed">
-                        {t(`categoryDescriptions.${category.key}`)}
-                      </p>
+                    <div className="flex flex-wrap gap-sm">
+                      {category.skills.map((skill) => (
+                        <Tag key={skill}>{skill}</Tag>
+                      ))}
                     </div>
+                    <Link
+                      href={`/skills/${category.key}`}
+                      className="inline-flex items-center gap-xs text-label font-medium text-accent hover:text-accent-hover transition-colors duration-150 mt-md"
+                    >
+                      {t('detailLink')}
+                      <span aria-hidden="true">&rarr;</span>
+                    </Link>
                   </div>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-sm">
-                    {category.skills.map((skill) => (
-                      <Tag key={skill}>{skill}</Tag>
-                    ))}
-                  </div>
-
-                  {/* Detail link */}
-                  <Link
-                    href={`/skills/${category.key}`}
-                    className="inline-flex items-center gap-xs text-label font-medium text-accent hover:text-accent-hover transition-colors duration-150 mt-md"
-                  >
-                    {t('detailLink')}
-                    <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">&rarr;</span>
-                  </Link>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </SkillsCarousel>
         </div>
       </div>
     </section>

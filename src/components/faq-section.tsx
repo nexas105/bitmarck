@@ -13,7 +13,7 @@ export function FAQSection() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="section-optional py-4xl px-md md:px-xl scroll-mt-[64px]"
+      className="section-optional py-4xl px-md md:px-xl scroll-mt-[64px] bg-surface"
     >
       <div className="mx-auto max-w-4xl">
         <SectionHeader number="05" eyebrow="FAQ" heading={t('heading')} id="faq-heading" />
