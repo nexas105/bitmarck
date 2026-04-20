@@ -66,7 +66,7 @@
     "card1Title": "GKV-Digitalisierung",
     "card1Description": "Mich reizt an Bitmarck der konkrete Nutzen: Digitalisierung im Gesundheitswesen, die Millionen Versicherte direkt betrifft. Genau in diesem Umfeld möchte ich Verantwortung übernehmen.",
     "card2Title": "IAM-Expertise trifft Praxis",
-    "card2Description": "Ich bringe dafür die passende Basis mit: SINA-Erfahrung aus zwei sicherheitskritischen Umgebungen und einen selbst konzipierten Auth-Service mit RBAC — fachlich nah an bitIAM und Telematik.",
+    "card2Description": "Ich bringe dafür die passende Basis mit: SINA-Erfahrung aus zwei sicherheitskritischen Umgebungen und einen selbst konzipierten Auth-Service mit JWT- und Session-Handling — fachlich nah an bitIAM und Telematik.",
     "card3Title": "Die richtige Rolle",
     "card3Description": "Ich arbeite an der Schnittstelle: Problemverständnis auf Fachseite, strukturierte Anforderungen für die Umsetzung und saubere Abstimmung zwischen allen Beteiligten. Genau dafür steht die Rolle bei Bitmarck."
   },

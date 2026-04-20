@@ -66,7 +66,7 @@
     "card1Title": "GKV Digitalization",
     "card1Description": "What motivates me about Bitmarck is the concrete impact: healthcare digitization that directly affects millions of insured people. That is exactly the environment where I want to take ownership.",
     "card2Title": "IAM Expertise Meets Practice",
-    "card2Description": "I bring a fitting foundation: SINA experience from two security-critical environments and a self-designed auth service with RBAC — closely aligned with bitIAM and telematics needs.",
+    "card2Description": "I bring a fitting foundation: SINA experience from two security-critical environments and a self-designed auth service with JWT and session handling — closely aligned with bitIAM and telematics needs.",
     "card3Title": "The Right Role",
     "card3Description": "I work at the intersection: understanding business-side problems, structuring implementation-ready requirements, and aligning stakeholders across teams. That is exactly what this role at Bitmarck requires."
   },
